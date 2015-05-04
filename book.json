@@ -1,0 +1,10 @@
+{
+	"title": "OSGP Documentation",
+	"description": "GitBook containing documentation for the OSGP project.",
+    "structure": {
+        "readme": "INTRO.md"
+    },
+	"variables": {
+        "myHelloWorldVariable": "Hello World"
+    }
+}
