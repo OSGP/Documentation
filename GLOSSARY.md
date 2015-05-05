@@ -15,3 +15,6 @@ COmpanion Specification for Energy Metering, defines a set of objects to exchang
 
 # DSMR
 Dutch Smart Meter Requirements, a set of rules that describe how to use Smart Meters using DLMS/COSOM, defined by Dutch grid operators. For more information [click here](http://www.netbeheernederland.nl/themas/dossier/documenten/?pageindex=7)
+
+# SOAP Webservice
+OSGP offers a Spring Framework SOAP Webservice.
