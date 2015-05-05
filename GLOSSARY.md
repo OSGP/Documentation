@@ -1,5 +1,5 @@
 # OSGP
-Open Source Grid Platform, a solution to control and monitor smart devices. The OSGP project is built using open source tools and standards.
+Open Smart Grid Platform, a solution to control and monitor smart devices. The OSGP project is built using open source tools and standards.
 
 # SSLD
 Sub Station Lighting Device, a smart grid device that is used to control and monitor public lighting and tariff switching.
