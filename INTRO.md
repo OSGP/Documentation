@@ -2,3 +2,5 @@
 # Introduction
 
 This is an introduction for the GitBook.
+
+{% include "./LICENSE" %
