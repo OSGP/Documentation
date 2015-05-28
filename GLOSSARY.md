@@ -2,7 +2,9 @@
 Open Smart Grid Platform, a solution to control and monitor smart devices. The OSGP project is built using open source tools and standards.
 
 # SSLD
-Sub Station Lighting Device, a smart grid device that is used to control and monitor public lighting and tariff switching.
+Sub Station Lighting Device, a smart grid device that is used to control and monitor public lighting (several street lights) and tariff switching for an area.
+# PSLD
+Public Street Lighting Device, a smart grid device that is used to control and monitor a single street light.
 
 # OSLP
 Open Source Lighting Protocol, the protocol used to communicate with SSLD and other smart grid devices.

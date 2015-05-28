@@ -1,14 +1,14 @@
 {
-	"gitbook": "2.0.2",
-	"title": "OSGP Documentation",
-	"description": "GitBook containing documentation for the OSGP Project.",
+    "gitbook": "2.0.2",
+    "title": "OSGP Documentation",
+    "description": "GitBook containing documentation for the OSGP Project.",
     "structure": {
         "readme": "INTRO.md"
     },
-	"variables": {
+    "variables": {
         "myHelloWorldVariable": "Hello World"
     },
-	"plugins": ["edit-link"],
+    "plugins": ["edit-link"],
     "pluginsConfig": {
             "edit-link": {
                 "base": "https://github.com/OSGP/Documentation/edit/development",
