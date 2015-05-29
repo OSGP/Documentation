@@ -1,24 +1,43 @@
-# Chapter 2
+# Open Source and Community
 
-The sections of chapter 2 shows some code examples.
+Non-technical knowledge for developers. Written by Emma and Sander
 
-| Tables       | Are            | Cool                                                            |
-| ------------- |:-------------:| -------------------------------------------------------:|
-| section 1   | JavaScript  | syntax highlighting is available in GitBook :)    |
-| col 2 is      | Java          |   no syntax highlighting available in GitBook :( |
+## Foundation
 
+//TODO
 
-Also a blockquote is demonstrated:
+## Open Souce Branching Strategy
 
-> Talk is cheap, show me the code.
+GitFlow
 
+//TODO
 
-This line references a footnote.[^1]
-This is some more text.
-And another line.
+## Review process
 
+//TODO
 
-New paragraph.
+## Bug Reports
 
+//TODO
 
-[^1] Important remark as a footnote.
+## Issues
+
+//TODO
+
+## Governance
+
+//TODO
+
+## Code of Conduct
+
+//TODO
+
+## Communication and Contact
+
+//TODO
+
+## Contribution to Documentation
+
+GitBook, find more information online
+
+//TODO
