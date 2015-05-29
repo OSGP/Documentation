@@ -9,6 +9,7 @@ Non-technical knowledge for developers. Written by Emma and Sander
 ## Open Souce Branching Strategy
 
 GitFlow
+http://nvie.com/posts/a-successful-git-branching-model/
 
 //TODO
 
@@ -22,6 +23,11 @@ GitFlow
 
 ## Issues
 
+Issues are used for communications:
+- Development idea's
+- Bug reports
+- Questions
+- ...
 //TODO
 
 ## Governance
