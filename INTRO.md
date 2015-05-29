@@ -1,12 +1,12 @@
 ![alt text](https://avatars1.githubusercontent.com/u/11352045?v=3&s=200 "Open Smart Grid Platform")
 
-# Introduction to the Open Smart Grid Platform
+# 1. Introduction to the Open Smart Grid Platform
 
 The Open Smart Grid Platform (OSGP) is an open, generic, scalable and independent 'Internet of Things' platform, which enables various connected smart objects in the public space to be easily controlled and monitored. Our platform allows the use of any application and with any communication infrastructure.
 
 Our goal is to stimulate the development of smart and sustainable solutions. Smart devices and smart apps play a central role in the development of smart grids and smart societies. The OSGP software enables you to connect to thousands of devices, control them, and monitor their performance. This is done in an open and secure way, so you can use it for your own applications and devices, thereby reducing the time to market and decreasing development costs.
 
-## Properties of the Open Smart Grid Platform
+## 1.1 Properties of the Open Smart Grid Platform
 
 - Acts as a **connecting link** between (web)applications and smart devices
 - Open Source approach **prevents vendor lock-in** 
@@ -22,7 +22,7 @@ Our goal is to stimulate the development of smart and sustainable solutions. Sma
 - The platform supports various IP data communication infrastructures to communicate with the devices.
 - OSGP also supports both authentication and encryption for all exchanges to protect the integrity and privacy of data as is required in e.g. the smart grid.
 
-### Unique features of the Open Smart Grid Platform
+### 1.1.1 Unique features of the Open Smart Grid Platform
 
 The Open Smart Grid Platform is unique by its multi-dimensional, generic and open design. Because of a true separation of layers and the use of open standards, other suppliers and/or third parties are able to develop and market innovative solutions.
 
@@ -44,7 +44,7 @@ The Open Smart Grid Platform is used in the following way:
 
 More (technical information) about the platform operation can be found further in this document.
 
-### Example use case for the OSGP
+### 1.1.2 Example use case for the OSGP
 Use cases of the OSGP is only limited by your imagination. Here are some examples:
 - Ad-hoc and scheduled Switching of Public Lighting
 - Electrical Transportation
@@ -59,7 +59,7 @@ Use cases of the OSGP is only limited by your imagination. Here are some example
 
 Basic Overview
 
-## Layered architecture
+## 1.2 Layered architecture
 
 The Open Smart Grid Platform environment consists of six layers:
 
@@ -70,19 +70,19 @@ The Open Smart Grid Platform environment consists of six layers:
 5. Protocol layer
 6. Devices
 
-### (Web) Applications
+### 1.2.1 (Web) Applications
 
 Applications can use the web services layer to provide functions relevant for your domain such as web applications to control public lighting. The applications are outside the scope of the OSGP.
 
-### Web services layer
+### 1.2.2 Web services layer
 
 In this layer the web services are exposed to the outside world. Applications can connect to the web services to implement the required functionality of the OSGP. The web services are divided into functional domains, i.e. Public Lighting, Smart Metering, Power Quality, etc. Functional domains can be add for other domains.
 
-### Domain logic layer
+### 1.2.3 Domain logic layer
 
 Every functional domain has a separate set of web services and a corresponding domain logic block. In the domain logic block the business logic of that functional domain can be found. This is where the translation of a functional named command will be translated into an generic intermediate format. In the case of public lighting the command "Turn light on" will be translated into a command like "set switch(1) in closed position". In this layer could also be decided that a functional command results in multiple commands to a device. De domain logic are closely related to de webservices layers and can be added as well.
 
-### OSGP core layer
+### 1.2.4 OSGP core layer
 
 In the core of the Open Smart Grid Platform the generic functions are found:
 
@@ -95,15 +95,15 @@ In the core of the Open Smart Grid Platform the generic functions are found:
 - Device status monitoring
 - Routing of device commands to appropriate device protocol
 
-### Protocol layer
+### 1.2.5 Protocol layer
 
 The different protocol adapters are found in this layer. Here the generic intermediate format of a command for a specific device will be translated into the protocol message the device understands. This message will be sent to the device. For communication failures there is a retry mechanism. The listeners for messages initiated by a device are implemented here. Examples are the DLMS/COSEM protocol adaptor for smart meters.
 
-### Devices
+### 1.2.6 Devices
 
 Any device in public space with an internet connection may be connected to the platform. The platform is independent of the device used, therefore this part of the set-up is not part of the platform.
 
-## Open Source approach
+## 1.3 Open Source approach
 
 We use an open source approach, which has proven to be a very powerful mechanism that can lead to global and large-scale innovations and implementations. We believe that an open source and open innovation approach in the field of smart grids, public infrastructures and smart cities will lead to
 
@@ -115,7 +115,7 @@ We use an open source approach, which has proven to be a very powerful mechanism
 - No vendor/technology lock-in
 - Lower costs
 
-### Independent Software Foundation
+### 1.3.1 Independent Software Foundation
 
 To ensure future and independent development of the platform, the OSGP founders founded an independent software foundation. This foundation promotes and facilitates the use of and future development of the Open Smart Grid Platform. In addition, the Foundation also supports the community of developers and users of the Open Smart Grid Platform to accelerate future development and to develop a larger user base of the platform. This foundation also encourages the development of the ecosystem.
 
