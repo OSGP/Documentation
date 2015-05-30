@@ -557,13 +557,13 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 - About 25.000 Sub Stations (middenspanningsruimtes)
 - About 800.000 street lights will be switched by the SSLD's mounted in the 25.000 Sub Stations
 
-**FlexOVL web application**
+**FlexOVL web application (not open souce availible)**
 
 Municipalities have a freedom of choice in their own application (using the webservices of the Open Smart Grid Platform), or using the default web application developed by Liander.
 
 ![alt text](./flexovl-web-application.png "FlexOVL Web Application")
 
-**Functionality of the default Liander web application**
+**Functionality of the default Liander web application (example)**
 
 - Create switching schedules and assign those schedules to one or more SSLD's
 - Create groups of SSLD's in order to be able to assign schedules to many SSLD's at once
