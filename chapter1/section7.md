@@ -52,3 +52,7 @@ Municipalities have a freedom of choice in their own application (using the webs
 ### 1.7.2 White papers
 
 //TODO
+
+### 1.7.3 Cloud solution
+
+Hosting OSGP in the cloud is possible, as well as on premises.
