@@ -1,15 +1,15 @@
-## Architecture
+## 2.1 Architecture
 
-### Functional layers overview
+_Image 1, functional layers overview_
  ![alt text](./functional-layers-overview.png "Functional Layers Overview")
 
-### Functional view
+### 2.1.1 Functional view
 
-#### 1.1 Starting architecture
+#### Starting architecture
 
 The Functional view shows an overview of the most important functions of the system. The two images below respectively show the starting architecture and functional reference architecture.
 
-_Image 1, functional starting architecture_
+_Image 2, functional starting architecture_
  ![alt text](./functional-starting-architecture.png "Functional Starting Architecture")
 
 1. Web applications
@@ -22,13 +22,12 @@ _Image 1, functional starting architecture_
 8. Open Street Light Protocol (OSLP)
 9. Public Street Lighting Device (PSLD) or Sub Station Lighting Device (SSLD)
 
-### Functional Reference
+### 2.1.2 Functional Reference
 
 This model partitions the system in 7 functional clusters (vertically) which are shown on the system layers (horizontally). The circled numbers refer to image 1.
 
+_Image 3, functional reference architecture_
 ![alt text](./functional-reference-architecture.png "Functional Reference Architecture")
-
-_Image 2, functional reference architecture_
 
 Vertical clusters:
 
