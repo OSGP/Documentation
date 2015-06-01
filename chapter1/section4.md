@@ -161,7 +161,3 @@ Authorisation for use of the platform functionalities is handled by roles. Roles
 | GET\_MESSAGES | X |   |
 | FIND\_DEVICES | X |   |
 | SET\_OWNER | X |   |
-
-## 1.5 Cloud solution
-
-Hosting OSGP in the cloud is possible, as well as on premises.
