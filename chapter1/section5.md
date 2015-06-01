@@ -16,7 +16,7 @@ The use of layers improves the separation of responsibilities. Each application 
 - Domain layer: responsible for the representation of the problem domain.
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
-**Layers:**
+_Image 10, Layers:_
  ![alt text](./layers.png "Layers")
 
 1. Audit logger
