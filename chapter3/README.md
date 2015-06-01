@@ -2,48 +2,111 @@
 
 ## Tool Used
 
-- Apache ActiveMQ: Open source messaging server, used to relay messages between components of OSGP. ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client. It provides "Enterprise Features" which in this case means fostering the communication from more than one client or server.
-- Apache HTTP server: Webserver, used as front for Apache Tomcat.
-- Apache JMeter: Application designed to load test functional behaviour and measure performance.
-- Apache Tomcat: Provides a "pure Java" HTTP web server environment for Java code to run in.
-- Bower:Package manager for Javascript packages. Web sites are made of lots of things - frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
-- CheckStyle: Tool for checking compliance to Java coding standard.
-- Eclipse: IDE for developing software.
-- FileZilla: FTP application.
-- Fitnesse: A test tool, used to write behaviour driven tests.
-- FindBugs: Tool for finding possible bugs.
-- Git: Version control system for the front-end applications.
-- GivWenZen: BDD extension for Fitnesse.
-- NodeJS: Tooling suite with various Javascript tools.
-- Notepad++: A free source code editor.
-- NPM: Package manager for the NodeJS Javascript applications.
-- PGAdmin: PostgreSQL administration and management tools.
-- PMD: Source code analyzer.
-- Protobuf	(Google Protocol Buffers): A language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and more.
-- Putty: A free and open-source terminal emulator, serial console and network file transfer application.
-- SourceTree:SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.
-- Vim: Source code editor.
-- Yeoman:	AngularJS web-app development tool, generates boilerplate code to get started quickly.
+- [Apache ActiveMQ](http://activemq.apache.org/): Open source messaging server, used to relay messages between components of OSGP. ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client. It provides "Enterprise Features" which in this case means fostering the communication from more than one client or server.
+- [Apache HTTP server](http://httpd.apache.org/): Webserver, used as front for Apache Tomcat.
+- [Apache JMeter](http://jmeter.apache.org/): Application designed to load test functional behaviour and measure performance.
+- [Apache Tomcat](http://tomcat.apache.org/): Provides a "pure Java" HTTP web server environment for Java code to run in.
+- [Bower](http://bower.io/): Package manager for Javascript packages. Web sites are made of lots of things - frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
+- [Eclipse](https://eclipse.org/): IDE for developing software.
+- [FileZilla](https://filezilla-project.org/): FTP application.
+- [Fitnesse](http://www.fitnesse.org/): A test tool, used to write behaviour driven tests.
+- [Git](https://git-scm.com/): Version control system.
+- [GivWenZen](https://github.com/weswilliams/GivWenZen): BDD extension for Fitnesse.
+- [NodeJS](https://nodejs.org/): Tooling suite with various Javascript tools.
+- [Notepad++](https://notepad-plus-plus.org/): A free source code editor.
+- [NPM](https://www.npmjs.com/): Package manager for the NodeJS Javascript applications.
+- [pgAdmin-III](http://www.pgadmin.org/): PostgreSQL administration and management tools.
+- [Protobuf (Google Protocol Buffers)](https://github.com/google/protobuf/): A language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and more.
+- [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/): A free and open-source terminal emulator, serial console and network file transfer application.
+- [SourceTree](https://www.sourcetreeapp.com/): SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.
+- [Vim](http://www.vim.org/): Source code editor.
 
 ## Code Guidelines and Code Tests
 
+- Use the code formatting rules < link needed >
+- Use the save action rules < link needed >
+- Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
+- Write behaviour driven tests using [Fitnesse](http://www.fitnesse.org/), see the [Integration-Tests repo](https://github.com/OSGP/Integration-Tests)
+- Fix SonarQube issues
+- Issue pull request (preferable to development branch)
 
 ## Continuous Integration
 
-- Jenkins	An open source continuous integration tool written in Java.
-- SonarQube: SonarQube is an open platform to manage code quality.
+All pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improving the quality of the code base.
+
+- [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
+- [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
 
 ## Technical Conventions and Rules for New Code
 
+This project is engineered, built and tested using Domain Driven Design and Behaviour Driven Tests.
+
+- Use the Frameworks, don't roll your own
+- Single class, single responsibility
+- Value objects are immutable
+- Map generated object to value objects or entities
+- Transferring an object means using a DTO
+- Use base classes for common logic
+- Interfaces are good, but 'impl' is bad
+- Extend classes, don't expand classes
+- Migrate databases using Flyway
+- JMS for messaging
+- Extend the authorization logic if needed, don't bypass it
+- Log errors/exceptions
+- Add meaningful comments to the code
+- Follow the code guidelines
 
 ## Development Guide per Component
 
+### Web Service Adapters
+
+The web service adapters use Spring Web Service, contract first. JAXB is used to generate Java classes from the XSD's. All SOAP operations are bound to an endpoint. The incoming SOAP requests are authenticated by organization identification (plus certificates). Organization authorizations are checked for the desired operation. If the request is OK, a JMS message is sent to a domain adapter component.
+
+### Domain Adapters
+
+Domain adapters contain business logic and persistence. Domain adapters process and forward the JMS message to the Core component.
+
+### Domain Components
+
+Domain components contain entities and value objects.
+
+### Core
+
+The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Further, it offers read-only database access for protocol adapter components.
+
+### Protocol Adapters
+
+Protocol Adapter components translate a message from domain adapter components into a protocol message for a smart device. Protocol Adapter components send the protocol message to a smart device using a network connection. The response from the smart device is translated into a domain response message which will be sent to the Core components (which will route it to the domain adapter that issued the request).
 
 ## Installation Script
 
-To get started quickly, an [installation script](https://github.com/OSGP/Config) has been created.
+To get started quickly, an [Installation Script](https://github.com/OSGP/Config) has been created.
+Below, all steps involved in using the script are shown in screenshots.
+These are the steps:
+- Creating a Virtual Machine (or skip this step if a 'real' installation is preferred)
+- Installing Ubuntu
+- Starting Ubuntu and Updating the Software
+- If using a Virtual Machine, installing Virtual Box Guest Addtions
+- Downloading the Puppet Scripts
+- Start with Installing Puppet
+- Using Puppet to Setup the Development Environment
+- Importing Maven Projects into Eclipse
+- Creating an Apache Tomcat7 Server
+- Creating Sym Link to Maven Settings
+- Setting Up Apache Tomcat7 Server Context
+- Deploying All OSGP Components to Apache Tomcat7 Server
+- Starting Apache ActiveMQ
+- Starting Apache Tomcat7 Server
+- Starting pgAdmin III and Connect to PostgreSQL
+- Creating the 'test-org' Organization
+- Installing SoapUI
+- Setting Up SoapUI
+- First SOAP Requests to Add a Device to OSGP
+- Opening Device Simulator to Add a Device
+- Registering a Device
+- Using 'SetLight' SOAP Request to Switch the Light On
 
-### Creating a virtual machine using [Virtual Box](https://www.virtualbox.org/)
+### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/)
 
 ![alt text](./installation-script-screenshots/01.png)
 
@@ -174,7 +237,7 @@ Make sure to check the development branch for the latest version!
 
 ![alt text](./installation-script-screenshots/52.png)
 
-### Importing Maven Project into Eclipse
+### Importing Maven Projects into Eclipse
 
 ![alt text](./installation-script-screenshots/54.png)
 
@@ -228,7 +291,7 @@ Make sure to check the development branch for the latest version!
 
 ![alt text](./installation-script-screenshots/73.png)
 
-### Starting pgAdmin III and Connection to PostgreSQL
+### Starting pgAdmin III and Connect to PostgreSQL
 
 ![alt text](./installation-script-screenshots/74.png)
 
@@ -274,7 +337,7 @@ Make sure to check the development branch for the latest version!
 
 ![alt text](./installation-script-screenshots/91.png)
 
-### Opening Device Simulater to Add a Device
+### Opening Device Simulator to Add a Device
 
 ![alt text](./installation-script-screenshots/92.png)
 

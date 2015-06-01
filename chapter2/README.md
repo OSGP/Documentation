@@ -1,4 +1,4 @@
-# User's Manual
+# User's Guide
 
  Sys Admin's who are tasked with keeping OSGP running on a environment, can find some information in this chapter.
 
@@ -32,7 +32,7 @@ When using the SOAP Web service, there are 2 flows that can occur:
 
 ## Maintenance
 
-There's not much maintenance that needs to be performed. Archiving some old log files, checking up on available disk space and creating a backup of the databases. Looking into the queues to see if there are unhandled messages in dead letter queue.
+There's not much maintenance that needs to be performed. Archiving some old log files, checking up on available disk space and creating a backup of the databases. Looking into the queues to see if there are not handled messages in dead letter queue.
 
 ## Tooling
 

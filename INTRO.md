@@ -110,7 +110,7 @@ We use an open source approach, which has proven to be a very powerful mechanism
 - An acceleration of (open) innovation
 - Encouraging ecosystem development
 - More open standards
-- more use of smart applications
+- More use of smart applications
 - Reducing (IT) complexity
 - No vendor/technology lock-in
 - Lower costs
