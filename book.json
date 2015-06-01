@@ -14,5 +14,17 @@
                 "base": "https://github.com/OSGP/Documentation/edit/development",
                 "label": "Fix This Page"
             }
+    },
+    "links": {
+        "home": null,
+        "about": false,
+        "issues": false,
+        "contribute": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "all": false
+        }
     }
 }
