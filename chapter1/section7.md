@@ -47,7 +47,7 @@ Municipalities are free to choose their own (web)application (using the webservi
 - On demand switching of public lighting
 - Review current status of an SSLD in order to review public lighting and tariff switching states
 - Abilities to monitor power consumption of public lighting (available if the SSLD is fitted with an Electricity Meter)
-- Monthly report offering insight into swtich moments and power consumption
+- Monthly report offering insight into switch moments and power consumption
 
 ### 1.7.2 White papers
 
