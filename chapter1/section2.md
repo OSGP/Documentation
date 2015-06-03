@@ -52,7 +52,7 @@ The use of layers improves the separation of responsibilities. Each application 
 
 At the moment only the OSLP protocol is supported but other protocols can easily be added to the platform.
 
-The Open Street Light Protocol is based on Google Protocol Buffers and is used for communicating with SSLD devices (and device simulators).
+The Open Street Light Protocol is based on Google Protocol Buffers and is used for communication with SSLD devices (and device simulators).
 
 ### 1.2.8 Smart devices
 
