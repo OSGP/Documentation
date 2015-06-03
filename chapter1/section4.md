@@ -13,7 +13,7 @@ The identified non-functional demands are:
 
 ### 1.4.1 Time Behavior
 
-Time behavior is mainly significant in the Flexovl project when a lot of devices have to be addressed in a short period of time over a wireless network. Both latency and limited bandwidth have to be taken in consideration while demanding the coordinated on and off switching of the lighting (no Christmas tree effect).
+Time behavior is mainly significant in the Flexovl project when a lot of devices have to be addressed in a short period of time over a wireless network. Both latency and limited bandwidth have to be taken in consideration while demanding the coordinated on and off switching of the lighting (We do not want the Christmas tree effect after all).
 
 - Time synchronization: devices periodically register with the platform and receive a time.
 - Protocol: because of the limited bandwidth an efficient protocol "protobuf" was selected.
@@ -27,7 +27,7 @@ Because of these points of interest we use message queueing combined with a retr
 
 ### 1.4.2 Extensibility
 
-At the moment the platform is mainly used for switching of public lighting but it is possible to easily extend this to other applications like electric transport, smart grids, etc.
+At the moment the platform is mainly used for switching of public lighting but this can easily be extended to other applications like electric transport, smart grids, etc.
 
 ### 1.4.3 Internationalization and localization
 
@@ -108,7 +108,7 @@ To ensure that devices can only receive instructions from a 'genuine' OSGP it mu
 
 To make sure OSGP can distinguish between 'genuine' devices and 'illegal' devices all devices are supplied with a manufacturer key. Each device has an unique key. Because of the asymmetrical encryption the platform contains the public part of each key. In this way devices can be identified by their unique key and their unique hardware ID. The device-ID will be encrypted in each message sent from the device to the platform.
 
-All communication between OSGP and the devices will be signed with these keys to ensure (1) the source is legitimate and (2) the integrity of the message. It is not necessary to encrypt the whole message because confidentiality is not important. This results in a less computationally intensive process.
+All communication between OSGP and the devices will be signed with these keys to ensure (1) the source is legitimate and (2) to ensure the integrity of the message. It is not necessary to encrypt the whole message because confidentiality is not important. This results in a less computationally intensive process.
 
 When a key is stolen (by hacking a device) this will not affect the integrity of the other devices. Each device has an unique key after all and only the hacked device has to be excluded from communicating in the platform.
 
@@ -118,11 +118,11 @@ The firmware will be used to distribute keys to devices. In this way we can use 
 
 #### 1.4.4.6 Authentication of web-applications
 
-Two way SSL will be used between web-applications and OSGP to ensure the identities for both parties. User organisations are responsible for the administration of the identity of and access to their web applications. The owner and management applications feature a login page. After successful login the user is linked to an organisation. Passwords will be stored encrypted. The organisation ID will be sent in each message to OSGP and will be verified by the SSL certificate.
+Two way SSL will be used between web-applications and OSGP to verify the identities for both parties. User organisations are responsible for the administration of the identity of and access to their web applications. The web applications feature a login page. After successful login the user is linked to an organisation. Passwords will be stored encrypted. The organisation ID will be sent in each message to OSGP and will be verified by the SSL certificate.
 
 #### 1.4.4.7 Authorisation of organisations
 
-Authorisation for use of the platform functionalities is handled by roles. Roles are defined for both platform functionality and device functionality. Each role has one or more functions. Access to device functions can be set per device. The matrixes below respectively show an overview of all device roles and functions and platform roles and functions.
+Authorisation for use of the platform functionalities is handled by roles. Roles are defined for both platform functionality and device functionality. Each role has one or more functions. Access to device functions can be set per device. The matrixes below respectively show an overview of all device-roles and device-functions and platform-roles and platform-functions.
 
 |   | **Roles** |
 | --- | --- |
