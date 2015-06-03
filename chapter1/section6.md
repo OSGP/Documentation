@@ -15,7 +15,7 @@ Data model explanation:
 
 | **Table** | **Description** |
 | --- | --- |
-| device | Devices table |
+| devices | Devices table |
 | device\_authorisation | Authorisation table, function group column concerns the device functions (AD\_HOC, INSTALLATION, etc) |
 | organisation | Organisation table, function group column concerns the platform functions (ADMIN of USER) |
 | event | Events table |
