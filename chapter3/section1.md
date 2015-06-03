@@ -32,7 +32,7 @@
 
 ## 3.1.3 Continuous Integration
 
-All pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improving the quality of the code base.
+All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to improve the code base quality level.
 
 - [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
 - [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
@@ -44,7 +44,7 @@ This project is engineered, built and tested using Domain Driven Design and Beha
 - Use the Frameworks, don't roll your own
 - Single class, single responsibility
 - Value objects are immutable
-- Map generated object to value objects or entities
+- Map generated objects to value objects or entities
 - Transferring an object means using a DTO
 - Use base classes for common logic
 - Interfaces are good, but 'impl' is bad
