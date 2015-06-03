@@ -37,5 +37,5 @@ There's not much maintenance that needs to be performed. Archiving some old log 
 
 ## 2.5 Tooling
 
-SSH/PuTTY, FileZilla, pgAdmin-III and SoapUI should be everything needed to maintain a server running OSGP.
+The only tools you need to keep an OSGP server running are SSH/PuTTY, FileZilla, pgAdmin-III and SoapUI.
 
