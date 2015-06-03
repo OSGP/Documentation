@@ -6,7 +6,7 @@ These are the steps:
 - Creating a Virtual Machine (or skip this step if a 'real' installation is preferred)
 - Installing Ubuntu
 - Starting Ubuntu and Updating the Software
-- If using a Virtual Machine, installing Virtual Box Guest Addtions
+- If a Virtual Machine is used, install Virtual Box Guest Addtions
 - Downloading the Puppet Scripts
 - Start with Installing Puppet
 - Using Puppet to Setup the Development Environment
