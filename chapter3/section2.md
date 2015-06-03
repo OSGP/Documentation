@@ -14,7 +14,7 @@ Domain components contain entities and value objects.
 
 ### 3.2.4 Core
 
-The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Further, it offers read-only database access for protocol adapter components.
+The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Furthermore, it offers read-only database access for protocol adapter components.
 
 ### 3.2.5 Protocol Adapters
 
