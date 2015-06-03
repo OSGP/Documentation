@@ -21,7 +21,7 @@ The functions an organisation can execute on a device are determined by the func
 - Configuration-group (Functions to configure devices)
 - Monitoring-group (Functions to monitor devices)
 
-This structure provides maximum flexibility when assigning rights to devices. Devices always belong to an Owner. An organisation can be an owner. The entity "Event", at the bottom of the image, is the execution of a function by an organisation on a device.
+This structure provides maximum flexibility when assigning rights to devices. Devices always belong to an Owner. An owner is an organisation, but not every organisation is an owner. The entity "Event", at the bottom of the image, is the execution of a function by an organisation on a device.
 
 Details like device-type, device-status etcetera have been omitted in this model.
 
@@ -36,6 +36,6 @@ Table describing the entities in the logical data-model
 | audit trail | The actions of an organisation on a device. A combination of [time, organisation, function and device]. |
 | function | An end-to-end operation. For example "set schedule". A function belongs to multiple function groups. |
 | function group | Usually this will be larger groups than the "function clusters" in this document. All functions available to end users could be in a single group for example. |
-| organisation | Een partij die een rol speelt in het beheer en de aansturing van de devices. Bijvoorbeeld: Liander, gemeenten. A party playing a role in the management and control of the devices. |
+| organisation | A party playing a role in the management and control of the devices, for example municipalities. |
 | owner | An organisation role. Each device has an owner. |
 | event | An event reported by the device (which is not the action of a natural person) for example an error or security problem. |
