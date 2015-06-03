@@ -16,17 +16,17 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 
 **Customer drivers (Municipalities)**
 
-- Get more in control, through controlling switching times themselves
+- Be more in control, by controlling switching times themselves
 - Resolve power failures faster, through up-to-date information
-- Save on costs, through energy saving and more efficient maintenance and management
-- Not dependent on one supplier
+- Reduction in costs, through energy saving and more efficient maintenance and management
+- No vendor lock-in, not dependent on one supplier
 
 **Implementation/roll-out**
 
 - Small scale roll-out started jan-2015
 - 200 Sub Stations will be fitted with an SSLD to control public lighting and tariff switching
 - 15 municipalities in the Liander grid operator area will be participating
-- Goal is to allow municipalities to use the application, give feedback and to see if the services offered to municipalities are adaquate
+- Goal is to allow municipalities to use the application, give feedback and to see if the services offered to municipalities are adequate
 
 
 - Large scale roll-out will start around end of 2015
@@ -34,13 +34,13 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 - About 25.000 Sub Stations (middenspanningsruimtes)
 - About 800.000 street lights will be switched by the SSLD's mounted in the 25.000 Sub Stations
 
-**FlexOVL web application (not open souce availible)**
+**FlexOVL web application (not open souce available)**
 
-Municipalities have a freedom of choice in their own application (using the webservices of the Open Smart Grid Platform), or using the default web application developed by Liander.
+Municipalities are free to chose in their own (web)application (using the webservices of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
 
 ![alt text](./flexovl-web-application.png "FlexOVL Web Application")
 
-**Functionality of the default Liander web application (example)**
+**Functionality of the default  web application as used by grid operator Liander (example)**
 
 - Create switching schedules and assign those schedules to one or more SSLD's
 - Create groups of SSLD's in order to be able to assign schedules to many SSLD's at once
