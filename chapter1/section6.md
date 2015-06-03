@@ -17,7 +17,7 @@ Data model explanation:
 | --- | --- |
 | devices | Devices table |
 | device\_authorisation | Authorisation table, function group column concerns the device functions (AD\_HOC, INSTALLATION, etc) |
-| organisation | Organisation table, function group column concerns the platform functions (ADMIN of USER) |
+| organization | Organization table, function group column concerns the platform functions (ADMIN of USER) |
 | event | Events table |
 | oslp\_log\_item | Table for logging of OSLP messages. |
 | webservice monitor log item | Audit record for tracking webservice activity. |
@@ -32,7 +32,7 @@ Data model explanation:
 | **Table** | **Description** |
 | --- | --- |
 | devices | Devices tabel |
-| organisations | Organisation table with userinfo. |
+| organizations | Organization table with userinfo. |
 | lightmeasurementdevices | Light measurement table for linking to devices and conversion to transitions (via sms\_type and sms\_index) of incoming light measurement texts. |
 | groups | Device groups. Device can exist only in 0 or 1 group. |
 | Lighting schedule | Available lighting schedules linked to device (after upload of schedule). |
@@ -54,17 +54,17 @@ This Table presents an overview of the components and the most important technol
 | --- | --- |
 | OSGP Platform | Java, Spring Framework, Hibernate, Netty |
 | Demo applicatie | Java, Spring Framework, Spring MVC |
-| OSGP Management applicatie | Java, Spring Framework, Spring MVC |
-| Net-Management applicatie | Java, Spring Framework, JAX-RS, AngularJS |
-| Liander Installatie applicatie | Java, Spring Framework, JAX-RS, AngularJS |
+| OSGP Management application | Java, Spring Framework, Spring MVC |
+| Net-Management application | Java, Spring Framework, JAX-RS, AngularJS |
+| Liander Installatie application | Java, Spring Framework, JAX-RS, AngularJS |
 | Web services | SOAP, WSDL |
 | OSLP Protocol | Google Protocol Buffers |
 
 ### 1.6.5 Interface view
 
-The platform contains  2 kinds of external interfaces:
+The platform contains two kinds of external interfaces:
 
-1. Web services (WSDL), to provide platform functionality to 3rd party applications.
+1. Web services (WSDL), to provide platform functionality to third party applications.
 2. Open Street Light Protocol (OSLP), to communicate with devices.
 
 ### 1.6.6 Web Services (WSDL)
