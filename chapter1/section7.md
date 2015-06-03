@@ -34,9 +34,9 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 - About 25.000 Sub Stations (middenspanningsruimtes)
 - About 800.000 street lights will be switched by the SSLD's mounted in the 25.000 Sub Stations
 
-**FlexOVL web application (not open souce available)**
+**FlexOVL web application (not open source available)**
 
-Municipalities are free to choose in their own (web)application (using the webservices of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
+Municipalities are free to choose their own (web)application (using the webservices of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
 
 ![alt text](./flexovl-web-application.png "FlexOVL Web Application")
 
