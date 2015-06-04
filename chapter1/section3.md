@@ -31,11 +31,11 @@ Table describing the entities in the logical data-model
 
 | **Entity** | **Description** |
 | --- | --- |
-| authorisation | Authorisation – Permissions of an organisation to execute a certain function  (member of a role) on a certain device |
+| authorization | Authorization – Permissions of an organisation to execute a certain function  (member of a role) on a certain device |
 | device | Electronics present in a "container" (for example a lamp post), connecting to the OSGP platform and (in case of a lamp post) controls the lights. One device has one owner. |
-| audit trail | The actions of an organisation on a device. A combination of [time, organisation, function and device]. |
+| audit trail | The actions of an organization on a device. A combination of [time, organization, function and device]. |
 | function | An end-to-end operation. For example "set schedule". A function belongs to multiple function groups. |
 | function group | Usually this will be larger groups than the "function clusters" in this document. All functions available to end users could be in a single group for example. |
-| organisation | A party playing a role in the management and control of the devices, for example municipalities. |
-| owner | An organisation role. Each device has an owner. |
+| organization | A party playing a role in the management and control of the devices, for example municipalities. |
+| owner | An organization role. Each device has an owner. |
 | event | An event reported by the device (which is not the action of a natural person) for example an error or security problem. |
