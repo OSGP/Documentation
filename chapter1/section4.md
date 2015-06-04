@@ -41,7 +41,7 @@ The following security measures are in place for the cloud hosted platform:
 - Firewalls between all servers and layers
 - DDOS protection
 - Communication over TLS
-- 
+
 ### Platform security
 - Certificates from a certificate authority
 - Audit trail on all actions throughout the platform
