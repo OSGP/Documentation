@@ -36,11 +36,13 @@ The platform and devices use UTC time. The OSLP protocol between platform and de
 ### 1.4.4 Security
 
 The following security measures are in place for the cloud hosted platform:
-
+### Cloud security
 - Hardened operating systems (according to Center of Internet Security)
 - Firewalls between all servers and layers
 - DDOS protection
 - Communication over TLS
+- 
+### Platform security
 - Certificates from a certificate authority
 - Audit trail on all actions throughout the platform
 - Role based authorizations on specific functions of devices
