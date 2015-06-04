@@ -40,6 +40,8 @@ The following security measures are in place for the cloud hosted platform:
 - Hardened operating systems (according to Center of Internet Security)
 - DDOS protection
 - Communication over TLS
+- IPSEC VPN connections
+- IP whitelisting
 
 ### Platform security
 - Firewalls between all servers and layers
@@ -47,8 +49,6 @@ The following security measures are in place for the cloud hosted platform:
 - Audit trail on all actions throughout the platform
 - Role based authorizations on specific functions of devices
 - Access control
-- IPSEC VPN connections
-- IP whitelisting
 - Unique device identification
 
 For every major release there will be a mandated security test.
