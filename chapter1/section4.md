@@ -54,8 +54,6 @@ The following security measures are in place for the cloud hosted platform:
 For every major release there will be a mandated security test.
 The cloud hosting platform will be tested regularly by the provider.
 
-**Security**
-
 In cooperation with the European Network of Cyber Security (ENCS) state of the art security measures were implemented.
 
 - Security per device
