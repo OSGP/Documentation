@@ -280,3 +280,5 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/99.png)
 
 ![alt text](./installation-script-screenshots/100.png)
+
+**AND YOUR DONE!! :)**
