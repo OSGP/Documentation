@@ -1,10 +1,13 @@
-## 1.2 Description of each of the platform components
+## 1.2 Principles
 
-### 1.2.1 Web applications
+This chapter gives an overview of the principles used defining and implementing the architecture. The following principles were applied:
 
-If one of the web apps is open source, we might write something on this and its APIs as well.
+- Layering
+- Domain driven design
+- Dependency inversion principle
+- Behavior driven development
 
-### 1.2.2 Application Layering
+### 1.2.1 Layering
 
 The use of layers improves the separation of responsibilities. Each application contains the following layers:
 
@@ -13,7 +16,7 @@ The use of layers improves the separation of responsibilities. Each application 
 - Domain layer: responsible for the representation of the problem domain.
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
-**Layers:**
+_Image, Layers:_
  ![alt text](./layers.png "Layers")
 
 1. Audit logger
@@ -27,33 +30,28 @@ The use of layers improves the separation of responsibilities. Each application 
 9. Queue
 10. Communication
 
+### 1.2.2 Domain driven design (DDD)
 
-### 1.2.3 HTTPS/SOAP communication
+Domain-driven design focusses on the problem domain. DDD's starting point is creating an optimal model for a specific problem domain by having a common language and constructive collaboration between technical and domain experts.
 
-//TODO
+DDD uses the following building blocks:
 
-### 1.2.4 Web services
+- Entity: An object not identified by its attributes but by its own identity.
+- Value Object: an object with attributes but has no own identity.
+- A collection of objects surrounding a specific root entity (or aggregate root). To ensure consistency objects in the aggregate can only be addressed through the aggregate root.
+- Service: Contains instructions not related to a specific object. 
+- Repository: Serves as a  collection for fetching and saving objects. Creates an abstraction for actual persistent implementations.
+- Factory: Contains methods to create domain objects.
 
-//TODO
+### 1.2.3 Dependency inversion principle
 
-### 1.2.5 Business logic
+The dependency inversion principle promotes an independent connection by inverting dependency relations. This ensures that the domain model can be very 'clean' without knowledge of the underlying infrastructure (POJO classes). To apply this principle the Spring Framework is used.
 
-//TODO
+### 1.2.4 Behavior driven development (BDD)
 
-### 1.2.6 Core
+Behavior driven development is a way of programming that first describes behavior in user stories and then implements this in the code. The user stories contain scenarios with acceptation criteria, which can be automated. This creates a complete test suite for the whole system.
 
-//TODO
+For the application of BDD the following frameworks are used:
 
-### 1.2.7 Open protocols
-
-- TLS (Transport Layer Security encryption)
-- SSL (Secure Sockets Layer encryption)
-- OSLP (Open Street Light Protocol).
-
-At the moment only the OSLP protocol is supported but other protocols can easily be added to the platform.
-
-The Open Street Light Protocol is based on Google Protocol Buffers and is used for communication with SSLD devices (and device simulators).
-
-### 1.2.8 Smart devices
-
-//TODO ? This one may be left out ?
+- GivWenZen, extension for FitNesse to use Given When Then scenario's
+- FitNesse, acceptance testing framework, makes use of wiki.
