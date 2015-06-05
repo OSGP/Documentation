@@ -6,7 +6,7 @@ Non-technical knowledge for developers.
 
 //TODO
 
-## 4.2 Open Souce Branching Strategy
+## 4.2 Open Source Branching Strategy
 
 We use the GitFlow branching strategy. Find more information on this strategy here: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
 
