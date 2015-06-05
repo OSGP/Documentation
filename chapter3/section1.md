@@ -31,16 +31,17 @@
 
 ## 3.1.2 Code Guidelines and Code Tests
 
-- Use the code formatting rules < link needed >
-- Use the save action rules < link needed >
+- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/code-format)
+- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/save-actions)
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
 - Write behaviour driven tests using [Fitnesse](http://www.fitnesse.org/), see the [Integration-Tests repo](https://github.com/OSGP/Integration-Tests)
+- In case you are not familiar with behaviour driven tests, include unit tests
 - Fix SonarQube issues
 - Issue pull request (preferable to development branch)
 
 ## 3.1.3 Continuous Integration
 
-All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to improve the code base quality level.
+All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improve the quality level of the code base.
 
 - [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
 - [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
