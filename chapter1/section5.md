@@ -35,13 +35,15 @@ The platform and devices use UTC time. The OSLP protocol between platform and de
 
 The following security measures are in place for the cloud hosted platform:
 ### Cloud security
-- Hardened operating systems (according to Center of Internet Security)
 - DDOS protection
-- Communication over TLS
 - IPSEC VPN connections
 - IP whitelisting
 
+### Operating System 
+- Hardened operating systems (according to Center of Internet Security)
+
 ### Platform security
+- Communication over TLS
 - Firewalls between all servers and layers
 - Certificates from a certificate authority
 - Audit trail on all actions throughout the platform
@@ -59,7 +61,7 @@ In cooperation with the European Network of Cyber Security (ENCS) state of the a
 - Security Certificates per Organisation and per device
 - All communication is encrypted
 
- ![alt text](./security-measures.png "Security Measures")
+ ![alt text](./functional-layers-overview.png "Functional Layers Overview")
 
 **Security measures:**
 1. Firewall in defined zone
@@ -74,7 +76,7 @@ In cooperation with the European Network of Cyber Security (ENCS) state of the a
 10. Unique CDMA modem number
 11. Role based authorizations on functions and devices
 
- ![alt text](./security-measures-2.png "Security Measures")
+ 
 
 #### 1.5.4.1 Encryption
 
