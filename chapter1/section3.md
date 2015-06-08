@@ -9,7 +9,7 @@ If one of the web apps is open source, we might write something on this and its 
 The use of layers improves the separation of responsibilities. Each application contains the following layers:
 
 - Presentation layer: responsible for providing information to users (persons and/or systems) and the handling of user requests
-- Application layer: responsible for executing system tasks including authorisation control
+- Application layer: responsible for executing system tasks including authorization control
 - Domain layer: responsible for the representation of the problem domain.
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
@@ -30,19 +30,19 @@ The use of layers improves the separation of responsibilities. Each application 
 
 ### 1.3.3 HTTPS/SOAP communication
 
-//TODO
+The web server is configured with a SSL certificate to encrypt the incoming and outgoing communication. The SOAP Web service (Spring Framework web service) uses a Java Keystore and a certificate for each organization. Only organizations that are know within the platform and are authorized to use the web service.
 
-### 1.3.4 Web services
+### 1.3.4 Web services per functional domain
 
-//TODO
+For the several functional domains separate SOAP Web services are offered. This separation offers authorization per functional domain. Each of the web service components send a queue message to the corresponding domain component.
 
 ### 1.3.5 Business logic
 
-//TODO
+For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the OSGP core component.
 
 ### 1.3.6 Core
 
-//TODO
+The OSGP core component receives queue messages from domain components. These messages from domain components are forwarded to a protocol adapter project. The OSGP core component also offers logic for a protocol adapter project to send the response of a smart device back to a domain project.
 
 ### 1.3.7 Open protocols
 
@@ -52,8 +52,8 @@ The use of layers improves the separation of responsibilities. Each application 
 
 At the moment only the OSLP protocol is supported but other protocols can easily be added to the platform.
 
-The Open Street Light Protocol is based on Google Protocol Buffers and is used for communication with SSLD devices (and device simulators).
+The Open Street Light Protocol is based on Google Protocol Buffers and is used for communication with SSLD devices (and device simulators). Google Protocol Buffers is used to generate the protocol implementations for Java (for the platform) and C/C++ (for the SSLD devices).
 
 ### 1.3.8 Smart devices
 
-//TODO ? This one may be left out ?
+Smart devices can receive messages from or send messages to protocol adapter components. In case of SSLD's this is done using TCP/IP over mobile internet connections (GPRS/CDMA). The communication is encrypted using public key cryptography.

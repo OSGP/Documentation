@@ -133,6 +133,6 @@ Furthermore each SOAP message has a header which contains the user's organisatio
 
 ### 1.6.7 Technology selection
 
-Open street light protocol does not use ASN.1 but Google Protocol Buffers. The main reason for this is the lack of a good quality free compiler for Java or C.
+Open street light protocol does not use ASN.1 but Google Protocol Buffers. The main reason for this is the lack of a good quality free ASN.1 compiler for Java or C. Google Protocol Buffers offers a fast and free compiler for Java and C which produces small message sizes.
 
 Open LDAP is not applied. A database solution was chosen instead of Directory services for authorisation.
