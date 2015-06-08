@@ -62,8 +62,7 @@ In cooperation with the European Network of Cyber Security (ENCS) state of the a
 - All communication is encrypted
 
  ![alt text](./security-measures.png "Security Measures")
-_Image, functional layers overview_
- ![alt text](./functional-layers-overview.png "Functional Layers Overview")
+
 **Security measures:**
 1. Firewall in defined zone
 2. Operating System Hardening
@@ -77,7 +76,7 @@ _Image, functional layers overview_
 10. Unique CDMA modem number
 11. Role based authorizations on functions and devices
 
- ![alt text](./security-measures-2.png "Security Measures")
+ ![alt text](./functional-layers-overview.png "Functional Layers Overview")
 
 #### 1.5.4.1 Encryption
 
