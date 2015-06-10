@@ -7,8 +7,8 @@ Community members can help you on voluntairy base. See the open source and commu
 You like professional support for your OSGP use case consiter support of one of the companies below.
 
 Smart Society Services
-Website: http://smartsocietyservices.com
-Contact: http://smartsocietyservices.com/contact/
+- Website: http://smartsocietyservices.com
+- Contact: http://smartsocietyservices.com/contact/
 
 Your company here? Contact us!
-https://osgplatform.wordpress.com/contact-form/
+- https://osgplatform.wordpress.com/contact-form/
