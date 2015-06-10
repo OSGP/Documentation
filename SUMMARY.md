@@ -14,4 +14,5 @@
    * [Developer's guide per component](chapter3/section2.md)
    * [Installation script](chapter3/section3.md)
 * [Open Source Community](chapter4/README.md)
-* [License](chapter5/README.md)
+* [Support](chapter5/README.md)
+* [License](chapter6/README.md)
