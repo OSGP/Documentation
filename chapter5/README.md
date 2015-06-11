@@ -1,10 +1,12 @@
-Theire are multiple options for support
+# CHAPTER 5: Commercial Support
 
-# Community support
-Community members can help you on voluntairy base. See the open source and community section for more information where you can ask your questions.
+There are multiple options for support
 
-# Commercial support
-You like professional support for your OSGP use case consiter support of one of the companies below.
+## 5.1 Community support
+Community members can help you on voluntary basis. See the open source and community section for more information where you can ask your questions.
+
+## 5.2 Commercial support
+You like professional support for your OSGP use case consider support of one of the companies below.
 
 Smart Society Services
 - Website: http://smartsocietyservices.com
