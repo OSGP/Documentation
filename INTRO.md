@@ -1,4 +1,4 @@
-![alt text](https://avatars1.githubusercontent.com/u/11352045?v=3&s=200 "Open Smart Grid Platform")
+![alt text](https://cloud.githubusercontent.com/assets/10920552/8107625/eed8156e-104a-11e5-93b4-c614f7246a25.jpg "Open Smart Grid Platform")
 
 # Introduction to the Open Smart Grid Platform
 
