@@ -1,27 +1,49 @@
 # CHAPTER 4. Open Source and Community
 
-Non-technical knowledge for developers.
+We invite anyone to participate in the development of OSGP. There are multiple ways to support the project.
 
-## 4.1 Foundation
+- submit issues about bugs or requested features
+- solve issues
+- develop new features
+- write or improve the documentation
 
-//TODO
+This chapter contains all the non-technical knowledge for developers to start contributing.
 
-## 4.2 Open Source Branching Strategy
+## 4.1 Submitting code
 
-We use the GitFlow branching strategy. Find more information on this strategy here: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
+To submit changes to the OSGP branch:
+1. Create a fork of the OSGP repo you will be working in
+2. Make and commit your changes to your fork
+3. Create a pull request to merge the changes into the right branch (see 4.2.1 for the branching strategy)
+If the changes fixes a bug, mention the issue number in the commit message or pull request message (example: fixes
+101, solved 87). If no ticket exists, create one beforehand. Afterwards, please update the relevant documentation in this GitBook.
 
-The GitFlow work flow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits. 
-## 4.3 Pull requests: review process
+### 4.1.1 Open Source Branching Strategy
+
+The OSGP's main branch is master. All major releases are tagged in this branch. Development is done in
+the development and feature branches. We use the GitFlow branching strategy. Find more information on this strategy here: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
+
+The GitFlow work flow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits.
+
+### 4.1.2 Guidelines
+
+Before code is merged it needs to comply with a number of guidelines:
+1. Code should be as complete as possible (No placeholders, TODO's or FIXME's)
+2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
+3. Fixed/added unit tests where applicable
+4. Javadocs added where applicable
+
+## 4.2 Pull requests: review process
 
 Once you send in a pull request, our developers will check your commit and test it. You can view the SonarCube test results at (http://54.77.62.182/sonarqube/) and the Jenkins continuous integration results at (http://54.77.62.182/) 
 
 If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Our developers are in charge of judging this. 
 
-## 4.4 Contributor License Agreement
+## 4.3 Contributor License Agreement
 
 We ask each of our contributors to sign our contributor license agreement (CLA). This has advantages for both parties, it gives you the ensurance that your contribution will remain available under the Apache 2.0 license. Meanwhile, you give your code in license to us, so we can add your code to OSGP. And we know your contribution is entirely your work, so we don't get in trouble with legal issues. Please read the CLA text carefully.  
 
-## 4.5 Issues and Bug Report
+## 4.4 Issues and Bug Report
 
 Issues are used for communicating:
 - Development idea's
@@ -30,20 +52,20 @@ Issues are used for communicating:
 - ...
 //TODO
 
-## 4.6 Governance
+## 4.5 Governance
 
 //TODO
 
-## 4.7 Code of Conduct
+## 4.6 Code of Conduct
 
 Please treat everyone with respect :)
 //TODO
 
-## 4.8 Communication and Contact
+## 4.7 Communication and Contact
 
 For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
-## 4.9 Contributing to documentation
+## 4.8 Contributing to documentation
 
 Our most recent documentation can be found [here](http://54.77.62.182/job/OSGP_Documentation_development/lastSuccessfulBuild/artifact/_book/index.html) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 
@@ -51,18 +73,22 @@ We encourage you to participate in improving the documentation. From corrected t
 
 Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com
 
-### 4.9.1 Chapters in the documentation
+### 4.8.1 Chapters in the documentation
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. //TODO
 
-### 4.9.2 Versioning withing the documentation
+### 4.8.2 Versioning withing the documentation
 
 We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. //TODO
 
 //TODO
 
-### 4.9.3 Guidelines for new documentation
+### 4.8.3 Guidelines for new documentation
 
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is to much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
+
+## 4.9 Foundation
+
+//TODO
