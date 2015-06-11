@@ -125,6 +125,8 @@ _This Code of Conduct is based on the Django Code of Conduct_
 
 ## 4.7 Communication and Contact
 
+We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. 
+
 For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
 ## 4.8 Contributing to documentation
@@ -154,6 +156,9 @@ We have chosen to work with GitBook since it allows us to make different version
 ### 4.8.4 Adding picture using the GitHub web interface
 
 People using the GitHub web interface can use [this method](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) to upload pictures to GitHub. How to consequently add the picture to the document can be found in the [GitBook Help](http://help.gitbook.com/)
+
+![alt text](https://cloud.githubusercontent.com/assets/10920552/8107625/eed8156e-104a-11e5-93b4-c614f7246a25.jpg "Logo Title Text 1")
+
 
 ## 4.9 Foundation
 
