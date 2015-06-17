@@ -56,6 +56,25 @@ Issues are used for communicating:
 
 //TODO
 
+With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Metitocracy to prevent unwanted dictators and ever lasting discussions. The basic idea is to make dicissions based on concensus. If this takes to long, the community council can be asked to make a decission.
+
+Maintainers
+
+Community council
+This council can make disccions on all commmunity related subject.
+
+General goverance
+- Make sure that people can contribute
+- How people can contribute
+- Infrastructure choices
+- Community wide principles
+- Procedures
+- Governance itself
+
+Direction governance
+- Decissions about goals and ambitions
+- adress concerns
+
 ## 4.6 Code of Conduct
 
 Please treat everyone with respect :)
