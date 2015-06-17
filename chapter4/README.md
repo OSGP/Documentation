@@ -9,7 +9,23 @@ We invite everyone to participate in the development of OSGP. There are multiple
 
 This chapter contains all the non-technical knowledge for developers to start contributing.
 
-## 4.1 Submitting code
+## 4.1 Contributing to the code
+
+Thank you for contributing to the Open Smart Grid Platform. Please keep the following in mind before submitting code. 
+
+### 4.1.1 Guidelines
+
+Before code is merged it needs to comply with a number of guidelines:
+1. Code should be as complete as possible (No placeholders, TODO's or FIXME's)
+2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
+3. Fixed/added unit tests where applicable
+4. Javadocs added where applicable
+
+### 4.1.2 Contributor License Agreement
+
+We ask each of our contributors to sign our contributor license agreement (CLA). This has advantages for both parties, it gives you the ensurance that your contribution will remain available under the Apache 2.0 license. Meanwhile, you give your code in license to us, so we can add your code to OSGP. And we know your contribution is entirely your work, so we don't get in trouble with legal issues. Please read the CLA text carefully.  
+
+### 4.1.3 Submitting code
 
 To submit changes to the OSGP branch:
 1. Create a fork of the OSGP repo you will be working in
@@ -18,20 +34,14 @@ To submit changes to the OSGP branch:
 If the changes fixes a bug, mention the issue number in the commit message or pull request message (example: fixes
 101, solved 87). If no ticket exists, create one beforehand. Afterwards, please update the relevant documentation in this GitBook.
 
-### 4.1.1 Open Source Branching Strategy
+### 4.1.4 Open Source Branching Strategy
 
 The OSGP's main branch is master. All major releases are tagged in this branch. Development is done in
 the development and feature branches. We use the GitFlow branching strategy. Find more information on this strategy here: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
 
 The GitFlow work flow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits.
 
-### 4.1.2 Guidelines
 
-Before code is merged it needs to comply with a number of guidelines:
-1. Code should be as complete as possible (No placeholders, TODO's or FIXME's)
-2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
-3. Fixed/added unit tests where applicable
-4. Javadocs added where applicable
 
 ## 4.2 Pull requests: review process
 
@@ -39,30 +49,15 @@ Anyone can send in a pull request. Once you send in a pull request, our develope
 
 If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Our developers are in charge of judging this. 
 
-## 4.3 Contributor License Agreement
 
-We ask each of our contributors to sign our contributor license agreement (CLA). This has advantages for both parties, it gives you the ensurance that your contribution will remain available under the Apache 2.0 license. Meanwhile, you give your code in license to us, so we can add your code to OSGP. And we know your contribution is entirely your work, so we don't get in trouble with legal issues. Please read the CLA text carefully.  
 
-## 4.4 Issues and Bug Report
+## 4.2 Communication and Contact
 
-Issues are used for communicating:
-- Development idea's
-- Bug reports
-- Questions
-- ...
+We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. 
 
-Issues and bugs can be post using the issue tracker of the relevant repository. 
+For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
-### 4.4.1 Bug tracking
-
-1. Find out as much as possible about the bug before reporting it. Please check on GitHub whether the bug has already been reported. Also, look for logs, error messages etc. Please include as much information as possible background on the bug. 
-2. The maintainer makes sure that somebody will look at the bug, check for duplicates and thank the contributor for sending in the bug. If the bug turns out to be a duplicate, the issue will be closed.
-3. A developer will try to reproduce the bug and will look for the root cause. The developer adds his findings to the issue. If the developer can not reproduce the bug, the developer will contact the user for more information or/and login into the user's system (when possible for the user/developer). If it's impossible to re-produce the bug, the issue will be closed.
-4. Otherwise, the developer will write a patch and tests the fix.
-5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
-6. The maintainer than closes the issue.
-
-### 4.4.2 New features 
+### 4.2.1 New Features
 
 1. If there is a need (or wish!) for a new feature, add it as issue to the relevant repository. Please provide a full description about the problem and the potential feature. If you use one of the following links, you will be given a basic format for your issue. 
 
@@ -79,6 +74,19 @@ Issues and bugs can be post using the issue tracker of the relevant repository.
 3. The developer makes a description on how he wants to fix the problem. Other developers can discuss the solution as well. If everybody agrees on the solution direction, the developer codes the solution and submits it (by sending in a pull request). The developer should also document the feature in the [GitBook](https://github.com/OSGP/Documentation/tree/development)
 
 4. The maintainer can check the code (or assign this to someone else) and merge it with upstream releases.
+
+### 4.2.2 Bug tracking
+
+1. Find out as much as possible about the bug before reporting it. Please check on GitHub whether the bug has already been reported. Also, look for logs, error messages etc. Please include as much information as possible background on the bug. 
+2. The maintainer makes sure that somebody will look at the bug, check for duplicates and thank the contributor for sending in the bug. If the bug turns out to be a duplicate, the issue will be closed.
+3. A developer will try to reproduce the bug and will look for the root cause. The developer adds his findings to the issue. If the developer can not reproduce the bug, the developer will contact the user for more information or/and login into the user's system (when possible for the user/developer). If it's impossible to re-produce the bug, the issue will be closed.
+4. Otherwise, the developer will write a patch and tests the fix.
+5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
+6. The maintainer than closes the issue.
+
+### 4.4.2 New features 
+
+
 
 ## 4.5 Governance
 
@@ -123,11 +131,6 @@ Disagreements, both social and technical, happen when people get passionate abou
 
 _This Code of Conduct is based on the Django Code of Conduct_
 
-## 4.7 Communication and Contact
-
-We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. 
-
-For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
 ## 4.8 Contributing to documentation
 
