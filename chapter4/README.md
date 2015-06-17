@@ -153,13 +153,6 @@ We have chosen to work with GitBook since it allows us to make different version
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is to much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
-### 4.8.4 Adding picture using the GitHub web interface
-
-People using the GitHub web interface can use [this method](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) to upload pictures to GitHub. How to consequently add the picture to the document can be found in the [GitBook Help](http://help.gitbook.com/)
-
-![alt text](https://cloud.githubusercontent.com/assets/10920552/8107625/eed8156e-104a-11e5-93b4-c614f7246a25.jpg "Logo Title Text 1")
-
-
 ## 4.9 Foundation
 
 //TODO
