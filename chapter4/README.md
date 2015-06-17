@@ -58,10 +58,10 @@ Issues are used for communicating:
 
 With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Metitocracy to prevent unwanted dictators and ever lasting discussions. The basic idea is to make dicissions based on concensus. If this takes to long, the community council can be asked to make a decission.
 
-Maintainers
+
 
 Community council
-This council can make disccions on all commmunity related subject.
+This council can make disccions on all commmunity related subject. The community council can be elected by the community members (when the need is theire). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alligntment between the foundation and the online community.
 
 General goverance
 - Make sure that people can contribute
@@ -74,6 +74,14 @@ General goverance
 Direction governance
 - Decissions about goals and ambitions
 - adress concerns
+
+Maintainers
+Maintainers are responsible for maintaing parts of the code-base. Maintainers have the following responsibitlities
+- Coordinate development activity
+- Make sure code reviews are being done
+- Eveluate pull-requests
+- Coordinate bug follow-ups
+In case of long discussions or arguments, maintainers or other can request a community coucil decission.
 
 ## 4.6 Code of Conduct
 
