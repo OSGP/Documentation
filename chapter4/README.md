@@ -41,15 +41,11 @@ the development and feature branches. We use the GitFlow branching strategy. Fin
 
 The GitFlow work flow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits.
 
-
-
-## 4.2 Pull requests: review process
+### 4.1.5 Pull requests: review process
 
 Anyone can send in a pull request. Once you send in a pull request, our developers will check your commit and test it. You can view the SonarCube test results at (http://54.77.62.182/sonarqube/) and the Jenkins continuous integration results at (http://54.77.62.182/) 
 
 If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Our developers are in charge of judging this. 
-
-
 
 ## 4.2 Communication and Contact
 
@@ -83,10 +79,6 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 4. Otherwise, the developer will write a patch and tests the fix.
 5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
 6. The maintainer than closes the issue.
-
-### 4.4.2 New features 
-
-
 
 ## 4.5 Governance
 
@@ -130,7 +122,6 @@ We are a community of professionals, and we conduct ourselves professionally. Be
 Disagreements, both social and technical, happen when people get passionate about what they are doing. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of OSGP comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 _This Code of Conduct is based on the Django Code of Conduct_
-
 
 ## 4.8 Contributing to documentation
 
