@@ -1,4 +1,4 @@
- ![alt text](./Book-cover.jpg "Open Smart Grid Platform")
+![alt text](./Book-cover.jpg "Open Smart Grid Platform")
 
 # Introduction to the Open Smart Grid Platform
 

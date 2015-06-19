@@ -23,7 +23,7 @@ Before code is merged it needs to comply with a number of guidelines:
 
 ### 4.1.2 Contributor License Agreement
 
-We ask each of our contributors to sign our contributor license agreement (CLA). This has advantages for both parties, it gives you the ensurance that your contribution will remain available under the Apache 2.0 license. Meanwhile, you give your code in license to us, so we can add your code to OSGP. And we know your contribution is entirely your work, so we don't get in trouble with legal issues. Please read the CLA text carefully.  
+We ask each of our contributors to sign our contributor license agreement (CLA). This has advantages for both parties, it gives you the assurance that your contribution will remain available under the Apache 2.0 license. Meanwhile, you give your code in license to us, so we can add your code to OSGP. And we know your contribution is entirely your work, so we don't get in trouble with legal issues. Please read the CLA text carefully.  
 
 ### 4.1.3 Submitting code
 
@@ -86,13 +86,13 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 
 ## 4.6 Code of Conduct
 
-Like the technical community as a whole, the OSGP team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentorship, teaching, and connecting people.
+Like the technical community as a whole, the OSGP team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentor-ship, teaching, and connecting people.
 
 Diversity is one of our huge strengths, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to. This code applies equally to founders, mentors and those seeking help and guidance.
 
 This isn’t an exhaustive list of things that you can’t do. Rather, take it in the spirit in which it’s intended - a guide to make it easier to enrich all of us and the technical communities in which we participate.
 
-This code of conduct applies to all spaces managed by the OSGP project (or OSGP Software Foundation onces established). This includes IRC, the mailing lists, the issue tracker, DSF events, and any other forums created by the project team which the community uses for communication. In addition, violations of this code outside these spaces may affect a person's ability to participate within them.
+This code of conduct applies to all spaces managed by the OSGP project (or OSGP Software Foundation once established). This includes IRC, the mailing lists, the issue tracker, DSF events, and any other forums created by the project team which the community uses for communication. In addition, violations of this code outside these spaces may affect a person's ability to participate within them.
 
 If you believe someone is violating the code of conduct, we ask that you report it by emailing opensource@smartsocietyservices.com. 
 
@@ -105,17 +105,17 @@ We strive to be a community that welcomes and supports people of all backgrounds
 Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we're a world-wide community, so you might not be communicating in someone else's primary language.
 
 #### Be respectful. 
-Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the OSGP community should be respectful when dealing with other members as well as with people outside the OSGP community.
+Not all of us will agree all the time, but disagreement is no excuse for poor behaviour and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the OSGP community should be respectful when dealing with other members as well as with people outside the OSGP community.
 
 #### Be careful in the words that you choose. 
-We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren't acceptable. This includes, but is not limited to:
+We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behaviour aren't acceptable. This includes, but is not limited to:
 - Violent threats or language directed against another person.
 - Discriminatory jokes and language.
 - Posting sexually explicit or violent material.
 - Posting (or threatening to post) other people's personally identifying information ("doxing").
 - Personal insults, especially those using racist or sexist terms.
 - Unwelcome sexual attention.
-- Advocating for, or encouraging, any of the above behavior.
+- Advocating for, or encouraging, any of the above behaviour.
 - Repeated harassment of others. In general, if someone asks you to stop, then stop.
 
 #### When we disagree, try to understand why. 
@@ -135,7 +135,7 @@ Some information on GitBook and using Markdown can be found [here](http://help.g
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. //TODO
 
-### 4.8.2 Versioning withing the documentation
+### 4.8.2 Versioning within the documentation
 
 We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. //TODO
 
