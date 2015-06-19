@@ -84,6 +84,33 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 
 //TODO
 
+With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Metitocracy to prevent unwanted dictators and ever lasting discussions. The basic idea is to make dicissions based on concensus. If this takes to long, the community council can be asked to make a decission.
+
+
+
+Community council
+This council can make disccions on all commmunity related subject. The community council can be elected by the community members (when the need is theire). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alligntment between the foundation and the online community.
+
+General goverance
+- Make sure that people can contribute
+- How people can contribute
+- Infrastructure choices
+- Community wide principles
+- Procedures
+- Governance itself
+
+Direction governance
+- Decissions about goals and ambitions
+- adress concerns
+
+Maintainers
+Maintainers are responsible for maintaing parts of the code-base. Maintainers have the following responsibitlities
+- Coordinate development activity
+- Make sure code reviews are being done
+- Eveluate pull-requests
+- Coordinate bug follow-ups
+In case of long discussions or arguments, maintainers or other can request a community coucil decission.
+
 ## 4.6 Code of Conduct
 
 Like the technical community as a whole, the OSGP team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentor-ship, teaching, and connecting people.
