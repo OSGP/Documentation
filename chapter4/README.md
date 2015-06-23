@@ -80,7 +80,7 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
 6. The maintainer than closes the issue.
 
-## 4.5 Governance
+## 4.3 Governance
 
 //TODO
 
@@ -111,7 +111,7 @@ Maintainers are responsible for maintaing parts of the code-base. Maintainers ha
 - Coordinate bug follow-ups
 In case of long discussions or arguments, maintainers or other can request a community coucil decission.
 
-## 4.6 Code of Conduct
+## 4.4 Code of Conduct
 
 Like the technical community as a whole, the OSGP team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentor-ship, teaching, and connecting people.
 
@@ -150,7 +150,7 @@ Disagreements, both social and technical, happen when people get passionate abou
 
 _This Code of Conduct is based on the Django Code of Conduct_
 
-## 4.8 Contributing to documentation
+## 4.5 Contributing to documentation
 
 Our most recent documentation can be found [here](http://54.77.62.182/job/OSGP_Documentation_development/lastSuccessfulBuild/artifact/_book/index.html) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 
@@ -158,22 +158,22 @@ We encourage you to participate in improving the documentation. From corrected t
 
 Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com
 
-### 4.8.1 Chapters in the documentation
+### 4.5.1 Chapters in the documentation
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. //TODO
 
-### 4.8.2 Versioning within the documentation
+### 4.5.2 Versioning within the documentation
 
 We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. //TODO
 
 //TODO
 
-### 4.8.3 Guidelines for new documentation
+### 4.5.3 Guidelines for new documentation
 
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is to much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
-## 4.9 Foundation
+## 4.6 Foundation
 
 //TODO
