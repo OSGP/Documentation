@@ -57,13 +57,13 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 
 1. If there is a need (or wish!) for a new feature, add it as issue to the relevant repository. Please provide a full description about the problem and the potential feature. If you use one of the following links, you will be given a basic format for your issue. 
 
-* [Issue in Platform](https://github.com/OSGP/Platform/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Shared repo](https://github.com/OSGP/shared/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Protocol-Adapter-OSLP](https://github.com/OSGP/Protocol-Adapter-OSLP/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Protocol-Adapter-DLMS](https://github.com/OSGP/Protocol-Adapter-DLMS/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Platform](https://github.com/OSGP/Platform/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Shared repo](https://github.com/OSGP/shared/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Protocol-Adapter-OSLP](https://github.com/OSGP/Protocol-Adapter-OSLP/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Protocol-Adapter-DLMS](https://github.com/OSGP/Protocol-Adapter-DLMS/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in Config](https://github.com/OSGP/Config/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Integration-Tests](https://github.com/OSGP/Integration-Tests/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in the documentation](https://github.com/OSGP/documentation/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Integration-Tests](https://github.com/OSGP/Integration-Tests/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in the documentation](https://github.com/OSGP/documentation/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 
 2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If OSGP core components are involved, please discuss your change first with one of our maintainers.
 
