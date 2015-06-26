@@ -88,9 +88,10 @@ With OSGP we intend to have the right balance between a benevolent Dictator and 
 
 
 
-Community council
+### Community council
 This council can make disccions on all commmunity related subject. The community council can be elected by the community members (when the need is theire). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alligntment between the foundation and the online community.
 
+The community council is responsible for:
 General goverance
 - Make sure that people can contribute
 - How people can contribute
@@ -98,12 +99,11 @@ General goverance
 - Community wide principles
 - Procedures
 - Governance itself
-
 Direction governance
 - Decissions about goals and ambitions
 - adress concerns
 
-Maintainers
+###Maintainers
 Maintainers are responsible for maintaing parts of the code-base. Maintainers have the following responsibitlities
 - Coordinate development activity
 - Make sure code reviews are being done
