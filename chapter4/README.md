@@ -61,7 +61,7 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 * [Issue in Shared repo](https://github.com/OSGP/shared/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in Protocol-Adapter-OSLP](https://github.com/OSGP/Protocol-Adapter-OSLP/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in Protocol-Adapter-DLMS](https://github.com/OSGP/Protocol-Adapter-DLMS/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Config](https://github.com/OSGP/Config/issues/new?title=Feature%20request:My%20Title&body=**Use%20case(s):**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+* [Issue in Config](https://github.com/OSGP/Config/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in Integration-Tests](https://github.com/OSGP/Integration-Tests/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in the documentation](https://github.com/OSGP/documentation/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 
