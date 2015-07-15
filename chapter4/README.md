@@ -31,7 +31,7 @@ To submit changes to the OSGP branch:
 1. Create a fork of the OSGP repo you will be working in
 2. Make and commit your changes to your fork
 3. Create a pull request to merge the changes into the right branch (see 4.2.1 for the branching strategy)
-If the changes fixes a bug, mention the issue number in the commit message or pull request message (example: fixes
+If the changes fix a bug, mention the issue number in the commit message or pull request message (example: fixes
 101, solved 87). If no ticket exists, create one beforehand. Afterwards, please update the relevant documentation in this GitBook.
 
 ### 4.1.4 Open Source Branching Strategy
@@ -75,7 +75,7 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 
 1. Find out as much as possible about the bug before reporting it. Please check on GitHub whether the bug has already been reported. Also, look for logs, error messages etc. Please include as much information as possible background on the bug. 
 2. The maintainer makes sure that somebody will look at the bug, check for duplicates and thank the contributor for sending in the bug. If the bug turns out to be a duplicate, the issue will be closed.
-3. A developer will try to reproduce the bug and will look for the root cause. The developer adds his findings to the issue. If the developer can not reproduce the bug, the developer will contact the user for more information or/and login into the user's system (when possible for the user/developer). If it's impossible to re-produce the bug, the issue will be closed.
+3. A developer will try to reproduce the bug and will look for the root cause. The developer adds his findings to the issue. If the developer cannot reproduce the bug, the developer will contact the user for more information or/and login into the user's system (when possible for the user/developer). If it's impossible to re-produce the bug, the issue will be closed.
 4. Otherwise, the developer will write a patch and tests the fix.
 5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
 6. The maintainer than closes the issue.
@@ -84,15 +84,15 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 
 //TODO
 
-With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Metitocracy to prevent unwanted dictators and ever lasting discussions. The basic idea is to make dicissions based on concensus. If this takes to long, the community council can be asked to make a decission.
+With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy to prevent unwanted dictators and everlasting discussions. The basic idea is to make decisions based on consensus. If this takes too long, the community council can be asked to make a decision.
 
 
 
 ### Community council
-This council can make disccions on all commmunity related subject. The community council can be elected by the community members (when the need is theire). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alligntment between the foundation and the online community.
+This council can make decisions on all community related subject. The community council can be elected by the community members (when the need is there). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alignment between the foundation and the online community.
 
 The community council is responsible for:
-General goverance
+General governance
 - Make sure that people can contribute
 - How people can contribute
 - Infrastructure choices
@@ -100,16 +100,16 @@ General goverance
 - Procedures
 - Governance itself
 Direction governance
-- Decissions about goals and ambitions
-- adress concerns
+- Decisions about goals and ambitions
+- address concerns
 
 ###Maintainers
-Maintainers are responsible for maintaing parts of the code-base. Maintainers have the following responsibitlities
+Maintainers are responsible for maintaining parts of the code-base. Maintainers have the following responsibilities
 - Coordinate development activity
 - Make sure code reviews are being done
-- Eveluate pull-requests
+- Evaluate pull-requests
 - Coordinate bug follow-ups
-In case of long discussions or arguments, maintainers or other can request a community coucil decission.
+In case of long discussions or arguments, maintainers or other can request a community council decision.
 
 ## 4.4 Code of Conduct
 
@@ -126,23 +126,23 @@ If you believe someone is violating the code of conduct, we ask that you report 
 #### Be friendly and patient.
 
 #### Be welcoming. 
-We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
 
 #### Be considerate. 
 Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we're a world-wide community, so you might not be communicating in someone else's primary language.
 
 #### Be respectful. 
-Not all of us will agree all the time, but disagreement is no excuse for poor behaviour and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the OSGP community should be respectful when dealing with other members as well as with people outside the OSGP community.
+Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the OSGP community should be respectful when dealing with other members as well as with people outside the OSGP community.
 
 #### Be careful in the words that you choose. 
-We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behaviour aren't acceptable. This includes, but is not limited to:
+We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren't acceptable. This includes, but is not limited to:
 - Violent threats or language directed against another person.
 - Discriminatory jokes and language.
 - Posting sexually explicit or violent material.
 - Posting (or threatening to post) other people's personally identifying information ("doxing").
 - Personal insults, especially those using racist or sexist terms.
 - Unwelcome sexual attention.
-- Advocating for, or encouraging, any of the above behaviour.
+- Advocating for, or encouraging, any of the above behavior.
 - Repeated harassment of others. In general, if someone asks you to stop, then stop.
 
 #### When we disagree, try to understand why. 
@@ -172,7 +172,7 @@ We have chosen to work with GitBook since it allows us to make different version
 
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
-- Currently we do not use image numbering, since it is to much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
+- Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
 ## 4.6 Foundation
 
