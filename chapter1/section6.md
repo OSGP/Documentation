@@ -54,9 +54,9 @@ This Table presents an overview of the components and the most important technol
 | --- | --- |
 | OSGP Platform | Java, Spring Framework, Hibernate, Netty |
 | Demo applicatie | Java, Spring Framework, Spring MVC |
-| OSGP Management application (not open source) | Java, Spring Framework, Spring MVC |
+| OSGP Management application | Java, Spring Framework, Spring MVC |
 | Net-Management application (not open source) | Java, Spring Framework, JAX-RS, AngularJS |
-| Liander Installatie application | Java, Spring Framework, JAX-RS, AngularJS |
+| Liander Installatie application (not open source) | Java, Spring Framework, JAX-RS, AngularJS |
 | Web services | SOAP, WSDL |
 | OSLP Protocol | Google Protocol Buffers |
 
