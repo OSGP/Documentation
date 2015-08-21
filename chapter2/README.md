@@ -25,7 +25,7 @@ We have prepared a full set of configuration (properties files, certificates, ke
 - **How to configure a component?** Most (if not all) components of OSGP are de-coupled using queues. Configure the broker URL in the properties file and take notice of the queues that a component uses/needs. Make sure to double check the connectionstring for PostgreSQL.
 - **How to configure URL's for a component?** In this case the Apache HTTPD vhost needs to be updated. The vhost config file can be found in /etc/httpd/conf.d. We use redirects from HTTP to HTTPS and AJP proxy to send the requests to Apache Tomcat.
 - **How to check up on Apache ActiveMQ?** Apache ActiveMQ offers a web interface (the default port is 8161). Using the web interface one can check the queues and especially the dead letter queue (DLQ).
-- _If your question is not in this list, please send it to us via opensource@smartsocietyservices.com_
+- _If your question is not in this list, please fire an issue on github * [Issue in Config](https://github.com/OSGP/Config/issues/new?title=Question:My%20Title&)_
 
 ## 2.3 Using Apps (Clients for OSGP)
 
