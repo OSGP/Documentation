@@ -89,9 +89,10 @@ With OSGP we intend to have the right balance between a benevolent Dictator and 
 
 
 ### Community council
-This council can make decisions on all community related subject. The community council can be elected by the community members (when the need is there). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation for alignment between the foundation and the online community.
+This council can make decisions on all community related subject. The community council can be elected by the community members (when the need is there). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation (once started) for alignment between the foundation and the online community.
 
 The community council is responsible for:
+
 General governance
 - Make sure that people can contribute
 - How people can contribute
@@ -99,9 +100,12 @@ General governance
 - Community wide principles
 - Procedures
 - Governance itself
+
 Direction governance
 - Decisions about goals and ambitions
 - address concerns
+
+When the community grows, community council members can be elected.
 
 ###Maintainers
 Maintainers are responsible for maintaining parts of the code-base. Maintainers have the following responsibilities
@@ -109,6 +113,7 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 - Make sure code reviews are being done
 - Evaluate pull-requests
 - Coordinate bug follow-ups
+
 In case of long discussions or arguments, maintainers or other can request a community council decision.
 
 ## 4.4 Code of Conduct
@@ -175,5 +180,7 @@ We have chosen to work with GitBook since it allows us to make different version
 - Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
 ## 4.6 Foundation
+
+The Foundation will be an indepentend organisation to support and promote the OSGP development (The foundation is not startd yet). The foundation will be simular to the Linux foundation or Apache foundation. If you like to support the Foundation, contact us: opensource@smartsocietyservices.com
 
 //TODO
