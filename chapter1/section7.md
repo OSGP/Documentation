@@ -49,6 +49,24 @@ Municipalities are free to choose their own (web)application (using the webservi
 - Abilities to monitor power consumption of public lighting (available if the SSLD is fitted with an Electricity Meter)
 - Monthly report offering insight into switch moments and power consumption
 
+#### 1.7.1.2 Smart Meter Head-end System
+
+**Technical drivers for Alliander**
+
+- Replacement or addition to the current head-end system
+- During the coming years, many smart meters will be placed in houses, companies and other properties, therefore grid operators need a scalable solution
+- E(lectricity) Meters can host up to 4 other smart devices, Gas Meters for example
+- DLMS/COSEM is used by many(if not all) Smart Meters
+
+**Customer drivers**
+
+- People will have more insight in their power consumption
+- Meter values can be gathered by the grid operator, instead of relying on people reporting the meter values
+
+**Implementation**
+
+- Implementation has just started, not yet in a usable form
+
 ### 1.7.2 White papers
 
 //TODO
