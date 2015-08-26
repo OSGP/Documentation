@@ -48,11 +48,13 @@ The OSGP core component receives queue messages from domain components. These me
 
 - TLS (Transport Layer Security encryption)
 - SSL (Secure Sockets Layer encryption)
-- OSLP (Open Street Light Protocol).
+- OSLP (Open Street Light Protocol)
 
 At the moment only the OSLP protocol is supported but other protocols can easily be added to the platform.
 
 The Open Street Light Protocol is based on Google Protocol Buffers and is used for communication with SSLD devices (and device simulators). Google Protocol Buffers is used to generate the protocol implementations for Java (for the platform) and C/C++ (for the SSLD devices).
+
+The DLMS protocol is the next protocol which will be added in order to be able to communicate with smart meters.
 
 ### 1.3.8 Smart devices
 
