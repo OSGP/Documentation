@@ -2,7 +2,7 @@
 
 This model displays the most important entities of the OSGP system and their mutual relationships.
 
-_Image, Logical Data Model_
+_Image of Logical Authorisation Data Model_
  ![alt text](./logical-data-model.png "Logical Data Model")
 
 The logic of the model above:
