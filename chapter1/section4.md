@@ -1,4 +1,4 @@
-## 1.4 Logical Data Model
+## 1.4 Logical Authorisation Data Model
 
 This model displays the most important entities of the OSGP system and their mutual relationships.
 
