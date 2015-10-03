@@ -65,7 +65,15 @@ Municipalities are free to choose their own (web)application (using the webservi
 
 **Implementation**
 
-- Implementation has just started, not yet in a usable form
+Features available within the platform so far:
+
+- Add smart meter to the platform, so the device is known and additonal actions can be performed for the device
+- Process shipment file, which adds several smart meters to the platform along with all needed information
+- Synchronize time between smart meters and head-end system, incase the smart meter adjusts it's time, some events will be logged
+- Retrieve events from the smart meter, several event logs are available
+- Retrieve periodic meter reads from the smart meter
+ 
+Soon, these features will be available for the protocol adapter as well.
 
 ### 1.7.2 White papers
 
