@@ -128,3 +128,4 @@ The foundation is for non-profit. Our aim is that companies / organizations can 
 - Taking care of legal conditions
 - Community management, events for users and developers
 - Marketing and promotion of the software
+
