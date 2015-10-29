@@ -1,7 +1,5 @@
-# Chapter 1
+# CHAPTER 1 Technical overview of the Open Smart Grid Platform
 
-The first chapter.
+This chapter contains basic technical information on the Open Smart Grid Platform. It is written for (potential) users, as well as developers. 
 
-This is an include, showing the LICENSE file:
-
-{% include "./../LICENSE" %}
+The chapter will elaborate on the architecture, the different platform components, logical data model, non-functional overview, principles, models & views and use cases. 
