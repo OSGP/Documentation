@@ -179,6 +179,10 @@ We have chosen to work with GitBook since it allows us to make different version
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
+
+Inspiration on how to write good documentation can be found here: [http://docs.writethedocs.org/](http://docs.writethedocs.org/).
+
+
 ## 4.6 Foundation
 
 The Foundation will be an indepentend organisation to support and promote the OSGP development (The foundation is not startd yet). The foundation will be simular to the Linux foundation or Apache foundation. If you like to support the Foundation, contact us: opensource@smartsocietyservices.com
