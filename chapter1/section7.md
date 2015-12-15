@@ -79,6 +79,6 @@ Soon, these features will be available for the protocol adapter as well.
 
 //TODO
 
-### 1.7.3 Cloud solution
+### 1.7.3 Deployment options
 
-Hosting OSGP in the cloud is possible, as well as on premises.
+Hosting the open smart grid platform in the cloud is possible, as well as on premises.
