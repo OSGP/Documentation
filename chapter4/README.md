@@ -45,13 +45,13 @@ The GitFlow work flow is someone complicated, but it has the advantage that it g
 
 Anyone can send in a pull request. Once you send in a pull request, our developers will check your commit and test it. You can view the SonarCube test results at (http://54.77.62.182/sonarqube/) and the Jenkins continuous integration results at (http://54.77.62.182/) 
 
-If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Our developers are in charge of judging this. 
+If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Developers are in charge of judging this. 
 
 ## 4.2 Communication and Contact
 
-We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. 
+We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. 
 
-For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
+If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
 ### 4.2.1 New Features
 
@@ -65,7 +65,7 @@ For issues and bugs, please use our GitHub issue list, we are currently actively
 * [Issue in Integration-Tests](https://github.com/OSGP/Integration-Tests/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 * [Issue in the documentation](https://github.com/OSGP/documentation/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
 
-2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If OSGP core components are involved, please discuss your change first with one of our maintainers.
+2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If OSGP core components are involved, please discuss your change first with one of the developers/maintainers.
 
 3. The developer makes a description on how he wants to fix the problem. Other developers can discuss the solution as well. If everybody agrees on the solution direction, the developer codes the solution and submits it (by sending in a pull request). The developer should also document the feature in the [GitBook](https://github.com/OSGP/Documentation/tree/development)
 
@@ -161,7 +161,9 @@ Our most recent documentation can be found [here](http://54.77.62.182/job/OSGP_D
 
 We encourage you to participate in improving the documentation. From corrected typos to new sections, every commit is appreciated. You can access the source files by clicking the "Fix this page"-button in the GitBook or by selecting the relevant Markdown-file in the documentation. You can commit your changes by sending a pull request. 
 
-Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com
+Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). 
+
+If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com
 
 ### 4.5.1 Chapters in the documentation
 
