@@ -33,7 +33,7 @@ The platform and devices use UTC time. The OSLP protocol between platform and de
 
 ### 1.5.4 Security
 
-The following security measures are in place for the cloud hosted platform:
+The following security measures could in place for the cloud hosted environment:
 ### Cloud security
 - DDOS protection
 - IPSEC VPN connections
