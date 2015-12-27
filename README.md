@@ -2,7 +2,7 @@
 
 ### Build Status
 
-[![Build Status](http://54.77.62.182/job/OSGP_Documentation_master/badge/icon?style=plastic)](http://54.77.62.182/job/OSGP_Documentation_master)
+[![Build Status](http://54.77.62.182/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://54.77.62.182/job/OSGP_Documentation_development)
 
 ### Description
 
