@@ -2,7 +2,7 @@
 
 ### Description
 
-Request which notifies the device to reboot immediately.
+Request which notifies the device to reboot immediately. After a reboot, the device will switch its relays according to its schedule. Any ad hoc changes to relays will be lost.
 
 Response communicates status.
 

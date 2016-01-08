@@ -490,7 +490,7 @@ SOAP Response containing response from 'device-01':
 
 
 
-#### 3.4.10.2 Tariff Schedule
+#### Tariff Schedule
 
 SOAP Request Message for Platform web-service:
 

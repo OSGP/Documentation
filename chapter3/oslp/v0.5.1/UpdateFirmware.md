@@ -2,7 +2,7 @@
 
 ### Description
 
-Request which sends an URL to the device. The device should try to download the new firmware image from the given URL.
+Request for a device to download and install new firmware. The request contains a URL defining the location of the new firmware image. The device should download the firmware from that location.
 
 Response communicates status.
 

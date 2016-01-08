@@ -2,9 +2,9 @@
 
 ### Description
 
-Request to fetch current power usage data from the registers of the device.
+Request to fetch the power usage data from the registers of the device.
 
-Response contains status and the power usage data.
+Response contains status and the power usage data, for the requested time period.
 
 ### Message definitions
 
