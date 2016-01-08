@@ -1,4 +1,4 @@
-## GetFirmware messages
+## GetFirmwareVersion messages
 
 ### Description
 
