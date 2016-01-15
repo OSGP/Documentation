@@ -576,7 +576,7 @@ setScheduleResponse {
 
 Description for this schedule:
 
-This schedule has one entry which switches all light relays off at January 1st 2016 at 7 'o clock in the morning. When 'weekday' is set to ABSOLUTEDAY, the date will be placed in 'startDay'.
+This schedule has one entry which switches light relay 1 (index: "\001") off at January 1st 2016 at 7 'o clock in the morning. When 'weekday' is set to ABSOLUTEDAY, the date will be placed in 'startDay'.
 
 
 
