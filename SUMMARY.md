@@ -32,7 +32,7 @@
       * [GetStatus](chapter3/oslp/v0.5.1/GetStatus.md)
       * [GetActualPowerUsage](chapter3/oslp/v0.5.1/GetActualPowerUsage.md)
       * [GetPowerUsageHistory](chapter3/oslp/v0.5.1/GetPowerUsageHistory.md)
-	  
+   * [Smart Meter](chapter3/section5.md)  
 * [Open Source Community](chapter4/README.md)
 * [Support](chapter5/README.md)
 * [License](chapter6/README.md)
