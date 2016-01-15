@@ -5,9 +5,9 @@
 
 In this paragraph you will find an approach for developing integration tests. The tests are based on surefire, failsafe, spring-test and a package naming convention.
 
-#### **package naming convention**
+#### a. package naming convention
 Just put your integration tests in a package with "integrationtests" somewhere in the name  
-#### **pom.xml**
+#### b. pom.xml
 * dependencies:
 ```xml
         <dependency>
@@ -59,7 +59,7 @@ Just put your integration tests in a package with "integrationtests" somewhere i
             </plugin>
 ```
 
-#### **example test**
+#### c. example test
 ```
 /**
  * This integration test requires a running up to date postgres db that can be
@@ -101,5 +101,5 @@ public class ScalerUnitTest {
 
 }
 ```
-#### **running**
+#### d. running
 mvn -DskipITs=false verify
