@@ -8,7 +8,7 @@ In this paragraph you will find an approach for developing integration tests. Th
 1. **package naming convention**  
 Just put your integration tests in a package with "integrationtests" somewhere in the name  
 2. **pom.xml**  
-* dependencies:  
+  * dependencies:  
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -24,15 +24,14 @@ Just put your integration tests in a package with "integrationtests" somewhere i
         </dependency>
     </dependencies>
 
-* property:  
+  * property:  
 
     <properties>
-        ..
         <skipITs>true</skipITs>
     </properties>
 
     
-* plugins:  
+  * plugins:  
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
