@@ -92,6 +92,8 @@ enum Status {
 
 ### Examples
 
+#### Example 1: Light schedule based on light-measurement
+
 Screenshot of this schedule in an OSGP client application.
 
 ![screenshot of schedule](./relay-1-and-2-schedule.jpg)
@@ -481,6 +483,100 @@ SOAP Response containing response from 'device-01':
 
 
 
+#### Example 2: Light schedule based on absolute time and day
+
+SOAP messages:
+
+``` xml
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">WEB_OWNER</ApplicationName>
+      <UserName xmlns="http://www.alliander.com/schemas/osp/common">liander gebruiker</UserName>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:SetScheduleRequest xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns3:DeviceIdentification>device-01</ns3:DeviceIdentification>
+         <ns3:Schedules>
+            <ns3:WeekDay>ABSOLUTEDAY</ns3:WeekDay>
+            <ns3:startDay>2016-01-01Z</ns3:startDay>
+            <ns3:ActionTime>ABSOLUTETIME</ns3:ActionTime>
+            <ns3:Time>07:00:00.000</ns3:Time>
+            <ns3:LightValue>
+               <ns3:Index>1</ns3:Index>
+               <ns3:On>false</ns3:On>
+            </ns3:LightValue>
+         </ns3:Schedules>
+      </ns3:SetScheduleRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header />
+   <SOAP-ENV:Body>
+      <ns3:SetScheduleAsyncResponse xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns3:AsyncResponse>
+            <ns2:CorrelationUid>LianderNetManagement|||device-01|||20160113131032759</ns2:CorrelationUid>
+            <ns2:DeviceId>device-01</ns2:DeviceId>
+         </ns3:AsyncResponse>
+      </ns3:SetScheduleAsyncResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">WEB_OWNER</ApplicationName>
+      <UserName xmlns="http://www.alliander.com/schemas/osp/common">liander gebruiker</UserName>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:SetScheduleAsyncRequest xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns3:AsyncRequest>
+            <ns2:CorrelationUid>LianderNetManagement|||device-01|||20160113131032759</ns2:CorrelationUid>
+            <ns2:DeviceId>device-01</ns2:DeviceId>
+         </ns3:AsyncRequest>
+      </ns3:SetScheduleAsyncRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header />
+   <SOAP-ENV:Body>
+      <ns3:SetScheduleResponse xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns3:Result>OK</ns3:Result>
+      </ns3:SetScheduleResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+OSLP SetScheduleRequest sent to 'device-01' to set a Light Schedule:
+
+``` json
+setScheduleRequest {
+  schedules {
+    weekday: ABSOLUTEDAY
+    startDay: "20160101"
+    actionTime: ABSOLUTETIME
+    time: "070000"
+    value {
+      index: "\001"
+      on: false
+    }
+  }
+  scheduleType: LIGHT
+}
+```
+OSLP SetScheduleResponse sent to platform:
+
+``` json
+setScheduleResponse {
+  status: OK
+}
+```
+
+Description for this schedule:
+
+This schedule has one entry which switches all light relays off at January 1st 2016 at 7 'o clock in the morning. When 'weekday' is set to ABSOLUTEDAY, the date will be placed in 'startDay'.
 
 
 
@@ -490,7 +586,8 @@ SOAP Response containing response from 'device-01':
 
 
 
-#### Tariff Schedule
+
+#### Example 3: Tariff Schedule
 
 SOAP Request Message for Platform web-service:
 
