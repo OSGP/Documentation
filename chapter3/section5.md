@@ -6,7 +6,7 @@
 In this paragraph you will find an approach for developing integration tests. The tests are based on surefire, failsafe, spring-test and a package naming convention.
 
 **package naming convention**  
-Just put your integration tests in a package with "integrationtests" somewhere in the name
+Just put your integration tests in a package with "integrationtests" somewhere in the name  
 **pom.xml**  
 dependencies:  
 
@@ -62,5 +62,48 @@ plugins:
 
 
 **example test**  
+
+/**
+ * This integration test requires a running up to date postgres db that can be
+ * accessed using user and password from test.properties and an up and running
+ * E-meter with device id E0004001515495114 and the ip address in this test.
+ * Tests under the integrationtests package will only be run with
+ * "-DskipITs=false"
+ * 
+ * @author dev
+ */
+@RunWith(SpringJUnit4ClassRunner.class)
+@TestPropertySource("classpath:/test.properties")
+@ContextConfiguration(classes = { ApplicationContext.class })
+public class ScalerUnitTest {
+
+    @Autowired
+    private TestScalerUnitCommandExecutor commandExecutor;
+
+    @Autowired
+    private DlmsConnectionFactory dlmsConnectionFactory;
+
+    @Autowired
+    private DomainHelperService domainHelperService;
+
+    @Test
+    public void testGetScalerUnit() throws Exception {
+        DlmsDeviceMessageMetadata dlmsDeviceMessageMetadata = new DlmsDeviceMessageMetadata();
+        dlmsDeviceMessageMetadata.setDeviceIdentification("E0004001515495114");
+        dlmsDeviceMessageMetadata.setIpAddress("89.200.96.223");
+
+        LnClientConnection connection = dlmsConnectionFactory
+                .getConnection(domainHelperService.findDlmsDevice(dlmsDeviceMessageMetadata));
+
+        ScalerUnitTestResponse execute = commandExecutor.execute(connection, new TestChannelQuery());
+
+        Assert.assertEquals(execute.getScalerUnit().getDlmsUnit(), DlmsUnit.wh);
+
+    }
+
+}
+
+
 **running**  
 
+mvn -DskipITs=false verify
