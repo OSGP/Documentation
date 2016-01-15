@@ -25,11 +25,11 @@ Just put your integration tests in a package with "integrationtests" somewhere i
     </dependencies>
 
   * property:  
-`
+```
     <properties>
         <skipITs>true</skipITs>
     </properties>
-`
+```
     
   * plugins:  
 
@@ -62,7 +62,8 @@ Just put your integration tests in a package with "integrationtests" somewhere i
 
 3. **example test**  
 
-`/**
+```
+/**
  * This integration test requires a running up to date postgres db that can be
  * accessed using user and password from test.properties and an up and running
  * E-meter with device id E0004001515495114 and the ip address in this test.
@@ -100,8 +101,8 @@ public class ScalerUnitTest {
 
     }
 
-}`
-
+}
+```
 
 4. **running**  
 
