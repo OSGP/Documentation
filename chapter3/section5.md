@@ -6,7 +6,7 @@
 In this paragraph you will find an approach for developing integration tests. The tests are based on surefire, failsafe, spring-test and a package naming convention.
 
 1. **package naming convention**
-Just put your integration tests in a package with "integrationtests" somewhere in the name
+Just put your integration tests in a package with "integrationtests" somewhere in the name  
 2. **pom.xml**
   * dependencies:
 ```
