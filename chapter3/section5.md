@@ -25,11 +25,10 @@ Just put your integration tests in a package with "integrationtests" somewhere i
     </dependencies>
 
   * property:  
-```
-    <properties>
+
         <skipITs>true</skipITs>
     </properties>
-```
+
   * plugins:  
 
             <plugin>
