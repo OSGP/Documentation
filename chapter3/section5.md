@@ -9,7 +9,7 @@ In this paragraph you will find an approach for developing integration tests. Th
 Just put your integration tests in a package with "integrationtests" somewhere in the name  
 2. **pom.xml**
   * dependencies:
-```
+```xml
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -25,13 +25,13 @@ Just put your integration tests in a package with "integrationtests" somewhere i
     </dependencies>
 ```
   * property:
-```
+```xml
     <properties>
         <skipITs>true</skipITs>
     </properties>
 ```
   * plugins:
-```
+```xml
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
