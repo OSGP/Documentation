@@ -30,7 +30,6 @@ Just put your integration tests in a package with "integrationtests" somewhere i
         <skipITs>true</skipITs>
     </properties>
 ```
-    
   * plugins:  
 
             <plugin>
@@ -103,7 +102,6 @@ public class ScalerUnitTest {
 
 }
 ```
-
 4. **running**  
 
 mvn -DskipITs=false verify
