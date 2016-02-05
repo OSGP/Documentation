@@ -29,7 +29,7 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 - Goal is to allow municipalities to use the application, give feedback and to see if the services offered to municipalities are adequate
 
 
-- Large scale roll-out will start around end of 2015
+- Large scale roll-out will start around 2016
 - The entire Liander grid operator area will use SSLD's to controll all public lighting and tariff switching
 - About 25.000 Sub Stations (middenspanningsruimtes)
 - About 800.000 street lights will be switched by the SSLD's mounted in the 25.000 Sub Stations
