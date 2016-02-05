@@ -157,13 +157,13 @@ _This Code of Conduct is based on the Django Code of Conduct_
 
 ## 4.5 Contributing to documentation
 
-Our most recent documentation can be found [here](http://54.77.62.182/job/OSGP_Documentation_development/lastSuccessfulBuild/artifact/_book/index.html) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
+Our most recent documentation can be found [here](http://54.77.62.182/documentation/) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 
 We encourage you to participate in improving the documentation. From corrected typos to new sections, every commit is appreciated. You can access the source files by clicking the "Fix this page"-button in the GitBook or by selecting the relevant Markdown-file in the documentation. You can commit your changes by sending a pull request. 
 
 Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). 
 
-If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com
+If you are completely new to this and you need help to get started, don't worry (so was I...), just send us an email at opensource@smartsocietyservices.com or fire an issure in the documenation repository.
 
 ### 4.5.1 Chapters in the documentation
 
@@ -171,9 +171,7 @@ It may be obvious to you already from the index, however, here is an overview on
 
 ### 4.5.2 Versioning within the documentation
 
-We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. //TODO
-
-//TODO
+We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. //TODO 
 
 ### 4.5.3 Guidelines for new documentation
 
