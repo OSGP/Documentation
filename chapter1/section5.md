@@ -51,8 +51,7 @@ The following security measures could in place for the cloud hosted environment:
 - Access control
 - Unique device identification
 
-For every major release there will be a mandated security test.
-The cloud hosting platform will be tested regularly by the provider.
+For every major release there will be a mandated security test initiated by Smart society services.
 
 In cooperation with the European Network of Cyber Security (ENCS) state of the art security measures were implemented.
 
