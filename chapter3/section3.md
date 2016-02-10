@@ -61,8 +61,6 @@ If you can't create 64 bit versions of the VM try these tips.
 
 ![alt text](./installation-script-screenshots/13.png)
 
-Run the Virtual Box.
-
 ![alt text](./installation-script-screenshots/14.png)
 
 ![alt text](./installation-script-screenshots/15.png)
@@ -100,6 +98,8 @@ Run the Virtual Box.
 ![alt text](./installation-script-screenshots/30.png)
 
 ### 3.3.4 Updating the Software
+
+Find the Software Updater link on the left icon menu bar. Click it to start Ubuntu Software update.
 
 ![alt text](./installation-script-screenshots/31.png)
 
@@ -165,6 +165,10 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/52.png)
 
 ### 3.3.11 Importing Maven Projects into Eclipse
+
+Eclipse (Extensible Tool Platform and Java IDE) can be installed via Ubuntu Software Center.
+After installing Eclipse install Maven support via Menu / Help / Install New Software.
+Select a "Work With" site and filter using "maven". You will find Maven Intergration for Eclipse. 
 
 ![alt text](./installation-script-screenshots/54.png)
 
