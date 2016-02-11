@@ -166,10 +166,6 @@ Make sure to check the development branch for the latest version!
 
 ### 3.3.11 Importing Maven Projects into Eclipse
 
-Eclipse (Extensible Tool Platform and Java IDE) can be installed via Ubuntu Software Center.
-After installing Eclipse install Maven support via Menu / Help / Install New Software.
-Select a "Work With" site and filter using "maven". You will find Maven Intergration for Eclipse. 
-
 ![alt text](./installation-script-screenshots/54.png)
 
 ![alt text](./installation-script-screenshots/55.png)
