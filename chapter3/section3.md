@@ -61,8 +61,6 @@ If you can't create 64 bit versions of the VM try these tips.
 
 ![alt text](./installation-script-screenshots/13.png)
 
-Run the Virtual Box.
-
 ![alt text](./installation-script-screenshots/14.png)
 
 ![alt text](./installation-script-screenshots/15.png)
@@ -100,6 +98,8 @@ Run the Virtual Box.
 ![alt text](./installation-script-screenshots/30.png)
 
 ### 3.3.4 Updating the Software
+
+Find the Software Updater link on the left icon menu bar. Click it to start Ubuntu Software update.
 
 ![alt text](./installation-script-screenshots/31.png)
 
