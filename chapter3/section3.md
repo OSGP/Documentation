@@ -180,7 +180,7 @@ Open eclipse (the executable can be found in the folder /home/dev/Downloads/ecli
 ![alt text](./installation-script-screenshots/59.png)
 
 ![alt text](./installation-script-screenshots/60.png)
-
+Show the 'Debug' and 'Git' perspectives.
 ![alt text](./installation-script-screenshots/61.png)
 
 ### 3.3.12 Creating an Apache Tomcat7 Server
