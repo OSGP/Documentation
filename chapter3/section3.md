@@ -199,6 +199,8 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/67.png)
 
 ### 3.3.13 Creating Sym Link to Maven Settings
+Create a symlink to the Maven setting file using this command: 
+'''sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2 '''
 
 ![alt text](./installation-script-screenshots/68.png)
 
