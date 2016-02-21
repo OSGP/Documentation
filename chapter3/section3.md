@@ -184,6 +184,7 @@ Show the 'Debug' and 'Git' perspectives.
 ![alt text](./installation-script-screenshots/61.png)
 
 ### 3.3.12 Creating an Apache Tomcat7 Server
+In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder /home/dev/Downloads/apache-tomcat-7.0.61.
 
 ![alt text](./installation-script-screenshots/62.png)
 
