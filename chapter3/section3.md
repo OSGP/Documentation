@@ -215,7 +215,7 @@ Create a symlink to the Maven setting file using this command:
 ![alt text](./installation-script-screenshots/71.png)
 
 ### 3.3.16 Starting Apache ActiveMQ
-
+Continue with starting Apache ActiveMQ (the executable can be found in the folder /home/dev/Downloads/apache-activemq-*/bin/linux-x86-64): by opening a terminal and use the command: '''sudo ./activemq console''' to start ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon).
 ![alt text](./installation-script-screenshots/72.png)
 
 ### 3.3.17 Starting Apache Tomcat7 Server
