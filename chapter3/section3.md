@@ -192,6 +192,7 @@ Make sure to check the development branch for the latest version!
 
 ![alt text](./installation-script-screenshots/65.png)
 
+Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments' '''string: -Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true'''
 ![alt text](./installation-script-screenshots/66.png)
 
 ![alt text](./installation-script-screenshots/67.png)
@@ -227,7 +228,9 @@ The default password is 1234.
 ![alt text](./installation-script-screenshots/76.png)
 
 ### 3.3.19 Creating the 'test-org' Organization
-
+'''
+psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.sql
+'''
 ![alt text](./installation-script-screenshots/77.png)
 
 ![alt text](./installation-script-screenshots/78.png)
