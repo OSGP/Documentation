@@ -216,18 +216,21 @@ Copy the /home/Sources/Config/tomcat/context.xml content to the context.xml in t
 ![alt text](./installation-script-screenshots/72.png)
 
 ### 3.3.17 Starting Apache Tomcat7 Server
-
+Continue with starting Apache ActiveMQ (the executable can be found in the folder /home/dev/Downloads/apache-activemq-*/bin/linux-x86-64): by opening a terminal and use the command: '''sudo ./activemq console''' to start ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon).
 ![alt text](./installation-script-screenshots/73.png)
 
 ### 3.3.18 Starting pgAdmin III and Connect to PostgreSQL
+Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using Host localhost, Port 5432, Username osp_admin and Password 1234.
 
 ![alt text](./installation-script-screenshots/74.png)
 
 ![alt text](./installation-script-screenshots/75.png)
-The default password is 1234.
+
 ![alt text](./installation-script-screenshots/76.png)
 
 ### 3.3.19 Creating the 'test-org' Organization
+Run the script (/home/dev/Sources/Config/sql/create-test-org.sql) to insert 'test-org' organization into the organisation table of the osgp_core database.
+
 '''
 psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.sql
 '''
