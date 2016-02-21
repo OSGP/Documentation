@@ -201,7 +201,7 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/68.png)
 
 ### 3.3.14 Setting Up Apache Tomcat7 Server Context
-
+Copy the /home/Sources/Config/tomcat/context.xml content to the context.xml in the eclipse environment (see screenshots).
 ![alt text](./installation-script-screenshots/69.png)
 
 ![alt text](./installation-script-screenshots/70.png)
@@ -223,7 +223,7 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/74.png)
 
 ![alt text](./installation-script-screenshots/75.png)
-
+The default password is 1234.
 ![alt text](./installation-script-screenshots/76.png)
 
 ### 3.3.19 Creating the 'test-org' Organization
