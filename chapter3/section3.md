@@ -26,7 +26,7 @@ These are the steps:
 - Registering a Device
 - Using 'SetLight' SOAP Request to Switch the Light On
 
-It recommended to take a look at the [readme.md in the config repository](https://github.com/OSGP/Config/blob/development/README.md)!
+It is recommended to take a look at the [readme.md in the config repository](https://github.com/OSGP/Config/blob/development/README.md)!
 
 ### 3.3.1 Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/)
 
