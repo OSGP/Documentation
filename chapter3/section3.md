@@ -191,7 +191,7 @@ In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat
 ![alt text](./installation-script-screenshots/63.png)
 
 ![alt text](./installation-script-screenshots/64.png)
-
+After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 300.
 ![alt text](./installation-script-screenshots/65.png)
 
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments' '''string: -Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true'''
