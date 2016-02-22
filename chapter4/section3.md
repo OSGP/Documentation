@@ -39,6 +39,7 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 
 In case of long discussions or arguments, maintainers or other can request a community council decision.
 
+Current maintainers:
 * OSGP platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
 * Smart metering domain: [Bart van der Zwet](https://github.com/bvdzwet)
 * Documentation & configutation: [Ruud Lemmers](https://github.com/rlemmers)
