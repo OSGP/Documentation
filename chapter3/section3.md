@@ -26,6 +26,8 @@ These are the steps:
 - Registering a Device
 - Using 'SetLight' SOAP Request to Switch the Light On
 
+It is recommended to take a look at the [readme.md in the config repository](https://github.com/OSGP/Config/blob/development/README.md)!
+
 ### 3.3.1 Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/)
 
 ! tip
@@ -200,7 +202,8 @@ Click on 'Open launch configuration', click on the 'Arguments' tab and add the f
 ![alt text](./installation-script-screenshots/67.png)
 
 ### 3.3.13 Creating Sym Link to Maven Settings
-Create a symlink to the Maven setting file using this command: '''sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2'''
+Create a symlink to the Maven setting file using this command: 
+'''sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2 '''
 ![alt text](./installation-script-screenshots/68.png)
 
 ### 3.3.14 Setting Up Apache Tomcat7 Server Context
