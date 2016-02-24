@@ -18,10 +18,12 @@ We have chosen to work with GitBook since it allows us to make different version
 
 ### 4.5.3 Guidelines for new documentation
 
+- Don't commit directly to the development branch, please do a pull request.
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
 
+### 4.5.4 Documentation inspiration
 
 Inspiration on how to write good documentation can be found here: [http://docs.writethedocs.org/](http://docs.writethedocs.org/).
 
