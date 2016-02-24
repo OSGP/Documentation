@@ -30,3 +30,6 @@ If you want to get in touch to discuss to discuss non-technical subjects, send u
 4. Otherwise, the developer will write a patch and tests the fix.
 5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
 6. The maintainer than closes the issue.
+
+### 4.2.2 Questions
+If you have a question. fire an issue in the most relevant repository.
