@@ -36,6 +36,7 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 - Make sure code/documentation reviews are being done
 - Coordinate pull-requests
 - Coordinate bug follow-ups
+- Coordinate questions
 
 In case of long discussions or arguments, maintainers or other can request a community council decision.
 
