@@ -18,10 +18,13 @@ We have chosen to work with GitBook since it allows us to make different version
 
 ### 4.5.3 Guidelines for new documentation
 
+- The master branch is only used by major OSGP releases
 - Don't commit directly to the development branch, please do a pull request.
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
 - Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
+- Give your (sub) document a relevant name or section with number
+- Update SUMMARY.md is needed
 
 ### 4.5.4 Documentation inspiration
 
