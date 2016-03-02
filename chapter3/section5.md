@@ -107,35 +107,56 @@ mvn -DskipITs=false verify
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./section3.x/SynchronizeTime.md)**
+- **[SynchronizeTime](./section3.x/SynchronizeTimeResponse.md)**
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
+- **[SendWakeupSms](./section3.x/SendWakeupSmsResponse.md)**
 - **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
+- **[GetSmsDetails](./section3.x/GetSmsDetailsResponse.md)**
 - **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
+- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjectsResponse.md)**
 
 #### SmartMeteringConfiguration
-- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
-- **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
-- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)**
-- **[SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md)**
-- **[SetAlarmNotifications](./section3.x/SetAlarmNotifications.md)**
-- **[SetConfigurationObject](./section3.x/SetConfigurationObject.md)**
-- **[SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md)**
-- **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)**
-- **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)**
 - **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
+- **[GetSetSpecialDaysResponse](./section3.x/GetSetSpecialDaysResponse.md)**
+- **[SetConfigurationObject](./section3.x/SetConfigurationObject.md)**
+- **[GetSetConfigurationObjectResponse](./section3.x/GetSetConfigurationObjectResponse.md)**
+- **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)**
+- **[GetSetPushSetupAlarmResponse](./section3.x/GetSetPushSetupAlarmResponse.md)**
+- **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)**
+- **[GetSetPushSetupSmsResponse](./section3.x/GetSetPushSetupSmsResponse.md)**
+- **[SetAlarmNotifications](./section3.x/SetAlarmNotifications.md)**
+- **[GetSetAlarmNotificationsResponse](./section3.x/GetSetAlarmNotificationsResponse.md)**
+- **[SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md)**
+- **[GetSetEncryptionKeyExchangeOnGMeterResponse](./section3.x/GetSetEncryptionKeyExchangeOnGMeterResponse.md)**
+- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)**
+- **[GetSetActivityCalendarResponse](./section3.x/GetSetActivityCalendarResponse.md)**
+- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
+- **[GetSetAdministrativeStatusResponse](./section3.x/GetSetAdministrativeStatusResponse.md)**
+- **[SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md)**
+- **[GetGetAdministrativeStatusResponse](./section3.x/GetGetAdministrativeStatusResponse.md)**
+- **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
+- **[GetReplaceKeysResponse](./section3.x/GetReplaceKeysResponse.md)**
 
 #### SmartMeteringInstallation
 - **[AddDevice](./section3.x/AddDevice.md)**
+- **[GetAddDeviceReponse](./section3.x/GetAddDeviceReponse.md)**
 
 #### SmartMeteringManagement
 - **[FindEvents](./section3.x/FindEvents.md)**
+- **[GetFindEventsResponse](./section3.x/GetFindEventsResponse.md)**
 - **[GetDevices](./section3.x/GetDevices.md)**
 
 #### SmartMeteringMonitoring
 - **[ActualMeterReads](./section3.x/ActualMeterReads.md)**
+- **[GetActualMeterReadsResponse](./section3.x/GetActualMeterReadsResponse.md)**
 - **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)**
+- **[GetActualMeterReadsGasResponse](./section3.x/GetActualMeterReadsGasResponse.md)**
 - **[PeriodicMeterReads](./section3.x/PeriodicMeterReads.md)**
+- **[GetPeriodicMeterReadsResponse](./section3.x/GetPeriodicMeterReadsResponse.md)**
 - **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
+- **[GetPeriodicMeterReadsGasResponse](./section3.x/GetPeriodicMeterReadsGasResponse.md)**
 - **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
+- **[GetReadAlarmRegisterResponse](./section3.x/GetReadAlarmRegisterResponse.md)*
 - **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
 
 #### SmartMeteringNotification
