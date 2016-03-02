@@ -110,6 +110,7 @@ mvn -DskipITs=false verify
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
 - **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
 - **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
+
 #### SmartMeteringConfiguration
 - **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
 - **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
@@ -121,11 +122,14 @@ mvn -DskipITs=false verify
 - **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)**
 - **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)**
 - **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
+
 #### SmartMeteringInstallation
 - **[AddDevice](./section3.x/AddDevice.md)**
+
 #### SmartMeteringManagement
 - **[FindEvents](./section3.x/FindEvents.md)**
 - **[GetDevices](./section3.x/GetDevices.md)**
+
 #### SmartMeteringMonitoring
 - **[ActualMeterReads](./section3.x/ActualMeterReads.md)**
 - **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)**
@@ -133,6 +137,7 @@ mvn -DskipITs=false verify
 - **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
 - **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
 - **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
+
 #### SmartMeteringNotification
 - **[SendNotification](./section3.x/SendNotification.md)**
 
