@@ -104,21 +104,15 @@ public class ScalerUnitTest {
 mvn -DskipITs=false verify
 
 ### 3.5.2 Webservices
-- **[ActualMeterReads](./section3.x/ActualMeterReads.md)**
-- **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)**
-- **[AddDevice](./section3.x/AddDevice.md)**
-- **[FindEvents](./section3.x/FindEvents.md)**
-- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
-- **[GetDevices](./section3.x/GetDevices.md)**
-- **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
-- **[PeriodicMeterReads](./section3.x/PeriodicMeterReads.md)**
-- **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
-- **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
-- **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
-- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
-- **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
-- **[SendNotification](./section3.x/SendNotification.md)**
+
+#### SmartMeteringAdHoc
+- **[SynchronizeTime](./section3.x/SynchronizeTime.md)**
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
+- **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
+- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
+#### SmartMeteringConfiguration
+- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
+- **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
 - **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)**
 - **[SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md)**
 - **[SetAlarmNotifications](./section3.x/SetAlarmNotifications.md)**
@@ -127,5 +121,18 @@ mvn -DskipITs=false verify
 - **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)**
 - **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)**
 - **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
-- **[SynchronizeTime](./section3.x/SynchronizeTime.md)**
+#### SmartMeteringInstallation
+- **[AddDevice](./section3.x/AddDevice.md)**
+#### SmartMeteringManagement
+- **[FindEvents](./section3.x/FindEvents.md)**
+- **[GetDevices](./section3.x/GetDevices.md)**
+#### SmartMeteringMonitoring
+- **[ActualMeterReads](./section3.x/ActualMeterReads.md)**
+- **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)**
+- **[PeriodicMeterReads](./section3.x/PeriodicMeterReads.md)**
+- **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
+- **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
+- **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
+#### SmartMeteringNotification
+- **[SendNotification](./section3.x/SendNotification.md)**
 
