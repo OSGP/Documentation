@@ -107,13 +107,13 @@ mvn -DskipITs=false verify
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./section3.x/SynchronizeTime.md)**
-- **[SynchronizeTime](./section3.x/SynchronizeTimeResponse.md)**
+- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)**
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
-- **[SendWakeupSms](./section3.x/SendWakeupSmsResponse.md)**
+- **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)**
 - **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
-- **[GetSmsDetails](./section3.x/GetSmsDetailsResponse.md)**
+- **[GetGetSmsDetailsResponse](./section3.x/GetGetSmsDetailsResponse.md)**
 - **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
-- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjectsResponse.md)**
+- **[GetRetrieveConfigurationObjectsResponse](./section3.x/GetRetrieveConfigurationObjectsResponse.md)**
 
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
@@ -156,7 +156,7 @@ mvn -DskipITs=false verify
 - **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
 - **[GetPeriodicMeterReadsGasResponse](./section3.x/GetPeriodicMeterReadsGasResponse.md)**
 - **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
-- **[GetReadAlarmRegisterResponse](./section3.x/GetReadAlarmRegisterResponse.md)*
+- **[GetReadAlarmRegisterResponse](./section3.x/GetReadAlarmRegisterResponse.md)**
 - **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
 
 #### SmartMeteringNotification
