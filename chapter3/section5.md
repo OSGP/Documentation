@@ -102,3 +102,6 @@ public class ScalerUnitTest {
 ```
 #### d. running
 mvn -DskipITs=false verify
+
+### 3.5.2 Integration tests
+**[CActualMeterReads](./section3.x/ActualMeterReads.md)**
