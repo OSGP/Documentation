@@ -107,7 +107,7 @@ mvn -DskipITs=false verify
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./section3.x/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
-- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)**
+- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)** is a request which returns the result of the [SynchronizeTime](./SynchronizeTime.md) request.
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
 - **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)**
 - **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
