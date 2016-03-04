@@ -5,7 +5,7 @@ GetSmsDetails is a request to receive information about the sent SMS and its del
 
 [GetGetSmsDetailsResponse](,.GetGetSmsDetailsResponse.md) request returns the result from sending the GetSmsDetails request. The response request contains the DeviceIdentification and CorrelationUid which is received from the GetSmsDetails request.
 
-#### References
+### References
 
 XSD: [sm-adhoc.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-adhoc.xsd)
 
