@@ -107,13 +107,13 @@ mvn -DskipITs=false verify
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./section3.x/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
-- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)** is a request which returns the result of the [SynchronizeTime](./SynchronizeTime.md) request.
-- **[SendWakeupSms](./section3.x/SendWakeupSms.md)**
-- **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)**
-- **[GetSmsDetails](./section3.x/GetSmsDetails.md)**
-- **[GetGetSmsDetailsResponse](./section3.x/GetGetSmsDetailsResponse.md)**
-- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)**
-- **[GetRetrieveConfigurationObjectsResponse](./section3.x/GetRetrieveConfigurationObjectsResponse.md)**
+- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)** is a request which returns the response of the [SynchronizeTime](./SynchronizeTime.md) request.
+- **[SendWakeupSms](./section3.x/SendWakeupSms.md)** is a request to wake up the E-meter by SMS when it is sleeping. When the device becomes awake, communication is possible.
+- **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)** is a request which returns the response of the [SendWakeupSms](SendWakeupSms.md) and the messageID from the SMS message.
+- **[GetSmsDetails](./section3.x/GetSmsDetails.md)** is a request to receive information about the sent SMS and its delivery status from [SendWakeupSms](SendWakeupSms.md), it needs the messageID which is obtained by the [GetSendWakeupSmsResponse](GetSendWakeupSmsResponse.md) request.
+- **[GetGetSmsDetailsResponse](./section3.x/GetGetSmsDetailsResponse.md)** is a request with the response from the [GetSmsDetails](./GetSmsDetails.md) request.
+- **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
+- **[GetRetrieveConfigurationObjectsResponse](./section3.x/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./RetrieveConfigurationObjects.md) request.
 
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
