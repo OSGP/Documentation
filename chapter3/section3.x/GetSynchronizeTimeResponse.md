@@ -1,7 +1,7 @@
 ## GetSynchronizeTimeResponse request
 
 ### Description
-GetSynchronizeTimeResponse request returns the result of the [SynchronizeTime](./SynchronizeTime.md) request.
+[GetSynchronizeTimeResponse](./GetSynchronizeTimeResponse.md) returns the result from synchronizing date and time. The response request contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request.
 
 ### References
 
