@@ -1,7 +1,7 @@
 ## GetSendWakeupSmsResponses request
 
 ### Description
-GetSendWakeupSmsResponses request returns the result from sending the wakeup request. The response request contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request. It also returns the messageID from the send SMS message.
+GetSendWakeupSmsResponses request returns the result from sending the wakeup request. The response request contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request. The response returns the messageID from the send SMS message which is needed to perform a [GetSmsDetails](./GetSmsDetails.md) request.
 
 ### References
 
