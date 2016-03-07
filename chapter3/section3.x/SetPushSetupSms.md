@@ -1,4 +1,4 @@
-## SetConfigurationObject request
+## SetPushSetupSms request
 
 ### Description
 SetPushSetupSms is a request to set an endpoint in a device which tells the device where to connect to when it is waked up.
