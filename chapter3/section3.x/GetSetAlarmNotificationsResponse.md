@@ -1,6 +1,13 @@
-        <wsdl:operation name="GetSetAlarmNotificationsResponse">
-            <wsdl:input message="tns:SetAlarmNotificationsAsyncRequest" name="SetAlarmNotificationsAsyncRequest">
-            </wsdl:input>
-            <wsdl:output message="tns:SetAlarmNotificationsResponse" name="SetAlarmNotificationsResponse">
-            </wsdl:output>
-        </wsdl:operation>
+## GetSetAlarmNotificationsResponse request
+
+### Description
+GetSetAlarmNotificationsResponse returns the result from setting a SetAlarmNotifications. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetAlarmNotifications](SetAlarmNotifications.md) request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
+
+
