@@ -1,14 +1,13 @@
-    <wsdl:message name="ReplaceKeysRequest">
-        <wsdl:part element="smconf:ReplaceKeysRequest" name="ReplaceKeysRequest" />
-    </wsdl:message>
-    <wsdl:message name="ReplaceKeysAsyncResponse">
-        <wsdl:part element="smconf:ReplaceKeysAsyncResponse" name="ReplaceKeysAsyncResponse" />
-    </wsdl:message>
-    <wsdl:message name="ReplaceKeysAsyncRequest">
-        <wsdl:part element="smconf:ReplaceKeysAsyncRequest" name="ReplaceKeysAsyncRequest">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="ReplaceKeysResponse">
-        <wsdl:part element="smconf:ReplaceKeysResponse" name="ReplaceKeysResponse">
-        </wsdl:part>
-    </wsdl:message>
+## ReplaceKeys request
+
+### Description
+ReplaceKeys is a request to change the keys on an E-meter. The request needs the DeviceIdentification, an AuthenticationKey and an EncryptionKey.
+
+[GetReplaceKeysResponse](GetReplaceKeysResponse.md) returns if the result is successful from the ReplaceKeys request. The response request contains the DeviceIdentification and CorrelationUid which is received from the ReplaceKeys request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
