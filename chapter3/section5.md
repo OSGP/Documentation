@@ -107,35 +107,35 @@ mvn -DskipITs=false verify
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./section3.x/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
-- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)** is a request which returns the response of the [SynchronizeTime](./section3.x/SynchronizeTime.md) request.
+- **[GetSynchronizeTimeResponse](./section3.x/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./section3.x/SynchronizeTime.md) request.
 - **[SendWakeupSms](./section3.x/SendWakeupSms.md)** is a request to wake up the E-meter by SMS when it is sleeping. When the device becomes awake, communication is possible.
-- **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)** is a request which returns the response of the [SendWakeupSms](./section3.x/SendWakeupSms.md) and the messageID from the SMS message.
+- **[GetSendWakeupSmsResponse](./section3.x/GetSendWakeupSmsResponse.md)** is a request which returns the response from the [SendWakeupSms](./section3.x/SendWakeupSms.md) and the messageID from the SMS message.
 - **[GetSmsDetails](./section3.x/GetSmsDetails.md)** is a request to receive information about the sent SMS and its delivery status from [SendWakeupSms](./section3.x/SendWakeupSms.md), it needs the messageID which is obtained by the [GetSendWakeupSmsResponses](./section3.x/GetSendWakeupSmsResponses.md) request.
 - **[GetGetSmsDetailsResponse](./section3.x/GetGetSmsDetailsResponse.md)** is a request with the response from the [GetSmsDetails](./section3.x/GetSmsDetails.md) request.
 - **[RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
 - **[GetRetrieveConfigurationObjectsResponse](./section3.x/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md) request.
 
 #### SmartMeteringConfiguration
-- **[SetSpecialDays](./section3.x/SetSpecialDays.md)**
-- **[GetSetSpecialDaysResponse](./section3.x/GetSetSpecialDaysResponse.md)**
-- **[SetConfigurationObject](./section3.x/SetConfigurationObject.md)**
-- **[GetSetConfigurationObjectResponse](./section3.x/GetSetConfigurationObjectResponse.md)**
-- **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)**
-- **[GetSetPushSetupAlarmResponse](./section3.x/GetSetPushSetupAlarmResponse.md)**
-- **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)**
-- **[GetSetPushSetupSmsResponse](./section3.x/GetSetPushSetupSmsResponse.md)**
-- **[SetAlarmNotifications](./section3.x/SetAlarmNotifications.md)**
-- **[GetSetAlarmNotificationsResponse](./section3.x/GetSetAlarmNotificationsResponse.md)**
-- **[SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md)**
-- **[GetSetEncryptionKeyExchangeOnGMeterResponse](./section3.x/GetSetEncryptionKeyExchangeOnGMeterResponse.md)**
-- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)**
-- **[GetSetActivityCalendarResponse](./section3.x/GetSetActivityCalendarResponse.md)**
-- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)**
-- **[GetSetAdministrativeStatusResponse](./section3.x/GetSetAdministrativeStatusResponse.md)**
-- **[SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md)**
-- **[GetGetAdministrativeStatusResponse](./section3.x/GetGetAdministrativeStatusResponse.md)**
-- **[ReplaceKeys](./section3.x/ReplaceKeys.md)**
-- **[GetReplaceKeysResponse](./section3.x/GetReplaceKeysResponse.md)**
+- **[SetSpecialDays](./section3.x/SetSpecialDays.md)** is a request to set a dayId profile for a specific date on a device.
+- **[GetSetSpecialDaysResponse](./section3.x/GetSetSpecialDaysResponse.md)** is a request which returns the response from the [SetSpecialDays](./section3.x/SetSpecialDays.md) request.
+- **[SetConfigurationObject](./section3.x/SetConfigurationObject.md)** is a request to set ConfigurationObject settings on a device to specify behaviour and connection options. 
+- **[GetSetConfigurationObjectResponse](./section3.x/GetSetConfigurationObjectResponse.md)** is a request which returns the response from the [SetConfigurationObject](./section3.x/SetConfigurationObject.md) request.
+- **[SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md)** is a request that pushes received alarm messages to OSGP.
+- **[GetSetPushSetupAlarmResponse](./section3.x/GetSetPushSetupAlarmResponse.md)** is a request which returns the response from the [SetPushSetupAlarm](./section3.x/SetPushSetupAlarm.md) request.
+- **[SetPushSetupSms](./section3.x/SetPushSetupSms.md)** is a request to set an endpoint in a device which tells the device where to connect to when it is waked up.
+- **[GetSetPushSetupSmsResponse](./section3.x/GetSetPushSetupSmsResponse.md)** is a request which returns the response from the [SetPushSetupSms](./section3.x/SetPushSetupSms.md) request.
+- **[SetAlarmNotifications](./section3.x/SetAlarmNotifications.md)** is a request to set the types of alarmnotifications that must be notified from the device when they occur.
+- **[GetSetAlarmNotificationsResponse](./section3.x/GetSetAlarmNotificationsResponse.md)** is a request which returns the response from the [SetAlarmNotifications](./section3.x/SetAlarmNotifications.md) request.
+- **[SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md)** is a request to transfer and set a G-meter key on a device.
+- **[GetSetEncryptionKeyExchangeOnGMeterResponse](./section3.x/GetSetEncryptionKeyExchangeOnGMeterResponse.md)** is a request which returns the response from the [SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md) request.
+- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)** is a request to set several parameters on a E-meter such as tariffs per day in a weekprofile.
+- **[GetSetActivityCalendarResponse](./section3.x/GetSetActivityCalendarResponse.md)** is a request which returns the response from the [SetActivityCalendar](./section3.x/SetActivityCalendar.md) request.
+- **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)** is a request to retrieve the current AdministrativeStatus setting.
+- **[GetGetAdministrativeStatusResponse](./section3.x/GetGetAdministrativeStatusResponse.md)** is a request which returns the response from the [GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md) request.
+- **[SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md)** is a request to set the AdministrativeStatus.
+- **[GetSetAdministrativeStatusResponse](./section3.x/GetSetAdministrativeStatusResponse.md)** is a request which returns the response from the [SetAdministrativeStatus](./section3.x/SetAdministrativeStatus.md) request.
+- **[ReplaceKeys](./section3.x/ReplaceKeys.md)** is a request to change the keys on a E-meter.
+- **[GetReplaceKeysResponse](./section3.x/GetReplaceKeysResponse.md)** is a request which returns the response from the [ReplaceKeys](./section3.x/ReplaceKeys.md) request.
 
 #### SmartMeteringInstallation
 - **[AddDevice](./section3.x/AddDevice.md)**
