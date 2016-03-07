@@ -13,7 +13,7 @@ SetConfigurationObject is a request to set ConfigurationObject settings on a dev
 - HLS_4_on_P0_enable
 - HLS_5_on_P0_enable
 
-See DSMR document chapter 8.3 for detailed description.
+See DSMR document chapter 8.3 for detailed description. The request needs the DeviceIdentification, GprsOperationMode, ConfigurationFlagType and Enabled parameters.
 
 [GetSetConfigurationObjectResponse](GetSetConfigurationObjectResponse.md) returns the result from setting a SetConfigurationObject. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetConfigurationObject request.
 
