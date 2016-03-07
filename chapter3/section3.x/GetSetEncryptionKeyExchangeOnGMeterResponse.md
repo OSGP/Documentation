@@ -1,6 +1,12 @@
-        <wsdl:operation name="GetSetEncryptionKeyExchangeOnGMeterResponse">
-            <wsdl:input message="tns:SetEncryptionKeyExchangeOnGMeterAsyncRequest" name="SetEncryptionKeyExchangeOnGMeterAsyncRequest"> 
-            </wsdl:input>
-            <wsdl:output message="tns:SetEncryptionKeyExchangeOnGMeterResponse" name="SetEncryptionKeyExchangeOnGMeterResponse">
-            </wsdl:output>
-        </wsdl:operation>
+## GetSetEncryptionKeyExchangeOnGMeterResponse request
+
+### Description
+GetSetEncryptionKeyExchangeOnGMeterResponse returns the result from setting a SetEncryptionKeyExchangeOnGMeter. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetEncryptionKeyExchangeOnGMeter](SetEncryptionKeyExchangeOnGMeter.md) request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
+
