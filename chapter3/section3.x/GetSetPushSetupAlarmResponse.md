@@ -1,6 +1,9 @@
-        <wsdl:operation name="GetSetPushSetupAlarmResponse">
-            <wsdl:input message="tns:SetPushSetupAlarmAsyncRequest" name="SetPushSetupAlarmAsyncRequest">
-            </wsdl:input>
-            <wsdl:output message="tns:SetPushSetupAlarmResponse" name="SetPushSetupAlarmResponse">
-            </wsdl:output>
-        </wsdl:operation>
+### Description
+GetSetPushSetupAlarmResponse returns the result from setting a SetPushSetupAlarm. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetPushSetupAlarm](SetPushSetupAlarm.md) request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
