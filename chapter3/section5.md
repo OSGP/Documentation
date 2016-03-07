@@ -116,7 +116,7 @@ mvn -DskipITs=false verify
 - **[GetRetrieveConfigurationObjectsResponse](./section3.x/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./section3.x/RetrieveConfigurationObjects.md) request.
 
 #### SmartMeteringConfiguration
-- **[SetSpecialDays](./section3.x/SetSpecialDays.md)** is a request to set a dayId profile for a specific date on a device.
+- **[SetSpecialDays](./section3.x/SetSpecialDays.md)** is a request to set a dayId profile and its tariffs for a specific date on a device.
 - **[GetSetSpecialDaysResponse](./section3.x/GetSetSpecialDaysResponse.md)** is a request which returns the response from the [SetSpecialDays](./section3.x/SetSpecialDays.md) request.
 - **[SetConfigurationObject](./section3.x/SetConfigurationObject.md)** is a request to set ConfigurationObject settings on a device to specify behaviour and connection options. 
 - **[GetSetConfigurationObjectResponse](./section3.x/GetSetConfigurationObjectResponse.md)** is a request which returns the response from the [SetConfigurationObject](./section3.x/SetConfigurationObject.md) request.
@@ -128,7 +128,7 @@ mvn -DskipITs=false verify
 - **[GetSetAlarmNotificationsResponse](./section3.x/GetSetAlarmNotificationsResponse.md)** is a request which returns the response from the [SetAlarmNotifications](./section3.x/SetAlarmNotifications.md) request.
 - **[SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md)** is a request to transfer and set a G-meter key on a device.
 - **[GetSetEncryptionKeyExchangeOnGMeterResponse](./section3.x/GetSetEncryptionKeyExchangeOnGMeterResponse.md)** is a request which returns the response from the [SetEncryptionKeyExchangeOnGMeter](./section3.x/SetEncryptionKeyExchangeOnGMeter.md) request.
-- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)** is a request to set several parameters on a E-meter such as tariffs per day in a weekprofile.
+- **[SetActivityCalendar](./section3.x/SetActivityCalendar.md)** is a request to set several parameters on an E-meter such as tariffs per day in a weekprofile.
 - **[GetSetActivityCalendarResponse](./section3.x/GetSetActivityCalendarResponse.md)** is a request which returns the response from the [SetActivityCalendar](./section3.x/SetActivityCalendar.md) request.
 - **[GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md)** is a request to retrieve the current AdministrativeStatus setting.
 - **[GetGetAdministrativeStatusResponse](./section3.x/GetGetAdministrativeStatusResponse.md)** is a request which returns the response from the [GetAdministrativeStatus](./section3.x/GetAdministrativeStatus.md) request.
