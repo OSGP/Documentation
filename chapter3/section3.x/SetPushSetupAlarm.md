@@ -1,16 +1,13 @@
-    <wsdl:message name="SetPushSetupAlarmRequest">
-        <wsdl:part element="smconf:SetPushSetupAlarmRequest" name="SetPushSetupAlarmRequest">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="SetPushSetupAlarmAsyncResponse"> 
-        <wsdl:part element="smconf:SetPushSetupAlarmAsyncResponse" name="SetPushSetupAlarmAsyncResponse">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="SetPushSetupAlarmAsyncRequest">
-        <wsdl:part element="smconf:SetPushSetupAlarmAsyncRequest" name="SetPushSetupAlarmAsyncRequest">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="SetPushSetupAlarmResponse">
-        <wsdl:part element="smconf:SetPushSetupAlarmResponse" name="SetPushSetupAlarmResponse">
-        </wsdl:part>
-    </wsdl:message>
+## SetPushSetupAlarm request
+
+### Description
+SetPushSetupAlarm is a request to push a received alarm notification from a device to OSGP and to store it in the OSGP event table from the database. 
+
+[GetSetPushSetupAlarmResponse](GetSetPushSetupAlarmResponse.md) returns the result from setting a SetPushSetupAlarm. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetPushSetupAlarm request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
