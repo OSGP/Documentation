@@ -1,6 +1,12 @@
-        <wsdl:operation name="GetSetConfigurationObjectResponse">
-            <wsdl:input message="tns:SetConfigurationObjectAsyncRequest" name="SetConfigurationObjectAsyncRequest">
-            </wsdl:input>
-            <wsdl:output message="tns:SetConfigurationObjectResponse" name="SetConfigurationObjectResponse">
-            </wsdl:output>
-        </wsdl:operation>
+## GetSetConfigurationObjectResponse request
+
+### Description
+GetSetConfigurationObjectResponse returns the result from setting a ConfigurationObject. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetConfigurationObject](SetConfigurationObject.md) request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
+
