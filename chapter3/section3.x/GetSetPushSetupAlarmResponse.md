@@ -1,3 +1,5 @@
+## GetSetPushSetupAlarmResponse
+
 ### Description
 GetSetPushSetupAlarmResponse returns the result from setting a SetPushSetupAlarm. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetPushSetupAlarm](SetPushSetupAlarm.md) request.
 
