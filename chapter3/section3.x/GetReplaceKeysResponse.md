@@ -1,6 +1,12 @@
-        <wsdl:operation name="GetReplaceKeysResponse">
-            <wsdl:input message="tns:ReplaceKeysAsyncRequest" name="ReplaceKeysAsyncRequest">
-            </wsdl:input>
-            <wsdl:output message="tns:ReplaceKeysResponse" name="ReplaceKeysResponse">
-            </wsdl:output>
-        </wsdl:operation>
+## GetReplaceKeysResponse request
+
+### Description
+GetReplaceKeysResponse returns if the result is successful from the ReplaceKeys request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [ReplaceKeys](ReplaceKeys.md) request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
+
