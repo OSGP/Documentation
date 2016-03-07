@@ -1,19 +1,14 @@
-	<wsdl:message name="SetAdministrativeStatusRequest">
-		<wsdl:part element="smconf:SetAdministrativeStatusRequest" 
-			name="SetAdministrativieStatusRequest">
-		</wsdl:part>
-	</wsdl:message>
-	<wsdl:message name="SetAdministrativeStatusAsyncResponse">
-		<wsdl:part element="smconf:SetAdministrativeStatusAsyncResponse" 
-			name="setAdministrativeStatusAsyncResponse">
-		</wsdl:part>
-	</wsdl:message>
-	
-    <wsdl:message name="SetAdministrativeStatusAsyncRequest">
-        <wsdl:part element="smconf:SetAdministrativeStatusAsyncRequest" name="SetAdministrativeStatusAsyncRequest">
-        </wsdl:part>
-    </wsdl:message>
-    <wsdl:message name="SetAdministrativeStatusResponse">
-        <wsdl:part element="smconf:SetAdministrativeStatusResponse" name="SetAdministrativeStatusResponse">
-        </wsdl:part>
-    </wsdl:message>
+## SetAdministrativeStatus request
+
+### Description
+SetAdministrativeStatusis a request to set the AdministrativeStatus on a device. The request needs the DeviceIdentification and Enabled parameter.
+
+[GetSetAdministrativeStatusResponse](GetGetAdministrativeStatusResponse.md) returns if the setting SetAdministrativeStatus is enabled. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetAdministrativeStatus request.
+
+### References
+
+XSD: [sm-configuration.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-configuration.xsd)
+
+WSDL: [SmartMeteringConfiguration.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringConfiguration.wsdl)
+
+
