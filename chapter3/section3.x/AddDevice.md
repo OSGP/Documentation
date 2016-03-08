@@ -1,13 +1,26 @@
-##  request
+## AddDevice request
 
 ### Description
- is a request to change the keys on an E-meter. The request needs the DeviceIdentification.
+AddDevice is a request to add a device to the OSGP database. The request needs the following parameters:
+- DeviceIdentification
+- Device_type
+- Communication_method
+- Communication_provider
+- ICC_id
+- DSMR_version
+- Supplier
+- HLS3_active
+- HLS4_active
+- HLS5_active
+- Master_key
+- Global_encryption_unicast_key
+- Authentication_key 
+- Delivery_date
 
-[](.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the  request.
+[GetAddDeviceReponse](GetAddDeviceReponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the AddDevice request.
 
 ### References
 
-XSD: [.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/.xsd)
+XSD: [sm-installation.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/SmartMeteringInstallation.xsd)
 
-WSDL: [.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/.wsdl)
-
+WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringInstallation.wsdl)
