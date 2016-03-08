@@ -138,26 +138,26 @@ mvn -DskipITs=false verify
 - **[GetReplaceKeysResponse](./section3.x/GetReplaceKeysResponse.md)** is a request which returns the response from the [ReplaceKeys](./section3.x/ReplaceKeys.md) request.
 
 #### SmartMeteringInstallation
-- **[AddDevice](./section3.x/AddDevice.md)**
-- **[GetAddDeviceReponse](./section3.x/GetAddDeviceReponse.md)**
+- **[AddDevice](./section3.x/AddDevice.md)** is a request to add a device to the OSGP database.
+- **[GetAddDeviceReponse](./section3.x/GetAddDeviceReponse.md)** is a request which returns the response from the [AddDevice](./section3.x/AddDevice.md) request.
 
 #### SmartMeteringManagement
-- **[FindEvents](./section3.x/FindEvents.md)**
-- **[GetFindEventsResponse](./section3.x/GetFindEventsResponse.md)**
-- **[GetDevices](./section3.x/GetDevices.md)**
+- **[FindEvents](./section3.x/FindEvents.md)** is a request to retrieve events logging from a device.
+- **[GetFindEventsResponse](./section3.x/GetFindEventsResponse.md)** is a request which returns the response from the [FindEvents](./section3.x/FindEvents.md) request.
+- **[GetDevices](./section3.x/GetDevices.md)** is a request to retrieve the last known relay statuses for a group of devices.
 
 #### SmartMeteringMonitoring
-- **[ActualMeterReads](./section3.x/ActualMeterReads.md)**
-- **[GetActualMeterReadsResponse](./section3.x/GetActualMeterReadsResponse.md)**
-- **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)**
-- **[GetActualMeterReadsGasResponse](./section3.x/GetActualMeterReadsGasResponse.md)**
-- **[PeriodicMeterReads](./section3.x/PeriodicMeterReads.md)**
-- **[GetPeriodicMeterReadsResponse](./section3.x/GetPeriodicMeterReadsResponse.md)**
-- **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)**
-- **[GetPeriodicMeterReadsGasResponse](./section3.x/GetPeriodicMeterReadsGasResponse.md)**
-- **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)**
-- **[GetReadAlarmRegisterResponse](./section3.x/GetReadAlarmRegisterResponse.md)**
-- **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)**
+- **[ActualMeterReads](./section3.x/ActualMeterReads.md)** is a request to retrieve the actual meter reads from an E-meter.
+- **[GetActualMeterReadsResponse](./section3.x/GetActualMeterReadsResponse.md)** is a request which returns the response from the [ActualMeterReads](./section3.x/ActualMeterReads.md) request.
+- **[ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md)** is a request to retrieve the actual meter reads from a G-meter.
+- **[GetActualMeterReadsGasResponse](./section3.x/GetActualMeterReadsGasResponse.md)** is a request which returns the response from the [ActualMeterReadsGas](./section3.x/ActualMeterReadsGas.md) request.
+- **[PeriodicMeterReads](./section3.x/PeriodicMeterReads.md)** is a request to retrieve the periodic meter reads from an E-meter.
+- **[GetPeriodicMeterReadsResponse](./section3.x/GetPeriodicMeterReadsResponse.md)** is a request which returns the response from the [PeriodicMeterReads](./section3.x/PeriodicMeterReads.md) request.
+- **[PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md)** is a request to retrieve the periodic meter reads from a G-meter.
+- **[GetPeriodicMeterReadsGasResponse](./section3.x/GetPeriodicMeterReadsGasResponse.md)** is a request which returns the response from the [PeriodicMeterReadsGas](./section3.x/PeriodicMeterReadsGas.md) request.
+- **[ReadAlarmRegister](./section3.x/ReadAlarmRegister.md)** is a request to read the alarm register from a device.
+- **[GetReadAlarmRegisterResponse](./section3.x/GetReadAlarmRegisterResponse.md)** is a request which returns the response from the [ReadAlarmRegister](./section3.x/ReadAlarmRegister.md) request.
+- **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)** is a request to push retrieved alarm notifications to OSGP.
 
 #### SmartMeteringNotification
 - **[SendNotification](./section3.x/SendNotification.md)**
