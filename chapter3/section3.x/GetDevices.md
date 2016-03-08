@@ -1,13 +1,11 @@
-	<wsdl:message name="GetDevicesHeader">
-		<wsdl:part element="common:OrganisationIdentification" name="OrganisationIdentification" />
-		<wsdl:part element="common:UserName" name="UserName" />
-		<wsdl:part element="common:ApplicationName" name="ApplicationName" />
-	</wsdl:message>
-	<wsdl:message name="GetDevicesRequest">
-		<wsdl:part element="smman:GetDevicesRequest" name="GetDevicesRequest">
-		</wsdl:part>
-	</wsdl:message>
-	<wsdl:message name="GetDevicesResponse">
-		<wsdl:part element="smman:GetDevicesResponse" name="GetDevicesResponse">
-		</wsdl:part>
-	</wsdl:message>
+
+## GetDevices request
+
+### Description
+GetDevices is a request to get the last known relay statuses for a group of devices, so you can get an overview of statuses for a specific set of devices. The request needs the Page parameter.
+
+### References
+
+XSD: [sm-management.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-management.xsd)
+
+WSDL: [SmartMeteringManagement.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringManagement.wsdl)
