@@ -160,5 +160,5 @@ mvn -DskipITs=false verify
 - **[RetrievePushNotificationAlarm](./section3.x/RetrievePushNotificationAlarm.md)** is a request to push retrieved alarm notifications to OSGP.
 
 #### SmartMeteringNotification
-- **[SendNotification](./section3.x/SendNotification.md)**
+- **[SendNotification](./section3.x/SendNotification.md)** is a request to let Webapps know there is a result ready to retrieve from the platform.
 
