@@ -1,6 +1,10 @@
-		<wsdl:operation name="GetFindEventsResponse">
-			<wsdl:input message="tns:FindEventsAsyncRequest" name="FindEventsAsyncRequest">
-			</wsdl:input>
-			<wsdl:output message="tns:FindEventsResponse" name="FindEventsResponse">
-			</wsdl:output>
-		</wsdl:operation>
+## GetFindEventsResponse request
+
+### Description
+GetFindEventsResponse returns if the result is successful from the FindEvents request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [FindEvents](FindEvents.md) request.
+
+### References
+
+XSD: [sm-management.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-management.xsd)
+
+WSDL: [SmartMeteringManagement.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringManagement.wsdl)
