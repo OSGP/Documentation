@@ -15,6 +15,8 @@ SetConfigurationObject is a request to set ConfigurationObject settings on a dev
 
 See DSMR document chapter 8.3 for detailed description. The request needs the DeviceIdentification, GprsOperationMode, ConfigurationFlagType and Enabled parameters.
 
+All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+
 [GetSetConfigurationObjectResponse](GetSetConfigurationObjectResponse.md) returns the result from setting a SetConfigurationObject. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetConfigurationObject request.
 
 ### References
