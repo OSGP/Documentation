@@ -8,6 +8,8 @@ CLOCK_INVALID, REPLACE_BATTERY, POWER_UP, PROGRAM_MEMORY_ERROR, RAM_ERROR, NV_ME
 
 The request needs the DeviceIdentification, AlarmType and Enabled parameters.
 
+All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+
 [GetSetAlarmNotificationsResponse](GetSetAlarmNotificationsResponse.md) returns the result from setting a SetAlarmNotifications. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetAlarmNotifications request.
 
 ### References
