@@ -3,6 +3,8 @@
 ### Description
 ActualMeterReads is a request to retrieve the actual import and export meter reads from an E-meter. The request needs the DeviceIdentification.
 
+All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+
 [GetActualMeterReadsResponse](GetActualMeterReadsResponse.md) returns the retrieved meter reads values, unit and logtime from the ActualMeterReads request. The response request contains the DeviceIdentification and CorrelationUid which is received from the ActualMeterReads request.
 
 ### References
