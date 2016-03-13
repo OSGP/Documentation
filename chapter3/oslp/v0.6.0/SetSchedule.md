@@ -25,13 +25,16 @@ message SetScheduleResponse {
 ``` json
 message Schedule {
     required Weekday weekday = 1;
-    optional string startDay = 2; // [(nanopb).max_size = 9]; //- format YYYYMMDD UTC, indicates the range of a schedule entry, from startDay
-    optional string endDay = 3; // [(nanopb).max_size = 9]; // - format YYYYMMDD UTC, including endDay
+    optional string startDay = 2; // [(nanopb).max_size = 9]; //- Format YYYYMMDD UTC, indicates the range of a schedule entry, from startDay.
+    optional string endDay = 3; // [(nanopb).max_size = 9]; // - Format YYYYMMDD UTC, including endDay.
     required ActionTime actionTime = 4;
-    optional string time = 5; // [(nanopb).max_size = 7]; // - format hhmmss localtime set when actionTime = ABSOLUTETIME
-    optional Window window = 6; // window to wait for light sensor trigger
+    optional string time = 5; // [(nanopb).max_size = 7]; // - Format hhmmss localtime set when actionTime = ABSOLUTETIME.
+    optional Window window = 6;           // Window to wait for light sensor trigger.
     repeated LightValue value = 7; // [(nanopb).max_count = 6];
-    optional TriggerType triggerType = 8; // React to setTransition or switch astronomical
+    optional TriggerType triggerType = 8; // React to setTransition or switch astronomical.
+    optional uint32 minimumLightsOn = 9;  // Minimal time (in seconds) the lights should burn before deciding to switch the lights on.
+    optional uint32 index = 10;           // Index of schedule entry in the schedule list.
+    optional bool isEnabled = 11;         // Is this schedule entry enabled?
 }
 
 enum Weekday {
@@ -587,7 +590,305 @@ This schedule has one entry which switches light relay 1 (index: "\001") off at 
 
 
 
-#### Example 3: Tariff Schedule
+
+
+
+
+
+#### Example 3: Schedule using OSLP v0.6.0 specific properties
+
+SOAP messages:
+
+```xml
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:com="http://www.alliander.com/schemas/osgp/publiclighting/2014/10" 
+xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+   <soapenv:Header>   
+   <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
+   <com:UserName>Kevin</com:UserName>
+   <com:ApplicationName>SoapUI</com:ApplicationName>
+   </soapenv:Header>
+   <soapenv:Body>      
+      <sch:SetScheduleRequest>
+         <!--type: Identification-->
+         <sch:DeviceIdentification>device-01</sch:DeviceIdentification>
+         <!--1 to 50 repetitions:-->
+         <sch:Schedules>
+            <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
+            <sch:WeekDay>ALL</sch:WeekDay>
+            <!--type: ActionTimeType - enumeration: [ABSOLUTETIME,SUNRISE,SUNSET]-->
+            <sch:ActionTime>SUNRISE</sch:ActionTime>
+            <!--Optional:-->
+            <sch:TriggerWindow>
+               <!--type: long-->
+               <sch:minutesBefore>15</sch:minutesBefore>
+               <!--type: long-->
+               <sch:minutesAfter>15</sch:minutesAfter>
+            </sch:TriggerWindow>
+            <!--1 to 6 repetitions:-->
+            <sch:LightValue>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <sch:Index>0</sch:Index>
+               <!--type: boolean-->
+               <sch:On>false</sch:On>
+            </sch:LightValue>
+            <!--Optional:-->
+            <!--type: TriggerType - enumeration: [LIGHT_TRIGGER,ASTRONOMICAL]-->
+            <sch:TriggerType>LIGHT_TRIGGER</sch:TriggerType>
+            <!--Optional:-->
+            <!--type: int, index of this schedule-entry-->
+            <sch:Index>0</sch:Index>
+            <!--Optional:-->
+            <!--type: boolean-->
+            <sch:IsEnabled>true</sch:IsEnabled>
+            <!--Optional:-->
+            <!--type: int, minimal burning time in seconds-->
+            <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
+         </sch:Schedules>
+         
+         <sch:Schedules>
+            <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
+            <sch:WeekDay>ALL</sch:WeekDay>
+            <!--type: ActionTimeType - enumeration: [ABSOLUTETIME,SUNRISE,SUNSET]-->
+            <sch:ActionTime>SUNSET</sch:ActionTime>
+            <!--Optional:-->
+            <sch:TriggerWindow>
+               <!--type: long-->
+               <sch:minutesBefore>15</sch:minutesBefore>
+               <!--type: long-->
+               <sch:minutesAfter>15</sch:minutesAfter>
+            </sch:TriggerWindow>
+            <!--1 to 6 repetitions:-->
+            <sch:LightValue>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <sch:Index>0</sch:Index>
+               <!--type: boolean-->
+               <sch:On>true</sch:On>
+            </sch:LightValue>
+            <!--Optional:-->
+            <!--type: TriggerType - enumeration: [LIGHT_TRIGGER,ASTRONOMICAL]-->
+            <sch:TriggerType>LIGHT_TRIGGER</sch:TriggerType>
+            <!--Optional:-->
+            <!--type: int, index of this schedule-entry-->
+            <sch:Index>1</sch:Index>
+            <!--Optional:-->
+            <!--type: boolean-->
+            <sch:IsEnabled>true</sch:IsEnabled>
+            <!--Optional:-->
+            <!--type: int, minimal burning time in seconds-->
+            <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
+         </sch:Schedules>
+         
+         <sch:Schedules>
+            <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
+            <sch:WeekDay>ALL</sch:WeekDay>
+            <!--type: ActionTimeType - enumeration: [ABSOLUTETIME,SUNRISE,SUNSET]-->
+            <sch:ActionTime>ABSOLUTETIME</sch:ActionTime>
+            <!--Optional:-->
+            <!--type: string-->
+            <sch:Time>23:00:00</sch:Time>
+            <!--Optional:-->
+            <sch:TriggerWindow>
+               <!--type: long-->
+               <sch:minutesBefore>30</sch:minutesBefore>
+               <!--type: long-->
+               <sch:minutesAfter>30</sch:minutesAfter>
+            </sch:TriggerWindow>
+            <!--1 to 6 repetitions:-->
+            <sch:LightValue>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <sch:Index>1</sch:Index>
+               <!--type: boolean-->
+               <sch:On>false</sch:On>
+            </sch:LightValue>
+            <!--Optional:-->
+            <!--type: int, index of this schedule-entry-->
+            <sch:Index>2</sch:Index>
+            <!--Optional:-->
+            <!--type: boolean-->
+            <sch:IsEnabled>true</sch:IsEnabled>
+            <!--Optional:-->
+            <!--type: int, minimal burning time in seconds-->
+            <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
+         </sch:Schedules>
+         
+         <sch:Schedules>
+            <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
+            <sch:WeekDay>ALL</sch:WeekDay>
+            <!--type: ActionTimeType - enumeration: [ABSOLUTETIME,SUNRISE,SUNSET]-->
+            <sch:ActionTime>ABSOLUTETIME</sch:ActionTime>
+            <!--Optional:-->
+            <!--type: string-->
+            <sch:Time>07:00:00</sch:Time>
+            <!--Optional:-->
+            <sch:TriggerWindow>
+               <!--type: long-->
+               <sch:minutesBefore>30</sch:minutesBefore>
+               <!--type: long-->
+               <sch:minutesAfter>30</sch:minutesAfter>
+            </sch:TriggerWindow>
+            <!--1 to 6 repetitions:-->
+            <sch:LightValue>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <sch:Index>1</sch:Index>
+               <!--type: boolean-->
+               <sch:On>true</sch:On>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <!--<sch:DimValue>100</sch:DimValue>-->
+            </sch:LightValue>
+            <!--Optional:-->
+            <!--type: int, index of this schedule-entry-->
+            <sch:Index>3</sch:Index>
+            <!--Optional:-->
+            <!--type: boolean-->
+            <sch:IsEnabled>true</sch:IsEnabled>
+            <!--Optional:-->
+            <!--type: int, minimal burning time in seconds-->
+            <sch:minimumLightsOn>300</sch:minimumLightsOn>
+         </sch:Schedules>
+      </sch:SetScheduleRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:SetScheduleAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns2:AsyncResponse>
+            <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160313162236547</ns3:CorrelationUid>
+            <ns3:DeviceId>device-01</ns3:DeviceId>
+         </ns2:AsyncResponse>
+      </ns2:SetScheduleAsyncResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+   <soapenv:Header>
+      <ns:ApplicationName>SoapUI</ns:ApplicationName>
+      <ns:UserName>Kevin</ns:UserName>
+      <ns:OrganisationIdentification>LianderNetManagement</ns:OrganisationIdentification>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:SetScheduleAsyncRequest>
+         <ns1:AsyncRequest>
+            <ns:CorrelationUid>LianderNetManagement|||device-01|||20160313162236547</ns:CorrelationUid>
+            <ns:DeviceId>device-01</ns:DeviceId>
+         </ns1:AsyncRequest>
+      </ns1:SetScheduleAsyncRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ns2:SetScheduleResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+         <ns2:Result>OK</ns2:Result>
+      </ns2:SetScheduleResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+OSLP SetScheduleRequest sent to 'device-01':
+```json
+setScheduleRequest {
+  schedules {
+    weekday: ALL
+    actionTime: SUNRISE
+    window {
+      minutesBefore: 15
+      minutesAfter: 15
+    }
+    value {
+      index: "\000"
+      on: false
+    }
+    triggerType: LIGHT_TRIGGER
+    index: 0
+    isEnabled: true
+  }
+  schedules {
+    weekday: ALL
+    actionTime: SUNSET
+    window {
+      minutesBefore: 15
+      minutesAfter: 15
+    }
+    value {
+      index: "\000"
+      on: true
+    }
+    triggerType: LIGHT_TRIGGER
+    index: 1
+    isEnabled: true
+  }
+  schedules {
+    weekday: ALL
+    actionTime: ABSOLUTETIME
+    time: "230000"
+    window {
+      minutesBefore: 30
+      minutesAfter: 30
+    }
+    value {
+      index: "\001"
+      on: false
+    }
+    index: 2
+    isEnabled: true
+  }
+  schedules {
+    weekday: ALL
+    actionTime: ABSOLUTETIME
+    time: "070000"
+    window {
+      minutesBefore: 30
+      minutesAfter: 30
+    }
+    value {
+      index: "\001"
+      on: true
+    }
+    minimumLightsOn: 300
+    index: 3
+    isEnabled: true
+  }
+  scheduleType: LIGHT
+}
+
+```
+
+OSLP SetScheduleResponse from 'device-01':
+```json
+setScheduleResponse {
+  status: OK
+}
+
+```
+
+Description for this schedule:
+
+This schedule consists of 1 page, and uses 'minimumLightOn' to indicate a minimal burning time in seconds. Further it uses 'index' and 'isEnabled' variables for the Schedule struct, to indicate what index this schedule-entry has within the list of schedule-entries and whether or not the schedule-entry is enabled.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Example 4: Tariff Schedule
 
 SOAP Request Message for Platform web-service:
 
