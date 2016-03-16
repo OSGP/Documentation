@@ -36,7 +36,7 @@
 
 #### SmartMeteringInstallation
 - **[AddDevice](./smartmetering/AddDevice.md)** is a request to add a device to the OSGP database.
-- **[GetAddDeviceReponse](./smartmetering/GetAddDeviceReponse.md)** is a request which returns the response from the [AddDevice](./smartmetering/AddDevice.md) request.
+- **[GetAddDeviceResponse](./smartmetering/GetAddDeviceResponse.md)** is a request which returns the response from the [AddDevice](./smartmetering/AddDevice.md) request.
 
 #### SmartMeteringManagement
 - **[FindEvents](./smartmetering/FindEvents.md)** is a request to retrieve events logging from a device.

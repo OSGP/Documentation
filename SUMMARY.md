@@ -62,7 +62,7 @@
       * [ReplaceKeys](chapter3/smartmetering/ReplaceKeys.md)
       * [GetReplaceKeysResponse](chapter3/smartmetering/GetReplaceKeysResponse.md)
       * [AddDevice](chapter3/smartmetering/AddDevice.md)
-      * [GetAddDeviceReponse](chapter3/smartmetering/GetAddDeviceReponse.md)
+      * [GetAddDeviceResponse](chapter3/smartmetering/GetAddDeviceResponse.md)
       * [FindEvents](chapter3/smartmetering/FindEvents.md)
       * [GetFindEventsResponse](chapter3/smartmetering/GetFindEventsResponse.md)
       * [GetDevices](chapter3/smartmetering/GetDevices.md)
