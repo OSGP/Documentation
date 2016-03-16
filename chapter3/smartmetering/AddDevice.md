@@ -17,7 +17,7 @@ AddDevice is a request to add a device to the OSGP database. The request needs t
 - Authentication_key 
 - Delivery_date
 
-All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md)
 
 [GetAddDeviceResponse](GetAddDeviceResponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the AddDevice request.
 
