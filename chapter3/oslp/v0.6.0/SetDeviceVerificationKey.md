@@ -2,7 +2,7 @@
 
 ### Description
 
-Request to switch to a new Platform public key used for verifying OSLP envelopes by the device. The base-64 encoded version of the key will be sent to the device, which is equivilant to the content of a PEM file (only the certificate chunk, not the headers).
+Request to switch to a new Platform public key used for verifying OSLP envelopes by the device. The base-64 encoded version of the key will be sent to the device, which is equivalent to the content of a PEM file (only the certificate chunk, not the headers).
 
 ### Message definitions
 
