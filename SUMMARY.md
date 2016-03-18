@@ -76,6 +76,7 @@
       * [ReadAlarmRegister](chapter3/smartmetering/ReadAlarmRegister.md)
       * [GetReadAlarmRegisterResponse](chapter3/smartmetering/GetReadAlarmRegisterResponse.md)
       * [RetrievePushNotificationAlarm](chapter3/smartmetering/RetrievePushNotificationAlarm.md)
+      * [ResponseMessages](chapter3/smartmetering/ResponseMessages.md)
 * [Open Source Community](chapter4/README.md)
 * [Support](chapter5/README.md)
 * [License](chapter6/README.md)
