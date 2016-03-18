@@ -7,7 +7,7 @@ Sub Station Lighting Device, a smart grid device that is used to control and mon
 Public Street Lighting Device, a smart grid device that is used to control and monitor a single street light.
 
 # OSLP
-Open Source Lighting Protocol, the protocol used to communicate with SSLD and other smart grid devices.
+Open Street Light Protocol, the protocol used to communicate with SSLD and other smart grid devices.
 
 # DLMS
 Device Language Message Specification, the protocol used to communicate with Smart Meters and other smart grid devices.

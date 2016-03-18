@@ -27,3 +27,7 @@ For the OSLP implementation, 2 components are used. The first component is the p
 #### 3.2.5.2 DLMS
 
 The DLMS implementation is work in progress.
+
+#### 3.2.5.2 61850
+
+The 61850 implementation is work in progress.
