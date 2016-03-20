@@ -19,7 +19,7 @@ We ask each of our contributors to sign our contributor license agreement (CLA).
 To submit changes to the OSGP branch:
 1. Create a fork of the OSGP repo you will be working in
 2. Make and commit your changes to your fork
-3. Create a pull request to merge the changes into the right branch (see 4.2.1 for the branching strategy)
+3. Create a pull request to merge the changes into the right branch (see 4.1.4 for the branching strategy)
 If the changes fix a bug, mention the issue number in the commit message or pull request message (example: fixes
 101, solved 87). If no ticket exists, create one beforehand. Afterwards, please update the relevant documentation in this GitBook.
 
