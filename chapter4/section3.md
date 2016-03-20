@@ -1,34 +1,34 @@
 ## 4.3 Governance
 
-With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy to prevent unwanted dictators and everlasting discussions. The basic idea is to make decisions based on consensus. If this takes too long, the community council can be asked to make a decision.
+With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy in order to have a balanced decision-making process and to prevent unwanted dictators and everlasting discussions. The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the community council has the authority to make a decision.
+
+The governance and rules should be respected.
 
 ### Community council
-This council can make decisions on all community related subject. The community council can be elected by the community members (when the need is there). The community council consists of 5 people. 1 is seat is taken by the OSGP Foundation (once started) for alignment between the foundation and the online community.
+The community council consists of 5 members and has the authority to make decisions on all community related subjects.
 
 The community council is responsible for:
+• General ambitions, objectives and goals
+• Principles and understandings
+• Governance and consultation bodies
+• Guidelines and procedures and tool selection
+• Contribution (process) of individual members
+• Architectural and (development) infrastructural choices
+• Raise subjects/issues that are important for the direction/development of the community
 
-General governance
-- Make sure that people can contribute
-- How people can contribute
-- Infrastructure choices
-- Community wide principles
-- Procedures
-- Governance itself
-
-Direction governance
-- Decisions about goals and ambitions
-- address concerns
-
-When the community grows, community council members can be elected. If more counsils are needed, the community counsil can decide to start more (sub) councils. If you like to join the community council, contact us!
+When the community grows, members of the community council can be elected. If the situation demands or requires it, the community council has the ability to establish sub councils for a specific subject, area of domain. One member (seat) represents the OSGP Foundation (once started) for alignment between the objectives of the foundation and the direction of the development of the online community.
 
 The community council consist of the following members:
-* [Kevin Smeets](https://github.com/kevinsmeets)    Maintainer
-* [Bart van der Zwet](https://github.com/bvdzwet)   Maintainer
-* [Sander Jansen](https://github.com/Sander3003)    Open source consultant
-* Thorben Meijer                                    Marketing expert
-* OSGP foundation seat
+• [Sander Jansen](https://github.com/Sander3003) - Open source consultant – Chairman 
+• [Paul Houtman](https://github.com/phoutman) – Lead Architect
+• [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
+• [Thorben Meijer](https://github.com/thorbenmeijer) - Marketing expert
+• Vacancy - OSGP foundation seat
 
+If you would like to join the community council, please contact us! Mention @OSGP/communitycouncil in an github issue.
 The (online) community council meetings will happen once a month.
+
+With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy to prevent unwanted dictators and everlasting discussions. The basic idea is to make decisions based on consensus. If this takes too long, the community council can be asked to make a decision.
 
 ###Maintainers
 Maintainers are responsible for maintaining parts of the code-base. Maintainers have the following responsibilities
