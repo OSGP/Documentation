@@ -167,7 +167,7 @@ Make sure to check the development branch for the latest version!
 ![alt text](./installation-script-screenshots/52.png)
 
 ### 3.3.11 Importing Maven Projects into Eclipse
-Open eclipse (the executable can be found in the folder /home/dev/Downloads/eclipse*/eclipse) and import the projects: File -> Import -> Existing Maven Projects, browse to folder /home/dev/Sources and start with the Shared project, then the Platform project and then the Protocol-Adapter-OSLP project.
+Open eclipse (the executable can be found in the folder /home/dev/Downloads/eclipse*/eclipse) and import the projects: File -> Import -> Existing Maven Projects, browse to folder /home/dev/Sources and start with the Shared project, then the Platform project, then the Protocol-Adapter-OSLP project and then the Protocol-Adapter-DLMS project.
 
 ![alt text](./installation-script-screenshots/54.png)
 

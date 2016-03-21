@@ -22,4 +22,4 @@ Dutch Smart Meter Requirements, a set of rules that describe how to use Smart Me
 OSGP offers a Spring Framework SOAP Webservice.
 
 # Domain driven design
-See [Wikipedia] (https://en.wikipedia.org/wiki/Domain-driven_design)
+See [Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)
