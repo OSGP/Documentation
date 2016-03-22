@@ -12,7 +12,7 @@
 * [Developer's Guide](chapter3/README.md)
    * [Developers 101](chapter3/section1.md)
    * [Developer's guide per component](chapter3/section2.md)
-   * [Installation guide](chapter3/section3.md)
+   * [Installation guide](chapter3/Installationguide.md.md)
       * [Setup Virtual Machine](chapter3/Setup-VM.md)
       * [Install Ubuntu](chapter3/InstallUbuntu.md)
       * [Setup OSGP](chapter3/setupOSGP.md)
