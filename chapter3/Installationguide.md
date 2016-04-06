@@ -1,7 +1,9 @@
 ## 3.3 Installation Script
 
 To get started quickly, an [Installation Script](https://github.com/OSGP/Config) has been created.
-Below, all steps involved in using the script are shown in screenshots.
+Below, all steps involved in using the script are shown in the paragraphs with screenshots. 
+Please follow the steps carefully.
+
 These are the steps:
 - Creating a Virtual Machine (or skip this step if a 'real' installation is preferred)
 - Installing Ubuntu
@@ -27,4 +29,3 @@ These are the steps:
 - Using 'SetLight' SOAP Request to Switch the Light On
 
 It is recommended to take a look at the [readme.md in the config repository](https://github.com/OSGP/Config/blob/development/README.md)!
-
