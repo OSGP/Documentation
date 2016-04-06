@@ -16,7 +16,7 @@
       * [Setup Virtual Machine](chapter3/Setup-VM.md)
       * [Install Ubuntu](chapter3/InstallUbuntu.md)
       * [Setup OSGP](chapter3/setupOSGP.md)
-      * [Test OPSGP installation](chapter3/testOSGP.md)
+      * [Test OSGP installation](chapter3/testOSGP.md)
    * [OSLP](chapter3/section4.md)
       * [OSLP v0.5.1](chapter3/oslp/oslp-v0.5.1.md)
          * [RegisterDevice](chapter3/oslp/v0.5.1/RegisterDevice.md)
