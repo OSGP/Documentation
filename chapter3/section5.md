@@ -1,6 +1,13 @@
 ## 3.5 SmartMetering Documentation
 
-### 3.5.1 Messages
+### 3.5.1 Generic functionality
+
+- **[priority](./smartmetering/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
+- **[scheduling](./smartmetering/scheduling.md)** requests can be scheduled for a certain time.
+- **[bundeling](./smartmetering/bundeling.md)** requests can be combined in a bundle.
+
+
+### 3.5.2 Messages
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmetering/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
