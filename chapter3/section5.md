@@ -5,10 +5,6 @@
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmetering/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
 - **[GetSynchronizeTimeResponse](./smartmetering/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./smartmetering/SynchronizeTime.md) request.
-- **[SendWakeupSms](./smartmetering/SendWakeupSms.md)** is a request to wake up the E-meter by SMS when it is sleeping. When the device becomes awake, communication is possible.
-- **[GetSendWakeupSmsResponse](./smartmetering/GetSendWakeupSmsResponse.md)** is a request which returns the response from the [SendWakeupSms](./smartmetering/SendWakeupSms.md) and the messageID from the SMS message.
-- **[GetSmsDetails](./smartmetering/GetSmsDetails.md)** is a request to receive information about the sent SMS and its delivery status from [SendWakeupSms](./smartmetering/SendWakeupSms.md), it needs the messageID which is obtained by the [GetSendWakeupSmsResponse](./smartmetering/GetSendWakeupSmsResponse.md) request.
-- **[GetGetSmsDetailsResponse](./smartmetering/GetGetSmsDetailsResponse.md)** is a request with the response from the [GetSmsDetails](./smartmetering/GetSmsDetails.md) request.
 - **[RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
 - **[GetRetrieveConfigurationObjectsResponse](./smartmetering/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md) request.
 
