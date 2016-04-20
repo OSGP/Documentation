@@ -9,6 +9,8 @@ Before code is merged it needs to comply with a number of guidelines:
 2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
 3. Fixed/added unit tests where applicable
 4. Javadocs added where applicable
+5. Accepting pull-requests with SonarQube reports "Blocker" and "Critical" and are not allowed
+6. Comply with International open standards where possible (e.g. IEC standards)
 
 ### 4.1.2 Contributor License Agreement
 
