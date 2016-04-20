@@ -94,6 +94,8 @@
       * [GetReadAlarmRegisterResponse](chapter3/smartmetering/GetReadAlarmRegisterResponse.md)
       * [RetrievePushNotificationAlarm](chapter3/smartmetering/RetrievePushNotificationAlarm.md)
       * [ResponseMessages](chapter3/smartmetering/ResponseMessages.md)
+      * [GetAssociationLnObjects](chapter3/smartmetering/GetAssociationLnObjects.md)
+      * [GetGetAssociationLnObjectsResponse](chapter3/smartmetering/GetGetAssociationLnObjectsResponse.md)
 * [Open Source Community](chapter4/README.md)
    * [Contributing to the code](chapter4/section1.md)
    * [Communication and Contact](chapter4/section2.md)
