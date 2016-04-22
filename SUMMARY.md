@@ -1,6 +1,6 @@
 # Summary
 
-* [General Overview](chapter1/README.md)
+* [General technical overview](chapter1/README.md)
    * [Architecture introduction](chapter1/section1.md)
    * [Architecture Principles](chapter1/section2.md)
    * [Platform components description](chapter1/section3.md)
