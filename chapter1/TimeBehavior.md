@@ -11,3 +11,5 @@ Time behavior is mainly significant in the Flexovl application when a lot of dev
 - When the SSLD's are disabled the PSLDs cannot be addressed
 
 Because of these points of interest we use message queueing combined with a retry mechanism of delayed delivery.
+
+The platform and devices use UTC time. The OSLP protocol between platform and devices uses UTC time as well.
