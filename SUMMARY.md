@@ -1,10 +1,10 @@
 # Summary
 
 * [Technical Overview](chapter1/README.md)
-   * [Architecture](chapter1/section1.md)
-   * [Principles](chapter1/section2.md)
-   * [Overview per component](chapter1/section3.md)
-   * [Logical data model](chapter1/section4.md)
+   * [Architecture introduction](chapter1/section1.md)
+   * [Architecture Principles](chapter1/section2.md)
+   * [Platform components description](chapter1/section3.md)
+   * [Logical Authorisation Model](chapter1/section4.md)
    * [Non-functional overview](chapter1/section5.md)
    * [Models and views](chapter1/section6.md)
    * [Use cases](chapter1/section7.md)
