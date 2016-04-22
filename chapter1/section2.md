@@ -1,4 +1,4 @@
-## 1.2 Principles
+## 1.2 Architecture Principles
 
 This chapter gives an overview of the principles used defining and implementing the architecture. The following principles were applied:
 
