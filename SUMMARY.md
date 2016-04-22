@@ -1,6 +1,6 @@
 # Summary
 
-* [Technical Overview](chapter1/README.md)
+* [General Overview](chapter1/README.md)
    * [Architecture introduction](chapter1/section1.md)
    * [Architecture Principles](chapter1/section2.md)
    * [Platform components description](chapter1/section3.md)
@@ -8,7 +8,7 @@
    * [Non-functional overview](chapter1/section5.md)
    * [Models and views](chapter1/section6.md)
    * [Use cases](chapter1/section7.md)
-* [User's Guide](chapter2/README.md)
+* [General User's Guide](chapter2/README.md)
 * [Developer's Guide](chapter3/README.md)
    * [Developers 101](chapter3/section1.md)
    * [Developer's guide per component](chapter3/section2.md)
