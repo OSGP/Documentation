@@ -6,6 +6,7 @@
    * [Platform components description](chapter1/section3.md)
    * [Logical Authorisation Model](chapter1/section4.md)
    * [Non-functional overview](chapter1/section5.md)
+      * [TimeBehavior](chapter1/TimeBehavior.md)
    * [Models and views](chapter1/section6.md)
    * [Use cases](chapter1/section7.md)
 * [General User's Guide](chapter2/README.md)
