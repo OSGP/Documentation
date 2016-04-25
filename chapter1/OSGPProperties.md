@@ -10,7 +10,7 @@
 - **Independent** of (cloud) hosting infrastructure
 - By delinking the chain and the use of open standards and the open source license, everybody can build their applications on top of OSGP.
 - OSGP is **optimized** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
-- OSGP simplifies the implementation of smart devices resulting in a shorter time-to-market by having build-in **device management** features
+- OSGP simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
 - The platform supports various IP data communication infrastructures to communicate with the devices (internet, lan, GPRS, CDMA, UMTS, etc.).
 - OSGP also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
 - OSGP Supports **multiple protocols**
