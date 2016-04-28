@@ -4,7 +4,7 @@
 
 - **[priority](./smartmetering/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 - **[scheduling](./smartmetering/scheduling.md)** requests can be scheduled for a certain time.
-- **[bundeling](./smartmetering/bundeling.md)** requests can be combined in a bundle.
+- **[bundeling](./smartmetering/bundeling.md)** requests can be combined in a [Bundle](./smartmetering/Bundle.md).
 
 
 ### 3.5.2 Messages
