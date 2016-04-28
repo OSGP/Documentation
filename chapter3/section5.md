@@ -62,3 +62,6 @@
 #### SmartMeteringNotification
 - **[SendNotification](./smartmetering/SendNotification.md)** is a request to let Webapps know there is a result ready to retrieve from the platform.
 
+#### SmartMeteringBundle
+- **[Bundle](./smartmetering/Bundle.md)**  is a special request in which one or more single request(s) to a specific device can be bundled. 
+  All request sent to this device make use of one communication channel, which may improve performance considerably.
