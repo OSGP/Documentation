@@ -10,27 +10,27 @@ The response behavior is described in [ResponseMessages](./ResponseMessages.md).
 
 Currently, the following actions are supported:
 
-* FindEventsQuery see [FindEvents](./FindEvents.md)
-* SpecialDaysRequestData see [SetSpecialDays](./SetSpecialDays.md)
-* ReadAlarmRegisterData see [ReadAlarmRegister](./ReadAlarmRegister.md)
-* ActualMeterReadsData see [ReadAlarmRegister](./ReadAlarmRegister.md)
-* ActualMeterReadsGasData see [ActualMeterReadsGas](./ActualMeterReadsGas.md)
-* GetAdministrativeStatusData see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
-* PeriodicMeterReadsRequestData see [PeriodicMeterReads](./PeriodicMeterReads.md)
-* PeriodicMeterReadsGasRequestData see [PeriodicMeterReadsGas](./PeriodicMeterReadsGas.md)
-* SetAdministrativeStatusTypeData see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
-* ActivityCalendarDataType see [SetActivityCalendar](./SetActivityCalendar.md)
-* SetEncryptionKeyExchangeOnGMeterRequestData see [SetEncryptionKeyExchangeOnGMeter](./SetEncryptionKeyExchangeOnGMeter.md)
-* SetAlarmNotificationsRequestData see [SetAlarmNotifications](./SetAlarmNotifications.md)
-* SetConfigurationObjectRequestData see [SetConfigurationObject](./SetConfigurationObject.md)
-* SetPushSetupAlarmRequestData see [SetPushSetupAlarm](./SetPushSetupAlarm.md)
-* SetPushSetupSmsRequestData see [GetSetPushSetupSmsResponse](./GetSetPushSetupSmsResponse.md)
-* SynchronizeTimeRequestData see [SynchronizeTime](./SynchronizeTime.md)
-* GetConfigurationRequestData
-* GetFirmwareVersionRequestData
-* SpecificConfigurationObjectRequestData see [SpecificConfigurationObject](./SpecificConfigurationObject.md)
-* KeySet
-* GetAssociationLnObjectsRequestData
+* FindEventsRequest see [FindEvents](./FindEvents.md)
+* GetSpecialDaysRequest see [SetSpecialDays](./SetSpecialDays.md)
+* ReadAlarmRegisterRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
+* GetActualMeterReadsRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
+* GetActualMeterReadsGasRequest see [ActualMeterReadsGas](./ActualMeterReadsGas.md)
+* GetAdministrativeStatusRequest see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
+* GetPeriodicMeterReadsRequest see [PeriodicMeterReads](./PeriodicMeterReads.md)
+* GetPeriodicMeterReadsGasRequest see [PeriodicMeterReadsGas](./PeriodicMeterReadsGas.md)
+* SetAdministrativeStatusRequest see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
+* SetActivityCalendarRequest see [SetActivityCalendar](./SetActivityCalendar.md)
+* SetEncryptionKeyExchangeOnGMeterRequest see [SetEncryptionKeyExchangeOnGMeter](./SetEncryptionKeyExchangeOnGMeter.md)
+* SetAlarmNotificationsRequest see [SetAlarmNotifications](./SetAlarmNotifications.md)
+* SetConfigurationObjectRequest see [SetConfigurationObject](./SetConfigurationObject.md)
+* SetPushSetupAlarmRequest see [SetPushSetupAlarm](./SetPushSetupAlarm.md)
+* SetPushSetupSmsRequest see [GetSetPushSetupSmsResponse](./GetSetPushSetupSmsResponse.md)
+* SynchronizeTimeRequest see [SynchronizeTime](./SynchronizeTime.md)
+* GetConfigurationRequest
+* GetFirmwareVersionRequest
+* GetSpecificConfigurationObjectRequest see [SpecificConfigurationObject](./SpecificConfigurationObject.md)
+* SetKeysRequest
+* GetAssociationLnObjectsRequest
 
 ### References
 
