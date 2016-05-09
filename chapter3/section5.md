@@ -14,6 +14,8 @@
 - **[GetSynchronizeTimeResponse](./smartmetering/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./smartmetering/SynchronizeTime.md) request.
 - **[RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
 - **[GetRetrieveConfigurationObjectsResponse](./smartmetering/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md) request.
+- **[GetSpecificConfigurationObject](./smartmetering/GetSpecificConfigurationObject.md)** is a request to obtain a specific object from an E-meter. 
+- **[GetSpecificConfigurationObjectResponse](./smartmetering/GetSpecificConfigurationObjectResponse.md)** is a request which returns the response from the [GetSpecificConfigurationObject](./smartmetering/GetSpecificConfigurationObject.md) request.
 
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./smartmetering/SetSpecialDays.md)** is a request to set a dayId profile and its tariffs for a specific date on a device.
