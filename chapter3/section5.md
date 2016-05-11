@@ -90,5 +90,3 @@ In these java classes you can add fields of type DataObject that you annotate wi
 The value of the field will be the response to get(AttributeAddress...)
 
 You can also annotate methods with or without a DataObject return value and with or without a DataObject parameter: @CosemMethod(id = ..., consumes = Type.x)
-
-The classes together form the behaviour of a certain device and should be registered with a logical device.
