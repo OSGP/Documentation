@@ -67,3 +67,26 @@
 #### SmartMeteringBundle
 - **[Bundle](./smartmetering/Bundle.md)**  is a special request in which one or more single request(s) to a specific device can be bundled. 
   All request sent to this device make use of one communication channel, which may improve performance considerably.
+
+### 3.5.3 DLMS device simulator
+
+The library that is used to connect to DLMS devices contains functionality to build a simulator for a device. The library offers the following core functionality.
+
+- zero or more servers can be started on a host (different ports)
+- zero or more logical devices can be registered with a server (different device id)
+- zero or more annotated objects can be registered with a logical device
+- these objects define available dlms classes, ObisCodes, attributeIds and methods for the device and can contain any logic
+- authentication and encryption are supported
+
+If you want to simulate a certain device you will prepare annotated classes and register instances of these with a logical device. Because you create plain Java you can make use of all functionality Java
+offers, for example databases. To try and make the simulation more realistic you may build in connection timeouts etc.
+
+#### Usage
+
+For each combination of a cosem class and obiscode you create a java class that you annotate with @CosemClass(id = ..., obis = "x.x.x.x.x.255")
+
+In these java classes you can add fields of type DataObject that you annotate with @CosemAttribute(id = ..., type = Type.x)
+
+The value of the field will be the response to get(AttributeAddress...)
+
+You can also annotate methods with or without a DataObject return value and with or without a DataObject parameter: @CosemMethod(id = ..., consumes = Type.x)
