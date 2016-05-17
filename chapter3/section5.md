@@ -1,14 +1,17 @@
 ## 3.5 SmartMetering Documentation
 
-### 3.5.1 Messages
+### 3.5.1 Generic functionality
+
+- **[priority](./smartmetering/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
+- **[scheduling](./smartmetering/scheduling.md)** requests can be scheduled for a certain time.
+- **[bundeling](./smartmetering/bundeling.md)** requests can be combined in a [Bundle](./smartmetering/Bundle.md).
+
+
+### 3.5.2 Messages
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmetering/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
 - **[GetSynchronizeTimeResponse](./smartmetering/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./smartmetering/SynchronizeTime.md) request.
-- **[SendWakeupSms](./smartmetering/SendWakeupSms.md)** is a request to wake up the E-meter by SMS when it is sleeping. When the device becomes awake, communication is possible.
-- **[GetSendWakeupSmsResponse](./smartmetering/GetSendWakeupSmsResponse.md)** is a request which returns the response from the [SendWakeupSms](./smartmetering/SendWakeupSms.md) and the messageID from the SMS message.
-- **[GetSmsDetails](./smartmetering/GetSmsDetails.md)** is a request to receive information about the sent SMS and its delivery status from [SendWakeupSms](./smartmetering/SendWakeupSms.md), it needs the messageID which is obtained by the [GetSendWakeupSmsResponse](./smartmetering/GetSendWakeupSmsResponse.md) request.
-- **[GetGetSmsDetailsResponse](./smartmetering/GetGetSmsDetailsResponse.md)** is a request with the response from the [GetSmsDetails](./smartmetering/GetSmsDetails.md) request.
 - **[RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
 - **[GetRetrieveConfigurationObjectsResponse](./smartmetering/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./smartmetering/RetrieveConfigurationObjects.md) request.
 
@@ -59,3 +62,6 @@
 #### SmartMeteringNotification
 - **[SendNotification](./smartmetering/SendNotification.md)** is a request to let Webapps know there is a result ready to retrieve from the platform.
 
+#### SmartMeteringBundle
+- **[Bundle](./smartmetering/Bundle.md)**  is a special request in which one or more single request(s) to a specific device can be bundled. 
+  All request sent to this device make use of one communication channel, which may improve performance considerably.
