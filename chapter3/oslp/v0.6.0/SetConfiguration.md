@@ -176,7 +176,7 @@ Soap requests and responses sent to and from platform:
             <ns1:TimeSyncFrequency>86400</ns1:TimeSyncFrequency>
             <!--Optional:-->
             <ns1:DeviceFixedIp>
-               <ns1:IpAddress>192.168.0.110</ns1:IpAddress>
+               <ns1:IpAddress>192.168.0.100</ns1:IpAddress>
                <ns1:NetMask>255.255.255.0</ns1:NetMask>
                <ns1:GateWay>192.168.0.1</ns1:GateWay>
             </ns1:DeviceFixedIp>
