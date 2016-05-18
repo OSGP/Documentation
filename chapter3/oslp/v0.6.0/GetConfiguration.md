@@ -191,7 +191,7 @@ Soap requests and responses sent to and from platform:
             <ns2:LongTermHistoryIntervalType>DAYS</ns2:LongTermHistoryIntervalType>
             <ns2:TimeSyncFrequency>86400</ns2:TimeSyncFrequency>
             <ns2:DeviceFixedIp>
-               <ns2:IpAddress>192.168.0.110</ns2:IpAddress>
+               <ns2:IpAddress>192.168.0.100</ns2:IpAddress>
                <ns2:NetMask>255.255.255.0</ns2:NetMask>
                <ns2:GateWay>192.168.0.1</ns2:GateWay>
             </ns2:DeviceFixedIp>
