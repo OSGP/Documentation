@@ -1,6 +1,6 @@
 ## 3.5 SmartMetering Documentation (Beta version)
 
-This chapter describes the SmartMetering webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
+This chapter describes the SmartMetering webservices (3.5.1 & 3.5.2) and the DLMS device simulator (3.5.3). Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
 
 ### 3.5.1 Generic functionality
 
