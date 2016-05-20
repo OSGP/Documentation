@@ -1,6 +1,6 @@
 ## 3.5 SmartMetering Documentation (Beta version)
 
-This chapter describes the SmartMetering webservices. Currently the webserivces of the beta version are described, since the webservices have not yet offically been released.
+This chapter describes the SmartMetering webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
 
 ### 3.5.1 Generic functionality
 
