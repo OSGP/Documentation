@@ -55,3 +55,4 @@ For the application of BDD the following frameworks are used:
 
 - GivWenZen, extension for FitNesse to use Given When Then scenario's
 - FitNesse, acceptance testing framework, makes use of wiki.
+- Cucumber, automated acceptance testing, based on scenario's from stories.
