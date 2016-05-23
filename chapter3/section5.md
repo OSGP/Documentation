@@ -80,8 +80,7 @@ The library that is used to connect to DLMS devices contains functionality to bu
 - these objects define available dlms classes, ObisCodes, attributeIds and methods for the device and can contain any logic
 - authentication and encryption are supported
 
-If you want to simulate a certain device you will prepare annotated classes and register instances of these with a logical device. Because you create plain Java you can make use of all functionality Java
-offers, for example databases. To try and make the simulation more realistic you may build in connection timeouts etc.
+If you want to simulate a certain device you will prepare annotated classes and register instances of these with a logical device. Because you create plain Java you can make use of all functionality Java offers, for example databases. To try and make the simulation more realistic you may build in connection timeouts etc.
 
 #### Usage
 
