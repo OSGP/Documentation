@@ -89,6 +89,19 @@ For each combination of a cosem class and obiscode you create a java class that 
 
 In these java classes you can add fields of type DataObject that you annotate with @CosemAttribute(id = ..., type = Type.x)
 
-The value of the field will be the response to get(AttributeAddress...)
+For example:
+
+```@CosemClass(id = 3, obis = "1.0.1.8.0.255")
+public class ImportValue {
+
+    @CosemAttribute(id = 2, type = Type.DOUBLE_LONG_UNSIGNED)
+    private DataObject d1 = DataObject.newUInteger32Data(10001);
+
+    @CosemAttribute(id = 3, type = Type.STRUCTURE)
+    private DataObject d2 = DataObject.newStructureData(DataObject.newInteger8Data((byte) -2),
+            DataObject.newInteger8Data((byte) 30));
+}```
+
+The value of the field will be the response to get(AttributeAddress...) that is fired from osgp CommandExecutors
 
 You can also annotate methods with or without a DataObject return value and with or without a DataObject parameter: @CosemMethod(id = ..., consumes = Type.x)
