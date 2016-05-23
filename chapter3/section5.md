@@ -125,7 +125,7 @@ For example:
 Such a method will be called when osgp fires ClientConnection.action, the DataObject that may be returned will become available in osgp on the MethodResult object.
 
 ####Per command design
-The suggested way to implement request/response for a command in the simulator is as follows.
+The way to implement request/response for a command in the simulator is as follows.
 - create a separate package per command
 - create a java class for each combination of classid and obiscode
-- in this class implement the attribute id's and the methods that will be requested.
+- in this class implement the attribute id's and the methods that will be requested as explained above
