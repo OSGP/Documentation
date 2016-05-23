@@ -105,3 +105,16 @@ public class ImportValue {
 The value of the field will be the response to get(AttributeAddress...) that is fired from osgp CommandExecutors
 
 You can also annotate methods with or without a DataObject return value and with or without a DataObject parameter: @CosemMethod(id = ..., consumes = Type.x)
+
+For example:
+
+    ```@CosemMethod(id = 1)
+    public void hello() throws IllegalMethodAccessException {
+        System.out.println("Has been called");
+        return;
+    }
+
+    @CosemMethod(id = 2, consumes = Type.OCTET_STRING)
+    public DataObject hello2(DataObject datO) throws IllegalMethodAccessException {
+        throw new IllegalMethodAccessException(MethodResultCode.OTHER_REASON);
+    }```
