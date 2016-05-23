@@ -103,7 +103,7 @@ public class ImportValue {
 }
 ```
 
-The value of the field will be the response to get(AttributeAddress...) that is fired from osgp CommandExecutors.
+The value of the field will be the response to get(AttributeAddress...) that is fired from osgp CommandExecutors. NOTE that these values can also be set! For example using the ClientConsole.
 
 You can also annotate methods with or without a DataObject return value and with or without a DataObject parameter: @CosemMethod(id = ..., consumes = Type.x)
 
@@ -123,3 +123,9 @@ For example:
 
 ```
 Such a method will be called when osgp fires ClientConnection.action, the DataObject that may be returned will become available in osgp on the MethodResult object.
+
+####Per command design
+The suggested way to implement request/response for a command in the simulator is as follows.
+- create a separate package per command
+- create a java class for each combination of classid and obiscode
+- in this class implement the attribute id's and the methods that will be requested.
