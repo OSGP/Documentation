@@ -91,7 +91,8 @@ In these java classes you can add fields of type DataObject that you annotate wi
 
 For example:
 
-```@CosemClass(id = 3, obis = "1.0.1.8.0.255")
+```
+@CosemClass(id = 3, obis = "1.0.1.8.0.255")
 public class ImportValue {
 
     @CosemAttribute(id = 2, type = Type.DOUBLE_LONG_UNSIGNED)
@@ -100,7 +101,8 @@ public class ImportValue {
     @CosemAttribute(id = 3, type = Type.STRUCTURE)
     private DataObject d2 = DataObject.newStructureData(DataObject.newInteger8Data((byte) -2),
             DataObject.newInteger8Data((byte) 30));
-}```
+}
+```
 
 The value of the field will be the response to get(AttributeAddress...) that is fired from osgp CommandExecutors
 
@@ -108,7 +110,8 @@ You can also annotate methods with or without a DataObject return value and with
 
 For example:
 
-    ```@CosemMethod(id = 1)
+```
+    @CosemMethod(id = 1)
     public void hello() throws IllegalMethodAccessException {
         System.out.println("Has been called");
         return;
@@ -117,4 +120,6 @@ For example:
     @CosemMethod(id = 2, consumes = Type.OCTET_STRING)
     public DataObject hello2(DataObject datO) throws IllegalMethodAccessException {
         throw new IllegalMethodAccessException(MethodResultCode.OTHER_REASON);
-    }```
+    }
+
+```
