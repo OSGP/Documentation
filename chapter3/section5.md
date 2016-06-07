@@ -88,6 +88,8 @@ For each combination of a cosem class and obiscode you create a java class that 
 
 In these java classes you can add fields of type DataObject that you annotate with @CosemAttribute(id = ..., type = Type.x)
 
+Also you can create getXXX and setXXX methods to intercept getting and setting data on a logical device. XXX will be the name of the corresponding field starting with a capital letter.
+
 For example:
 
 ```
@@ -100,6 +102,13 @@ public class ImportValue {
     @CosemAttribute(id = 3, type = Type.STRUCTURE)
     private DataObject d2 = DataObject.newStructureData(DataObject.newInteger8Data((byte) -2),
             DataObject.newInteger8Data((byte) 30));
+            
+    public void setD1(DataObject newData) throws IllegalAttributeAccessException {
+      // ....
+    }
+    public DataObject getD1() throws IllegalAttributeAccessException {
+      return d1;
+    }
 }
 ```
 
