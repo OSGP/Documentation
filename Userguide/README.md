@@ -12,9 +12,6 @@ A next step could be to have a look at the WSDL's to understand which functions 
 
 If a full installation is desired, have a look at our [Installation Script](https://github.com/OSGP/Config) within the Config repository. This can be used to setup a development environment which can be used to start the Platform and run it. Installation on one or several servers can be derived from the steps within the Installation Script. 
 
-### 2.1.2 Configuration
-
-We have prepared a full set of configuration (properties files, certificates, key store, ...) which is available in our [Config repository](https://github.com/OSGP/Config). This configuration can be used to setup a trial environment. In case someone wants to set up an environment 
 
 ## 2.2 FAQ
 
