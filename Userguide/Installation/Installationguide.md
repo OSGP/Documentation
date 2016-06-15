@@ -1,4 +1,4 @@
-## 3.3 Installation Script
+## 2.2 Installation Script
 
 To get started quickly, an [Installation Script](https://github.com/OSGP/Config) has been created.
 Below, all steps involved in using the script are shown in the paragraphs with screenshots. 

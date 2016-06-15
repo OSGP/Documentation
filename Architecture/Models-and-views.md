@@ -1,12 +1,12 @@
-## 1.6 Models and Views
+## 1.8 Models and Views
 
-### 1.6.1 Design view
+### 1.8.1 Design view
 
 The image below shows a high-level view of the system's components.
 
 ![alt text](./design-view.png "Design View")
 
-### 1.6.2 Data model platform
+### 1.8.2 Data model platform
 
 _Image, Overview of platform data model_
 ![alt text](./data-model.png "Data Model")
@@ -22,7 +22,7 @@ Data model explanation:
 | oslp\_log\_item | Table for logging of OSLP messages. |
 | webservice monitor log item | Audit record for tracking webservice activity. |
 
-### 1.6.3 Data model web application
+### 1.8.3 Data model web application
 
 _Image showing the datamodel for the owners and management application_
 ![alt text](./data-model-web-application.png "Data Model Web Application")
@@ -42,7 +42,7 @@ Data model explanation:
 | Burninghour report devices | Device informatie burninghour report |
 | Burninghour report data | Data related to a device in burninghour report. |
 
-### 1.6.4 Logical view
+### 1.8.4 Logical view
 
 The logical view is a high-level overview of the system . The image below displays the main components and interfaces between these components.
 
@@ -60,14 +60,14 @@ This Table presents an overview of the components and the most important technol
 | Web services | SOAP, WSDL |
 | OSLP Protocol | Google Protocol Buffers |
 
-### 1.6.5 Interface view
+### 1.8.5 Interface view
 
 The platform contains two kinds of external interfaces:
 
 1. Web services (WSDL), to provide platform functionality to third party applications.
 2. Open Street Light Protocol (OSLP), to communicate with devices.
 
-### 1.6.6 Web Services (WSDL)
+### 1.8.6 Web Services (WSDL)
 
 A separate WSDL is implemented for each functional cluster. All SOAP operations have a request object parameter and return a response object. For Synchronized Webservices  the result is immediately included in the response.
 
@@ -131,7 +131,7 @@ Furthermore each SOAP message has a header which contains the user's organisatio
 | **TariffSwitchingScheduleManagement** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 
-### 1.6.7 Technology selection
+### 1.8.7 Technology selection
 
 Open street light protocol does not use ASN.1 but Google Protocol Buffers. The main reason for this is the lack of a good quality free ASN.1 compiler for Java or C. Google Protocol Buffers offers a fast and free compiler for Java and C which produces small message sizes.
 

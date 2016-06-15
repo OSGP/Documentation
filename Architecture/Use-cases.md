@@ -1,10 +1,10 @@
-## 1.7 Applications
+## 1.9 Applications
 
 //TODO
 
-### 1.7.1 Use cases
+### 1.9.1 Use cases
 
-#### 1.7.1.1 Reference implementation in The Netherlands:  Flexible system for operating public lighting (FlexOVL)
+#### 1.9.1.1 Reference implementation in The Netherlands:  Flexible system for operating public lighting (FlexOVL)
 
 FlexOVL, a new and flexible switching system of public lighting delivers more control for municipalities and is the first solution which is powered by the Open Smart Grid Platform.
 
@@ -49,7 +49,7 @@ Municipalities are free to choose their own (web)application (using the webservi
 - Abilities to monitor power consumption of public lighting (available if the SSLD is fitted with an Electricity Meter)
 - Monthly report offering insight into switch moments and power consumption
 
-#### 1.7.1.2 Smart Meter Head-end System
+#### 1.9.1.2 Smart Meter Head-end System
 
 **Technical drivers for Alliander**
 
@@ -75,10 +75,4 @@ Features available within the platform so far:
  
 Soon, these features will be available for the protocol adapter as well.
 
-### 1.7.2 White papers
 
-//TODO
-
-### 1.7.3 Deployment options
-
-Hosting the open smart grid platform in the cloud is possible, as well as on premises.

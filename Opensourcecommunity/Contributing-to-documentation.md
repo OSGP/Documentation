@@ -1,4 +1,4 @@
-## 4.5 Contributing to documentation
+## 3.5 Contributing to documentation
 
 Our most recent documentation can be found [here](http://54.77.62.182/documentation/) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 

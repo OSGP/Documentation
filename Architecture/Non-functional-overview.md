@@ -1,4 +1,4 @@
-## 1.5 Non-functional view
+## 1.7 Non-functional view
 
 De non-functional view is an overview of the most significant non-functional demands.
 

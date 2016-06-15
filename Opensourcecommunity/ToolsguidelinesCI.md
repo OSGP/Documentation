@@ -1,6 +1,6 @@
-## 3.1 Developer tools, technical guidelines and continuous integration
+## 3.6 Developer tools, technical guidelines and continuous integration
 
-## 3.1.1 Tools Used
+## 3.6.1 Tools Used
 
 ### Platform
 
@@ -30,7 +30,7 @@
 - [GivWenZen](https://github.com/weswilliams/GivWenZen): BDD extension for Fitnesse.
 - [Cucumber](https://cucumber.io/): automated acceptance testing framework.
 
-## 3.1.2 Code Guidelines and Code Tests
+## 3.6.2 Code Guidelines and Code Tests
 
 - Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/code-format)
 - Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/save-actions)
@@ -40,14 +40,14 @@
 - Fix SonarQube issues
 - Issue pull request (preferable to development branch)
 
-## 3.1.3 Continuous Integration
+## 3.6.3 Continuous Integration
 
 All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improve the quality level of the code base.
 
 - [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
 - [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
 
-## 3.1.4 Technical Conventions and Rules for New Code
+## 3.6.4 Technical Conventions and Rules for New Code
 
 This project is engineered, built and tested using Domain Driven Design and Behaviour Driven Tests.
 

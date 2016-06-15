@@ -1,5 +1,5 @@
 
-### 3.3.20 Installing SoapUI
+### 2.2.20 Installing SoapUI
 
 ![alt text](./installation-script-screenshots/79.png)
 

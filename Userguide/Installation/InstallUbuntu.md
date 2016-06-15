@@ -1,4 +1,4 @@
-### 3.3.2 Installing [Ubuntu](http://www.ubuntu.com/desktop)
+### 2.2.2 Installing [Ubuntu](http://www.ubuntu.com/desktop)
 
 ![alt text](./installation-script-screenshots/12.png)
 

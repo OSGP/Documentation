@@ -1,27 +1,20 @@
 # Summary
 
-* [General technical overview](Achitecture/README.md)
-   * [Architecture introduction](Achitecture/Architecture-introduction.md)
-   * [Architecture Principles](Achitecture/Architecture-Principles.md)
-   * [Platform components description](Achitecture/Platform-components-description.md)
-   * [Logical Authorisation Model](Achitecture/Logical-Authorisation-Model.md)
-   * [Non-functional overview](Achitecture/Non-functional-overview.md)
-      * [TimeBehavior](Achitecture/TimeBehavior.md)
-      * [Extensibility](Achitecture/Extensibility.md)
-      * [Internationalization and localization](Achitecture/Internationalizationlocalization.md)
-      * [Security](Achitecture/security.md)
-   * [Models and views](Achitecture/Models-and-views.md)
-   * [Use cases](Achitecture/Use-cases.md)
-   
-* [Open Source Community](OpenSourceCommunity/README.md)
-   * [Contributing to the code](OpenSourceCommunity/Contributing-to-the-code.md)
-   * [Communication and Contact](OpenSourceCommunity/Communication-and-contact.md)
-   * [Governance](OpenSourceCommunity/Governance.md)
-   * [Code of Conduct](OpenSourceCommunity/Code-of-conduct.md)
-   * [Contributing to documentation](OpenSourceCommunity/Contributing-to-documentation.md)
-   * [Foundation](OpenSourceCommunity/Foundation.md)
-   
-   
+* [General platform architecture](Architecture/README.md)
+   * [Architecture introduction](Architecture/Architecture-introduction.md)
+   * [Architecture functional layers](Architecture/Functionallayersoverview.md)
+   * [Architecture Principles](Architecture/Architecture-Principles.md)
+   * [Platform components description](Architecture/Platform-components-description.md)
+   * [Technical components overview](Architecture/Component-overview.md)
+   * [Logical Authorisation Model](Architecture/Logical-Authorisation-Model.md)
+   * [Non-functional overview](Architecture/Non-functional-overview.md)
+      * [TimeBehavior](Architecture/TimeBehavior.md)
+      * [Extensibility](Architecture/Extensibility.md)
+      * [Internationalization and localization](Architecture/Internationalizationlocalization.md)
+      * [Security](Architecture/security.md)
+   * [Models and views](Architecture/Models-and-views.md)
+   * [Use cases](Architecture/Use-cases.md)
+
 * [General User's Guide](Userguide/README.md)
    * [Installation guide](Userguide/Installation/Installationguide.md)
       * [Setup Virtual Machine](Userguide/Installation/Setup-VM.md)
@@ -29,9 +22,19 @@
       * [Setup OSGP](Userguide/Installation/setupOSGP.md)
       * [Test OSGP installation](Userguide/Installation/testOSGP.md)
    * [Configuration](Userguide/Configuration.md)
-   * [Deployment](Userguide/Maintenance.md)
-
-
+   * [Deployment](Userguide/Deployment.md)
+   * [FAQ](Userguide/FAQ.md)
+      
+* [Open Source Community](OpenSourceCommunity/README.md)
+   * [Contributing to the code](OpenSourceCommunity/Contributing-to-the-code.md)
+   * [Communication and Contact](OpenSourceCommunity/Communication-and-contact.md)
+   * [Governance](OpenSourceCommunity/Governance.md)
+   * [Code of Conduct](OpenSourceCommunity/Code-of-conduct.md)
+   * [Contributing to documentation](OpenSourceCommunity/Contributing-to-documentation.md)
+   * [Developers 101](OpenSourceCommunity/ToolsguidelinesCI.md)
+   * [Foundation](OpenSourceCommunity/Foundation.md)
+   
+   
 * [Domains](Domains/README.md)
    * [Core and management](Domains/Coreandmanagement/README.md)
    * [Smart lighting](Domains/Smartlighting/README.md)
@@ -125,5 +128,4 @@
 
 
 * [Developer's Guide](chapter3/README.md)
-   * [Developers 101](chapter3/section1.md)
    * [Developer's guide per component](chapter3/section2.md)

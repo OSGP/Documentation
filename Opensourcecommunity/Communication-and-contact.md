@@ -1,4 +1,4 @@
-## 4.2 Communication and Contact
+## 3.2 Communication and Contact
 
 We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. 
 

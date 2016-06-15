@@ -1,4 +1,4 @@
-## 4.3 Governance
+## 3.3 Governance
 
 With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy in order to have a balanced decision-making process and to prevent unwanted dictators and everlasting discussions. The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the community council has the authority to make a decision.
 

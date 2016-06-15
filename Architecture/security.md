@@ -1,4 +1,4 @@
-### 1.5.4 Security
+### 1.7.4 Security
 
 The following security measures could in place for a hosted environment:
 ### Cloud security
@@ -46,23 +46,23 @@ In cooperation with the European Network of Cyber Security (ENCS) state of the a
 
  
 
-#### 1.5.4.1 Encryption
+#### 1.7.4.1 Encryption
 
 An analysis of safety aspects has led to the decision that the safety of the whole system will be realized by proven technology based on asymmetrical coding (Also known as public-key encryption).
 
-#### 1.5.4.2 Algorithms
+#### 1.7.4.2 Algorithms
 
 Only public encryption Algorithms will be used. Due to performance limitations (of the devices) and recommendations from The European Network for Cyber Security (ENCS) Elliptic Curve DSA with 256-bit-keys was selected. This improves the security and efficiency over the 1024 bit RSA algorithm. Messages can be smaller and less processor capacity is needed. The key length of Elliptic Curve DSA is similar to the 3072 bit key length of RSA.
 
 Note: Even though OSGP uses ECDSA to secure the OSLP, other encryptions may be used as well. The RSA Algorithm is still supported if preferred. This is a flexible configuration option.
 
-#### 1.5.4.3 Private APN
+#### 1.7.4.3 Private APN
 
 A private APN is used for linking to mobile data communication infrastructures.
 
  ![alt text](./private-apn.png "Private APN")
 
-#### 1.5.4.4 Authentication of OSGP
+#### 1.7.4.4 Authentication of OSGP
 
 The Open Smart Grid Platform contains an extensive authorization model, which enables a device owner  to give certain rights on certain devices to other organizations. Every organization will only see devices they have rights to.
 
@@ -72,7 +72,7 @@ An organization can get rights from the device owner to specific functions of a 
 
 To ensure that devices can only receive instructions from a 'genuine' OSGP it must be possible to authenticate the OSGP platform. This is implemented through a standard technology based on asymmetric encryption. The OSGP platform will receive an unique key to enable the devices to tell if the messages come from a 'genuine' OSGP. To prevent replay-attacks each message will get an index number (this is standard practice as well).
 
-#### 1.5.4.5 Authentication of devices
+#### 1.7.4.5 Authentication of devices
 
 To make sure OSGP can distinguish between 'genuine' devices and 'illegal' devices all devices are supplied with a manufacturer key. Each device has an unique key. Because of the asymmetrical encryption the platform contains the public part of each key. In this way devices can be identified by their unique key and their unique hardware ID. The device-ID will be encrypted in each message sent from the device to the platform.
 
@@ -84,7 +84,7 @@ The security is independent from the carrier (GPRS, CDMA, Ethernet, etc.).
 
 The firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates.
 
-#### 1.5.4.6 Authentication of web-applications
+#### 1.7.4.6 Authentication of web-applications
 
 Two way SSL will be used between web-applications and OSGP to verify the identities for both parties. User organisations are responsible for the administration of the identity of and access to their web applications. The web applications feature a login page. After successful login the user is linked to an organisation. Passwords will be stored encrypted. The organisation ID will be sent in each message to OSGP and will be verified by the SSL certificate.
 

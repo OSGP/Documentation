@@ -1,5 +1,5 @@
 
-### 3.3.8 Downloading the Puppet Scripts From Our [Config GitHub Repository](https://github.com/OSGP/Config)
+### 2.2.8 Downloading the Puppet Scripts From Our [Config GitHub Repository](https://github.com/OSGP/Config)
 
 Make sure to check the development branch for the latest version!
 
