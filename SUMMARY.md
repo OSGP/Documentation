@@ -34,7 +34,6 @@
    * [Developers 101](OpenSourceCommunity/ToolsguidelinesCI.md)
    * [Foundation](OpenSourceCommunity/Foundation.md)
    
-   
 * [Domains](Domains/README.md)
    * [Core and management](Domains/Coreandmanagement/README.md)
    * [Smart lighting](Domains/Smartlighting/README.md)
