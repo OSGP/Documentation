@@ -36,6 +36,8 @@ This chapter describes the SmartMetering webservices (3.5.1 & 3.5.2) and the DLM
 - **[GetSetActivityCalendarResponse](./smartmetering/GetSetActivityCalendarResponse.md)** is a request which returns the response from the [SetActivityCalendar](./smartmetering/SetActivityCalendar.md) request.
 - **[GetAdministrativeStatus](./smartmetering/GetAdministrativeStatus.md)** is a request to retrieve the current AdministrativeStatus setting.
 - **[GetGetAdministrativeStatusResponse](./smartmetering/GetGetAdministrativeStatusResponse.md)** is a request which returns the response from the [GetAdministrativeStatus](./smartmetering/GetAdministrativeStatus.md) request.
+- **[GetFirmwareVersionRequest](./smartmetering/GetFirmwareVersionRequest.md)** is a request to retrieve the firmwareversion(s).
+- **[GetFirmwareVersionAsyncRequest](./smartmetering/GetFirmwareVersionAsyncRequest.md)** is a request which returns the response from the [GetFirmwareVersionRequest](./smartmetering/GetFirmwareVersionRequest.md).
 - **[SetAdministrativeStatus](./smartmetering/SetAdministrativeStatus.md)** is a request to set the AdministrativeStatus.
 - **[GetSetAdministrativeStatusResponse](./smartmetering/GetSetAdministrativeStatusResponse.md)** is a request which returns the response from the [SetAdministrativeStatus](./smartmetering/SetAdministrativeStatus.md) request.
 - **[ReplaceKeys](./smartmetering/ReplaceKeys.md)** is a request to change the keys on a E-meter.
