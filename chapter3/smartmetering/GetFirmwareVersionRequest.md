@@ -5,7 +5,7 @@ GetFirmwareVersionRequest is a request to retrieve the firmware version(s) of a 
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetFirmwareVersionAsyncRequest](GetFirmwareVersionAsyncRequest.md) returns if the version(s). The response request contains the DeviceIdentification and CorrelationUid which is received from the GetFirmwareVersionRequest request.
+[GetFirmwareVersionAsyncRequest](GetFirmwareVersionAsyncRequest.md) returns the version(s). The response request contains the DeviceIdentification and CorrelationUid which is received from the GetFirmwareVersionRequest request.
 
 ### References
 
