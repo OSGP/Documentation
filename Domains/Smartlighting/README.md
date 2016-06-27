@@ -1,0 +1,1 @@
+##4.2 This domain covers the use of the open smart grid platform for smart lighting.
