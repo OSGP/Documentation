@@ -110,7 +110,7 @@
          * [GetActualPowerUsage](Protocols/OSLP/v0.5.1/GetActualPowerUsage.md)
          * [GetPowerUsageHistory](Protocols/OSLP/v0.5.1/GetPowerUsageHistory.md)
          * [Protobuf Contract](Protocols/OSLP/v0.5.1/oslp.proto.v0.5.1.md)
-<hr>
+
       * [OSLP v0.6.0](Protocols/OSLP/oslp-v0.6.0.md)
          * [GetConfiguration](Protocols/OSLP/v0.6.0/GetConfiguration.md)
          * [SetConfiguration](Protocols/OSLP/v0.6.0/SetConfiguration.md)
