@@ -1,2 +1,2 @@
-##4.3
-This covers the services for tariff switching using the open smart grid platform.
+##4.3 Tafriff switching
+This covers the services for tariff switching domain using the open smart grid platform.
