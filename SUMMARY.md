@@ -86,7 +86,7 @@
       * [Bundle](Domains/Smartmetering/smartmeteringwebservices/Bundle.md)
       * [SpecificConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/SpecificConfigurationObject.md)
 
-* [Protocols](Procotols/README.md)
+* [Protocols](Procotcols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
    * [DLMS](Protocols/DLMS/README.md)
    * [OSLP](Protocols/OSLP/README.md)
