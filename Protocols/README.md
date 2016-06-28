@@ -18,6 +18,6 @@ For the OSLP implementation, 2 components are used. The first component is the p
 
 The DLMS implementation is work in progress.
 
-#### 5.1.4 61850
+#### 5.1.4 IEC61850
 
-The 61850 implementation is work in progress.
+The IEC61850 implementation is work in progress.
