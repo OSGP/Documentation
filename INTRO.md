@@ -34,6 +34,3 @@ Use cases of the OSGP are only limited by your imagination. Here are some exampl
 - [Check out the domain section if you want to know about the the existing domains](./Architecture/README.md)
 - [Check out the protocol section to find out more on the existing supported protocols](./Protocols/README.md)
 - [Read the open source section how to contribute!](./Opensourcecommunity/README.md)
-
-
-
