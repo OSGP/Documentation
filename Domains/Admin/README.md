@@ -7,6 +7,7 @@ The Core component routes messages from domain adapter components to protocol ad
 
 
 Common webservices
+
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |
 | **DeviceInstallation.wsdl** |
@@ -40,5 +41,5 @@ Common webservices
 | **ScheduleManagement.wsdl** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 | SetTariffSchedule | DeviceIdentification, Schedules, Page | - |
-| ** AdHocManagement.wsdl       ** |
+| **AdHocManagement.wsdl** |
 | SetReboot | DeviceIdentification | - |

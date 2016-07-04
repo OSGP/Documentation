@@ -1,7 +1,7 @@
 ## 4.5 SmartMetering Documentation (Beta version)
 
 This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
-Information on the DLMS device simulator can be found in the [DLMS protocol section](Protocols/DLMS/Devicesimulator.md)
+Information on the DLMS device simulator can be found in the [DLMS protocol section](../Protocols/DLMS/Devicesimulator.md)
 
 ### 4.5.1 Generic functionality
 
