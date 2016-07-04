@@ -43,7 +43,7 @@ Furthermore each SOAP message has a header which contains the user's organisatio
 
 For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the OSGP core component.
 
-More information on the specific domains can be found in the [domain chapter](/Domains/README.md)
+More information on the specific domains can be found in the [domain chapter](../Domains/README.md)
 
 ### 1.3.5 Core
 
@@ -68,7 +68,7 @@ The protocols can use of the of the security layers:
 - SSL (Secure Sockets Layer encryption)
 
 Other protocols can easily be added to the platform. Protocols based on open standards are prefered (if possible).
-A full list of current supported protocols can be found in the [protocols chapter](/Protocols/README.md).
+A full list of current supported protocols can be found in the [protocols chapter](../Protocols/README.md).
 
 
 ### 1.3.7 Smart devices
