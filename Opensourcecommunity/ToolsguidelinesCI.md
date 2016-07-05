@@ -2,33 +2,7 @@
 
 ## 3.6.1 Tools Used
 
-### Platform
-
-- [Apache ActiveMQ](http://activemq.apache.org/): Open source messaging server, used to relay messages between components of OSGP. ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client. It provides "Enterprise Features" which in this case means fostering the communication from more than one client or server.
-- [Apache HTTP server](http://httpd.apache.org/): Webserver, used as front for Apache Tomcat.
-- [Apache Tomcat](http://tomcat.apache.org/): Provides a "pure Java" HTTP web server environment for Java code to run in.
-- [pgAdmin-III](http://www.pgadmin.org/): PostgreSQL administration and management tools.
-- [Protobuf (Google Protocol Buffers)](https://github.com/google/protobuf/): A language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and more.
-
-### Development
-
-- [Bower](http://bower.io/): Package manager for Javascript packages. Web sites are made of lots of things - frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
-- [Eclipse](https://eclipse.org/): IDE for developing software.
-- [FileZilla](https://filezilla-project.org/): FTP application.
-- [Git](https://git-scm.com/): Version control system.
-- [NodeJS](https://nodejs.org/): Tooling suite with various Javascript tools.
-- [Notepad++](https://notepad-plus-plus.org/): A free source code editor.
-- [NPM](https://www.npmjs.com/): Package manager for the NodeJS Javascript applications.
-- [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/): A free and open-source terminal emulator, serial console and network file transfer application.
-- [SourceTree](https://www.sourcetreeapp.com/): SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.
-- [Vim](http://www.vim.org/): Source code editor. 
-
-### Testing
-
-- [Apache JMeter](http://jmeter.apache.org/): Application designed to load test functional behaviour and measure performance.
-- [Fitnesse](http://www.fitnesse.org/): A test tool, used to write behaviour driven tests.
-- [GivWenZen](https://github.com/weswilliams/GivWenZen): BDD extension for Fitnesse.
-- [Cucumber](https://cucumber.io/): automated acceptance testing framework.
+The technology and tools used can be found in the [Technology stack](../Architecture/Technologystack.md) section.
 
 ## 3.6.2 Code Guidelines and Code Tests
 
@@ -65,3 +39,29 @@ This project is engineered, built and tested using Domain Driven Design and Beha
 - Log errors/exceptions
 - Add meaningful comments to the code
 - Follow the code guidelines
+
+## 3.6.5 Development Guide per Component
+
+### Web Service Adapters
+
+The web service adapters use Spring Web Service, contract first. JAXB is used to generate Java classes from the XSD's. All SOAP operations are bound to an endpoint. The incoming SOAP requests are authenticated by organization identification (plus certificates). Organization authorizations are checked for the desired operation. If the request is OK, a JMS message is sent to a domain adapter component.
+
+### Domain Adapters
+
+Domain adapters contain business logic and persistence. Domain adapters process and forward the JMS message to the Core component.
+
+### Domain Components
+
+Domain components contain entities and value objects.
+
+### Core
+
+The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Furthermore, it offers read-only database access for protocol adapter components.
+
+### Protocol Adapters
+
+Protocol Adapter components translate a message from domain adapter components into a protocol message for a smart device. Protocol Adapter components send the protocol message to a smart device using a network connection. The response from the smart device is translated into a domain response message which will be sent to the Core components (which will route it to the domain adapter which issued the request).
+
+#### OSLP
+
+For the OSLP implementation, 2 components are used. The first component is the protocol adapter for the protocol. It can translate message into the protocol message for SSLD's. Second there's the signing-server component. It is responsible for signing the protocol message using the private key of the platform. The components communicate using a queue-pair. The singing-server can handle multiple protocol adapter instances by utilizing a reply-to queue per protocol adapter instance. Since the protocol adapter component needs to be reachable from a network, it is a requirement that the private key may not be used by the protocol adapter directly. The singing-server component  can be deployed in such a way that no network access is available to this component, as the only coupling needed are the queues / the message broker.

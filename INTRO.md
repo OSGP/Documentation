@@ -29,7 +29,7 @@ Use cases of the OSGP are only limited by your imagination. Here are some exampl
 - Power Quality monitoring
 
 ### I.3 Getting started
-- [Visit the userguide section to try the open smart grid platform on your local machine](./Userguide/installation/Installationguide.md)
+- [Visit the userguide section to try the open smart grid platform on your local machine](./Userguide/Installation/Installationguide.md)
 - [The Architecture section provides information on platform architecture](./Architecture/README.md)
 - [Check out the domain section if you want to know about the the existing domains](./Architecture/README.md)
 - [Check out the protocol section to find out more on the existing supported protocols](./Protocols/README.md)

@@ -12,7 +12,7 @@ We encourage you to participate in improving the documentation. From corrected t
 
 4. Sign the CLA using [cla-assistant](http://52.16.237.165/) (a comment by CLAAdmin will appear for your pull request to help you out).
 
-5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [documentation](http://54.77.62.182/documentation/chapter4/section3.html).
+5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](../Opensourcecommunity/Governance).
 
 Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you like to upload illustation, you can use git or [Github](https://help.github.com/articles/adding-a-file-to-a-repository/)
 
@@ -22,17 +22,13 @@ If you are completely new to this and you need help to get started, file an issu
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. 
 
-Chapter 1 consist of an OSGP introduction and architecture for potential users, architects and developers. The OSGP website is used for basic product information.
-
-Chapter 2 contains documentation for OSGP users
-
-Chapter 3 consist of developer information for all sorts of developers
-
-Chapter 4 contains community related topics
-
-Chapter 5 shows the support options
-
-Chapter 4 the code and documentation license
+* Chapter 1 consist of an OSGP introduction and architecture for potential users, architects and developers. The OSGP website is used for basic product information.
+* Chapter 2 contains the general userguide for OSGP users
+* Chapter 3 contains community related topics
+* Chapter 4 contains information related to the OSGP domains
+* Chapter 5 contains information related to the protocols and simulators
+* Chapter 6 shows the support options
+* Chapter 7 code and documentation license
 
 ### 4.5.2 Versioning within the documentation
 
