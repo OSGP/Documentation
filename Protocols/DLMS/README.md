@@ -10,4 +10,4 @@ The [OpenMUC jDLMS library from Fraunhofer](https://www.openmuc.org/dlms-cosem/)
 Please note that jDLMS is licensed under the GPLv3.
 
 ###DLMS device simulator
-[DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
+DLMS [device simulator](Protocols/DLMS/Devicesimulator.md)
