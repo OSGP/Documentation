@@ -1,10 +1,10 @@
-## 3.2 Communication and Contact
+## Communication and Contact
 
 We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. 
 
 If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
 
-### 4.2.1 New Features
+### New Features
 
 1. If there is a need (or wish!) for a new feature, add it as issue to the relevant repository. Please provide a full description about the problem and the potential feature. If you use one of the following links, you will be given a basic format for your issue. 
 
@@ -22,7 +22,7 @@ If you want to get in touch to discuss to discuss non-technical subjects, send u
 
 4. The maintainer can check the code (or assign this to someone else) and merge it with upstream releases.
 
-### 4.2.2 Bug tracking
+### Bug tracking
 
 1. Find out as much as possible about the bug before reporting it. Please check on GitHub whether the bug has already been reported. Also, look for logs, error messages etc. Please include as much information as possible background on the bug. 
 2. The maintainer makes sure that somebody will look at the bug, check for duplicates and thank the contributor for sending in the bug. If the bug turns out to be a duplicate, the issue will be closed.
@@ -31,5 +31,5 @@ If you want to get in touch to discuss to discuss non-technical subjects, send u
 5. Once the patch is accepted (see Code review/test process), it will be shipped with the next release.
 6. The maintainer than closes the issue.
 
-### 4.2.2 Questions
+### Questions
 If you have a question. fire an issue in the most relevant repository.

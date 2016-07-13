@@ -1,5 +1,5 @@
 
-### 2.2.20 Installing SoapUI
+### Installing SoapUI
 
 ![alt text](./installation-script-screenshots/79.png)
 
@@ -13,7 +13,7 @@
 
 ![alt text](./installation-script-screenshots/84.png)
 
-### 3.3.21 Setting Up SoapUI 
+### Setting Up SoapUI 
 
 ![alt text](./installation-script-screenshots/85.png)
 
@@ -23,7 +23,7 @@
 
 ![alt text](./installation-script-screenshots/88.png)
 
-### 3.3.22 First SOAP Requests to Add a Device to OSGP
+### First SOAP Requests to Add a Device to OSGP
 
 ![alt text](./installation-script-screenshots/89.png)
 
@@ -31,7 +31,7 @@
 
 ![alt text](./installation-script-screenshots/91.png)
 
-### 3.3.23 Opening Device Simulator to Add a Device
+### Opening Device Simulator to Add a Device
 
 ![alt text](./installation-script-screenshots/92.png)
 
@@ -41,13 +41,13 @@
 
 ![alt text](./installation-script-screenshots/95.png)
 
-### 3.3.24 Registering a Device
+### Registering a Device
 
 ![alt text](./installation-script-screenshots/96.png)
 
 ![alt text](./installation-script-screenshots/97.png)
 
-### 3.3.25 Using 'SetLight' SOAP Request to Switch the Light On
+### Using 'SetLight' SOAP Request to Switch the Light On
 
 ![alt text](./installation-script-screenshots/98.png)
 

@@ -1,16 +1,16 @@
-## 4.5 SmartMetering Documentation (Beta version)
+## SmartMetering Documentation (Beta version)
 
 This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
 Information on the DLMS device simulator can be found in the [DLMS protocol section](../Protocols/DLMS/Devicesimulator.md)
 
-### 4.5.1 Generic functionality
+### Generic functionality
 
 - **[priority](./smartmeteringwebservices/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 - **[scheduling](./smartmeteringwebservices/scheduling.md)** requests can be scheduled for a certain time.
 - **[bundeling](./smartmeteringwebservices/bundeling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
 
 
-### 4.5.2 Messages
+### Messages
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.

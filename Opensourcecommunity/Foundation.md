@@ -1,5 +1,4 @@
-
-## 3.7 Foundation
+## Foundation
 
 The Foundation will be an independent organisation to support and promote the OSGP development (The foundation is not started yet). The foundation will be similar to the Linux foundation or Apache foundation. The Foundation will start once we have multiple founding members. If you like to support the Foundation, contact us: opensource@smartsocietyservices.com
 

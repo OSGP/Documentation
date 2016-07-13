@@ -1,4 +1,4 @@
-## I.1 Properties of the Open Smart Grid Platform
+## Properties of the Open Smart Grid Platform
 
 - Acts as a **connecting link** between (web)applications and smart devices
 - The open Source approach **prevents vendor lock-in** 
@@ -19,7 +19,7 @@
 - Adding servers can be done in **runtime**
  
 
-### I.1.1 Unique features of the Open Smart Grid Platform
+### Unique features of the Open Smart Grid Platform
 
 The Open Smart Grid Platform is unique by its multi-dimensional, generic and open design. Because of a true separation of layers and the use of open standards, other suppliers and/or third parties are able to develop and market innovative solutions.
 

@@ -1,4 +1,4 @@
-## 3.3 Governance
+## Governance
 
 With OSGP we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy in order to have a balanced decision-making process and to prevent unwanted dictators and everlasting discussions. The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the community council has the authority to make a decision.
 
@@ -19,8 +19,8 @@ The community council is responsible for:
 When the community grows, members of the community council can be elected. If the situation demands or requires it, the community council has the ability to establish sub councils for a specific subject, area of domain. One member (seat) represents the OSGP Foundation (once started) for alignment between the objectives of the foundation and the direction of the development of the online community.
 
 The community council consist of the following members:
-* [Sander Jansen](https://github.com/Sander3003) - Open source consultant – Chairman 
-* [Paul Houtman](https://github.com/phoutman) – Lead Architect
+* [Sander Jansen](https://github.com/Sander3003) - Open source consultant - Chairman 
+* [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
 * [Thorben Meijer](https://github.com/thorbenmeijer) - Marketing expert
 * Vacancy - OSGP foundation seat

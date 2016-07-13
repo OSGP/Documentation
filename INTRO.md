@@ -17,9 +17,9 @@ The Open Smart Grid Platform is used in the following way:
 - For the 'translation' and communication of user/operator commands to the various smart devices, the platform uses multiple (open) protocols
 - The platform supports various IP based data telecommunication technologies and protocols to communicate with the devices
 
-More (technical information) about the platform operation can be found later on in this document.
+More technical and user information about the open smart grid platform can be found in this document. More generic/product information about the open smart grid platform can be found on the [open smart grid platform website](http://opensmartgridplatform.org/).
 
-### I.1.2 Example use case for the OSGP
+### Example use case for the OSGP
 Use cases of the OSGP are only limited by your imagination. Here are some examples:
 - Ad-hoc and scheduled Switching of Public Lighting
 - Electrical Transportation
@@ -28,7 +28,7 @@ Use cases of the OSGP are only limited by your imagination. Here are some exampl
 - Flexible load management ( solar energy and wind energy)
 - Power Quality monitoring
 
-### I.3 Getting started
+### Getting started
 - [Visit the userguide section to try the open smart grid platform on your local machine](./Userguide/Installation/Installationguide.md)
 - [The Architecture section provides information on platform architecture](./Architecture/README.md)
 - [Check out the domain section if you want to know about the the existing domains](./Architecture/README.md)

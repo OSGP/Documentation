@@ -1,10 +1,10 @@
-## 3.6 Developer tools, technical guidelines and continuous integration
+## Developer tools, technical guidelines and continuous integration
 
-## 3.6.1 Tools Used
+## Tools Used
 
 The technology and tools used can be found in the [Technology stack](../Architecture/Technologystack.md) section.
 
-## 3.6.2 Code Guidelines and Code Tests
+## Code Guidelines and Code Tests
 
 - Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/code-format)
 - Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/save-actions)
@@ -14,14 +14,14 @@ The technology and tools used can be found in the [Technology stack](../Architec
 - Fix SonarQube issues
 - Issue pull request (preferable to development branch)
 
-## 3.6.3 Continuous Integration
+## Continuous Integration
 
 All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improve the quality level of the code base.
 
 - [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
 - [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
 
-## 3.6.4 Technical Conventions and Rules for New Code
+## Technical Conventions and Rules for New Code
 
 This project is engineered, built and tested using Domain Driven Design and Behaviour Driven Tests.
 
@@ -40,7 +40,7 @@ This project is engineered, built and tested using Domain Driven Design and Beha
 - Add meaningful comments to the code
 - Follow the code guidelines
 
-## 3.6.5 Development Guide per Component
+## Development Guide per Component
 
 ### Web Service Adapters
 

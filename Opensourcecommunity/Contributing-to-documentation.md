@@ -1,4 +1,4 @@
-## 3.5 Contributing to documentation
+## Contributing to documentation
 
 Our most recent documentation can be found [here](http://54.77.62.182/documentation/) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 
@@ -18,7 +18,7 @@ Some information on GitBook and using Markdown can be found [here](http://help.g
 
 If you are completely new to this and you need help to get started, file an issue in the documentation repository.
 
-### 4.5.1 Chapters in the documentation
+### Chapters in the documentation
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. 
 
@@ -30,11 +30,11 @@ It may be obvious to you already from the index, however, here is an overview on
 * Chapter 6 shows the support options
 * Chapter 7 code and documentation license
 
-### 4.5.2 Versioning within the documentation
+### Versioning within the documentation
 
 We have chosen to work with GitBook since it allows us to make different versions of documentation for each release. This is done by branching the files in the documentation repository. The master branch is used for releases only. The development branch is our main and current branch. If you like to improve the documentation, start a feature branch with your changes and send a pull request to the development branch.
 
-### 4.5.3 Guidelines for new documentation
+### Guidelines for new documentation
 
 - The master branch is only used by major OSGP releases
 - Don't commit directly to the development branch, please do a pull request.
@@ -44,7 +44,7 @@ We have chosen to work with GitBook since it allows us to make different version
 - Give your (sub) document a relevant name or section with number
 - Update SUMMARY.md if needed
 
-### 4.5.4 Documentation inspiration
+### Documentation inspiration
 
 Inspiration on how to write good documentation can be found here: [http://docs.writethedocs.org/](http://docs.writethedocs.org/).
 

@@ -1,6 +1,6 @@
-##4.1 The open smart grid platform core functions for device management.
+## The open smart grid platform core and admin functions for device management.
 
-### 4.1.1 Core
+### Core
 
 The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Furthermore, it offers read-only database access for protocol adapter components.
 
@@ -43,3 +43,11 @@ Common webservices
 | SetTariffSchedule | DeviceIdentification, Schedules, Page | - |
 | **AdHocManagement.wsdl** |
 | SetReboot | DeviceIdentification | - |
+
+* [Core WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common)
+* [Core XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common/schemas)
+
+
+### Admin
+* [Admin WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin)
+* [Admin XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin/schemas)

@@ -1,6 +1,7 @@
 # Summary
 
 * [General platform architecture](Architecture/README.md)
+   * [Open smart grid platform properties](Architecture/OSGPProperties.md)
    * [Architecture introduction](Architecture/Architecture-introduction.md)
    * [Architecture functional layers](Architecture/Functionallayersoverview.md)
    * [Architecture Principles](Architecture/Architecture-Principles.md)
@@ -37,9 +38,11 @@
 * [Domains](Domains/README.md)
    * [Admin](Domains/Admin/README.md)
    * [Smart lighting](Domains/Smartlighting/README.md)
+      * [Use cases](Domains/Smartlighting/Smartlightning-use-cases.md)
    * [Tariff switching](Domains/Tariffswitching/README.md)
    * [Microgrids](Domains/Microgrids/README.md)
-   * [SmartMetering](Domains/Smartmetering/README.md) 
+   * [SmartMetering](Domains/Smartmetering/README.md)
+      * [Use cases](Domains/Smartmetering/Smartmetering-use-cases.md)
       * [SynchronizeTime](Domains/Smartmetering/smartmeteringwebservices/SynchronizeTime.md)
       * [GetSynchronizeTimeResponse](Domains/Smartmetering/smartmeteringwebservices/GetSynchronizeTimeResponse.md)
       * [RetrieveConfigurationObjects](Domains/Smartmetering/smartmeteringwebservices/RetrieveConfigurationObjects.md)

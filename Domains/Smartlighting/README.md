@@ -1,4 +1,4 @@
-##4.2 This domain covers the use of the open smart grid platform for smart lighting.
+## This domain covers the use of the open smart grid platform for smart lighting.
 
 
 PublicLighting webservices
@@ -16,9 +16,6 @@ PublicLighting webservices
 | SetLight | DeviceIdentification, LightValue | - |
 | **PublicLightingScheduleManagement** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
-| **TariffSwitching** |
-| **TariffSwitchingAdHocManagement** |
-| GetDevices |   |   |
-| GetStatus | DeviceIdentification | Status |
-| **TariffSwitchingScheduleManagement** |
-| SetSchedule | DeviceIdentification, Schedules, Page | - |
+
+* [PublicLighting WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-publiclighting/src/main/webapp/WEB-INF/wsdl/publiclighting)
+* [PublicLighting XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-publiclighting/src/main/webapp/WEB-INF/wsdl/publiclighting/schemas)

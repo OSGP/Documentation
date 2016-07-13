@@ -1,6 +1,6 @@
 # Thanks for contributing!  
 
-Please comply with the [code of conduct](http://54.77.62.182/documentation/chapter4/section4.html) and [documentation guidelines](http://54.77.62.182/documentation/chapter4/section5.html).
+Please comply with the [code of conduct](http://54.77.62.182/documentation/Opensourcecommunity/Code-of-conduct.html) and [documentation guidelines](http://54.77.62.182/documentation/Opensourcecommunity/Contributing-to-documentation.html).
 
 To get started:
 
