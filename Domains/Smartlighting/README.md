@@ -4,9 +4,9 @@
 The goal of this domain is to control, monitor and manage (street) lights at scale. It allows streetlight owners to control/manage the (street) lights in an more intelligent way compared to ripple control technology.
 
 ## Features
-This domain consist of e.g. Switching schedules, groups, light sensors, manual switching and monitoring of a typical public lighting use-case.
+This domain consist of e.g. Switching schedules, groups, light sensors, manual switching and monitoring of a typical public lighting use-case.
 
-PublicLighting webservices
+##PublicLighting webservices
 
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |

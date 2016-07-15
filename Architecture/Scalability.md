@@ -1,3 +1,5 @@
+###Scalability 
+
 The Open Smart Grid Platform is designed and built for scalability and reliability
 
 * Messages will never get lost, In the worst case scenario, a message will be send to the dead letter queue.

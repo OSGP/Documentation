@@ -1,8 +1,9 @@
+### Functional view
 
 _Image, functional layers overview_
  ![alt text](./functional-layers-overview.png "Functional Layers Overview")
 
-### Functional view
+
 
 #### Starting architecture
 

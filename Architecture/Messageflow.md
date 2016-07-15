@@ -1,6 +1,7 @@
-# This are some examples how an messages flows in the open smart grid platform.
+# Messageflow examples 
+This are some examples how an messages flows in the open smart grid platform.
 
-## Message Flow – Request/Acknowledge/Poll
+## Message Flow:  Request/Acknowledge/Poll
 
  ![Message flow](./Messageflow-1-poll.png "Request/Acknowledge/Poll")
 
@@ -20,7 +21,7 @@
 | 12 | WS adapter sends soap response to client app |
 
 
-## Message Flow – Request/Acknowledge/Notify
+## Message Flow: Request/Acknowledge/Notify
 
  ![Message flow](./Messageflow-2-Notify.png "Request/Acknowledge/Notify")
 

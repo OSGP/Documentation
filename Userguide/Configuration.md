@@ -3,7 +3,7 @@ We have prepared a full set of configuration (properties files, certificates, ke
 
 ## Add a device
 
-### Platform uses “single device calls”.
+### Platform uses _single device calls_.
 In order to add a device to the platform, call the add device method in the device installation web service (for a specific domain) for each device.
 
 ### Implementation may differ for different device types
