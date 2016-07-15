@@ -14,13 +14,3 @@ Up-to-date information on use-cases can be found on the [open smart grid platfor
 
 - People will have more insight in their power consumption
 - Meter values can be gathered by the grid operator, instead of relying on people reporting the meter values
-
-**Implementation**
-
-Features available within the platform so far:
-
-- Add smart meter to the platform, so the device is known and additonal actions can be performed for the device
-- Process shipment file, which adds several smart meters to the platform along with all needed information
-- Synchronize time between smart meters and head-end system, incase the smart meter adjusts it's time, some events will be logged
-- Retrieve events from the smart meter, several event logs are available
-- Retrieve periodic meter reads from the smart meter

@@ -80,7 +80,7 @@ All communication between OSGP and the devices will be signed with these keys to
 
 When a key is stolen (by hacking a device) this will not affect the integrity of the other devices. Each device has an unique key after all and only the hacked device has to be excluded from communicating in the platform.
 
-The security is independent from the carrier (GPRS, CDMA, Ethernet, etc.).
+The security is independent from the carrier (GPRS, CDMA, Ethernet, etc.). The open smart grid platform supports symmetric and asymmetric encryption (depends on device and protocol).
 
 The firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates.
 
@@ -129,3 +129,7 @@ Authorisation for use of the platform functionalities is handled by roles. Roles
 | GET\_MESSAGES | X |   |
 | FIND\_DEVICES | X |   |
 | SET\_OWNER | X |   |
+
+### Logging
+* Every action to and from devices is logged in the audittrail
+* Messages from unknown devices will be denied (and logged)

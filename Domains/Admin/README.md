@@ -1,12 +1,9 @@
 ## The open smart grid platform core and admin functions for device management.
 
-### Core
+## Scope
+This core and admin domain contains all generic webservices that can be used in other domains. Most generic services relate to device management including powerful device authorization management
 
-The Core component routes messages from domain adapter components to protocol adapter components and vice versa. Furthermore, it offers read-only database access for protocol adapter components.
-
-
-
-Common webservices
+### Common webservices
 
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |
@@ -48,6 +45,6 @@ Common webservices
 * [Core XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common/schemas)
 
 
-### Admin
+### Admin webservices
 * [Admin WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin)
 * [Admin XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin/schemas)

@@ -12,6 +12,7 @@
       * [Extensibility](Architecture/Extensibility.md)
       * [Internationalization and localization](Architecture/Internationalizationlocalization.md)
       * [Security](Architecture/security.md)
+      * [Scalability](Architecture/Scalability.md)
    * [Models and views](Architecture/Models-and-views.md)
    * [Technology stack](Architecture/Technologystack.md)
    * [Use cases](Architecture/Use-cases.md)

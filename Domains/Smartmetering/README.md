@@ -1,7 +1,21 @@
 ## SmartMetering Documentation (Beta version)
 
-This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
+This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet officially been released.
 Information on the DLMS device simulator can be found in the [DLMS protocol section](../Protocols/DLMS/Devicesimulator.md)
+
+### Scope
+The goal of this domain is to read and manage millions of smart smart meters. This includes smart meter installation, firmware updates, smart meter removal, read smart meter values, time synchronisation, etc.
+Everything that is needed to professional manage millions of smart meters is or can be included in this domain.
+
+### Features
+
+Smart metering features available within on the open smart grid platform so far:
+
+- Add smart meter to the platform, so the device is known and additional actions can be performed for the device
+- Process shipment file, which adds several smart meters to the platform along with all needed information
+- Synchronize time between smart meters and head-end system, in case the smart meter adjusts it's time, some events will be logged
+- Retrieve events from the smart meter, several event logs are available
+- Retrieve periodic meter reads from the smart meter
 
 ### Generic functionality
 

@@ -17,7 +17,7 @@ The use of layers improves the separation of responsibilities. Each application 
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
 _Image, Layers:_
- ![alt text](./layers.png "Layers")
+ ![alt text](./OSGP-components.png "Layers")
 
 1. Audit logger
 2. Webservices
