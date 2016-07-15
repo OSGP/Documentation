@@ -6,6 +6,7 @@
    * [Architecture functional layers](Architecture/Functionallayersoverview.md)
    * [Architecture Principles](Architecture/Architecture-Principles.md)
    * [Platform components description](Architecture/Platform-components-description.md)
+   * [Message flow examples](Architecture/Messageflow.md)
    * [Logical Authorisation Model](Architecture/Logical-Authorisation-Model.md)
    * [Non-functional overview](Architecture/Non-functional-overview.md)
       * [TimeBehavior](Architecture/TimeBehavior.md)

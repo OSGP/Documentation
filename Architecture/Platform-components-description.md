@@ -11,8 +11,8 @@ The use of layers improves the separation of responsibilities. Each application 
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
 **Layers:**
- ![Open smart grid platform layers](./OSGP-components.png "Layers")
 
+ ![Open smart grid platform layers](./OSGP-components.png "Layers")
 
 
 ### Authentication and authorization
@@ -26,7 +26,9 @@ For the several functional domains separate SOAP Web services are offered. This 
 WSDL
 A separate WSDL is implemented for each functional cluster. All SOAP operations have a request object parameter and return a response object. For Synchronized Webservices  the result is immediately included in the response.
 For asynchronous web services the response contains a correlation ID. This Correlation ID  is to be used by the requester to receive the actual result from the platform. The following diagram is an example of such an asynchronous request.
-![alt text](./a-sync-web-service-request.png "A-Sync Web Service Request")
+
+![Web request example](./a-sync-web-service-request.png "A-Sync Web Service Request")
+
 Furthermore each SOAP message has a header which contains the user's organisation ID. This table displays an overview of the WSDL's including operations and fields in the request and response objects.
 
 ### Domain logic layer
@@ -81,6 +83,7 @@ A full list of current supported protocols can be found in the [protocols chapte
 Protocol specific device attributes are stored in protocol adapter DB
 
 ### Queues
+Queues are used to connect open smart grid platform components with each other.
 
  ![Example how a queue works](./Queues.png "Queues")
 

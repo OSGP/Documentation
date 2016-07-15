@@ -8,3 +8,4 @@ The identified non-functional demands are:
 - Extensibility
 - Internationalisation and localisation
 - Security
+- Scalability
