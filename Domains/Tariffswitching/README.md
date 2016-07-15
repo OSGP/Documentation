@@ -12,5 +12,5 @@ This covers the services for tariff switching domain using the open smart grid p
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 
 
-[Tariff switching WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-tariffswitching/src/main/webapp/WEB-INF/wsdl/tariffswitching)
-[Tariff switching XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-tariffswitching/src/main/webapp/WEB-INF/wsdl/tariffswitching/schemas)
+* [Tariff switching WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-tariffswitching/src/main/webapp/WEB-INF/wsdl/tariffswitching)
+* [Tariff switching XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-tariffswitching/src/main/webapp/WEB-INF/wsdl/tariffswitching/schemas)

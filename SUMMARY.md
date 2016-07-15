@@ -93,8 +93,10 @@
 
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
+   
    * [DLMS / COSEM](Protocols/DLMS/README.md)
-   	  * [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
+      * [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
+
    * [OSLP](Protocols/OSLP/README.md)
       * [OSLP v0.5.1](Protocols/OSLP/oslp-v0.5.1.md)
          * [RegisterDevice](Protocols/OSLP/v0.5.1/RegisterDevice.md)
@@ -130,4 +132,3 @@
 
 * [Support](Support/README.md)
 * [License](Apache-license/README.md)
-* [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
