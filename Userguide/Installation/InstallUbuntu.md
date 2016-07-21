@@ -1,4 +1,4 @@
-### 2.2.2 Installing [Ubuntu](http://www.ubuntu.com/desktop)
+### Installing [Ubuntu](http://www.ubuntu.com/desktop)
 
 ![alt text](./installation-script-screenshots/12.png)
 
@@ -32,7 +32,7 @@
 
 ![alt text](./installation-script-screenshots/27.png)
 
-### 3.3.3 Starting Ubuntu for the First Time
+### Starting Ubuntu for the First Time
 
 ![alt text](./installation-script-screenshots/28.png)
 
@@ -40,7 +40,7 @@
 
 ![alt text](./installation-script-screenshots/30.png)
 
-### 3.3.4 Updating the Software
+### Updating the Software
 
 Find the Software Updater link on the left icon menu bar. Click it to start Ubuntu Software update.
 
@@ -50,7 +50,7 @@ Find the Software Updater link on the left icon menu bar. Click it to start Ubun
 
 ![alt text](./installation-script-screenshots/33.png)
 
-### 3.3.5 Installing Virtual Box Guest Additions
+### Installing Virtual Box Guest Additions
 
 ![alt text](./installation-script-screenshots/34.png)
 
@@ -58,7 +58,7 @@ Find the Software Updater link on the left icon menu bar. Click it to start Ubun
 
 ![alt text](./installation-script-screenshots/36.png)
 
-### 3.3.6 Installing Virtual Box Guest Additions, Again
+### Installing Virtual Box Guest Additions, Again
 
 In case the Virtual Box version is not the latest, there might be a problem with the Virtual Box Guest Additions.
 To fix it, use the latest version of Virtual Box Guest Additions.
@@ -69,7 +69,7 @@ To fix it, use the latest version of Virtual Box Guest Additions.
 
 ![alt text](./installation-script-screenshots/39.png)
 
-### 3.3.7 Ubuntu installed and Virtual Box Guest Additons Up and Running
+### Ubuntu installed and Virtual Box Guest Additons Up and Running
 
 Optionally, Shared Clipboard and Drag 'n' Drop can be set to Bidirectional.
 

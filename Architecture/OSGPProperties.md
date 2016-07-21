@@ -1,5 +1,6 @@
-## I.1 Properties of the Open Smart Grid Platform
+## Properties of the Open Smart Grid Platform
 
+The open smart grid platform is designed for message based communication.
 - Acts as a **connecting link** between (web)applications and smart devices
 - The open Source approach **prevents vendor lock-in** 
 - State of the art **security** 
@@ -18,8 +19,9 @@
 - Supports **active-active** setup over multiple datacenters
 - Adding servers can be done in **runtime**
  
+Please note: the Open Smart Grid Platform is not build for streaming data such as video, audio or a stream of high frequency measurement data.
 
-### I.1.1 Unique features of the Open Smart Grid Platform
+### Unique features of the Open Smart Grid Platform
 
 The Open Smart Grid Platform is unique by its multi-dimensional, generic and open design. Because of a true separation of layers and the use of open standards, other suppliers and/or third parties are able to develop and market innovative solutions.
 
@@ -29,3 +31,4 @@ The Open Smart Grid Platform is unique by its multi-dimensional, generic and ope
 4. The platform layers are truly separated by open standards and the platform is made available as **open source** software.
 5. The  platform does not hold on to any application data ( **stateless** ). No messages/commands will ever get lost.
 This enables third party vendors and developers to deliver innovative applications which are competitive in both rich functionalities and the generated data.
+

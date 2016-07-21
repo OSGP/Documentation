@@ -1,7 +1,7 @@
-## 1.3 Description of each of the platform components
+## Description of each of the platform components
 
 
-### 1.3.1 Application Layering
+### Application Layering
 
 The use of layers improves the separation of responsibilities. Each application contains the following layers:
 
@@ -11,51 +11,61 @@ The use of layers improves the separation of responsibilities. Each application 
 - Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
 **Layers:**
- ![alt text](./layers.png "Layers")
 
-1. Audit logger
-2. Webservices
-3. Functions
-4. Queue
-5. Worklow engine
-6. Protocol framework
-7. Protocol implementations
-8. Workflow engine
-9. Queue
-10. Communication
+ ![Open smart grid platform layers](./OSGP-components.png "Layers")
 
 
-### 1.3.2 HTTPS/SOAP communication
+### Authentication and authorization
 
 The web server is configured with a SSL certificate to encrypt the incoming and outgoing communication. The SOAP Web service (Spring Framework web service) uses a Java Keystore and a certificate for each organization. Only organizations that are know within the platform and are authorized to use the web service.
 
-### 1.3.3 Web services per functional domain
+### Application integration layer
 
 For the several functional domains separate SOAP Web services are offered. This separation offers authorization per functional domain. Each of the web service components send a queue message to the corresponding domain component.
 
 WSDL
 A separate WSDL is implemented for each functional cluster. All SOAP operations have a request object parameter and return a response object. For Synchronized Webservices  the result is immediately included in the response.
 For asynchronous web services the response contains a correlation ID. This Correlation ID  is to be used by the requester to receive the actual result from the platform. The following diagram is an example of such an asynchronous request.
-![alt text](./a-sync-web-service-request.png "A-Sync Web Service Request")
+
+![Web request example](./a-sync-web-service-request.png "A-Sync Web Service Request")
+
 Furthermore each SOAP message has a header which contains the user's organisation ID. This table displays an overview of the WSDL's including operations and fields in the request and response objects.
 
-### 1.3.4 Business logic
+### Domain logic layer
 
 For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the OSGP core component.
 
 More information on the specific domains can be found in the [domain chapter](../Domains/README.md)
 
-### 1.3.5 Core
+### OSGP Core Services
 
 The OSGP core component receives queue messages from domain components. These messages from domain components are forwarded to a protocol adapter project. The OSGP core component also offers logic for a protocol adapter project to send the response of a smart device back to a domain project.
-The Core component routes messages from domain adapter components to protocol adapter components and vice versa.
+The Core component routes messages from domain adapter components to protocol adapter components and vice versa. The core layer also contains a workflow engine.
 
-The internal datamodel in the Core layer:
+The internal databasemodel in the core layer:
 ![alt text](./Core-datamodel/OSGP-core-model.png "Core model")
 ![alt text](./Core-datamodel/OSGP-core-logging-and-monitor-model.png "Logging and monitor model")
 ![alt text](./Core-datamodel/OSGP-core-OSLP-device-model.png "Device model")
 
-### 1.3.6 Open protocols
+
+_Image, Overview of platform data model_
+![alt text](./data-model.png "Data Model")
+
+Data model explanation:
+
+| **Table** | **Description** |
+| --- | --- |
+| devices | Devices table |
+| device\_authorisation | Authorisation table, function group column concerns the device functions (AD\_HOC, INSTALLATION, etc) |
+| organization | Organization table, function group column concerns the platform functions (ADMIN of USER) |
+| event | Events table |
+| oslp\_log\_item | Table for logging of OSLP messages. |
+| webservice monitor log item | Audit record for tracking webservice activity. |
+
+The platform will store as less data as possible
+Generic (and domain specific) devices attributes are stored in core DB
+
+### Protocol Layer
 
 The open smart grid platform supports multiple protocols.
 
@@ -70,8 +80,20 @@ The protocols can use of the of the security layers:
 Other protocols can easily be added to the platform. Protocols based on open standards are prefered (if possible).
 A full list of current supported protocols can be found in the [protocols chapter](../Protocols/README.md).
 
+Protocol specific device attributes are stored in protocol adapter DB
 
-### 1.3.7 Smart devices
+### Queues
+Queues are used to connect open smart grid platform components with each other.
+
+ ![Example how a queue works](./Queues.png "Queues")
+
+* Transactions on messages to and from the queues
+* Messages are persistence on the queues
+* Queues are clustered for reliability and speed
+* By using queues, the open smart grid platform can be stateless
+
+
+### Smart devices
 
 The open smart grid platform can connect to any device as long as the device supports one of the supported protocols.
 Smart devices can receive messages from or send messages to protocol adapter components. In case of SSLD's this is done using TCP/IP over mobile internet connections (GPRS/CDMA). The communication is encrypted using public key cryptography.

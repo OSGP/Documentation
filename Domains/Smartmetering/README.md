@@ -1,16 +1,30 @@
-## 4.5 SmartMetering Documentation (Beta version)
+## SmartMetering Documentation (Beta version)
 
-This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet offically been released.
+This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet officially been released.
 Information on the DLMS device simulator can be found in the [DLMS protocol section](../Protocols/DLMS/Devicesimulator.md)
 
-### 4.5.1 Generic functionality
+### Scope
+The goal of this domain is to read and manage millions of smart smart meters. This includes smart meter installation, firmware updates, smart meter removal, read smart meter values, time synchronisation, etc.
+Everything that is needed to professional manage millions of smart meters is or can be included in this domain.
+
+### Features
+
+Smart metering features available within on the open smart grid platform so far:
+
+- Add smart meter to the platform, so the device is known and additional actions can be performed for the device
+- Process shipment file, which adds several smart meters to the platform along with all needed information
+- Synchronize time between smart meters and head-end system, in case the smart meter adjusts it's time, some events will be logged
+- Retrieve events from the smart meter, several event logs are available
+- Retrieve periodic meter reads from the smart meter
+
+### Generic functionality
 
 - **[priority](./smartmeteringwebservices/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 - **[scheduling](./smartmeteringwebservices/scheduling.md)** requests can be scheduled for a certain time.
 - **[bundeling](./smartmeteringwebservices/bundeling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
 
 
-### 4.5.2 Messages
+### Messages
 
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.

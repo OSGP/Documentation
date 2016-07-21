@@ -1,8 +1,9 @@
+### Functional view
 
 _Image, functional layers overview_
  ![alt text](./functional-layers-overview.png "Functional Layers Overview")
 
-### 1.2.1 Functional view
+
 
 #### Starting architecture
 
@@ -21,7 +22,7 @@ _Image, functional starting architecture_
 8. Open Street Light Protocol (OSLP)
 9. Public Street Lighting Device (PSLD) or Sub Station Lighting Device (SSLD)
 
-### 1.2.2 Functional Reference
+### Functional Reference
 
 This model partitions the system in 7 functional clusters (vertically) which are shown on the system layers (horizontally). The circled numbers refer to image 1.
 

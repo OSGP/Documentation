@@ -1,4 +1,4 @@
-##2.5 FAQ
+## FAQ
 
 - **How to start everything up?** Make sure that PostgreSQL is running. Make sure that Apache HTTPD web server and Apache ActiveMQ are running. Then start Apache Tomcat application server.
 - **Where are the log files?** The Apache Tomcat application server logs can be found in /var/log/tomcat7. The Apache HTTPD web server logs can be found in /var/log/httpd. The PostgreSQL log files can be found in /var/lib/pgsql/9.3/data/pg_log.

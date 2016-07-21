@@ -1,4 +1,4 @@
-### 1.7.1 Time Behavior
+### Time Behavior
 
 Time behavior is mainly significant in the Flexovl application when a lot of devices have to be addressed in a short period of time over a wireless network. Both latency and limited bandwidth have to be taken in consideration while demanding the coordinated on and off switching of the lighting (We do not want the Christmas tree effect after all).
 
