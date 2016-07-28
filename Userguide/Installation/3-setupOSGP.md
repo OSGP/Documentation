@@ -1,4 +1,4 @@
-###Setting Up the OSGP Platform
+### Setting Up the OSGP Platform
 This chapter describes all the steps needed to set-up the OSGP Platform.
 
 ### Importing Maven Projects into Eclipse
@@ -66,7 +66,7 @@ Continue by adding the Maven Projects to the Tomcat server by right clicking on 
 At this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup.
 
 ### Starting Apache ActiveMQ
-Continue with starting Apache ActiveMQ (the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`): by opening a terminal and use the command: 
+Continue with starting Apache ActiveMQ (the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`): by opening a terminal and use the command:
 ```shell
 sudo ./activemq console
 ```
@@ -90,7 +90,7 @@ Open pgAdminIII and configure a connection: choose the 'Add a connection to a se
 
 ![alt text](./installation-script-screenshots/76.png)
 
-####Tip
+#### Tip
 - If you receive the error 'No more connections allowed' in pgAdmin (or when executing the sql script), stop the Tomcat server, and start it again once you are finished with the steps below.
 
 ### Creating the 'test-org' Organization

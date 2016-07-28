@@ -1,7 +1,7 @@
 ### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
 To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up the development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the vagrant up command.
 
-###Install Vagrant and VirtualBox
+### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
 And follow the installation steps.
@@ -14,11 +14,11 @@ Complete the installation and restart your PC.
 ![alt text](./installation-script-screenshots/02.png)
 
 
-####Tip
+#### Tip
  - Remember to enable Virtualization in your system BIOS.
  - Also disable Hyper-V in Windows (can be found in Windows Features)
 
-##Download and run the Vagrant file
+## Download and run the Vagrant file
 First create a new directory (for example: `C:\OSGP\osgp-box\`)
 
 Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant/Vagrantfile> and right-click on the page and choose 'Save (page) as..'
@@ -56,7 +56,7 @@ Close the Settings window and Start the Virtual Machine again. Once it is booted
 
 ![alt text](./installation-script-screenshots/09.png)
 
-####Tip
+#### Tip
  - Remember to always log in as The "dev" user
 
 You just created a virtual machine running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the OSGP platform.

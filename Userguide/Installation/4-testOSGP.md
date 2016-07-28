@@ -43,7 +43,7 @@ Make sure the box 'Create sample requests for all operators' is checked, and cli
 
 ### First SOAP Requests to Add a Device to OSGP
 Before sending the request, the test-org.pfx should be added as SSL Keystore: Go to the properties interface for the request (bottom left of the screen, after selecting 'Request 1' under UpdateKey in the 'admin' project'), and choose `test-org.pfx` from the drop-down box.
-###Note
+### Note
 - This has to be done for each request!
 
 ![alt text](./installation-script-screenshots/89.png)
