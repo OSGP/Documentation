@@ -1,14 +1,15 @@
-
 ###Setting Up the OSGP Platform
+This chapter describes all the steps needed to set-up the OSGP Platform.
 
 ### Importing Maven Projects into Eclipse
 Open eclipse (the executable can be found in the folder `/home/dev/Tools/eclipse`) and import the projects:
 File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources`
 You will find 5 folders there, import each one (Except Config) in the following order:
--- `/home/dev/Sources/Shared`
--- `/home/dev/Sources/Platform`
--- `/home/dev/Sources/Protocol-Adapter-OSLP`
--- `/home/dev/Sources/Protocol-Adapter-DLMS`
+
+- `/home/dev/Sources/Shared`
+- `/home/dev/Sources/Platform`
+- `/home/dev/Sources/Protocol-Adapter-OSLP`
+- `/home/dev/Sources/Protocol-Adapter-DLMS`
 
 
 ![alt text](./installation-script-screenshots/54.png)
@@ -101,3 +102,5 @@ psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.s
 ![alt text](./installation-script-screenshots/77.png)
 
 ![alt text](./installation-script-screenshots/78.png)
+
+Now that everything has been set up, continue to the next chapter to start testing the Platform by sending it some requests.

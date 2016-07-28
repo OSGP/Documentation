@@ -1,3 +1,5 @@
+### Testing the platform
+This chapter will describe the steps needed to test the OSGP Platform.
 
 ### Setting Up SoapUI
 Start SoapUI by typing the following command in a terminal:
@@ -40,7 +42,7 @@ Make sure the box 'Create sample requests for all operators' is checked, and cli
 ![alt text](./installation-script-screenshots/88-3.png)
 
 ### First SOAP Requests to Add a Device to OSGP
-Before we can send our first request, we have to add the test-org.pfx as SSL Keystore: Go to the properties interface for the request (bottom left of the screen, after selecting 'Request 1' under UpdateKey in the 'admin' project'), and choose `test-org.pfx` from the drop-down box.
+Before sending the request, the test-org.pfx should be added as SSL Keystore: Go to the properties interface for the request (bottom left of the screen, after selecting 'Request 1' under UpdateKey in the 'admin' project'), and choose `test-org.pfx` from the drop-down box.
 ###Note
 - This has to be done for each request!
 
@@ -93,7 +95,7 @@ After the request has been submitted, the response should include the SSLD devic
 
 ### Opening Device Simulator to Add a Device
 In order to be able to use the SSLD-000-00-01 Device, the device needs to be simulated in the Device Simulator. To do this we have to create it.
-In the Firefox Browser, open the Device Simulator by going to the following URL: 
+In the Firefox Browser, open the Device Simulator by going to the following URL:
 ```
 https://localhost/web-device-simulator/devices
 ```
@@ -153,14 +155,14 @@ Using SoapUI, click on Request 1 under SetLight at the public-lighting project. 
 </soapenv:Envelope>
 ```
 
-Submit the request. Take note of the CorrelationUid in the response. We can send out a request later using that Id to ask the Platform if the request succeeded. 
+Submit the request. Take note of the CorrelationUid in the response. You can use this Id in another request to ask the server for the status of this request.
 ![alt text](./installation-script-screenshots/98.png)
 
-In the home screen of the OSLP device simulator, the lightbulb should light up for SSLD_000-00-01. Now we know the request succeeded. 
+In the home screen of the OSLP device simulator, the lightbulb should light up for SSLD_000-00-01. This means that the request succeeded.
 ![alt text](./installation-script-screenshots/99.png)
 
-Normally we don't have a device simulator to know if the SetLight request succeeded. But we can ask the platform by sending another request: GetSetLightResponse.
-In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' project. Set the following parameters in the request (And the keystore in the request properties):
+The last request concerns the response form the previous SetLight request.
+In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' project. Set the following parameters in the request (And the keystore in the request properties). Make sure to replace the CorrelationUid with the value from the respons from the SetLight request.
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
@@ -186,3 +188,6 @@ In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' pr
 
 ![alt text](./installation-script-screenshots/100.png)
 
+The server replied Ok, indicicating that the SetLight request has been processed succesfully.
+
+This step also condcludes the installation manual.

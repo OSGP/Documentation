@@ -1,14 +1,14 @@
-# Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
-To improve the usability of the Installation process, we have created a Script and Vagrant file to automatically set-up the development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the vagrant up command.
+### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
+To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up the development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the vagrant up command.
 
-##Install Vagrant and VirtualBox
-Before we can use VirtualBox and Vagrant, we will have to install it.
+###Install Vagrant and VirtualBox
+
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
 And follow the installation steps.
 
 ![alt text](./installation-script-screenshots/01.png)
 
-Next we have to download and install Vagrant. Vagrant is available at the following URL:
+Now download and install Vagrant. Vagrant is available at the following URL:
 <https://www.vagrantup.com/downloads.html>
 Complete the installation and restart your PC.
 ![alt text](./installation-script-screenshots/02.png)
@@ -21,11 +21,8 @@ Complete the installation and restart your PC.
 ##Download and run the Vagrant file
 First create a new directory (for example: `C:\OSGP\osgp-box\`)
 
-@Todo: Must put Vagrantfile here
+Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant/Vagrantfile> and right-click on the page and choose 'Save (page) as..'
 
-Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant/Vagrantfile> and right-click on the page and choose 'Save page as..'
-
-@Todo: Add Screenshot of downloading the vagrant file
 ![alt text](./installation-script-screenshots/03.png)
 
 Navigate to your newly created directory and choose 'save'.
@@ -43,7 +40,7 @@ Don't log in yet, wait until the script in the Console is finished.
 
 ![alt text](./installation-script-screenshots/05.png)
 
-Now that the script has been ran its course, go to the Ubuntu virtual machine and log in as vagrant user (the password is vagrant). Now shut the virtual machine down.
+Now that the script has ran its course, go to the Ubuntu virtual machine and log in as vagrant user (the password is vagrant). Now shut the virtual machine down.
 
 ![alt text](./installation-script-screenshots/06.png)
 
@@ -62,4 +59,4 @@ Close the Settings window and Start the Virtual Machine again. Once it is booted
 ####Tip
  - Remember to always log in as The "dev" user
 
-We just created a virtual machine, running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the OSGP platform.
+You just created a virtual machine running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the OSGP platform.
