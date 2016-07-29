@@ -47,13 +47,6 @@ Click on 'Open launch configuration', click on the 'Arguments' tab and add the f
 
 ![alt text](./installation-script-screenshots/67.png)
 
-### Creating Sym Link to Maven Settings
-Create a symlink to the Maven setting file using this command in a terminal:
-```shell
-sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2
-```
-![alt text](./installation-script-screenshots/68.png)
-
 ### Setting Up Apache Tomcat7 Server Context
 Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/Config/tomcat/context.xml` to map configuration file names to file paths.
 ![alt text](./installation-script-screenshots/69.png)

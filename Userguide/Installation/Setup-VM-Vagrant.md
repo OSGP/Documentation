@@ -27,6 +27,13 @@ Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant/Vag
 
 Navigate to your newly created directory and choose 'save'.
 
+#### Note
+ - Make sure that the file is named like this: `Vagrantfile`  *without* an extension!
+ - If the file has an extension (for example .txt) you can rename the file using the following console command:
+```shell
+mv Vagrantfile.txt Vagrantfile
+```
+
 Now open a Command Prompt and navigate to the newly created directory where you just put the Vagrantfile.
 
 Run the following command:
