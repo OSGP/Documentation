@@ -19,15 +19,14 @@
    * [Use cases](Architecture/Use-cases.md)
 
 * [General User's Guide](Userguide/README.md)
-   * [Installation guide](Userguide/Installation/Installationguide.md)
-      * [Setup Virtual Machine](Userguide/Installation/Setup-VM.md)
-      * [Install Ubuntu](Userguide/Installation/InstallUbuntu.md)
+   * [Installation](Userguide/Installation/Installationguide.md)
+      * [Setup Virtual Machine](Userguide/Installation/Setup-VM-Vagrant.md)      
       * [Setup OSGP](Userguide/Installation/setupOSGP.md)
       * [Test OSGP installation](Userguide/Installation/testOSGP.md)
    * [Configuration](Userguide/Configuration.md)
    * [Deployment](Userguide/Deployment.md)
    * [FAQ](Userguide/FAQ.md)
-      
+
 * [Open Source Community](Opensourcecommunity/README.md)
    * [Contributing to the code](Opensourcecommunity/Contributing-to-the-code.md)
    * [Communication and Contact](Opensourcecommunity/Communication-and-contact.md)
@@ -36,7 +35,7 @@
    * [Contributing to documentation](Opensourcecommunity/Contributing-to-documentation.md)
    * [Developers 101](Opensourcecommunity/ToolsguidelinesCI.md)
    * [Foundation](Opensourcecommunity/Foundation.md)
-   
+
 * [Domains](Domains/README.md)
    * [Admin](Domains/Admin/README.md)
    * [Smart lighting](Domains/Smartlighting/README.md)
@@ -95,7 +94,7 @@
 
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
-   
+
    * [DLMS / COSEM](Protocols/DLMS/README.md)
       * [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
 
