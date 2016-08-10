@@ -1,5 +1,5 @@
 ### Adding an Organisation to the platform
-This chapter will describe how to add a new Organisation to the platform. This includes creating a certificate for the new organisation.
+This chapter describes how to add a new Organisation to the platform. This includes creating a certificate for the new organisation.
 
 ### Creating an Organisation
 In SoapUi go to DeviceManagement under the Admin project. Click on request 1 under CreateOrganisation. Fill in the parameters like the example request below. Make sure to sign the request with the test-org.pfx and to use the test-org organisation in the request header.
