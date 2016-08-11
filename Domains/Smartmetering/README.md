@@ -33,6 +33,8 @@ Smart metering features available within on the open smart grid platform so far:
 - **[GetRetrieveConfigurationObjectsResponse](./smartmeteringwebservices/GetRetrieveConfigurationObjectsResponse.md)** is a request which returns the response from the [RetrieveConfigurationObjects](./smartmeteringwebservices/RetrieveConfigurationObjects.md) request.
 - **[GetSpecificConfigurationObject](./smartmeteringwebservices/GetSpecificConfigurationObject.md)** is a request to obtain a specific object from an E-meter. 
 - **[GetSpecificConfigurationObjectResponse](./smartmeteringwebservices/GetSpecificConfigurationObjectResponse.md)** is a request which returns the response from the [GetSpecificConfigurationObject](./smartmeteringwebservices/GetSpecificConfigurationObject.md) request.
+- **[GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md)** is a request to get the associated ln objects.
+- **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md) ** is a request which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) request.
 
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./smartmeteringwebservices/SetSpecialDays.md)** is a request to set a dayId profile and its tariffs for a specific date on a device.
@@ -53,8 +55,8 @@ Smart metering features available within on the open smart grid platform so far:
 - **[GetGetAdministrativeStatusResponse](./smartmeteringwebservices/GetGetAdministrativeStatusResponse.md)** is a request which returns the response from the [GetAdministrativeStatus](./smartmeteringwebservices/GetAdministrativeStatus.md) request.
 - **[SetAdministrativeStatus](./smartmeteringwebservices/SetAdministrativeStatus.md)** is a request to set the AdministrativeStatus.
 - **[GetSetAdministrativeStatusResponse](./smartmeteringwebservices/GetSetAdministrativeStatusResponse.md)** is a request which returns the response from the [SetAdministrativeStatus](./smartmeteringwebservices/SetAdministrativeStatus.md) request.
-- **[GetFirmwareVersionRequest](./smartmeteringwebservices/GetFirmwareVersionRequest.md)** is a request to retrieve the firmwareversion(s).
-- **[GetFirmwareVersionAsyncRequest](./smartmeteringwebservices/GetFirmwareVersionAsyncRequest.md)** is a request which returns the response from the [GetFirmwareVersionRequest](./smartmeteringwebservices/GetFirmwareVersionRequest.md).
+- **[GetFirmwareVersion](./smartmeteringwebservices/GetFirmwareVersion.md)** is a request to retrieve the firmwareversion(s).
+- **[GetGetFirmwareVersionResponse](./smartmeteringwebservices/GetGetFirmwareVersionResponse.md)** is a request which returns the response from the [GetFirmwareVersionRequest](./smartmeteringwebservices/GetFirmwareVersion.md).
 - **[ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md)** is a request to change the keys on a E-meter.
 - **[GetReplaceKeysResponse](./smartmeteringwebservices/GetReplaceKeysResponse.md)** is a request which returns the response from the [ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md) request.
 
@@ -68,14 +70,14 @@ Smart metering features available within on the open smart grid platform so far:
 - **[GetDevices](./smartmeteringwebservices/GetDevices.md)** is a request to retrieve the last known relay statuses for a group of devices.
 
 #### SmartMeteringMonitoring
-- **[ActualMeterReads](./smartmeteringwebservices/ActualMeterReads.md)** is a request to retrieve the actual meter reads from an E-meter.
-- **[GetActualMeterReadsResponse](./smartmeteringwebservices/GetActualMeterReadsResponse.md)** is a request which returns the response from the [ActualMeterReads](./smartmeteringwebservices/ActualMeterReads.md) request.
-- **[ActualMeterReadsGas](./smartmeteringwebservices/ActualMeterReadsGas.md)** is a request to retrieve the actual meter reads from a G-meter.
+- **[GetActualMeterReads](./smartmeteringwebservices/GetActualMeterReads.md)** is a request to retrieve the actual meter reads from an E-meter.
+- **[GetActualMeterReadsResponse](./smartmeteringwebservices/GetActualMeterReadsResponse.md)** is a request which returns the response from the [ActualMeterReads](./smartmeteringwebservices/GetActualMeterReads.md) request.
+- **[GetActualMeterReadsGas](./smartmeteringwebservices/GetActualMeterReadsGas.md)** is a request to retrieve the actual meter reads from a G-meter.
 - **[GetActualMeterReadsGasResponse](./smartmeteringwebservices/GetActualMeterReadsGasResponse.md)** is a request which returns the response from the [ActualMeterReadsGas](./smartmeteringwebservices/ActualMeterReadsGas.md) request.
-- **[PeriodicMeterReads](./smartmeteringwebservices/PeriodicMeterReads.md)** is a request to retrieve the periodic meter reads from an E-meter.
-- **[GetPeriodicMeterReadsResponse](./smartmeteringwebservices/GetPeriodicMeterReadsResponse.md)** is a request which returns the response from the [PeriodicMeterReads](./smartmeteringwebservices/PeriodicMeterReads.md) request.
-- **[PeriodicMeterReadsGas](./smartmeteringwebservices/PeriodicMeterReadsGas.md)** is a request to retrieve the periodic meter reads from a G-meter.
-- **[GetPeriodicMeterReadsGasResponse](./smartmeteringwebservices/GetPeriodicMeterReadsGasResponse.md)** is a request which returns the response from the [PeriodicMeterReadsGas](./smartmeteringwebservices/PeriodicMeterReadsGas.md) request.
+- **[GetPeriodicMeterReads](./smartmeteringwebservices/GetPeriodicMeterReads.md)** is a request to retrieve the periodic meter reads from an E-meter.
+- **[GetPeriodicMeterReadsResponse](./smartmeteringwebservices/GetPeriodicMeterReadsResponse.md)** is a request which returns the response from the [PeriodicMeterReads](./smartmeteringwebservices/GetPeriodicMeterReads.md) request.
+- **[GetPeriodicMeterReadsGas](./smartmeteringwebservices/GetPeriodicMeterReadsGas.md)** is a request to retrieve the periodic meter reads from a G-meter.
+- **[GetPeriodicMeterReadsGasResponse](./smartmeteringwebservices/GetPeriodicMeterReadsGasResponse.md)** is a request which returns the response from the [PeriodicMeterReadsGas](./smartmeteringwebservices/GetPeriodicMeterReadsGas.md) request.
 - **[ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md)** is a request to read the alarm register from a device.
 - **[GetReadAlarmRegisterResponse](./smartmeteringwebservices/GetReadAlarmRegisterResponse.md)** is a request which returns the response from the [ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md) request.
 - **[RetrievePushNotificationAlarm](./smartmeteringwebservices/RetrievePushNotificationAlarm.md)** is a request to push retrieved alarm notifications to OSGP.
@@ -84,5 +86,11 @@ Smart metering features available within on the open smart grid platform so far:
 - **[SendNotification](./smartmeteringwebservices/SendNotification.md)** is a request to let Webapps know there is a result ready to retrieve from the platform.
 
 #### SmartMeteringBundle
-- **[Bundle](./smartmeteringwebservices/Bundle.md)**  is a special request in which one or more single request(s) to a specific device can be bundled. 
-  All request sent to this device make use of one communication channel, which may improve performance considerably.
+- **[Bundle](./smartmeteringwebservices/Bundle.md)**  is a special request in which one or more single request(s) to a specific device can be bundled.
+- **[GetBundleResponse](./smartmeteringwebservices/Bundle.md)** is a request which gets the response from the [Bundle](./smartmeteringwebservices/Bundle.md) request.
+
+All request sent to this device make use of one communication channel, which may improve performance considerably.
+
+### WSDL's
+* [SmartMetering WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering)
+* [PublicLighting XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas)
