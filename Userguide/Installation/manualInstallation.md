@@ -12,17 +12,17 @@ The OSGP Platform runs on a Linux environment. It is recommended to set up a mac
 ### Software and tools
 
 The OSGP platform needs the following software and tools installed/downloaded:
--- **Java 7** openjdk-7
--- **PostgreSQL** and **PGAdmin 3**
--- **Git**
--- **Maven**
--- **ActiveMQ**
--- **Tomcat 7**
--- **Apache HTTPD**
--- **SoapUi**
--- **Eclipse EE Luna**
--- **Google Protocol Buffers**: **protobuf-compiler**, **libprotoc7** and **libprotobuf7**
--- **[PostgreSql JDBC driver JRE 7](https://jdbc.postgresql.org/download/postgresql-9.4.1209.jre7.jar)**
+- **Java 7** openjdk-7
+- **PostgreSQL** and **PGAdmin 3**
+- **Git**
+- **Maven**
+- **ActiveMQ**
+- **Tomcat 7**
+- **Apache HTTPD**
+- **SoapUi**
+- **Eclipse EE Luna**
+- **Google Protocol Buffers**: **protobuf-compiler**, **libprotoc7** and **libprotobuf7**
+- **[PostgreSql JDBC driver JRE 7](https://jdbc.postgresql.org/download/postgresql-9.4.1209.jre7.jar)**
 
 ### Settings
 
@@ -30,36 +30,42 @@ The OSGP platform needs the following software and tools installed/downloaded:
 It is recommeded to create a 'dev' user, because some scripts contain hard coded references to this 'dev' user. It is possible to skip this step, but then some of the scripts will have to be adjusted manually.
 
 ##### Tomcat 7
--- Place the PostgreSql JDBC driver jar in the Tomcat7 lib directory.
--- Change permissions of Tomcat 7 Config files to 644 in the Tomcat 7 conf directory.
+- Place the PostgreSql JDBC driver jar in the Tomcat7 lib directory.
+- Change permissions of Tomcat 7 Config files to 644 in the Tomcat 7 conf directory.
 
 ##### Apache HTTPD
--- Enable mod_ssl by running the following command: ```a2enmod ssl```
--- Enable proxy_ajp by running the following command: ```a2enmod proxy_ajp```
+- Enable mod_ssl by running the following command: 
+```shell
+a2enmod ssl
+```
+- Enable proxy_ajp by running the following command: 
+```shell
+a2enmod proxy_ajp
+```
 
 #### Java
--- Make sure the JAVA_HOME var is set, and points to openjdk-7.
+- Make sure the JAVA_HOME var is set, and points to openjdk-7.
 
 ### Cloning Sources
 Clone the following repo's, it is recommeded to create a Sources directory in ```/home/dev/``` since some scripts contain hard coded references to those folders.
-
--- git clone https://github.com/OSGP/Config.git /home/dev/Sources/Config
--- git clone https://github.com/OSGP/Shared.git /home/dev/Sources/Shared
--- git clone https://github.com/OSGP/Platform.git /home/dev/Sources/Platform
--- git clone https://github.com/OSGP/Protocol-Adapter-OSLP.git /home/dev/Sources/Protocol-Adapter-OSLP
--- git clone https://github.com/OSGP/Protocol-Adapter-DLMS.git /home/dev/Sources/Protocol-Adapter-DLMS
-
+```shell
+git clone https://github.com/OSGP/Config.git /home/dev/Sources/Config
+git clone https://github.com/OSGP/Shared.git /home/dev/Sources/Shared
+git clone https://github.com/OSGP/Platform.git /home/dev/Sources/Platform
+git clone https://github.com/OSGP/Protocol-Adapter-OSLP.git /home/dev/Sources/Protocol-Adapter-OSLP
+git clone https://github.com/OSGP/Protocol-Adapter-DLMS.git /home/dev/Sources/Protocol-Adapter-DLMS
+```
 Make sure you are on the development branch (default).
 
 Initialiaze the Git submodules in Platform, Protocol-Adapter-OSLP and Protocol-Adapter-DLMS ny running the following command in each directory:
 ```shell
--- git submodule update --init --recursive
+git submodule update --init --recursive
 ```
 
 ### Creating directories and symlinks
 Create the following directories:
--- ```/var/log/osp/logs```
--- ```/etc/osp/```
+- ```/var/log/osp/logs```
+- ```/etc/osp/```
 
 Make the dev user (or equivelant) the owner of the log directory with rwx permission. Give the other users read and execute permission.
 
