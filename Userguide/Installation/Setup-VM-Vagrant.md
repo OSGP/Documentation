@@ -1,6 +1,9 @@
 ### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
 To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up the development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the vagrant up command.
 
+#### Note
+ - If you would like to follow the **manual installation procedure**, please proceed to the [Manual Installation Chapter](./manualInstallation.md)
+
 ### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>

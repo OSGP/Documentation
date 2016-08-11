@@ -10,7 +10,7 @@ A next step could be to have a look at the WSDL's to understand which functions 
 
 ### Installation
 
-If a full installation is desired, have a look at our [Installation Script](https://github.com/OSGP/Config) within the Config repository. This can be used to setup a development environment which can be used to start the Platform and run it. Installation on one or several servers can be derived from the steps within the Installation Script. 
+If a full installation is desired, have a look at our [Installation Guide](./Installation/Installationguide.md). This can be used to setup a development environment which can be used to start the Platform and run it. Installation on one or several servers can be derived from the steps within the Installation Script. 
 
 ## Using Apps (Clients for OSGP)
 
