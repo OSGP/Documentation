@@ -21,7 +21,7 @@
 * [General User's Guide](Userguide/README.md)
    * [Installation](Userguide/Installation/Installationguide.md)
       * [Setup Virtual Machine](Userguide/Installation/Setup-VM-Vagrant.md)
-      * [Manual Setyp](Userguide/Installation/manualInstallation.md)
+      * [Manual Setup](Userguide/Installation/manualInstallation.md)
       * [Setup OSGP](Userguide/Installation/setupOSGP.md)
       * [Test OSGP installation](Userguide/Installation/testOSGP.md)
       * [Add a new organisation](Userguide/Installation/addOrganisation.md)

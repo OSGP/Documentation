@@ -87,6 +87,6 @@ service postgresql reload
 
 ### Set up the OSGP Platform
 
-Continue with setting up the OSGP Platform by following the [installation manual chapter 2.1.2.](http://documentation.opensmartgridplatform.org/Userguide/Installation/setupOSGP.html)
+Continue with setting up the OSGP Platform by following the [Setup OSGP Guide](http://documentation.opensmartgridplatform.org/Userguide/Installation/setupOSGP.html)
 
 
