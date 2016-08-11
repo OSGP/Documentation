@@ -23,7 +23,7 @@
       * [Setup Virtual Machine](Userguide/Installation/Setup-VM-Vagrant.md)
       * [Setup OSGP](Userguide/Installation/setupOSGP.md)
       * [Test OSGP installation](Userguide/Installation/testOSGP.md)
-      * [Add a new organisation](Userguide/addOrganisation.md)
+      * [Add a new organisation](Userguide/Installation/addOrganisation.md)
    * [Configuration](Userguide/Configuration.md)
    * [Deployment](Userguide/Deployment.md)
    * [FAQ](Userguide/FAQ.md)
