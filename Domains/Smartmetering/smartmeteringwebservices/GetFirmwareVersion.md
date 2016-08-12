@@ -1,11 +1,11 @@
-## GetFirmwareVersionRequest request
+## GetFirmwareVersion request
 
 ### Description
-GetFirmwareVersionRequest is a request to retrieve the firmware version(s) of a device. The request needs the DeviceIdentification.
+GetFirmwareVersion is a request to retrieve the firmware version(s) of a device. The request needs the DeviceIdentification.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetFirmwareVersionAsyncRequest](GetFirmwareVersionAsyncRequest.md) returns the version(s). The response request contains the DeviceIdentification and CorrelationUid which is received from the GetFirmwareVersionRequest request.
+[GetGetFirmwareVersionResponse](GetGetFirmwareVersionResponse.md) returns the version(s). The response request contains the DeviceIdentification and CorrelationUid which is received from the GetFirmwareVersion request.
 
 ### References
 
