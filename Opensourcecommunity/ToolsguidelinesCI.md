@@ -18,8 +18,8 @@ The technology and tools used can be found in the [Technology stack](../Architec
 
 All changes pushed to GitHub are built by our buildserver. Pull requests to master branch or development branch are also built. SonarQube performs static code analysis to help improve the quality level of the code base.
 
-- [Jenkins buildserver](http://54.77.62.182/): An open source continuous integration tool written in Java.
-- [SonarQube](http://54.77.62.182/sonarqube): SonarQube is an open platform to manage code quality.
+- [Jenkins buildserver](http://ci.opensmartgridplatform.org): An open source continuous integration tool written in Java.
+- [SonarQube](http://ci.opensmartgridplatform.org/sonarqube): SonarQube is an open platform to manage code quality.
 
 ## Technical Conventions and Rules for New Code
 

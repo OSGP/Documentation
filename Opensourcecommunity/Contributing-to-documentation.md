@@ -1,6 +1,19 @@
+## Documentation Publication
+
+This documentation is available in multiple formats.
+
+Web
+* [Development branch publication](http://documentation.opensmartgridplatform.org)
+* [Master branch publication](http://documentation.opensmartgridplatform.org/documentation-master)
+* [Latest Pull-request publication](http://documentation.opensmartgridplatform.org/documentation-pr)
+
+PDF
+* [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/documentation-pdf)
+
+
 ## Contributing to documentation
 
-Our most recent documentation can be found [here](http://54.77.62.182/documentation/) The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
+The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
 
 We encourage you to participate in improving the documentation. From corrected typos to new sections, every commit is appreciated. You can access the source files by clicking the "Fix this page"-button in the GitBook or by selecting the relevant Markdown-file in the documentation. You can commit your changes by sending a pull request. 
 
@@ -10,7 +23,7 @@ We encourage you to participate in improving the documentation. From corrected t
 
 3. Make sure the automated test suite succeeds. They will show-up in the pull request.
 
-4. Sign the CLA using [cla-assistant](http://52.16.237.165/) (a comment by CLAAdmin will appear for your pull request to help you out).
+4. Sign the CLA using [cla-assistant](http://cla.opensmartgridplatform.org/) (a comment by CLAAdmin will appear for your pull request to help you out).
 
 5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](../Opensourcecommunity/Governance).
 
