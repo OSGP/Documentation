@@ -34,6 +34,6 @@ The GitFlow work flow is someone complicated, but it has the advantage that it g
 
 ### Pull requests: review process
 
-Anyone can send in a pull request. Once you send in a pull request, our developers will check your commit and test it. You can view the SonarCube test results at (http://54.77.62.182/sonarqube/) and the Jenkins continuous integration results at (http://54.77.62.182/) 
+Anyone can send in a pull request. Once you send in a pull request, our developers will check your commit and test it. You can view the SonarCube test results at (http://ci.opensmartgridplatform.org/sonarqube/) and the Jenkins continuous integration results at (http://ci.opensmartgridplatform.org) 
 
 If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the OSGP! Developers are in charge of judging this. 
