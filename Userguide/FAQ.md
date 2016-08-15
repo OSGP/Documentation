@@ -10,4 +10,5 @@
 - **How do I obtain a public key for a device?** Public Keys are usually manufacterer supplied for Smart Metering. For the Open Source part you can use the OSLP device simulator. In Sources/Config/certificates/oslp/ you can find instructions for generating a OSLP device public key, and a folder with 5 pre-generated keys for test devices.
 - **My code gives a lot of errors in Eclipse after importing** Try the following things: run ```mvn clean install``` in the Shared, Platform and Adapter directories. Right-click on a project in Eclipse and select 'Maven -> Update project..', select all projects and update.
 - **The Vagrant script fails** If you are receiving errors while downloading the ubuntu iso, sources, etc. or if the puppet script does not start; try running the Vagrant script again by typing ```vagrant destroy && vagrant up``` in the directory with the vagrant file.
+- **Is a user required to consume platform services?** No, an organization is required.
 - _If your question is not in this list, please fire an [issue on github ](https://github.com/OSGP/Config/issues/new?title=Question:My%20Title&)_

@@ -26,6 +26,8 @@
       * [Test OSGP installation](Userguide/Installation/testOSGP.md)
       * [Add a new organisation](Userguide/Installation/addOrganisation.md)
    * [Configuration](Userguide/Configuration.md)
+   	  * [Add a device](Userguide/Addadevice.md)
+      * [Users](Userguide/Users.md)
    * [Deployment](Userguide/Deployment.md)
    * [FAQ](Userguide/FAQ.md)
 
