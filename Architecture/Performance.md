@@ -2,7 +2,7 @@
 
 This chapter describes the results of a performance test, to give potential users an indication of the system requirements for the platform.
 
-The Platform (OSLP) was tested with the following AWS setup:
+The Platform was tested with the following AWS setup:
 
 Systems:
 
@@ -20,8 +20,8 @@ Setup:
 
 For the test to succeed, two requirements were to be met:
 
-1. Switch 10.000 simulated devices under 5 minutes.
-2. Switch 40.000 simulated devices under 5 minutes.
+1. Switch 10.000 simulated OSLP devices under 5 minutes.
+2. Switch 40.000 simulated OSLP devices under 5 minutes.
 
 The results showed that both tests succeeded.
 
