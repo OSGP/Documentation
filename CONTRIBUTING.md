@@ -1,6 +1,6 @@
 # Thank you for contributing!  
 
-Please comply with the [code of conduct](http://54.77.62.182/documentation/Opensourcecommunity/Code-of-conduct.html) and [documentation guidelines](http://documentation.opensmartgridplatform.org/Opensourcecommunity/Contributing-to-documentation.html).
+Please comply with the [code of conduct](http://documentation.opensmartgridplatform.org/Opensourcecommunity/Code-of-conduct.html) and [documentation guidelines](http://documentation.opensmartgridplatform.org/Opensourcecommunity/Contributing-to-documentation.html).
 
 ## To get started
 
