@@ -66,6 +66,9 @@ Don't log in yet, wait until the script in the Console is finished.
 
 ![alt text](./installation-script-screenshots/05.png)
 
+#### Tip
+ - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
+ 
 Now that the script has ran its course, go to the Ubuntu virtual machine and log in as vagrant user (the password is vagrant). Now shut the virtual machine down.
 
 ![alt text](./installation-script-screenshots/06.png)
