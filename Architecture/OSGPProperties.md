@@ -4,18 +4,18 @@ The open smart grid platform is designed for message based communication.
 - Acts as a **connecting link** between (web)applications and smart devices
 - The open Source approach **prevents vendor lock-in** 
 - State of the art **security** 
-- Fully **scalable,** dynamically scaling up and down as more devices and applications are added.  > 5 million devices with the aid of a growth path
+- Fully **scalable,** dynamically scaling up and down as more devices and applications are added.
 - Freedom of choice in the **desired IP communication infrastructure** , e.g. CDMA and GPRS.
 - Stimulates open innovation by using **open standards** and **open source** technology
 - **Multiple devices** and communication protocols are supported
 - **Independent** of (cloud) hosting infrastructure
-- By delinking the chain and the use of open standards and the open source license, everybody can build their applications on top of OSGP.
-- OSGP is **optimized** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
-- OSGP simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
+- By delinking the chain and the use of open standards and the open source license, everybody can build their applications on top of the open smart grid platform.
+- The open smart grid platform is **designed** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
+- The open smart grid platform simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
 - The platform supports various IP data communication infrastructures to communicate with the devices (internet, lan, GPRS, CDMA, UMTS, etc.).
-- OSGP also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
-- OSGP Supports **multiple protocols**
-- **Easy application integration**
+- The open smart grid platform also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
+- The open smart grid platform Supports **multiple protocols**
+- **Easy application integration** by abstracting the device complexibility with webservices can could be used for many devices.
 - Supports **active-active** setup over multiple datacenters
 - Adding servers can be done in **runtime**
  
