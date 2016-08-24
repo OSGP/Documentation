@@ -13,7 +13,7 @@ The open smart grid platform is designed for message based communication.
 - The open smart grid platform is **designed** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
 - The open smart grid platform simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
 - The platform supports various IP data communication infrastructures to communicate with the devices (internet, lan, GPRS, CDMA, UMTS, etc.).
-- The open smart grid platform also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
+- The open smart grid platform also supports authentication and encryption for all data exchanges (if supported by devices) to protect the integrity and privacy of data as required in e.g. the smart grid.
 - The open smart grid platform Supports **multiple protocols**
 - **Easy application integration** by abstracting the device complexibility with webservices can could be used for many devices.
 - Supports **active-active** setup over multiple datacenters
