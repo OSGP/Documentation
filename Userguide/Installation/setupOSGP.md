@@ -1,36 +1,16 @@
-
-### Downloading the Puppet Scripts From Our [Config GitHub Repository](https://github.com/OSGP/Config)
-
-Make sure to check the development branch for the latest version!
-
-![alt text](./installation-script-screenshots/42.png)
-
-![alt text](./installation-script-screenshots/43.png)
-
-![alt text](./installation-script-screenshots/44.png)
-
-![alt text](./installation-script-screenshots/45.png)
-
-![alt text](./installation-script-screenshots/46.png)
-
-### Start with Installing Puppet
-
-![alt text](./installation-script-screenshots/47.png)
-
-![alt text](./installation-script-screenshots/48.png)
-
-### Using Puppet to Setup the Development Environment
-
-![alt text](./installation-script-screenshots/49.png)
-
-![alt text](./installation-script-screenshots/50.png)
-
-![alt text](./installation-script-screenshots/51.png)
-
-![alt text](./installation-script-screenshots/52.png)
+### Setting Up the OSGP Platform
+This chapter describes all the steps needed to set-up the OSGP Platform.
 
 ### Importing Maven Projects into Eclipse
-Open eclipse (the executable can be found in the folder /home/dev/Downloads/eclipse*/eclipse) and import the projects: File -> Import -> Existing Maven Projects, browse to folder /home/dev/Sources and start with the Shared project, then the Platform project, then the Protocol-Adapter-OSLP project and then the Protocol-Adapter-DLMS project.
+Open eclipse (the executable can be found in the folder `/home/dev/Tools/eclipse`) and import the projects:
+File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources`
+You will find 5 folders there, import each one (Except Config) in the following order:
+
+- `/home/dev/Sources/Shared`
+- `/home/dev/Sources/Platform`
+- `/home/dev/Sources/Protocol-Adapter-OSLP`
+- `/home/dev/Sources/Protocol-Adapter-DLMS`
+
 
 ![alt text](./installation-script-screenshots/54.png)
 
@@ -45,11 +25,13 @@ Open eclipse (the executable can be found in the folder /home/dev/Downloads/ecli
 ![alt text](./installation-script-screenshots/59.png)
 
 ![alt text](./installation-script-screenshots/60.png)
-Show the 'Debug' and 'Git' perspectives.
-![alt text](./installation-script-screenshots/61.png)
 
 ### Creating an Apache Tomcat7 Server
-In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder /home/dev/Downloads/apache-tomcat-7.0.61.
+
+In Eclipse go to Window -> Open Perspective -> Debug
+![alt text](./installation-script-screenshots/61.png)
+
+In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/apache-tomcat-7.0.61`
 
 ![alt text](./installation-script-screenshots/62.png)
 
@@ -60,18 +42,13 @@ After adding the server, double click on the Tomcat server in the 'Servers' view
 ![alt text](./installation-script-screenshots/65.png)
 
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments':
-'-Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true'
+`-Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true`
 ![alt text](./installation-script-screenshots/66.png)
 
 ![alt text](./installation-script-screenshots/67.png)
 
-### Creating Sym Link to Maven Settings
-Create a symlink to the Maven setting file using this command: 
-'''sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2 '''
-![alt text](./installation-script-screenshots/68.png)
-
 ### Setting Up Apache Tomcat7 Server Context
-Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in /home/dev/Sources/Config/tomcat/context.xml to map configuration file names to file paths.
+Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/Config/tomcat/context.xml` to map configuration file names to file paths.
 ![alt text](./installation-script-screenshots/69.png)
 
 ![alt text](./installation-script-screenshots/70.png)
@@ -82,7 +59,11 @@ Continue by adding the Maven Projects to the Tomcat server by right clicking on 
 At this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup.
 
 ### Starting Apache ActiveMQ
-Continue with starting Apache ActiveMQ (the executable can be found in the folder /home/dev/Downloads/apache-activemq-*/bin/linux-x86-64): by opening a terminal and use the command: '''sudo ./activemq console''' to start ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon).
+Continue with starting Apache ActiveMQ (the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`): by opening a terminal and use the command:
+```shell
+sudo ./activemq console
+```
+This start ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon).
 ![alt text](./installation-script-screenshots/72.png)
 
 ### Starting Apache Tomcat7 Server
@@ -90,7 +71,11 @@ With ActiveMQ running, the Tomcat7 server can be started.
 ![alt text](./installation-script-screenshots/73.png)
 
 ### Starting pgAdmin III and Connect to PostgreSQL
-Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using Host localhost, Port 5432, Username osp_admin and Password 1234.
+Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using
+- Host: localhost
+- Port: 5432
+- Username: osp_admin
+- Password: 1234
 
 ![alt text](./installation-script-screenshots/74.png)
 
@@ -98,12 +83,17 @@ Open pgAdminIII and configure a connection: choose the 'Add a connection to a se
 
 ![alt text](./installation-script-screenshots/76.png)
 
-### Creating the 'test-org' Organization
-Run the script (/home/dev/Sources/Config/sql/create-test-org.sql) to insert 'test-org' organization into the organisation table of the osgp_core database.
+#### Tip
+- If you receive the error 'No more connections allowed' in pgAdmin (or when executing the sql script), stop the Tomcat server, and start it again once you are finished with the steps below.
 
-'''
+### Creating the 'test-org' Organization
+Run the script in `/home/dev/Sources/Config/sql/create-test-org.sql` to insert 'test-org' organization into the organisation table of the osgp_core database.
+
+```shell
 psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.sql
-'''
+```
 ![alt text](./installation-script-screenshots/77.png)
 
 ![alt text](./installation-script-screenshots/78.png)
+
+Now that everything has been set up, continue to the next chapter to start testing the Platform by sending it some requests.

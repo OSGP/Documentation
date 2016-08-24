@@ -1,7 +1,7 @@
-## GetFirmwareVersionAsyncRequest request
+## GetGetFirmwareVersionResponse request
 
 ### Description
-GetFirmwareVersionAsyncRequest returns the device firmware versions requested with the GetFirmwareVersionRequest method. The response request contains the DeviceIdentification and CorrelationUid which is received from the [GetFirmwareVersionRequest](GetFirmwareVersionRequest.md) request.
+GetGetFirmwareVersionResponse returns the device firmware versions requested with the GetFirmwareVersion method. The response request contains the DeviceIdentification and CorrelationUid which is received from the [GetFirmwareVersion](GetFirmwareVersion.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
