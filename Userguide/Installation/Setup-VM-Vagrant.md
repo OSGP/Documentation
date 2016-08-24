@@ -44,7 +44,7 @@ Navigate to your newly created directory and choose 'save'.
 #### Note
  - Make sure that the file is named like this: `Vagrantfile`  *without* an extension!
  - If the file has an extension (for example .txt) you can rename the file using the following console command.
-Unix:
+MacOS/Linux:
 ```shell
 mv Vagrantfile.txt Vagrantfile
 ```
