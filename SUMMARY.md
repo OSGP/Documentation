@@ -97,6 +97,8 @@
       * [Bundle](Domains/Smartmetering/smartmeteringwebservices/SendNotification.md)
       * [Bundle](Domains/Smartmetering/smartmeteringwebservices/Bundle.md)
       * [SpecificConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/SpecificConfigurationObject.md)
+      * [DeCoupleMbusDevice](chapter3/smartmetering/DeCoupleMbusDevice.md)
+      * [GetDeCoupleMbusDeviceResponse](chapter3/smartmetering/GetDeCoupleMbusDeviceResponse.md)
 
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
