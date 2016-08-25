@@ -63,7 +63,7 @@ Smart metering features available within on the open smart grid platform so far:
 #### SmartMeteringInstallation
 - **[AddDevice](./smartmeteringwebservices/AddDevice.md)** is a request to add a device to the OSGP database.
 - **[GetAddDeviceResponse](./smartmeteringwebservices/GetAddDeviceResponse.md)** is a request which returns the response from the [AddDevice](./smartmeteringwebservices/AddDevice.md) request.
-- - **[DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md)** is a request to decouple an M-Bus device from a gateway.
+- **[DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md)** is a request to decouple an M-Bus device from a gateway.
 - **[GetDeCoupleMbusDeviceResponse](./smartmeteringwebservices/GetDeCoupleMbusDeviceResponse.md)** is a request which returns the response from the [DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md) request.
 
 #### SmartMeteringManagement
