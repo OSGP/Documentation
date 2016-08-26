@@ -1,13 +1,13 @@
-## DeCoupleMBusDevice request
+## DeCoupleMbusDevice request
 
 ### Description
-DeCoupleMBusDevice is a request to decouple an MBus device (such as a gas meter) from a device to the OSGP database. The request needs the following parameters:
+DeCoupleMbusDevice is a request to decouple an Mbus device (such as a gas meter) from a device to the OSGP database. The request needs the following parameters:
 - DeviceIdentification
-- MBusDeviceIdentification
+- MbusDeviceIdentification
 
 All requests have similar response behaviour which is described in [ResponseMessages](ResponseMessages.md)
 
-[GetDeCoupleMBusDeviceResponse](GetDeCoupleMBusDeviceResponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the DeCoupleMBusDevice request.
+[GetDeCoupleMbusDeviceResponse](GetDeCoupleMbusDeviceResponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the DeCoupleMbusDevice request.
 
 ### References
 
