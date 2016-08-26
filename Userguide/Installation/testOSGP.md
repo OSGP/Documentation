@@ -2,7 +2,7 @@
 This chapter will describe the steps needed to test the OSGP Platform.
 
 ### Setting Up SoapUI
-Start SoapUI by typing the following command in a terminal:
+Start SoapUI by double clicking the shortcut on the Desktop or run it manually by typing the following command in a terminal:
 ```shell
 /home/dev/Tools/SoapUI-5.2.1/bin/soapui.sh
 ```
@@ -13,32 +13,44 @@ Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home
 Go to WSDL Settings and check 'Generate Example Values in New Requests' and 'Generate Comments with Type Information in New Requests'
 ![alt text](./installation-script-screenshots/86.png)
 
-Create a new SOAP Project and call it 'admin'
+### Adding the 'Admin' Soap project
+Import the 'admin' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/Config/soapui/`, select 'admin-soapui-project.xml' and click open.
+
+Alternatively you can create the 'admin' project yourself by following the steps below:
+
+- Create a new SOAP Project and call it 'admin'
 ![alt text](./installation-script-screenshots/87.png)
 
-Open the Project View by double-clicking on the 'admin' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
-Fill out the password (1234) and click Ok and close the Project View window.
+- Open the Project View by double-clicking on the 'admin' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
+- Fill out the password (1234) and click Ok and close the Project View window.
 ![alt text](./installation-script-screenshots/87-1.png)
 
-Right click the 'admin' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
+- Right click the 'admin' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
 https://localhost/osgp-adapter-ws-admin/wsdl/Admin/DeviceManagement.wsdl
 ```
-Make sure the box 'Create sample requests for all operators' is checked, and click OK.
+
+- Make sure the box 'Create sample requests for all operators' is checked, and click OK.
 ![alt text](./installation-script-screenshots/88.png)
 
-Create another new SOAP Project and call it 'public-lighting'
+### Adding the 'Public Lighting' Soap project.
+Import the 'public-lighting' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/Config/soapui/`, select 'public-lighting-soapui-project.xml' and click open.
+
+Alternatively you can create the 'public-lighting' project yourself by following the steps below:
+
+- Create another new SOAP Project and call it 'public-lighting'
 ![alt text](./installation-script-screenshots/88-1.png)
 
-Open the Project View by double-clicking on the 'public-lighting' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
-Fill out the password (1234) and click Ok and close the Project View window.
+- Open the Project View by double-clicking on the 'public-lighting' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
+- Fill out the password (1234) and click Ok and close the Project View window.
 ![alt text](./installation-script-screenshots/88-2.png)
 
-Right click the 'public-lighting' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
+- Right click the 'public-lighting' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
 https://localhost/osgp-adapter-ws-publiclighting/wsdl/PublicLighting/PublicLightingAdHocManagement.wsdl
 ```
-Make sure the box 'Create sample requests for all operators' is checked, and click OK.
+
+- Make sure the box 'Create sample requests for all operators' is checked, and click OK.
 ![alt text](./installation-script-screenshots/88-3.png)
 
 ### First SOAP Requests to Add a Device to OSGP
