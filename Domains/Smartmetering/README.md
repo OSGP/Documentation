@@ -65,6 +65,8 @@ Smart metering features available within on the open smart grid platform so far:
 - **[GetAddDeviceResponse](./smartmeteringwebservices/GetAddDeviceResponse.md)** is a request which returns the response from the [AddDevice](./smartmeteringwebservices/AddDevice.md) request.
 - **[CoupleMbusDevice](./smartmeteringwebservices/CoupleMbusDevice.md)** is a request to couple a M-Bus device to a gateway.
 - **[GetCoupleMbusDeviceResponse](./smartmeteringwebservices/GetCoupleMbusDeviceResponse.md)** is a request which returns the response from the [CoupleMbusDevice](./smartmeteringwebservices/CoupleMbusDevice.md) request.
+- **[DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md)** is a request to decouple an M-Bus device from a gateway.
+- **[GetDeCoupleMbusDeviceResponse](./smartmeteringwebservices/GetDeCoupleMbusDeviceResponse.md)** is a request which returns the response from the [DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md) request.
 
 #### SmartMeteringManagement
 - **[FindEvents](./smartmeteringwebservices/FindEvents.md)** is a request to retrieve events logging from a device.
