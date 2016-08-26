@@ -1,7 +1,7 @@
-## GetDeCoupleMBusDeviceResponse request
+## GetDeCoupleMbusDeviceResponse request
 
 ### Description
-GetDeCoupleMBusDeviceResponse returns if the result is successful from the DeCoupleMBusDevice request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [DeCoupleMBusDevice](DeCoupleMBusDevice.md) request.
+GetDeCoupleMbusDeviceResponse returns if the result is successful from the DeCoupleMbusDevice request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [DeCoupleMbusDevice](DeCoupleMbusDevice.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
