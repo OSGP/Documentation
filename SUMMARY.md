@@ -99,8 +99,8 @@
       * [SpecificConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/SpecificConfigurationObject.md)
       * [CoupleMbusDevice](Domains/Smartmetering/smartmeteringwebservices/CoupleMbusDevice.md)
       * [GetCoupleMbusDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetCoupleMbusDeviceResponse.md)
-      * [DeCoupleMbusDevice](Domains/Smartmetering/smartmeteringwebservices/DeCoupleMBusDevice.md)
-      * [GetDeCoupleMbusDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetDeCoupleMBusDeviceResponse.md)
+      * [DeCoupleMbusDevice](Domains/Smartmetering/smartmeteringwebservices/DeCoupleMbusDevice.md)
+      * [GetDeCoupleMbusDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetDeCoupleMbusDeviceResponse.md)
 
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
