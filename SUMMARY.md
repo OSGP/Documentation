@@ -97,6 +97,8 @@
       * [Bundle](Domains/Smartmetering/smartmeteringwebservices/SendNotification.md)
       * [Bundle](Domains/Smartmetering/smartmeteringwebservices/Bundle.md)
       * [SpecificConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/SpecificConfigurationObject.md)
+      * [CoupleMbusDevice](Domains/Smartmetering/smartmeteringwebservices/CoupleMbusDevice.md)
+      * [GetCoupleMbusDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetCoupleMbusDeviceResponse.md)
       * [DeCoupleMbusDevice](Domains/Smartmetering/smartmeteringwebservices/DeCoupleMbusDevice.md)
       * [GetDeCoupleMbusDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetDeCoupleMbusDeviceResponse.md)
 
