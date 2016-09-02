@@ -34,12 +34,13 @@
    * [FAQ](Userguide/FAQ.md)
 
 * [Open Source Community](Opensourcecommunity/README.md)
+   * [Start contributing](Opensourcecommunity/Getstarted.md)
+   * [Developers 101](Opensourcecommunity/ToolsguidelinesCI.md)
    * [Contributing to the code](Opensourcecommunity/Contributing-to-the-code.md)
+   * [Contributing to documentation](Opensourcecommunity/Contributing-to-documentation.md)
    * [Communication and Contact](Opensourcecommunity/Communication-and-contact.md)
    * [Governance](Opensourcecommunity/Governance.md)
    * [Code of Conduct](Opensourcecommunity/Code-of-conduct.md)
-   * [Contributing to documentation](Opensourcecommunity/Contributing-to-documentation.md)
-   * [Developers 101](Opensourcecommunity/ToolsguidelinesCI.md)
    * [Foundation](Opensourcecommunity/Foundation.md)
 
 * [Domains](Domains/README.md)
