@@ -1,4 +1,4 @@
-This is guidance to start contributing to the open smart grid platform project:
+This is a guide to start contributing to the open smart grid platform project:
 
 1. Make yourself comfortable with with the open smart grid platform by e.g. installing it.
 2. Read the documentation to get an idea of how the software works (architecture chapter), how the community works (this chapter).
