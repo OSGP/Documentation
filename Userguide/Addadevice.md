@@ -12,4 +12,4 @@ To add a DLMS Device to the Platform, take a look at the documentation of the So
 To add an OSLP Device to the Platform, the Soap call defined in [DeviceInstallation](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common/DeviceInstallation.wsdl) can be used.
 
 ### For each device additional actions may be required:
-Setting configuration, authorizations, schedules, firmware updates, etc. Please take a look at the WSDL files and the documentation for specific the specific Web Service calls.
+Please take a look at the [domain specific WSDL files](../Domains/README.md) in the documentation for more information on Web Service calls for Adding devices, Setting configuration, authorizations, schedules, firmware updates, etc.
