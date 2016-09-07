@@ -30,6 +30,7 @@
    * [Configuration](Userguide/Configuration.md)
       * [Add a device](Userguide/Addadevice.md)
       * [Users](Userguide/Users.md)
+   * [Web Services](Userguide/GuideToWebServices.md)
    * [Deployment](Userguide/Deployment.md)
    * [FAQ](Userguide/FAQ.md)
 
