@@ -8,7 +8,7 @@
     "variables": {
         "myHelloWorldVariable": "Hello World"
     },
-    "plugins": ["edit-link"],
+    "plugins": ["edit-link","collapsible-menu"],
     "pluginsConfig": {
             "edit-link": {
                 "base": "https://github.com/OSGP/Documentation/edit/development",
@@ -16,6 +16,9 @@
             }
     },
     "links": {
+		"sidebar": {
+			"Download as PDF": "http://documentation.opensmartgridplatform.org/documentation-pdf"
+		},
         "home": null,
         "about": false,
         "issues": false,
