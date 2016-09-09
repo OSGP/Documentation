@@ -18,7 +18,7 @@
     "links": {
 		"sidebar": {
 			"Download as PDF": "http://documentation.opensmartgridplatform.org/documentation-pdf"
-		}
+		},
         "home": null,
         "about": false,
         "issues": false,
