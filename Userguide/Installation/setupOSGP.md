@@ -2,8 +2,10 @@
 This chapter describes all the steps needed to set-up the OSGP Platform.
 
 ### Importing Maven Projects into Eclipse
-Open eclipse (the executable can be found in the folder `/home/dev/Tools/eclipse`) and import the projects:
+Open Eclipse by clicking the shortcut on the Desktop and import the projects:
+
 File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources`
+
 You will find 5 folders there, import each one (Except Config) in the following order:
 
 - `/home/dev/Sources/Shared`
@@ -59,15 +61,19 @@ Continue by adding the Maven Projects to the Tomcat server by right clicking on 
 At this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup.
 
 ### Starting Apache ActiveMQ
-Continue with starting Apache ActiveMQ (the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`): by opening a terminal and use the command:
+Continue with starting Apache ActiveMQ. On the desktop double click the ActiveMQ shortcut.
+
+Alternatively you can open a terminal and run the executable manually by using the following command:
+(the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`)
 ```shell
 sudo ./activemq console
 ```
+
 This start ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon).
 ![alt text](./installation-script-screenshots/72.png)
 
 ### Starting Apache Tomcat7 Server
-With ActiveMQ running, the Tomcat7 server can be started.
+With ActiveMQ running, the Tomcat7 server can be started. Go to Eclipse, go to the Servers tab in the Debug view, and right click on the Tomcat server and select 'Start'.
 ![alt text](./installation-script-screenshots/73.png)
 
 ### Starting pgAdmin III and Connect to PostgreSQL
@@ -83,16 +89,16 @@ Open pgAdminIII and configure a connection: choose the 'Add a connection to a se
 
 ![alt text](./installation-script-screenshots/76.png)
 
-#### Tip
-- If you receive the error 'No more connections allowed' in pgAdmin (or when executing the sql script), stop the Tomcat server, and start it again once you are finished with the steps below.
-
 ### Creating the 'test-org' Organization
 Run the script in `/home/dev/Sources/Config/sql/create-test-org.sql` to insert 'test-org' organization into the organisation table of the osgp_core database.
 
 ```shell
 psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.sql
 ```
+
 ![alt text](./installation-script-screenshots/77.png)
+
+Go back to PgAdmin III, expand servers, select localhost -> databases -> osgp_core -> Schemas -> public -> Tables. Right click the organisation table and select 'show top 100 data rows'. Confirm that the test-org organisation has been added to the Database.
 
 ![alt text](./installation-script-screenshots/78.png)
 
