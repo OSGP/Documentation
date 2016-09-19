@@ -42,13 +42,3 @@ A description of the general package structure of a web service component.
 
 #### webapp
 The WSDL and schema definitions can be found under main/webapp/WEB_INF/wsdl.
-
-### Using the Open Smart Grid Platform Web Services
-
-Clients for OSGP can use the SOAP Web service. To be able to use the SOAP Web service, the client has to be configured to use the Java Keystore. Also, the client has to send organisation identification, user name and application name as part of the SOAP Header for each request. The organisation identification has to match with a certificate that has been signed with the main CA certificate. The organisation identification has to match with a known organisation identification within the Platform.
-
-For more information with regard to accessing the Web Services and/or adding a Organization Certificate to the Open Smart Grid Platform, please see the [Installation Manual](../../Userguide/Installation/Installationguide.md)
-
-When using the SOAP Web service, there are 2 flows that can occur:
-- some calls are synchronous: a response is returned immediately;
-- other calls are a-synchronous: an initial response contains a correlation id, which can be used to obtain the actual response.

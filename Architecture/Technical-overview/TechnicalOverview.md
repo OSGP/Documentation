@@ -4,8 +4,7 @@ This chapter gives an overview of a more technical nature. It describes each lay
 
 #### A Request through the Platform
 
-The picture below depicts a Request traveling through the platform. It attempts to make clear which code and parts of the Platform are actually used.
-
+The picture below depicts an example of a request (OSLP SetLight request) traveling through the platform to a device.
 ![alt text](./pictures/OsgpSetLightFlow.PNG)
 
 - A web request enters the platform at it's EndPoint, which in turns calls the RequestService. The RequestService checks if the organisation in the request is authorized, creates the request message and sends it to the MessageSender which in turn puts it on the queue of the Domain Adapter.
@@ -13,7 +12,7 @@ The picture below depicts a Request traveling through the platform. It attempts 
 - The MessageListener in Core receives the message. The DeviceRequestMessageService contains generic functionality such as Authorization, Validation, etc. Once these procedures are completed, the message is routed to the right protocol adapter.
 - In the Protocol Adapter the message is received by the MessageListener. It is processed through the MessageProcessor and OslpDeviceService. The request eventually ends up in the OslpChannelHandler, where the actual Protocol Request to the device is made.
 
-For a detailed description of each layer, please take a look at the sub chappters of this chapter.
+For a detailed description of each layer, please take a look at a more detailed description of each layer in this chapter.
 
 #### Configuration files
 The Platform uses property files for certain settings (such as JMS settings, Persistence settings, etc.). These files are stored in property files which can be found in the Config repository on Github. These files are sym linked to /etc/osp/, where the Platform (through reference in context.xml) looks for the property files.
