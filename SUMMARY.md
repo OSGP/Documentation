@@ -112,14 +112,12 @@
             * [RetrievePushNotificationAlarm](Domains/Smartmetering/smartmeteringwebservices/RetrievePushNotificationAlarm.md)
         * [Notification](Domains/Smartmetering/smartmeteringwebservices/Notifications.md)
             * [SendNotification](Domains/Smartmetering/smartmeteringwebservices/SendNotification.md)
-      * [ResponseMessages](Domains/Smartmetering/smartmeteringwebservices/ResponseMessages.md)
-      * [Use cases](Domains/Smartmetering/Smartmetering-use-cases.md)
+     * [ResponseMessages](Domains/Smartmetering/smartmeteringwebservices/ResponseMessages.md)
+     * [Use cases](Domains/Smartmetering/Smartmetering-use-cases.md)
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
-
    * [DLMS / COSEM](Protocols/DLMS/README.md)
       * [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
-
    * [OSLP](Protocols/OSLP/README.md)
       * [OSLP v0.5.1](Protocols/OSLP/oslp-v0.5.1.md)
          * [RegisterDevice](Protocols/OSLP/v0.5.1/RegisterDevice.md)
@@ -141,7 +139,6 @@
          * [GetActualPowerUsage](Protocols/OSLP/v0.5.1/GetActualPowerUsage.md)
          * [GetPowerUsageHistory](Protocols/OSLP/v0.5.1/GetPowerUsageHistory.md)
          * [Protobuf Contract](Protocols/OSLP/v0.5.1/oslp.proto.v0.5.1.md)
-
       * [OSLP v0.6.0](Protocols/OSLP/oslp-v0.6.0.md)
          * [GetConfiguration](Protocols/OSLP/v0.6.0/GetConfiguration.md)
          * [SetConfiguration](Protocols/OSLP/v0.6.0/SetConfiguration.md)
@@ -152,6 +149,5 @@
          * [SwitchFirmware](Protocols/OSLP/v0.6.0/SwitchFirmware.md)
          * [SwitchConfiguration](Protocols/OSLP/v0.6.0/SwitchConfiguration.md)
          * [Protobuf Contract](Protocols/OSLP/v0.6.0/oslp.proto.v0.6.0.md)
-
 * [Support](Support/README.md)
 * [License](Apache-license/README.md)
