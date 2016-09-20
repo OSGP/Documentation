@@ -3,6 +3,8 @@
 ### Description
 Bundle is a special request in which one or more single request(s) to a specific device can be bundled. All request sent to this device make use of one communication channel, which may improve performance considerably.
 
+[GetBundleResponse](GetBundleResponse.md) returns ...
+
 The Bundle request has an **Actions** tag. This contains a list of one or more single request(s).
 The response behavior is described in [ResponseMessages](./ResponseMessages.md).
 
