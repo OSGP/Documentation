@@ -26,7 +26,7 @@ Currently, the following actions are supported:
 * SetAlarmNotificationsRequest see [SetAlarmNotifications](./SetAlarmNotifications.md)
 * SetConfigurationObjectRequest see [SetConfigurationObject](./SetConfigurationObject.md)
 * SetPushSetupAlarmRequest see [SetPushSetupAlarm](./SetPushSetupAlarm.md)
-* SetPushSetupSmsRequest see [GetSetPushSetupSmsResponse](./GetSetPushSetupSmsResponse.md)
+* SetPushSetupSmsRequest see [SetPushSetupSms](./SetPushSetupSms.md)
 * SynchronizeTimeRequest see [SynchronizeTime](./SynchronizeTime.md)
 * GetConfigurationRequest
 * GetFirmwareVersionRequest
