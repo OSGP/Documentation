@@ -88,6 +88,7 @@
       * [GetActualMeterReadsGas](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReadsGas.md)
       * [GetActualMeterReadsGasResponse](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReadsGasResponse.md)
       * [GetPeriodicMeterReads](Domains/Smartmetering/smartmeteringwebservices/GetPeriodicMeterReads.md)
+      * [GetPeriodicMeterReadsResponse](Domains/Smartmetering/smartmeteringwebservices/GetPeriodicMeterReadsResponse.md)
       * [GetPeriodicMeterReadsGas](Domains/Smartmetering/smartmeteringwebservices/GetPeriodicMeterReadsGas.md)
       * [GetPeriodicMeterReadsGasResponse](Domains/Smartmetering/smartmeteringwebservices/GetPeriodicMeterReadsGasResponse.md)
       * [ReadAlarmRegister](Domains/Smartmetering/smartmeteringwebservices/ReadAlarmRegister.md)
