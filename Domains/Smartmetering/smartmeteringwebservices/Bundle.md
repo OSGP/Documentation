@@ -17,7 +17,7 @@ Currently, the following actions are supported:
 * ReadAlarmRegisterRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
 * GetActualMeterReadsRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
 * GetActualMeterReadsGasRequest see [ActualMeterReadsGas](./ActualMeterReadsGas.md)
-* GetAdministrativeStatusRequest see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
+* GetAdministrativeStatusRequest see [GetAdministrativeStatus](./SetAdministrativeStatus.md)
 * GetPeriodicMeterReadsRequest see [PeriodicMeterReads](./PeriodicMeterReads.md)
 * GetPeriodicMeterReadsGasRequest see [PeriodicMeterReadsGas](./PeriodicMeterReadsGas.md)
 * SetAdministrativeStatusRequest see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
