@@ -13,7 +13,7 @@ The response behavior is described in [ResponseMessages](./ResponseMessages.md).
 Currently, the following actions are supported:
 
 * FindEventsRequest see [FindEvents](./FindEvents.md)
-* GetSpecialDaysRequest see [SetSpecialDays](./SetSpecialDays.md)
+* SetSpecialDaysRequest see [SetSpecialDays](./SetSpecialDays.md)
 * ReadAlarmRegisterRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
 * GetActualMeterReadsRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
 * GetActualMeterReadsGasRequest see [ActualMeterReadsGas](./ActualMeterReadsGas.md)
