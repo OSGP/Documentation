@@ -23,3 +23,6 @@ OSGP offers a Spring Framework SOAP Webservice.
 
 # Domain driven design
 See [Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)
+
+# DTO Object
+Data Transfer Object. See [Wikipedia](https://en.wikipedia.org/wiki/Data_transfer_object)
