@@ -1,6 +1,6 @@
 ## Core Layer
 
-The Core layer of the Open Source Grid Platform is responsible for Validation, Tanslation, Authorisation and Routing of request. It also contains all the Domain Objects.
+The Core layer of the Open Source Grid Platform is responsible for Validation, Tanslation, Authorisation and Routing of request messages. It also contains all the Domain Objects.
 
 The core layer consists of two compoments:
 
@@ -36,7 +36,7 @@ These packages contain interfaces for the Services.
 - protocol: Interfaces for the Protocol services.
 
 #### infra.jms
-- domain: Contains Messages, MessageListeners and MessageProcessors for Domain releated messaging.
-- protocl: Contains Messages, MessageListeners and MessageProcessors for Protocol related messaging.
+- domain: Contains Messages, MessageListeners and MessageProcessors for Domain related messaging.
+- protocol: Contains Messages, MessageListeners and MessageProcessors for Protocol related messaging.
 
 

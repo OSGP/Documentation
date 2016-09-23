@@ -23,11 +23,9 @@
 - [FileZilla](https://filezilla-project.org/): FTP application.
 - [Git](https://git-scm.com/): Version control system.
 - [NodeJS](https://nodejs.org/): Tooling suite with various Javascript tools.
-- [Notepad++](https://notepad-plus-plus.org/): A free source code editor.
 - [NPM](https://www.npmjs.com/): Package manager for the NodeJS Javascript applications.
 - [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/): A free and open-source terminal emulator, serial console and network file transfer application.
-- [SourceTree](https://www.sourcetreeapp.com/): SourceTree is a powerful Git and Mercurial desktop client for developers on Mac or Windows.
-- [Vim](http://www.vim.org/): Source code editor. 
+- [Vim](http://www.vim.org/): Source code editor.
 - [Apache Maven](https://maven.apache.org/): Software project management tool
 - [GIT & GitHub](https://github.com/osgp): Source code management
 
@@ -48,7 +46,7 @@ This Table presents an overview of the components and the most important technol
 | **Component** | **Technology** |
 | --- | --- |
 | OSGP Platform | Java, Spring Framework, Hibernate, Netty |
-| Demo applicatie | Java, Spring Framework, Spring MVC |
+| Demo application | Java, Spring Framework, Spring MVC |
 | Web services | SOAP, WSDL |
 | OSLP Protocol | Google Protocol Buffers |
 

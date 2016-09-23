@@ -1,11 +1,11 @@
 ## Protocol Adapters
 
-The Protocol Adapters are responsible for the actual communication to and from a device. They usually operate in a certain domain, and might use common/generic functiuons from the platform.
+The Protocol Adapters are responsible for the actual communication to and from a device. They usually operate in a certain domain, and might use common/generic functions from the platform.
 
 The Open Smart Grid Platform currently has the following protcol adapters:
-- Protocol-Adapter-DLMS: Smart Metering 
+- Protocol-Adapter-DLMS: Smart Metering
 - Protocol-Adapter-IEC61850: Public Lighting
-- Protocol-Adapter-OSLP: Public Lighting
+- Protocol-Adapter-OSLP: Public Lighting and Microgrids
 
 ### General package structure
 
@@ -34,7 +34,7 @@ Contains the exceptions that might be thrown while communication with a device (
 #### infra
 This package contains all the code for communication through JMS (Platform) and Networking (Device).
 - messaging: Contains the JMS Messages, MessageListeners, MessageSenders and MessageProcessors.
-- networking: contains the classes that are responsibel for connecting to a device using a certain protocol.
+- networking: Contains the classes that are responsibel for connecting to a device using a certain protocol.
 
 #### services
 Services used to check the request status.

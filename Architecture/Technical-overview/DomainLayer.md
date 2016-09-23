@@ -9,12 +9,12 @@ At the moment the Platform uses the following Domain Adapters:
 Generic
 - Core - osgp-adapter-domain-core: Contains Core (common) functionality (AdHocManagement, FirmwareManagement, etc.)
 - Admin - osgp-adapter-domain-admin: Contains Admin functionality (DeviceManagement)
-- Shared - osgp-adapter-domain-shared: Emtpy
 
 Domain
 - Public Lighting - osgp-adapter-domain-publiclighting: Contains functionality for the Public Lighting Domain.
 - Smart Metering - osgp-adapter-domain-smartmetering: Contains functionality for the Smart Metering Domain.
 - Tariff Switching - osgp-adapter-domain-tariffswitching: Contains functionality for the Tariff Switching Domain.
+- Microgrids - osgp-adapter-domain-microgrids: Contains functionality for the Microgrids domain.
 
 ### General Package structure
 

@@ -6,4 +6,4 @@ Hosting the open smart grid platform in the cloud is possible, as well as on pre
 
 ### Maintenance
 
-There's not much maintenance that needs to be performed. Archiving some old log files, checking up on available disk space and creating a backup of the databases. Looking into the queues to see if there are not handled messages in dead letter queue.
+There's not much maintenance that needs to be performed. Archiving some old log files, checking up on available disk space and creating a backup of the databases. Looking into the queues to see if there are no messages in the dead letter queue.

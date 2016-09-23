@@ -45,9 +45,9 @@ Table describing the entities in the logical data-model
 | owner | An organization role. Each device has an owner. |
 | event | An event reported by the device (which is not the action of a natural person) for example an error or security problem. |
 
-An organization can get rights from the device owner to specific functions of a device, for instance reading value _x_ on device _y_. Every other function of the device has to offer will not be available to this organization.
+An organization can get rights to one or more function groups, and thus all functions in that function group will be available to this organization.
 
-To ensure that devices can only receive instructions from a 'genuine' open smart grid platform it must be possible to authenticate the open smart grid platform. This is implemented through a standard technology based on asymmetric encryption. The open smart grid platform will receive an unique key to enable the devices to tell if the messages come from a 'genuine' open smart grid platform. To prevent replay-attacks each message will get an index number (this is standard practice as well).
+To ensure that devices can only receive instructions from a 'genuine' open smart grid platform it must be possible to authenticate the open smart grid platform. This is implemented through a standard technology based on asymmetric encryption (If supported by the Device). The open smart grid platform will receive an unique key to enable the devices to tell if the messages come from a 'genuine' open smart grid platform. Both OSLP and DLMS device types use this kind of encryption. To prevent replay-attacks each message will get an index number (this is standard practice as well).
 
 #### Authentication of devices
 
@@ -59,13 +59,15 @@ When a key is stolen (by hacking a device) this will not affect the integrity of
 
 The security is independent from the carrier (GPRS, CDMA, Ethernet, etc.). The open smart grid platform supports symmetric and asymmetric encryption (depends on device and protocol).
 
-The firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates.
+For OSLP devices, the firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates. DLMS devices use a mechanism to switch keys that is indepents of firmware updates.
+
+Additional security may be provided by using TLS communication.
 
 #### Authorisation of organisations
 
-Authorisation for use of the platform functionalities is handled by roles. Roles are defined for both platform functionality and device functionality. Each role has one or more functions. Access to device functions can be set per device. The tables below respectively show an overview of all device-roles and device-functions and platform-roles and platform-functions.
+Authorisation for use of the platform functionalities is handled by function groups. Function groups are defined for both platform functionality and device functionality. Each function group has one or more functions. Access to device functions can be set per device. The tables below respectively show an overview of all function-groups and device-functions and platform-groups and platform-functions.
 
-|   | **Roles** |
+|   | **Groups** |
 | --- | --- |
 | **Functions** | OWNER | INSTALLATION | AD\_HOC | MANAGEMENT | FIRMWARE | SCHEDULING | TARIFF\_SCHEDULING | CONFIGURATION | MONITORING |
 | GET\_DEVICE\_AUTHORISATION | X | X | X | X | X | X | X | X | X |
@@ -93,7 +95,7 @@ Authorisation for use of the platform functionalities is handled by roles. Roles
 
 
 
-|   | **Roles** |
+|   | **Groups** |
 | --- | --- |
 | **Functions** | ADMIN | USER |
 | CREATE\_ORGANISATION | X |   |
