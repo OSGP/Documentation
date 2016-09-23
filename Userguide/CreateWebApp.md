@@ -6,7 +6,7 @@ To access these services and commuinicate with devices through the platform, ple
 - A Soap request will have to be generated from the Application.
 - In the WSDL and xsd files of the Platform the Requests and it's objects are defined.
 - Fill in the parameters once you have an empty soap request for a certain function. The restrictions/requirements are defined in the WSDL files.
-- The request should have a header where an ApplicationName, UserName and OrganisationId are defined. At the moment User and App name are not used in the Platform (Except fir audability and logging). The OrganisationId, however, must match a known organisation within the Platform. This organisation must have the right authortities to make a certain request.
+- The request should have a header where an ApplicationName, UserName and OrganisationId are defined. At the moment User and App name are not used in the Platform (Except for audability and logging). The OrganisationId, however, must match a known organisation within the Platform. This organisation must have the right authortities to make a certain request.
 - Furthermore, the Request must be signed with a certificate from the Organization with the OrganisationId in the header.
 - The requests are made to Secure HTTP protocol (https).
 - For Asynchronious requests, the Platform will respond with a correlationId after succesfully making the request. Use this correlationId in the matching Response-Request to obtain the response from the device.
