@@ -35,10 +35,10 @@ If you are completely new to this and you need help to get started, file an issu
 
 It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. 
 
-* Chapter 1 consist of an OSGP introduction and architecture for potential users, architects and developers. The OSGP website is used for basic product information.
-* Chapter 2 contains the general userguide for OSGP users
+* Chapter 1 consist of an open smart grid platform introduction and architecture for potential users, architects and developers. The open smart grid platform website is used for basic product information.
+* Chapter 2 contains the general userguide for open smart grid platform users
 * Chapter 3 contains community related topics
-* Chapter 4 contains information related to the OSGP domains
+* Chapter 4 contains information related to the open smart grid platform domains
 * Chapter 5 contains information related to the protocols and simulators
 * Chapter 6 shows the support options
 * Chapter 7 code and documentation license
@@ -49,7 +49,7 @@ We have chosen to work with GitBook since it allows us to make different version
 
 ### Guidelines for new documentation
 
-- The master branch is only used by major OSGP releases
+- The master branch is only used by major open smart grid platform releases
 - Don't commit directly to the development branch, please do a pull request.
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well

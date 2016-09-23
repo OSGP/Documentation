@@ -1,6 +1,6 @@
 # CHAPTER 3. Open Source and Community
 
-We invite everyone to participate in the development of OSGP. There are multiple ways to support the project.
+We invite everyone to participate in the development of the open smart grid platform. There are multiple ways to support the project.
 
 - submit issues about bugs or requested features
 - solve issues

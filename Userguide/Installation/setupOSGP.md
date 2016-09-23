@@ -1,17 +1,17 @@
-### Setting Up the OSGP Platform
-This chapter describes all the steps needed to set-up the OSGP Platform.
+### Setting Up the Open Smart Grid Platform
+This chapter describes all the steps needed to set-up the open samrt grid platform.
 
 ### Importing Maven Projects into Eclipse
 Open Eclipse by clicking the shortcut on the Desktop and import the projects:
 
-File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources`
+File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources/OSGP`
 
 You will find 5 folders there, import each one (Except Config) in the following order:
 
-- `/home/dev/Sources/Shared`
-- `/home/dev/Sources/Platform`
-- `/home/dev/Sources/Protocol-Adapter-OSLP`
-- `/home/dev/Sources/Protocol-Adapter-DLMS`
+- `/home/dev/Sources/OSGP/Shared`
+- `/home/dev/Sources/OSGP/Platform`
+- `/home/dev/Sources/OSGP/Protocol-Adapter-OSLP`
+- `/home/dev/Sources/OSGP/Protocol-Adapter-DLMS`
 
 
 ![alt text](./installation-script-screenshots/54.png)
@@ -50,12 +50,12 @@ Click on 'Open launch configuration', click on the 'Arguments' tab and add the f
 ![alt text](./installation-script-screenshots/67.png)
 
 ### Setting Up Apache Tomcat7 Server Context
-Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/Config/tomcat/context.xml` to map configuration file names to file paths.
+Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml` to map configuration file names to file paths.
 ![alt text](./installation-script-screenshots/69.png)
 
 ![alt text](./installation-script-screenshots/70.png)
 
-### Deploying All OSGP Components to Apache Tomcat7 Server
+### Deploying all Open Smart Grid Platform components to Apache Tomcat7 Server
 Continue by adding the Maven Projects to the Tomcat server by right clicking on the Tomcat server and choosing 'Add and Remove', followed by clicking on the 'Add =All' button.
 ![alt text](./installation-script-screenshots/71.png)
 At this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup.
@@ -90,10 +90,10 @@ Open pgAdminIII and configure a connection: choose the 'Add a connection to a se
 ![alt text](./installation-script-screenshots/76.png)
 
 ### Creating the 'test-org' Organization
-Run the script in `/home/dev/Sources/Config/sql/create-test-org.sql` to insert 'test-org' organization into the organisation table of the osgp_core database.
+Run the script in `/home/dev/Sources/OSGP/Config/sql/create-test-org.sql` to insert 'test-org' organization into the organisation table of the osgp_core database.
 
 ```shell
-psql -U osp_admin -d osgp_core -f /home/dev/Sources/Config/sql/create-test-org.sql
+psql -U osp_admin -d osgp_core -f /home/dev/Sources/OSGP/Config/sql/create-test-org.sql
 ```
 
 ![alt text](./installation-script-screenshots/77.png)

@@ -9,12 +9,12 @@ The open smart grid platform is designed for message based communication.
 - Stimulates open innovation by using **open standards** and **open source** technology
 - **Multiple devices** and communication protocols are supported
 - **Independent** of (cloud) hosting infrastructure
-- By delinking the chain and the use of open standards and the open source license, everybody can build their applications on top of OSGP.
-- OSGP is **optimized** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
-- OSGP simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
+- By delinking the chain and the use of open standards and the open source license, everybody can build their applications on top of the open smart grid platform.
+- The open smart grid platform is **optimized** to provide reliable and efficient delivery of command and control information for e.g. [smart meters](http://en.wikipedia.org/wiki/Smart_meter), direct [load control](http://en.wikipedia.org/wiki/Load_control) modules, [solar panels](http://en.wikipedia.org/wiki/Solar_panels), gateways and other applications.
+- The open smart grid platform simplifies the implementation of smart devices resulting in a shorter time-to-market by having built-in **device management** features
 - The platform supports various IP data communication infrastructures to communicate with the devices (internet, lan, GPRS, CDMA, UMTS, etc.).
-- OSGP also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
-- OSGP Supports **multiple protocols**
+- The open smart grid platform also supports authentication and encryption for all data exchanges to protect the integrity and privacy of data as required in e.g. the smart grid.
+- The open smart grid platform supports **multiple protocols**
 - **Easy application integration**
 - Supports **active-active** setup over multiple datacenters
 - Adding servers can be done in **runtime**

@@ -2,7 +2,7 @@
 
 ### Platform
 
-- [Apache ActiveMQ](http://activemq.apache.org/): Open source messaging server, used to relay messages between components of OSGP. ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client. It provides "Enterprise Features" which in this case means fostering the communication from more than one client or server.
+- [Apache ActiveMQ](http://activemq.apache.org/): Open source messaging server, used to relay messages between components of the open smart grid platform. ActiveMQ is an open source message broker written in Java together with a full Java Message Service (JMS) client. It provides "Enterprise Features" which in this case means fostering the communication from more than one client or server.
 - [Apache HTTP server](http://httpd.apache.org/): Webserver, used as front for Apache Tomcat.
 - [Apache Tomcat](http://tomcat.apache.org/): Provides a "pure Java" HTTP web server environment for Java code to run in.
 - [pgAdmin-III](http://www.pgadmin.org/): PostgreSQL administration and management tools.
@@ -45,7 +45,7 @@ This Table presents an overview of the components and the most important technol
 
 | **Component** | **Technology** |
 | --- | --- |
-| OSGP Platform | Java, Spring Framework, Hibernate, Netty |
+| Open Smart Grid Platform | Java, Spring Framework, Hibernate, Netty |
 | Demo application | Java, Spring Framework, Spring MVC |
 | Web services | SOAP, WSDL |
 | OSLP Protocol | Google Protocol Buffers |
