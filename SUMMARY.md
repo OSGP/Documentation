@@ -32,7 +32,7 @@
    * [Configuration](Userguide/Configuration.md)
       * [Add a device](Userguide/Addadevice.md)
       * [Users](Userguide/Users.md)
-      * [Add a new organisation](Userguide/Installation/addOrganisation.md)
+      * [Add a new organisation](Userguide/addOrganisation.md)
    * [Web Services](Userguide/GuideToWebServices.md)
    * [Deployment](Userguide/Deployment.md)
    * [FAQ](Userguide/FAQ.md)
