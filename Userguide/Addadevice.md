@@ -11,7 +11,7 @@ Each device type may have its own registration mechanism.
 
 - To add an OSLP Device to the Platform, the Soap call defined in [DeviceInstallation](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common/DeviceInstallation.wsdl) can be used, or the [UpdateKey Request](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin/DeviceManagement.wsdl).
 
-Please take a look at the [Test OSGP Chapter](./Installation/testOSGP.md) in the installation manual for a detailed guide of how to add a OSLP device to the platform.
+Please take a look at the chapter [Testing the open smart grid platform](./Installation/testOSGP.md) in the installation manual for a detailed guide of how to add a OSLP device to the platform.
 
 ### Additional Device actions
 In the [Domain Chapter](../Domains/README.md) of the documentation more information of the Web Service calls can be found for Adding devices, setting configuration, authorizations, schedules, firmware updates, etc.

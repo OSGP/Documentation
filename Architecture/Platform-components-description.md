@@ -33,13 +33,13 @@ Furthermore each SOAP message has a header which contains the user's organisatio
 
 ### Domain logic layer
 
-For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the OSGP core component.
+For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the open smart grid platform core component.
 
 More information on the specific domains can be found in the [domain chapter](../Domains/README.md)
 
-### OSGP Core Services
+### Open Smart Grid Platform Core Services
 
-The OSGP core component receives queue messages from domain components. These messages from domain components are forwarded to a protocol adapter project. The OSGP core component also offers logic for a protocol adapter project to send the response of a smart device back to a domain project.
+The open smart grid platform core component receives queue messages from domain components. These messages from domain components are forwarded to a protocol adapter project. The open smart grid platform core component also offers logic for a protocol adapter project to send the response of a smart device back to a domain project.
 The Core component routes messages from domain adapter components to protocol adapter components and vice versa. The core layer also contains a workflow engine.
 
 The internal databasemodel in the core layer:

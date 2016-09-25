@@ -83,4 +83,4 @@ Now go to the Processor Tab and increase the amount of Processors to 4.
 
 Close the Settings window and Start the Virtual Machine again. Once it is booted, you should be automatically logged in as the 'Dev' user.
 
-You just created a virtual machine running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the OSGP platform.
+You just created a virtual machine running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the open smart grid platform.

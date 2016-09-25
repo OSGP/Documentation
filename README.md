@@ -19,7 +19,7 @@ PDF
 * [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/documentation-pdf)
 
 
-# Generic project information and news
+## Open smart grid platform information and news
 
 High-level project information and news can be found on the open smart grid platform website: 
 * [www.opensmartgridplatform.org](http://opensmartgridplatform.org/)

@@ -1,7 +1,7 @@
 {
     "gitbook": "2.0.2",
-    "title": "OSGP Documentation",
-    "description": "GitBook containing documentation for the OSGP Project.",
+    "title": "Open Smart Grid Platform Documentation",
+    "description": "GitBook containing documentation for the Open Smart Grid Platform Project.",
     "structure": {
         "readme": "INTRO.md"
     },
