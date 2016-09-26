@@ -12,7 +12,7 @@ Please comply with the [code of conduct](http://documentation.opensmartgridplatf
  
 4. Sign the CLA using [cla-assistant](http://cla.opensmartgridplatform.org) (a comment by CLAAdmin will appear for your pull request to help you out).
 
-5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [documentation](http://documentation.opensmartgridplatform.org/Opensourcecommunity/Governance.html).
+5. Assign a maintainer or relevant community member on this topic to accept/evaluate your pull request. The current maintainer can be found in the [documentation](http://documentation.opensmartgridplatform.org/Opensourcecommunity/Governance.html).
 
 If you have any questions, open an issue.
 

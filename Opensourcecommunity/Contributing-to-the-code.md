@@ -5,7 +5,7 @@ Thank you for contributing to the Open Smart Grid Platform. Please keep the foll
 ### Guidelines
 
 Before code is merged it needs to comply with a number of guidelines:
-1. Code should be as complete as possible (No placeholders, TODO's or FIXME's)
+1. Code should be as complete as possible (preferably no placeholders, TODO's or FIXME's)
 2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
 3. Fixed/added unit tests where applicable
 4. Javadocs added where applicable
@@ -18,7 +18,7 @@ We ask each of our contributors to sign our contributor license agreement (CLA).
 
 ### Submitting code
 
-To submit changes to the open smart grid platform branch:
+To submit changes to the open smart grid platform branches:
 1. Create a fork of the open smart grid platform repo you will be working in
 2. Make and commit your changes to your fork
 3. Create a pull request to merge the changes into the right branch (see 4.1.4 for the branching strategy)
