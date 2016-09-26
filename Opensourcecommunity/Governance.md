@@ -43,4 +43,4 @@ In case of long discussions or arguments, maintainers or other can request a com
 Current maintainers:
 * Open smart grid platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
 * Smart metering domain: [Bart van der Zwet](https://github.com/bvdzwet)
-* Documentation & configutation: [Ruud Lemmers](https://github.com/rlemmers)
+* Documentation & configuration: [Ruud Lemmers](https://github.com/rlemmers)
