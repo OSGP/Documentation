@@ -13,7 +13,7 @@ The community council is responsible for:
 * Governance and consultation bodies
 * Guidelines and procedures and tool selection
 * Contribution (process) of individual members
-* Architectural and (development) infrastructural choices
+* Architectural and (development) infrastructure choices
 * Raise subjects/issues that are important for the direction/development of the community
 
 When the community grows, members of the community council can be elected. If the situation demands or requires it, the community council has the ability to establish sub councils for a specific subject, area of domain. One member (seat) represents the Open Smart Grid Platform Foundation (once started) for alignment between the objectives of the foundation and the direction of the development of the online community.
@@ -26,9 +26,7 @@ The community council consist of the following members:
 * Vacancy - Open Smart Grid Platform foundation seat
 
 If you would like to join the community council, please contact us! Mention @OSGP/communitycouncil in an github issue.
-The (online) community council meetings will happen once a month.
-
-With the open smart grid platform we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy to prevent unwanted dictators and everlasting discussions. The basic idea is to make decisions based on consensus. If this takes too long, the community council can be asked to make a decision.
+The (online) community council meetings will happen when needed.
 
 ###Maintainers
 Maintainers are responsible for maintaining parts of the code-base. Maintainers have the following responsibilities
