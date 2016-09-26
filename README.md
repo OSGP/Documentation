@@ -2,7 +2,7 @@
 
 ### Build Status
 
-[![Build Status](http://54.77.62.182/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://54.77.62.182/job/OSGP_Documentation_development)
+[![Build Status](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development)
 
 ### Description
 
@@ -23,3 +23,6 @@ PDF
 
 High-level project information and news can be found on the open smart grid platform website: 
 * [www.opensmartgridplatform.org](http://opensmartgridplatform.org/)
+
+## Development Installation Manual
+[Installation Manual](http://documentation.opensmartgridplatform.org/Userguide/Installation/Installationguide.html)
