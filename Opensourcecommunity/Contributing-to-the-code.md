@@ -34,6 +34,6 @@ The GitFlow work flow is someone complicated, but it has the advantage that it g
 
 ### Pull requests: review process
 
-Anyone can send in a pull request. Once you send in a pull request, assign a maintainer or other developer with knowledge on this topic to accept/evaluate your pull request. You can view the SonarCube test results at (http://ci.opensmartgridplatform.org/sonarqube/) and the Jenkins continuous integration results at (http://ci.opensmartgridplatform.org) 
+Anyone can send in a pull request. Assign a maintainer or other developer with knowledge on this topic to accept/evaluate your pull request. You can view the SonarCube test results at (http://ci.opensmartgridplatform.org/sonarqube/) and the Jenkins continuous integration results at (http://ci.opensmartgridplatform.org) 
 
 If your code is a useful contribution and meets our quality standards (see section 3.1), it will be added to the open smart grid platform! Developers are in charge of judging this. Don't forget to update the documentation as well.
