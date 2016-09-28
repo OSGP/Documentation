@@ -32,4 +32,4 @@ If you want to get in touch to discuss to discuss non-technical subjects, send u
 6. The maintainer than closes the issue.
 
 ### Questions
-If you have a question. fire an issue in the most relevant repository.
+If you have a question, please create an issue in the most relevant repository.
