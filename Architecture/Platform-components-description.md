@@ -37,7 +37,7 @@ SOAP is chosen in the open smart grid platform webservices over REST for the fol
 - SOAP has the advantage of having a contract (WSDL)
 - SOAP has extensive security features that are being used in the open smart grid platform to meet the high security demands/requirements requested by e.g. the energy utilities
 - Energy companies are generally not progressive in terms of technology. SOAP is acceptable for energy companies and REST is sometimes seen as new and insecure.
-The benefits of REST (e.g. speed / less overhead) does not outweigh the benefits of SOAP. More general information on this topic can be found [online](http://spf13.com/post/soap-vs-rest). Contributions to make REST available on the open smart grid platform is welcome.
+The benefits of REST (e.g. speed / less overhead) does not outweigh the benefits of SOAP. More general information on this topic can be found [online](http://spf13.com/post/soap-vs-rest). Contributions to make REST available on the open smart grid platform are welcome.
 
 
 ### Domain logic layer
