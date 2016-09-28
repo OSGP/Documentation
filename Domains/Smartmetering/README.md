@@ -29,9 +29,9 @@ Smart metering features available within on the open smart grid platform so far:
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
 - **[GetSynchronizeTimeResponse](./smartmeteringwebservices/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md) request.
-- **[RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md)** is a request to obtain the entire tree and list of objects from an E-meter. 
+- **[RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md)** is a request to obtain all the attributes of the whole tree of objects from an E-meter. 
 - **[GetRetrieveAllAttributeValuesResponse](./smartmeteringwebservices/GetRetrieveAllAttributeValuesResponse.md)** is a request which returns the response from the [RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md) request.
-- **[GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md)** is a request to obtain a specific object from an E-meter. 
+- **[GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md)** is a request to obtain a specific attribute value from an ObisCode from an E-meter. 
 - **[GetSpecificAttributeValueResponse](./smartmeteringwebservices/GetSpecificAttributeValueResponse.md)** is a request which returns the response from the [GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md) request.
 - **[GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md)** is a request to get the associated ln objects.
 - **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md) ** is a request which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) request.
