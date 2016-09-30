@@ -15,8 +15,7 @@ To learn more about the open smart grid platform's webservices, please take a lo
 
 ### Rest
 
-It is not possible to communicate with the Platform directly using REST webservices. As mentioned above, the open smart grid platform uses SOAP (For reasons defined [here](http://documentation.opensmartgridplatform.org/Architecture/Platform-components-description.md). If you want to use REST for your front end, you can write an Integration Layer that serves as a Soap Client and exposes the Soap calls through Rest web services you can access from your front end.
-
+It is not possible to communicate with the Platform directly using REST webservices. As mentioned above, the open smart grid platform uses SOAP (For reasons defined [here](../Architecture/Platform-components-description.md)). If you want to use REST for your front end, you can write an Integration Layer that serves as a Soap Client and exposes the Soap calls through Rest web services that you can access from your front end.
 
 ### Flows
 
