@@ -1,20 +1,22 @@
 ## Communication and Contact
 
-We choose the GitHub issues feature for most of our communication. This keeps the communication central and topic central. For issues and bugs, please use our GitHub issue list, we are currently actively developing the Open Smart Grid Platform, so your message will be detected in no-time. 
+We choose [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for most of our development communication. This keeps the communication central and topic central and connect to development effort. 
+Please use [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for issues and bugs. 
 
-If you want to get in touch to discuss to discuss non-technical subjects, send us an email to our temporary email address at opensource@smartsocietyservices.com. Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
+If you want to get in touch to discuss to discuss non-technical subjects, send us an email opensource@smartsocietyservices.com or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**). 
+Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
+
+## Jira
+
+Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Smart society services for synergy reasons. 
+Once we have multilple contributors outside Smart society services we can move to a dedicated jira instance or something else.
+
+Once you get actively involved, you can request write permissions on the jira board.
+You can request write access to the Jira issue board by sending a request to marcel.van.hal<at>smartsocietyservices.com and a copy to opensource@smartsocietyservices.com (if Marcel is on holiday).
 
 ### New Features
 
-1. If there is a need (or wish!) for a new feature, add it as issue to the relevant repository. Please provide a full description about the problem and the potential feature. If you use one of the following links, you will be given a basic format for your issue. 
-
-* [Issue in Platform](https://github.com/OSGP/Platform/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Shared repo](https://github.com/OSGP/shared/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Protocol-Adapter-OSLP](https://github.com/OSGP/Protocol-Adapter-OSLP/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Protocol-Adapter-DLMS](https://github.com/OSGP/Protocol-Adapter-DLMS/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Config](https://github.com/OSGP/Config/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in Integration-Tests](https://github.com/OSGP/Integration-Tests/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
-* [Issue in the documentation](https://github.com/OSGP/documentation/issues/new?title=Feature%20request:My%20Title&body=**Use%20case:**%0A%0A**Expected%20behavior:**%0A%0A**Motivation:**%0A%0A**Acceptance%20criteria:**)
+1. If there is a need (or wish!) for a new feature, add it as issue to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) as a user story. Please provide a full description about the background of the problem. Spilt-up big userstories in multiple small user stories.
 
 2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If open smart grid platform core components are involved, please discuss your change first with one of the developers/maintainers.
 
@@ -32,4 +34,5 @@ If you want to get in touch to discuss to discuss non-technical subjects, send u
 6. The maintainer than closes the issue.
 
 ### Questions
-If you have a question, please create an issue in the most relevant repository.
+If you have a question, please create an Github issue in the [documentation repository](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**) or request access to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/).
+ .
