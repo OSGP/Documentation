@@ -12,7 +12,7 @@ Jira was chosen due to its extensive features. The current [Jira](https://smarts
 Once we have multilple contributors outside Smart society services we can move to a dedicated jira instance or something else.
 
 Once you get actively involved, you can request write permissions on the jira board.
-You can request write access to the Jira issue board by sending a request to marcel.van.hal<at>smartsocietyservices.com and a copy to opensource@smartsocietyservices.com (if Marcel is on holiday).
+You can request write access to the Jira issue board by sending a request to marcel.van.hal<at>smartsocietyservices.com and a copy to opensource@smartsocietyservices.com (if Marcel is not available).
 
 ### New Features
 
