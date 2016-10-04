@@ -22,7 +22,7 @@ The community council consist of the following members:
 * [Sander Jansen](https://github.com/Sander3003) - Open source consultant - Chairman 
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
-* [Thorben Meijer](https://github.com/thorbenmeijer) - Marketing expert
+* Vacancy
 * Vacancy - Open Smart Grid Platform foundation seat
 
 If you would like to join the community council, please contact us! Mention @OSGP/communitycouncil in an github issue.

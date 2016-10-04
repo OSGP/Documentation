@@ -13,4 +13,4 @@
 - **I want to update my code from Github** If you want to update your code, just run ```git pull``` in the repository you want to update. You can also create a fresh Virtual Machine using the vagrant installation, this procedure makes sure you have the most recent code.
 - **Is a user required to consume platform services?** No, an organization is required.
 
-_If your question is not in this list, please create an [issue on github ](https://github.com/OSGP/Config/issues/new?title=Question:My%20Title&)_
+_If your question is not in this list, please create an [issue on Github in the documentation repository ][documentation repository](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**) 
