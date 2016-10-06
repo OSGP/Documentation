@@ -2,9 +2,9 @@
 This chapter describes all the steps needed to set-up the open samrt grid platform.
 
 ### Importing Maven Projects into Eclipse
-Open Eclipse by clicking the shortcut on the Desktop and import the projects:
+Open Eclipse by clicking the shortcut on the Desktop and import the projects.
 
-File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources/OSGP`
+Go to File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources/OSGP`
 
 You will find 5 folders there, import each one (Except Config) in the following order:
 
@@ -25,8 +25,6 @@ You will find 5 folders there, import each one (Except Config) in the following 
 ![alt text](./installation-script-screenshots/58.png)
 
 ![alt text](./installation-script-screenshots/59.png)
-
-![alt text](./installation-script-screenshots/60.png)
 
 ### Creating an Apache Tomcat7 Server
 

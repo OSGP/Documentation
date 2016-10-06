@@ -68,16 +68,16 @@ Don't log in yet, wait until the script in the Console is finished.
 
 #### Tip
  - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
- 
-Now that the script has ran its course, go to the Ubuntu virtual machine and log in as vagrant user (the password is vagrant). Now shut the virtual machine down.
+
+Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. Now shut down the virtual machine.
 
 ![alt text](./installation-script-screenshots/06.png)
 
-Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called xxxx_xxxx_osgp_development_xxxxxxx) and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (more is better).
+Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called xxxx_xxxx_osgp_development_xxxxxxx) and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (or the maximum recommended (in green amount).
 
 ![alt text](./installation-script-screenshots/07.png)
 
-Now go to the Processor Tab and increase the amount of Processors to 4.
+Now go to the Processor Tab and increase the amount of Processors to the maximum recommended (in green) amount.
 
 ![alt text](./installation-script-screenshots/08.png)
 

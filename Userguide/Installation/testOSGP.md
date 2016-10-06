@@ -4,7 +4,7 @@ This chapter will describe the steps needed to test the Open Smart Grid Platform
 ### Setting Up SoapUI
 Start SoapUI by double clicking the shortcut on the Desktop or run it manually by typing the following command in a terminal:
 ```shell
-/home/dev/Tools/SoapUI-5.2.1/bin/soapui.sh
+/home/dev/Tools/SoapUI/bin/soapui.sh
 ```
 
 Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/test-org.pfx` and fill out the password (the password is 1234)
