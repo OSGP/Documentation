@@ -6,7 +6,8 @@ This document describes the automatic installation procedure
 ---
 ### Manual installation
 
- - If you would like to follow the **manual installation procedure**, please proceed to the [Manual Installation Chapter](./manualInstallation.md).  
+If you would like to follow the **manual installation procedure**, please proceed to the [Manual Installation Chapter](./manualInstallation.md).  
+
 ---
 
 ### Overview
