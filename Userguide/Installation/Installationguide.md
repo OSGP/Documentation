@@ -2,6 +2,7 @@
 
 To get started quickly, a [Vagrant Installation Guide](./Setup-VM-Vagrant.md) has been created and a guide for [Manual Installation](./manualInstallation.md).
 
+The goal of the installation manual is to control a simulated OSLP device through the Platform.
 Below, is a summary of all steps involved. See the next chapters for a detailed guide with screenshots.
 Please follow the steps carefully.
 

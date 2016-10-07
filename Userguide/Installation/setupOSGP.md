@@ -1,18 +1,24 @@
 ### Setting Up the Open Smart Grid Platform
-This chapter describes all the steps needed to set-up the open samrt grid platform.
+This chapter describes all the steps needed to set-up the open smart grid platform.
 
 ### Importing Maven Projects into Eclipse
 Open Eclipse by clicking the shortcut on the Desktop and import the projects.
 
 Go to File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources/OSGP`
 
-You will find 5 folders there, import each one (Except Config) in the following order:
+Import the following Projects (in the order as mentioned below)
 
 - `/home/dev/Sources/OSGP/Shared`
 - `/home/dev/Sources/OSGP/Platform`
 - `/home/dev/Sources/OSGP/Protocol-Adapter-OSLP`
-- `/home/dev/Sources/OSGP/Protocol-Adapter-DLMS`
 
+The following Protocol Adapters are optional, they are not required for this Installation Guide.
+
+- `/home/dev/Sources/OSGP/Protocol-Adapter-DLMS`
+- `/home/dev/Sources/OSGP/Protocol-Adapter-IEC61850`
+
+Optional, contains the Integration Tests (not covered in the manual)
+- `/home/dev/Sources/OSGP/Integration-Tests`
 
 ![alt text](./installation-script-screenshots/54.png)
 
@@ -22,8 +28,10 @@ You will find 5 folders there, import each one (Except Config) in the following 
 
 ![alt text](./installation-script-screenshots/57.png)
 
+**Optional**
 ![alt text](./installation-script-screenshots/58.png)
 
+**Optional**
 ![alt text](./installation-script-screenshots/59.png)
 
 ### Creating an Apache Tomcat7 Server
@@ -62,7 +70,7 @@ At this point, eclipse's auto-build should have built the projects, and the Tomc
 Continue with starting Apache ActiveMQ. On the desktop double click the ActiveMQ shortcut.
 
 Alternatively you can open a terminal and run the executable manually by using the following command:
-(the executable can be found in the folder `/home/dev/Tools/apache-activemq-*/bin/linux-x86-64`)
+(the executable can be found in the folder `/home/dev/Tools/activemq/bin/linux-x86-64`)
 ```shell
 sudo ./activemq console
 ```
