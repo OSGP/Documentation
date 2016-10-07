@@ -34,11 +34,11 @@ It is recommeded to create a 'dev' user, because some scripts contain hard coded
 - Change permissions of Tomcat 7 Config files to 644 in the Tomcat 7 conf directory.
 
 ##### Apache HTTPD
-- Enable mod_ssl by running the following command: 
+- Enable mod_ssl by running the following command:
 ```shell
 a2enmod ssl
 ```
-- Enable proxy_ajp by running the following command: 
+- Enable proxy_ajp by running the following command:
 ```shell
 a2enmod proxy_ajp
 ```
@@ -54,10 +54,13 @@ git clone https://github.com/OSGP/Shared.git /home/dev/Sources/OSGP/Shared
 git clone https://github.com/OSGP/Platform.git /home/dev/Sources/OSGP/Platform
 git clone https://github.com/OSGP/Protocol-Adapter-OSLP.git /home/dev/Sources/OSGP/Protocol-Adapter-OSLP
 git clone https://github.com/OSGP/Protocol-Adapter-DLMS.git /home/dev/Sources/OSGP/Protocol-Adapter-DLMS
+git clone https://github.com/OSGP/Protocol-Adapter-IEC61850.git /home/dev/Sources/OSGP/Protocol-Adapter-IEC61850
+git clone https://github.com/OSGP/Integration-Tests.git /home/dev/Sources/OSGP/Integration-Tests
+git clone https://github.com/OSGP/Documentation.git /home/dev/Sources/OSGP/Documentation
 ```
 Make sure you are on the development branch (default).
 
-Initialiaze the Git submodules in Platform, Protocol-Adapter-OSLP and Protocol-Adapter-DLMS ny running the following command in each directory:
+Initialiaze the Git submodules in Platform, Protocol-Adapter-OSLP, Protocol-Adapter-DLMS, Protocol-Adapter-IEC61850 and Integration-Tests by running the following command in each directory:
 ```shell
 git submodule update --init --recursive
 ```
