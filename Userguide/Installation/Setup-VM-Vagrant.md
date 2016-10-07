@@ -30,7 +30,8 @@ In case of installing on Ubuntu 14.04, make sure to grab the latest version of V
 ### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
-And follow the installation steps.
+And follow the installation steps. 
+> **note:** If you already have VirtualBox, make sure it is at least **version 5.1**
 
 ![alt text](./installation-script-screenshots/01.png)
 
