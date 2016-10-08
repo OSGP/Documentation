@@ -13,7 +13,7 @@ _Image, functional starting architecture_
  ![alt text](./functional-starting-architecture.png "Functional Starting Architecture")
 
 1. Web applications
-2. Platform (OSGP)
+2. Open Smart Grid Platform
 3. Web services
 4. Basic functions
 5. Database

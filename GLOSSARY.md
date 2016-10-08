@@ -19,7 +19,10 @@ COmpanion Specification for Energy Metering, defines a set of objects to exchang
 Dutch Smart Meter Requirements, a set of rules that describe how to use Smart Meters using DLMS/COSOM, defined by Dutch grid operators. For more information [click here](http://www.netbeheernederland.nl/themas/dossier/documenten/?pageindex=7)
 
 # SOAP Webservice
-OSGP offers a Spring Framework SOAP Webservice.
+The open smart grid platform offers a Spring Framework SOAP Webservice.
 
 # Domain driven design
 See [Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)
+
+# DTO Object
+Data Transfer Object. See [Wikipedia](https://en.wikipedia.org/wiki/Data_transfer_object)

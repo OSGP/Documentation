@@ -1,5 +1,5 @@
 ### Testing the platform
-This chapter will describe the steps needed to test the OSGP Platform.
+This chapter will describe the steps needed to test the Open Smart Grid Platform.
 
 ### Setting Up SoapUI
 Start SoapUI by double clicking the shortcut on the Desktop or run it manually by typing the following command in a terminal:
@@ -7,21 +7,21 @@ Start SoapUI by double clicking the shortcut on the Desktop or run it manually b
 /home/dev/Tools/SoapUI-5.2.1/bin/soapui.sh
 ```
 
-Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home/dev/Sources/Config/certificates/osgp-ca/certs/test-org.pfx` and fill out the password (the password is 1234)
+Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/test-org.pfx` and fill out the password (the password is 1234)
 ![alt text](./installation-script-screenshots/85.png)
 
 Go to WSDL Settings and check 'Generate Example Values in New Requests' and 'Generate Comments with Type Information in New Requests'
 ![alt text](./installation-script-screenshots/86.png)
 
 ### Adding the 'Admin' Soap project
-Import the 'admin' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/Config/soapui/`, select 'admin-soapui-project.xml' and click open.
+Import the 'admin' project by clicking File -> Import project. Browse to `/home/dev/Sources/OSGP/Config/soapui/`, select 'admin-soapui-project.xml' and click open.
 
 Alternatively you can create the 'admin' project yourself by following the steps below:
 
 - Create a new SOAP Project and call it 'admin'
 ![alt text](./installation-script-screenshots/87.png)
 
-- Open the Project View by double-clicking on the 'admin' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
+- Open the Project View by double-clicking on the 'admin' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/`
 - Fill out the password (1234) and click Ok and close the Project View window.
 ![alt text](./installation-script-screenshots/87-1.png)
 
@@ -34,14 +34,14 @@ https://localhost/osgp-adapter-ws-admin/wsdl/Admin/DeviceManagement.wsdl
 ![alt text](./installation-script-screenshots/88.png)
 
 ### Adding the 'Public Lighting' Soap project.
-Import the 'public-lighting' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/Config/soapui/`, select 'public-lighting-soapui-project.xml' and click open.
+Import the 'public-lighting' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/OSGP/Config/soapui/`, select 'public-lighting-soapui-project.xml' and click open.
 
 Alternatively you can create the 'public-lighting' project yourself by following the steps below:
 
 - Create another new SOAP Project and call it 'public-lighting'
 ![alt text](./installation-script-screenshots/88-1.png)
 
-- Open the Project View by double-clicking on the 'public-lighting' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
+- Open the Project View by double-clicking on the 'public-lighting' project. Go to 'WS-Security Configurations' and select the 'Keystores' Tab. Click on the '+' to add the `test-org.pfx` in `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/`
 - Fill out the password (1234) and click Ok and close the Project View window.
 ![alt text](./installation-script-screenshots/88-2.png)
 
@@ -53,7 +53,7 @@ https://localhost/osgp-adapter-ws-publiclighting/wsdl/PublicLighting/PublicLight
 - Make sure the box 'Create sample requests for all operators' is checked, and click OK.
 ![alt text](./installation-script-screenshots/88-3.png)
 
-### First SOAP Requests to Add a Device to OSGP
+### First SOAP requests to add a device to the open smart grid platform
 Before sending the request, the test-org.pfx should be added as SSL Keystore: Go to the properties interface for the request (bottom left of the screen, after selecting 'Request 1' under UpdateKey in the 'admin' project'), and choose `test-org.pfx` from the drop-down box.
 ### Note
 - This has to be done for each request!

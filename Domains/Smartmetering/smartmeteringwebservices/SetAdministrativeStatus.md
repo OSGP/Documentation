@@ -5,7 +5,7 @@ SetAdministrativeStatusis a request to set the AdministrativeStatus on a device.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetSetAdministrativeStatusResponse](GetGetAdministrativeStatusResponse.md) returns if the setting SetAdministrativeStatus is enabled. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetAdministrativeStatus request.
+[GetSetAdministrativeStatusResponse](GetSetAdministrativeStatusResponse.md) returns if the setting SetAdministrativeStatus is enabled. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetAdministrativeStatus request.
 
 ### References
 
