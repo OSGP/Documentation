@@ -595,7 +595,7 @@ This schedule has one entry which switches light relay 1 (index: "\001") off at 
 
 
 
-#### Example 3: Schedule using OSLP v0.6.0 specific properties
+#### Example 3: Schedule using OSLP v0.6.1 specific properties
 
 SOAP messages:
 
