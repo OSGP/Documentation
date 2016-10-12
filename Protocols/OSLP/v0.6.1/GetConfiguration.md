@@ -206,7 +206,7 @@ Soap requests and responses sent to and from platform:
             <ns2:CommunicationTimeout>30</ns2:CommunicationTimeout>
             <ns2:CommunicationNumberOfRetries>5</ns2:CommunicationNumberOfRetries>
             <ns2:CommunicationPauseTimeBetweenConnectionTrials>120</ns2:CommunicationPauseTimeBetweenConnectionTrials>
-            <ns2:OspgIpAddress>168.63.97.65</ns2:OspgIpAddress>
+            <ns2:OsgpIpAddress>168.63.97.65</ns2:OsgpIpAddress>
             <ns2:OsgpPortNumber>12122</ns2:OsgpPortNumber>
             <ns2:TestButtonEnabled>false</ns2:TestButtonEnabled>
             <ns2:AutomaticSummerTimingEnabled>false</ns2:AutomaticSummerTimingEnabled>
