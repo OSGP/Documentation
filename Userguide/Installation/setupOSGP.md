@@ -1,5 +1,5 @@
-### Setting Up the Open Smart Grid Platform
-This chapter describes all the steps needed to set-up the open smart grid platform.
+### Setting Up the Open Smart Grid Platform Development environment
+This chapter describes all the steps needed to finalize the open smart grid platform development environment.
 
 ### Importing Maven Projects into Eclipse
 Open Eclipse by clicking the shortcut on the Desktop and import the projects.
@@ -11,13 +11,8 @@ Import the following Projects (in the order as mentioned below)
 - `/home/dev/Sources/OSGP/Shared`
 - `/home/dev/Sources/OSGP/Platform`
 - `/home/dev/Sources/OSGP/Protocol-Adapter-OSLP`
-
-The following Protocol Adapters are optional, they are not required for this Installation Guide.
-
 - `/home/dev/Sources/OSGP/Protocol-Adapter-DLMS`
 - `/home/dev/Sources/OSGP/Protocol-Adapter-IEC61850`
-
-Optional, contains the Integration Tests (not covered in the manual)
 - `/home/dev/Sources/OSGP/Integration-Tests`
 
 ![alt text](./installation-script-screenshots/54.png)
@@ -28,10 +23,8 @@ Optional, contains the Integration Tests (not covered in the manual)
 
 ![alt text](./installation-script-screenshots/57.png)
 
-**Optional**
 ![alt text](./installation-script-screenshots/58.png)
 
-**Optional**
 ![alt text](./installation-script-screenshots/59.png)
 
 ### Creating an Apache Tomcat7 Server
@@ -39,7 +32,7 @@ Optional, contains the Integration Tests (not covered in the manual)
 In Eclipse go to Window -> Open Perspective -> Debug
 ![alt text](./installation-script-screenshots/61.png)
 
-In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/apache-tomcat-7.0.61`
+In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/tomcat`
 
 ![alt text](./installation-script-screenshots/62.png)
 

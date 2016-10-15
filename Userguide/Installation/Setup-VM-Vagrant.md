@@ -1,7 +1,7 @@
 
 ## Installation
 
-This document describes the automatic installation procedure
+This document describes the automatic installation procedure for your OSGP development environment.
 
 ---
 ### Manual installation
@@ -12,7 +12,7 @@ If you would like to follow the **manual installation procedure**, please procee
 
 ### Overview
 ##### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
-To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up a virtual development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
+To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up a virtual OSGP development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
 
 
 
@@ -23,36 +23,36 @@ The following system requirements are recommended:
 - At least 4 GB RAM, 8 GB recommended
 - At least 10 GB free space
 
-The installation procedure has been tested on Windows 7, Windows 10, macOS, Ubuntu 14.04 and Ubuntu 16.04.
-
-In case of installing on Ubuntu 14.04, make sure to grab the latest version of Vagrant from the website.
+The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubuntu 14.04 and Ubuntu 16.04.
 
 ### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
 And follow the installation steps. 
-> **note:** If you already have VirtualBox, make sure it is at least **version 5.1**
+> **note:** If you already have VirtualBox, make sure it is at least **version 5.1.6**
 
 ![alt text](./installation-script-screenshots/01.png)
 
+> **note:** Check whether Virtualbox stores the images on a drive with enough free space. (Open Oracle VM VirtualBox Manager -> Preferences -> General -> Default Machine Folder).
+
 Now download and install Vagrant. Vagrant is available at the following URL:
 <https://www.vagrantup.com/downloads.html>
+> **note:** If you already have Vagrant, make sure it is at least **version 1.8.6**
 Complete the installation and restart your PC.
 ![alt text](./installation-script-screenshots/02.png)
 
+> **note:** If you did a fresh install of Vagrant and already had a command prompt open, make sure you close this command prompt and open it again.
 
 #### Tip
  - Remember to enable Virtualization in your system BIOS.
  - Also disable Hyper-V in Windows (can be found in Windows Features)
 
 ## Download and run the Vagrant file
-First create a new directory (for example: `C:\OSGP\osgp-box\`)
+First create a new directory (for example: `D:\My Vagrant Images\OSGP Development\`)
 
-Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant/Vagrantfile> and right-click on the page and choose 'Save (page) as..'
+Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant> and save the png image and Vagrantfile files in your newly created directory.
 
 ![alt text](./installation-script-screenshots/03.png)
-
-Navigate to your newly created directory and choose 'save'.
 
 #### Note
  - Make sure that the file is named like this: `Vagrantfile`  *without* an extension!
@@ -66,14 +66,14 @@ Windows:
 move Vagrantfile.txt Vagrantfile
 ```
 
-Now open a Command Prompt and navigate to the newly created directory where you just put the Vagrantfile.
+Now open a Command Prompt and navigate to the newly created directory where you just put the files.
 
 Run the following command:
 `vagrant up`
 
 ![alt text](./installation-script-screenshots/04.png)
 
-Vagrant will now automatically download an Ubuntu image (+- 1.4 Gb), install it, and run the installation puppet script when finished. This might take a while, depending on your internet speed.
+Vagrant will now automatically download an Ubuntu image (+- 2.6 Gb), install it, and run the installation puppet script when finished. This might take a while, depending on your internet speed.
 After some time (while the script is still running) you will notice that a window with an Ubuntu Virtual Machine pops-up.
 Don't log in yet, wait until the script in the Console is finished.
 
