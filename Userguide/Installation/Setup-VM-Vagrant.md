@@ -68,6 +68,8 @@ move Vagrantfile.txt Vagrantfile
 
 Now open a Command Prompt and navigate to the newly created directory where you just put the files.
 
+> **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 1 cpu and 4096 GB of RAM. If you can it is wise to make this 4 cpus and 8192 GB of RAM.
+
 Run the following command:
 `vagrant up`
 
