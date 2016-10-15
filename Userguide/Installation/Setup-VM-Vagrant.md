@@ -14,8 +14,6 @@ If you would like to follow the **manual installation procedure**, please procee
 ##### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
 To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up a virtual OSGP development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
 
-
-
 ### System Requirements
 The following system requirements are recommended:
 
@@ -50,7 +48,7 @@ Complete the installation and restart your PC.
 ## Download and run the Vagrant file
 First create a new directory (for example: `D:\My Vagrant Images\OSGP Development\`)
 
-Browse to <https://raw.githubusercontent.com/OSGP/Config/development/vagrant> and save the png image and Vagrantfile files in your newly created directory.
+Browse to <https://github.com/OSGP/Config/tree/development/vagrant> and save the png image and Vagrantfile files in your newly created directory.
 
 ![alt text](./installation-script-screenshots/03.png)
 
