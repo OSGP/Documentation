@@ -23,9 +23,13 @@ Import the following Projects (in the order as mentioned below)
 
 ![alt text](./installation-script-screenshots/57.png)
 
-![alt text](./installation-script-screenshots/58.png)
+![alt text](./installation-script-screenshots/58.0.png)
 
-![alt text](./installation-script-screenshots/59.png)
+![alt text](./installation-script-screenshots/58.1.png)
+
+![alt text](./installation-script-screenshots/59.0.png)
+
+![alt text](./installation-script-screenshots/59.1.png)
 
 ### Creating an Apache Tomcat7 Server
 
@@ -36,10 +40,18 @@ In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat
 
 ![alt text](./installation-script-screenshots/62.png)
 
-![alt text](./installation-script-screenshots/63.png)
+![alt text](./installation-script-screenshots/63.0.png)
+
+![alt text](./installation-script-screenshots/63.1.png)
+
+![alt text](./installation-script-screenshots/63.2.png)
+
+![alt text](./installation-script-screenshots/63.3.png)
+
+![alt text](./installation-script-screenshots/63.4.png)
 
 ![alt text](./installation-script-screenshots/64.png)
-After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 300.
+After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 3.
 ![alt text](./installation-script-screenshots/65.png)
 
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments':
