@@ -36,7 +36,9 @@ In Eclipse go to Window -> Open Perspective -> Debug
 
 In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/tomcat`
 
-![alt text](./installation-script-screenshots/62.png)
+![alt text](./installation-script-screenshots/62.0.png)
+
+![alt text](./installation-script-screenshots/62.1.png)
 
 ![alt text](./installation-script-screenshots/63.0.png)
 
