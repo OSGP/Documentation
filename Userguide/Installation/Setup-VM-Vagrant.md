@@ -12,7 +12,7 @@ If you would like to follow the **manual installation procedure**, please procee
 
 ### Overview
 ##### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
-To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up a virtual OSGP development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
+To improve the usability of the Installation process, a Vagrant file and some puppet scripts are used to automatically set-up an virtual OSGP development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
 
 ### System Requirements
 The following system requirements are recommended:
@@ -35,10 +35,11 @@ And follow the installation steps.
 
 Now download and install Vagrant. Vagrant is available at the following URL:
 <https://www.vagrantup.com/downloads.html>
-> **note:** If you already have Vagrant, make sure it is at least **version 1.8.6**
-Complete the installation and restart your PC.
+
 ![alt text](./installation-script-screenshots/02.png)
 
+> **note:** If you already have Vagrant, make sure it is at least **version 1.8.6**
+Complete the installation and restart your PC.
 > **note:** If you did a fresh install of Vagrant and already had a command prompt open, make sure you close this command prompt and open it again.
 
 #### Tip
@@ -73,7 +74,7 @@ Run the following command:
 
 ![alt text](./installation-script-screenshots/04.png)
 
-Vagrant will now automatically download an Ubuntu image (+- 2.6 Gb), install it, and run the installation puppet script when finished. This might take a while, depending on your internet speed.
+Vagrant will now automatically download an Ubuntu image (+- 2.6 Gb), create a virtualbox image from it and run the installation puppet script when finished. This might take a while, depending on your internet speed.
 After some time (while the script is still running) you will notice that a window with an Ubuntu Virtual Machine pops-up.
 Don't log in yet, wait until the script in the Console is finished.
 
@@ -82,11 +83,16 @@ Don't log in yet, wait until the script in the Console is finished.
 #### Tip
  - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
 
-Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. Now shut down the virtual machine.
+Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. 
+
+## Optimize your OSGP Development virtualbox image.
+At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.3 Setup OSGP
+
+If you do want to update the virtualbox settings for this image, shut down the image first:
 
 ![alt text](./installation-script-screenshots/06.png)
 
-Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called xxxx_xxxx_osgp_development_xxxxxxx) and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (or the maximum recommended (in green amount).
+Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called "OSGP Development") and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (or the maximum recommended (in green amount).
 
 ![alt text](./installation-script-screenshots/07.png)
 
@@ -96,4 +102,6 @@ Now go to the Processor Tab and increase the amount of Processors to the maximum
 
 Close the Settings window and Start the Virtual Machine again. Once it is booted, you should be automatically logged in as the 'Dev' user.
 
-You just created a virtual machine running Ubuntu with pre-installed tooling. The next chapter of the guide describes how to set-up the open smart grid platform.
+## Recap
+
+You just created a virtual machine running Ubuntu with pre-installed tooling. Proceed with chapter 2.1.3 of the guide describes how to set-up the open smart grid platform.
