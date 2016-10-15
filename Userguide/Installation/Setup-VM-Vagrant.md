@@ -48,7 +48,7 @@ Complete the installation and restart your PC.
 ## Download and run the Vagrant file
 First create a new directory (for example: `D:\My Vagrant Images\OSGP Development\`)
 
-Browse to <https://github.com/OSGP/Config/tree/development/vagrant> and save the png image and Vagrantfile files in your newly created directory.
+Browse to [https://github.com/OSGP/Config/tree/development/vagrant](https://github.com/OSGP/Config/tree/development/vagrant) and save the png image and Vagrantfile files in your newly created directory.
 
 ![alt text](./installation-script-screenshots/03.png)
 
