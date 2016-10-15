@@ -23,8 +23,6 @@ Import the following Projects (in the order as mentioned below)
 
 ![alt text](./installation-script-screenshots/57.png)
 
-![alt text](./installation-script-screenshots/58.0.png)
-
 ![alt text](./installation-script-screenshots/58.1.png)
 
 ![alt text](./installation-script-screenshots/59.0.png)
