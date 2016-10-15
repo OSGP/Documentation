@@ -40,6 +40,7 @@ Now download and install Vagrant. Vagrant is available at the following URL:
 
 > **note:** If you already have Vagrant, make sure it is at least **version 1.8.6**
 Complete the installation and restart your PC.
+
 > **note:** If you did a fresh install of Vagrant and already had a command prompt open, make sure you close this command prompt and open it again.
 
 #### Tip
