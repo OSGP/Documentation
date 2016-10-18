@@ -70,7 +70,7 @@ Make sure to use the test-org as OrganisationIdentification in the request heade
 #### Creating a certificate for the new organisation
 Now that the 'my-org' organisation is authorised to use the SSLD_000-00-01 device, it is time to create a certificate for the my-org organisation. This certificate will be used to sign the requests.
 
-Open a terminal and navigate to `/home/dev/Sources/Config/certificates/`
+Open a terminal and navigate to `/home/dev/Sources/OSGP/Config/certificates/`
 
 A script has been created to create the certificates, execute it by running the following command in the terminal:
 ```shell
@@ -79,15 +79,15 @@ A script has been created to create the certificates, execute it by running the 
 
 You should receive similar output as shown in the screenshot below.
 
-![alt text](./installation-script-screenshots/101.png)
+![alt text](./screenshots/01.png)
 
 Now that the certificate has been created, restart the tomcat server.
 
 ### Signing a request with the new certificate
 
-When the tomcat server is up and running again, go to SoapUi and add the new certificate to the pubblic-lighting project: double-click on the project, go to the WS-Security Configurations tab and select the keystores tab. Click the '+' button and browse to the my-org.pfx certificate which can be found in `/home/dev/Sources/Config/certificates/osgp-ca/certs/`
+When the tomcat server is up and running again, go to SoapUi and add the new certificate to the pubblic-lighting project: double-click on the project, go to the WS-Security Configurations tab and select the keystores tab. Click the '+' button and browse to the my-org.pfx certificate which can be found in `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/`
 
-![alt text](./installation-script-screenshots/102.png)
+![alt text](screenshots/02.png)
 
 Now double-click on 'Request 1' in SetLight in PublicLightingAdHocManagement in the public-lighting project. Set the SSL Keystore to 'my-org.pfx' in the request properties so the request gets signed with the new certificate. Change the request parameters as shown in the example below:
 
