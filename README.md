@@ -18,7 +18,6 @@ Web
 PDF
 * [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/documentation-pdf)
 
-
 ## Open smart grid platform information and news
 
 High-level project information and news can be found on the open smart grid platform website: 
