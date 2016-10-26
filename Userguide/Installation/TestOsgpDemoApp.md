@@ -1,10 +1,7 @@
 ### Testing the platform using the Web Demo
 This chapter will describe the steps needed to test the Open Smart Grid Platform using the Web Demo Application.
 
-- Open a terminal and clone the demo app to the Sources/OSGP folder:
-- ```bash
-git clone https://github.com/OSGP/PublicLightingDemoApp.git /home/dev/Sources/OSGP/PublicLightingDemoApp
-```
+
 - Open Eclipse and import the following folder as as Maven project  ```/home/dev/Sources/OSGP/PublicLightingDemoApp/```
 - Add the PublicLightingDemoApp components to the Tomcat Server.
 - (Re)Start the Tomcat Server.
