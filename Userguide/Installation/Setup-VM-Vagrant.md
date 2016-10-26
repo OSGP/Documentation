@@ -1,7 +1,7 @@
 
 ## Installation
 
-This document describes the automatic installation procedure for your OSGP development environment.
+This document describes the automatic installation procedure for your Open Smart Grid Platform development environment.
 
 ---
 ### Manual installation
@@ -12,7 +12,7 @@ If you would like to follow the **manual installation procedure**, please procee
 
 ### Overview
 ##### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
-To improve the usability of the Installation process, a Vagrant file and some puppet scripts are used to automatically set-up an virtual OSGP development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
+To improve the usability of the Installation process, a Vagrant file and some puppet scripts are used to automatically set-up an virtual Open Smart Grid Platform development environment. The following steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
 
 ### System Requirements
 The following system requirements are recommended:
@@ -86,8 +86,8 @@ Don't log in yet, wait until the script in the Console is finished.
 
 Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. 
 
-## Optimize your OSGP Development virtualbox image.
-At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.3 Setup OSGP
+## Optimize your Open Smart Grid Platform Development virtualbox image.
+At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.3 Setup Open Smart Grid Platform
 
 If you do want to update the virtualbox settings for this image, shut down the image first:
 
