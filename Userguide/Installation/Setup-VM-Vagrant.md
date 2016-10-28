@@ -105,4 +105,4 @@ Close the Settings window and Start the Virtual Machine again. Once it is booted
 
 ## Recap
 
-You just created a virtual machine running Ubuntu with pre-installed tooling. Proceed with chapter 2.1.3 of the guide describes how to set-up the open smart grid platform.
+You just created a virtual machine running Ubuntu with pre-installed tooling. Proceed with [Platform Setup](setupOSGP.md) of the guide describing how to set-up the open smart grid platform.
