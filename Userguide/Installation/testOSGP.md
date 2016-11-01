@@ -85,7 +85,7 @@ A SSLD needs to be added to the platform, together with a public key. The Update
 Click the 'play' button to submit the request to the endpoint. You should receive similar response as shown in the screenshot below:
 ![alt text](./installation-script-screenshots/48.png)
 
-After the SSLD has been added, let's see if the function FindAllDevices shows the SSLD. Continue with the FindAllDevices request from the public-lighting project.
+After the SSLD has been added, let's see if the function FindAllDevices shows the SSLD. Continue with the FindAllDevices request from the public-lighting project. Since this is not the same project, we have to change the endpoint; in this case in https://localhost:443/osgp-adapter-ws-publiclighting/publiclighting/adHocManagementService/.
 Do not forget to set the SSL keystore in the Request Properties. Use the following parameters in the request:
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
