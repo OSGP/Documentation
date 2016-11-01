@@ -1,7 +1,7 @@
-## GetSpecificConfigurationObjectResponse request
+## GetSpecificAttributeValueResponse request
 
 ### Description
-GetSpecificConfigurationObjectResponse returns the result values as text from getting the configuration objects. The response request contains the DeviceIdentification and CorrelationUid which is received from the [GetSpecificConfigurationObject](GetSpecificConfigurationObject.md) request.
+GetSpecificAttributeValueResponse returns the result values as text from getting the configuration objects. The response request contains the DeviceIdentification and CorrelationUid which is received from the [GetSpecificAttributeValue](GetSpecificAttributeValue.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

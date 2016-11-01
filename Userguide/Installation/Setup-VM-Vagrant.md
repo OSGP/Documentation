@@ -1,8 +1,20 @@
-### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
+
+## Installation
+
+This document describes the automatic installation procedure
+
+---
+### Manual installation
+
+If you would like to follow the **manual installation procedure**, please proceed to the [Manual Installation Chapter](./manualInstallation.md).  
+
+---
+
+### Overview
+##### Creating a Virtual Machine using [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com)
 To improve the usability of the Installation process, a Puppet Script and Vagrant file are used to automatically set-up a virtual development environment. These steps will describe how to install VirtualBox, Vagrant and kick off the procedure by running the `vagrant up` command.
 
-#### Note
- - If you would like to follow the **manual installation procedure**, please proceed to the [Manual Installation Chapter](./manualInstallation.md)
+
 
 ### System Requirements
 The following system requirements are recommended:
@@ -18,7 +30,8 @@ In case of installing on Ubuntu 14.04, make sure to grab the latest version of V
 ### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
-And follow the installation steps.
+And follow the installation steps. 
+> **note:** If you already have VirtualBox, make sure it is at least **version 5.1**
 
 ![alt text](./installation-script-screenshots/01.png)
 
@@ -68,16 +81,16 @@ Don't log in yet, wait until the script in the Console is finished.
 
 #### Tip
  - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
- 
-Now that the script has ran its course, go to the Ubuntu virtual machine and log in as vagrant user (the password is vagrant). Now shut the virtual machine down.
+
+Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. Now shut down the virtual machine.
 
 ![alt text](./installation-script-screenshots/06.png)
 
-Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called xxxx_xxxx_osgp_development_xxxxxxx) and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (more is better).
+Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called xxxx_xxxx_osgp_development_xxxxxxx) and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (or the maximum recommended (in green amount).
 
 ![alt text](./installation-script-screenshots/07.png)
 
-Now go to the Processor Tab and increase the amount of Processors to 4.
+Now go to the Processor Tab and increase the amount of Processors to the maximum recommended (in green) amount.
 
 ![alt text](./installation-script-screenshots/08.png)
 

@@ -4,7 +4,7 @@ License information: Apache 2.0. The code files on this master branch don't have
 
 ### Build Status
 
-[![Build Status](http://54.77.62.182/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://54.77.62.182/job/OSGP_Documentation_development)
+[![Build Status](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development)
 
 ### Description
 
@@ -25,3 +25,9 @@ PDF
 
 High-level project information and news can be found on the open smart grid platform website: 
 * [www.opensmartgridplatform.org](http://opensmartgridplatform.org/)
+
+Open smart grid platform detailed documentation:
+* [documentation.opensmartgridplatform.org/](http://documentation.opensmartgridplatform.org/)
+
+Open smart grid platform issue tracker:
+* [Open smart grid platform Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/)
