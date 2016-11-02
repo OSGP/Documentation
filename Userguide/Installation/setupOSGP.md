@@ -65,7 +65,10 @@ Click on 'Open launch configuration', click on the 'Arguments' tab and add the f
 ![alt text](./installation-script-screenshots/27.png)
 
 ### Setting Up Apache Tomcat7 Server Context
-Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml` to map configuration file names to file paths.
+All modules contain their own context.xml. In there are the environment variables meantioned where the global and module specific configuration files are located. Default they will point to a location in /etc/osp/.
+
+If you want to deviate from this, you might set up the context.xml in tomcat to be able to redirect in one file to different locations. Default you don't need to do this. This is optional.
+In order to use a custom context.xml, copy the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml.sample` to the Tomcat7 context.xml in the eclipse Servers folder, to map configuration file names to file paths.
 ![alt text](./installation-script-screenshots/28.png)
 
 ![alt text](./installation-script-screenshots/29.png)
