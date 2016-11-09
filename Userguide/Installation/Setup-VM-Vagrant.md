@@ -103,6 +103,12 @@ Now go to the Processor Tab and increase the amount of Processors to the maximum
 
 Close the Settings window and Start the Virtual Machine again. Once it is booted, you should be automatically logged in as the 'Dev' user.
 
+## Post actions
+
+In order to use git correctly you need to execute the following commands in a terminal:
+`git config --global user.name "<your full name>"`
+`git config --global user.email <your email address>`
+
 ## Recap
 
 You just created a virtual machine running Ubuntu with pre-installed tooling. Proceed with [Platform Setup](setupOSGP.md) of the guide describing how to set-up the open smart grid platform.
