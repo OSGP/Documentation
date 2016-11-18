@@ -105,6 +105,10 @@
             * [FindEvents](Domains/Smartmetering/smartmeteringwebservices/FindEvents.md)
             * [GetFindEventsResponse](Domains/Smartmetering/smartmeteringwebservices/GetFindEventsResponse.md)
             * [GetDevices](Domains/Smartmetering/smartmeteringwebservices/GetDevices.md)
+
+            * [EnableDebugging](Domains/Smartmetering/smartmeteringwebservices/EnableDebugging.md)
+            * [DisableDebugging](Domains/Smartmetering/smartmeteringwebservices/DisableDebugging.md)
+            * [FindMessageLogs](Domains/Smartmetering/smartmeteringwebservices/FindMessageLogs.md)
         * [Monitoring](Domains/Smartmetering/smartmeteringwebservices/Monitoring.md)
             * [GetActualMeterReads](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReads.md)
             * [GetActualMeterReadsResponse](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReadsResponse.md)
