@@ -6,10 +6,10 @@ The request needs the DeviceIdentification and a Page number to return.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetFindMessageLogsResponse](GetFindMessageLogsResponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the FindMessageLogs request.
+[GetFindMessageLogsResponse](GetFindMessageLogsResponse.md) returns if the result is successful from the  request. The response contains the DeviceIdentification and CorrelationUid which is received from the FindMessageLogs request.
 
 
-**Note: This functionality also exists in the admin devicemanagent service. It was duplicated here to be implemented asynchronously, as there is no support for asynchronous requests triggering a notification service in the admin project. As soon as asynchronous requests and notifications are implemented througout the OSGP platform, this method should be removed in favour of the admin implementation.**
+**Note: This functionality also exists in the admin device management service. It was duplicated here to be implemented asynchronously, as there is no support for asynchronous requests triggering a notification service in the admin project. As soon as asynchronous requests and notifications are implemented throughout the OSGP platform, this method should be removed in favour of the admin implementation.**
 
 
 ### References

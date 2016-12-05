@@ -4,13 +4,13 @@
 ## The Open Street Light Protocol
 
 The OSLP is a lightweight message based protocol. 
-OSLP uses [Google Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) and is used for communication with SSLD devices (and device simulators). It is defined as a contract/interface. The interface defines datatypes and messages which use those datatypes.
+OSLP uses [Google Protocol Buffers](https://developers.google.com/protocol-buffers/?hl=en) and is used for communication with SSLD devices (and device simulators). It is defined as a contract/interface. The interface defines datatypes and messages which use those data types.
 Google Protocol Buffers is used to generate the protocol implementations for Java (for the platform) and C/C++ (for the SSLD devices).
 
 Open street light protocol does not use ASN.1 but Google Protocol Buffers. The main reason for this is the lack of a good quality free ASN.1 compiler for Java or C. Google Protocol Buffers offers a fast and free compiler for Java and C which produces small message sizes.
 
 ## Protocol security
-* Public/private keypair
+* Public/private key pair
 * Signing of messages through Elliptic Curve DSA 256 bit
 ** Integrity of the message is ensured 
 ** Sender identity is ensured

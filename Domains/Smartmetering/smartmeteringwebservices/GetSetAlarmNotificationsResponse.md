@@ -1,7 +1,7 @@
 ## GetSetAlarmNotificationsResponse request
 
 ### Description
-GetSetAlarmNotificationsResponse returns the result from setting a SetAlarmNotifications. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetAlarmNotifications](SetAlarmNotifications.md) request.
+GetSetAlarmNotificationsResponse returns the result from setting a SetAlarmNotifications. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetAlarmNotifications](SetAlarmNotifications.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

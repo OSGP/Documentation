@@ -8,15 +8,15 @@ Once we get the foundation going, we will open an address so you can directly co
 
 ## Jira
 
-Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Smart society services for synergy reasons. 
-Once we have multilple contributors outside Smart society services we can move to a dedicated jira instance or something else.
+Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Smart Society Services for synergy reasons. 
+Once we have multiple contributors outside Smart Society Services we can move to a dedicated Jira instance or something else.
 
-Once you get actively involved, you can request write permissions on the jira board.
+Once you get actively involved, you can request write permissions on the Jira board.
 You can request write access to the Jira issue board by sending a request to opensource@smartsocietyservices.com (Marcel checks this mailbox for Jira requests).
 
 ### New Features
 
-1. If there is a need (or wish!) for a new feature, add it as issue to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) as a user story. Please provide a full description about the background of the problem. Spilt-up big userstories in multiple small user stories.
+1. If there is a need (or wish!) for a new feature, add it as issue to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) as a user story. Please provide a full description about the background of the problem. Spilt-up big user stories in multiple small user stories.
 
 2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If open smart grid platform core components are involved, please discuss your change first with one of the developers/maintainers.
 

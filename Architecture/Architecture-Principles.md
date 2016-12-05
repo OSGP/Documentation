@@ -14,16 +14,16 @@ The use of layers improves the separation of responsibilities. Each application 
 - Presentation layer: responsible for providing information to users (persons and/or systems) and the handling of user requests
 - Application layer: responsible for executing system tasks including authorisation control
 - Domain layer: responsible for the representation of the problem domain.
-- Infrastructure: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
+- Infrastructure layer: responsible for technical matters supporting other layers. For instance persistence, messaging, etc
 
 _Image, Layers:_
  ![alt text](./OSGP-components.png "Layers")
 
 1. Audit logger
-2. Webservices
+2. Web Services
 3. Functions
 4. Queue
-5. Worklow engine
+5. Workflow engine
 6. Protocol framework
 7. Protocol implementations
 8. Workflow engine
@@ -32,7 +32,7 @@ _Image, Layers:_
 
 ### Domain driven design (DDD)
 
-Domain-driven design focusses on the problem domain. DDD's starting point is creating an optimal model for a specific problem domain by having a common language and constructive collaboration between technical and domain experts.
+Domain-driven design focuses on the problem domain. DDD's starting point is creating an optimal model for a specific problem domain by having a common language and constructive collaboration between technical and domain experts.
 
 DDD uses the following building blocks:
 
@@ -45,14 +45,15 @@ DDD uses the following building blocks:
 
 ### Dependency inversion principle
 
-The dependency inversion principle promotes an independent connection by inverting dependency relations. This ensures that the domain model can be very 'clean' without knowledge of the underlying infrastructure (POJO classes). To apply this principle the Spring Framework is used.
+The dependency inversion principle promotes an independent connection by inverting dependency relations. This ensures that the domain model can be very 'clean' without knowledge of the underlying infrastructure (POJO classes). The Spring framework is used to implement the Dependency Inversion principle.
+
 
 ### Behavior driven development (BDD)
 
-Behavior driven development is a way of programming that first describes behavior in user stories and then implements this in the code. The user stories contain scenarios with acceptation criteria, which can be automated. This creates a complete test suite for the whole system.
+Behavior driven development is a way of programming that first describes behavior in user stories and then implements this in code. The user stories contain scenarios with acceptation criteria that can be automated. This creates a complete test suite for the whole system.
 
 For the application of BDD the following frameworks are used:
 
-- GivWenZen, extension for FitNesse to use Given When Then scenario's
 - FitNesse, acceptance testing framework, makes use of wiki.
-- Cucumber, automated acceptance testing, based on scenario's from stories.
+- GivWenZen, extension for FitNesse to use Given When Then scenario's
+- Cucumber, automated acceptance testing, based on scenarios from stories.

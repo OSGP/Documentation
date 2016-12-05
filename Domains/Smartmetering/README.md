@@ -1,19 +1,19 @@
 ## SmartMetering Documentation (Beta version)
 
-This chapter describes the SmartMetering domain including the webservices. Currently the webservices of the beta version are described, since the webservices have not yet officially been released.
+This chapter describes the SmartMetering domain including the web services. Currently the web services of the beta version are described, since the web services have not yet officially been released.
 Information on the DLMS device simulator can be found in the [DLMS protocol section](../Protocols/DLMS/Devicesimulator.md)
 
 ### Scope
-The goal of this domain is to read and manage millions of smart smart meters. This includes smart meter installation, firmware updates, smart meter removal, read smart meter values, time synchronisation, etc.
-Everything that is needed to professional manage millions of smart meters is or can be included in this domain.
+The goal of this domain is to read and manage millions of smart meters. This includes smart meter installation, firmware updates, smart meter removal, read smart meter values, time synchronisation, etc.
+Everything that is needed to professionally manage millions of smart meters is or can be included in this domain.
 
 ### Features
 
-Smart metering features available within on the open smart grid platform so far:
+Currently, the following Smart Metering features are available within the open smart grid platform:
 
 - Add smart meter to the platform, so the device is known and additional actions can be performed for the device
 - Process shipment file, which adds several smart meters to the platform along with all needed information
-- Synchronize time between smart meters and head-end system, in case the smart meter adjusts it's time, some events will be logged
+- Synchronize time between smart meters and head-end system, in case the smart meter adjusts its time, some events will be logged
 - Retrieve events from the smart meter, several event logs are available
 - Retrieve periodic meter reads from the smart meter
 
@@ -45,17 +45,17 @@ Smart metering features available within on the open smart grid platform so far:
 - **[GetSetPushSetupAlarmResponse](./smartmeteringwebservices/GetSetPushSetupAlarmResponse.md)** is a request which returns the response from the [SetPushSetupAlarm](./smartmeteringwebservices/SetPushSetupAlarm.md) request.
 - **[SetPushSetupSms](./smartmeteringwebservices/SetPushSetupSms.md)** is a request to set an endpoint in a device which tells the device where to connect to when it is waked up.
 - **[GetSetPushSetupSmsResponse](./smartmeteringwebservices/GetSetPushSetupSmsResponse.md)** is a request which returns the response from the [SetPushSetupSms](./smartmeteringwebservices/SetPushSetupSms.md) request.
-- **[SetAlarmNotifications](./smartmeteringwebservices/SetAlarmNotifications.md)** is a request to set the types of alarmnotifications that must be notified from the device when they occur.
+- **[SetAlarmNotifications](./smartmeteringwebservices/SetAlarmNotifications.md)** is a request to set the types of alarm notifications that must be notified from the device when they occur.
 - **[GetSetAlarmNotificationsResponse](./smartmeteringwebservices/GetSetAlarmNotificationsResponse.md)** is a request which returns the response from the [SetAlarmNotifications](./smartmeteringwebservices/SetAlarmNotifications.md) request.
 - **[SetEncryptionKeyExchangeOnGMeter](./smartmeteringwebservices/SetEncryptionKeyExchangeOnGMeter.md)** is a request to transfer and set a G-meter key on a device.
 - **[GetSetEncryptionKeyExchangeOnGMeterResponse](./smartmeteringwebservices/GetSetEncryptionKeyExchangeOnGMeterResponse.md)** is a request which returns the response from the [SetEncryptionKeyExchangeOnGMeter](./smartmeteringwebservices/SetEncryptionKeyExchangeOnGMeter.md) request.
-- **[SetActivityCalendar](./smartmeteringwebservices/SetActivityCalendar.md)** is a request to set several parameters on an E-meter such as tariffs per day in a weekprofile.
+- **[SetActivityCalendar](./smartmeteringwebservices/SetActivityCalendar.md)** is a request to set several parameters on an E-meter such as tariffs per day in a week profile.
 - **[GetSetActivityCalendarResponse](./smartmeteringwebservices/GetSetActivityCalendarResponse.md)** is a request which returns the response from the [SetActivityCalendar](./smartmeteringwebservices/SetActivityCalendar.md) request.
 - **[GetAdministrativeStatus](./smartmeteringwebservices/GetAdministrativeStatus.md)** is a request to retrieve the current AdministrativeStatus setting.
 - **[GetGetAdministrativeStatusResponse](./smartmeteringwebservices/GetGetAdministrativeStatusResponse.md)** is a request which returns the response from the [GetAdministrativeStatus](./smartmeteringwebservices/GetAdministrativeStatus.md) request.
 - **[SetAdministrativeStatus](./smartmeteringwebservices/SetAdministrativeStatus.md)** is a request to set the AdministrativeStatus.
 - **[GetSetAdministrativeStatusResponse](./smartmeteringwebservices/GetSetAdministrativeStatusResponse.md)** is a request which returns the response from the [SetAdministrativeStatus](./smartmeteringwebservices/SetAdministrativeStatus.md) request.
-- **[GetFirmwareVersion](./smartmeteringwebservices/GetFirmwareVersion.md)** is a request to retrieve the firmwareversion(s).
+- **[GetFirmwareVersion](./smartmeteringwebservices/GetFirmwareVersion.md)** is a request to retrieve the firmware version(s).
 - **[GetGetFirmwareVersionResponse](./smartmeteringwebservices/GetGetFirmwareVersionResponse.md)** is a request which returns the response from the [GetFirmwareVersionRequest](./smartmeteringwebservices/GetFirmwareVersion.md).
 - **[ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md)** is a request to change the keys on a E-meter.
 - **[GetReplaceKeysResponse](./smartmeteringwebservices/GetReplaceKeysResponse.md)** is a request which returns the response from the [ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md) request.

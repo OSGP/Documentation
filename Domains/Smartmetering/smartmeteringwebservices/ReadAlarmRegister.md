@@ -5,7 +5,7 @@ ReadAlarmRegister is a request to retrieve the query alarm register. A notificat
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetReadAlarmRegisterResponse](GetReadAlarmRegisterResponse.md) returns the alarm notifications from the ReadAlarmRegister request. The response request contains the DeviceIdentification and CorrelationUid which is received from the ReadAlarmRegister request.
+[GetReadAlarmRegisterResponse](GetReadAlarmRegisterResponse.md) returns the alarm notifications from the ReadAlarmRegister request. The response contains the DeviceIdentification and CorrelationUid which is received from the ReadAlarmRegister request.
 
 ### References
 

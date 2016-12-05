@@ -5,7 +5,7 @@ GetPeriodicMeterReads is a request to retrieve the periodic import and export me
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetPeriodicMeterReadsResponse](GetPeriodicMeterReadsResponse.md) returns the retrieved meter reads values, unit and logtime from the GetPeriodicMeterReads request. The response request contains the DeviceIdentification and CorrelationUid which is received from the GetPeriodicMeterReads request.
+[GetPeriodicMeterReadsResponse](GetPeriodicMeterReadsResponse.md) returns the retrieved meter reads values, unit and log time from the GetPeriodicMeterReads request. The response contains the DeviceIdentification and CorrelationUid which is received from the GetPeriodicMeterReads request.
 
 ### References
 

@@ -6,7 +6,7 @@ For example in Central European Summer Time, DST is active and times are UTC/GMT
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetSynchronizeTimeResponse](./GetSynchronizeTimeResponse.md) returns the result from synchronizing date and time. The response request contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request.
+[GetSynchronizeTimeResponse](./GetSynchronizeTimeResponse.md) returns the result from synchronizing date and time. The response contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request.
 
 ### References
 

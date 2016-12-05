@@ -2,7 +2,7 @@
 This covers the services for tariff switching domain using the open smart grid platform.
 
 ##Scope
-This domain allows tariff switching. It allows a relays to switch when a tariff changes. 
+This domain allows tariff switching. It allows a relay to switch when a tariff changes. 
 This domain could be used to replace ripple control tariff signals.
 
 ### Webservices

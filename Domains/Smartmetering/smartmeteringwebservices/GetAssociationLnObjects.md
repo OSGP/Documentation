@@ -1,11 +1,11 @@
 ## GetAssociationLnObjects request
 
 ### Description
-GetAssociationLnObjects is a request to get the Association LN object tree from an E-meter. The request is send with the DeviceIdentification number from the desired device.
+GetAssociationLnObjects is a request to get the Association LN object tree from an E-meter. The request is sent with the DeviceIdentification number from the desired device.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetGetAssociationLnObjectsResponse](GetGetAssociationLnObjectsResponse.md) returns the result values from getting the Association LN object. The response request contains the DeviceIdentification and CorrelationUid which is received from the GetAssociationLnObjects request.
+[GetGetAssociationLnObjectsResponse](GetGetAssociationLnObjectsResponse.md) returns the result values from getting the Association LN object. The response contains the DeviceIdentification and CorrelationUid which is received from the GetAssociationLnObjects request.
 
 ### References
 

@@ -26,7 +26,7 @@ message SetConfigurationResponse {
 
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum LightType {

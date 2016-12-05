@@ -27,7 +27,7 @@ We encourage you to participate in improving the documentation. From corrected t
 
 5. Assign a maintainer or other developer on this topic to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](../Opensourcecommunity/Governance).
 
-Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you like to upload illustation, you can use git or [Github](https://help.github.com/articles/adding-a-file-to-a-repository/)
+Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you like to upload illustration, you can use git or [Github](https://help.github.com/articles/adding-a-file-to-a-repository/)
 
 If you are completely new to this and you need help to get started, file an issue in the documentation repository.
 

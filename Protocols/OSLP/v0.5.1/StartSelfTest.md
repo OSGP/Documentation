@@ -18,7 +18,7 @@ message StartSelfTestResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum Status {

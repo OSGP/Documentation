@@ -6,7 +6,7 @@ The image below shows a high-level view of the system's components.
 
 ![alt text](./design-view.png "Design View")
 
-### Data model an (not open source) smart lighting web application 
+### Data model of a (not open source) smart lighting web application 
 
 _Image showing the datamodel for the owners and management application_
 ![alt text](./data-model-web-application.png "Data Model Web Application")
@@ -28,7 +28,7 @@ Data model explanation:
 
 ### Logical view
 
-The logical view is a high-level overview of the system . The image below displays the main components and interfaces between these components.
+The logical view is a high-level overview of the system. The image below displays the main components and interfaces between these components.
 
  ![alt text](./logical-view.png "Logical View")
 

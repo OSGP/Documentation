@@ -5,7 +5,7 @@ SetPushSetupAlarm is a request to push a received alarm notification from a devi
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetSetPushSetupAlarmResponse](GetSetPushSetupAlarmResponse.md) returns the result from setting a SetPushSetupAlarm. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetPushSetupAlarm request.
+[GetSetPushSetupAlarmResponse](GetSetPushSetupAlarmResponse.md) returns the result from setting a SetPushSetupAlarm. The response contains the DeviceIdentification and CorrelationUid which is received from the SetPushSetupAlarm request.
 
 ### References
 

@@ -5,7 +5,7 @@ UpdateFirmware is a request to install another firmware version(s) on a device. 
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetUpdateFirmwareResponse](GetUpdateFirmwareResponse.md) returns the version(s). The response request contains the DeviceIdentification and CorrelationUid which is received from the UpdateFirmware request.
+[GetUpdateFirmwareResponse](GetUpdateFirmwareResponse.md) returns the version(s). The response contains the DeviceIdentification and CorrelationUid which is received from the UpdateFirmware request.
 
 ### References
 

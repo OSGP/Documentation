@@ -5,7 +5,7 @@ GetActualMeterReadsGas is a request to retrieve the actual import and export met
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetActualMeterReadsGasResponse](GetActualMeterReadsGasResponse.md) returns the retrieved meter reads values, unit and logtime from the GetActualMeterReadsGas request. The response request contains the DeviceIdentification and CorrelationUid which is received from the GetActualMeterReadsGas request.
+[GetActualMeterReadsGasResponse](GetActualMeterReadsGasResponse.md) returns the retrieved meter reads values, unit and log time from the GetActualMeterReadsGas request. The response contains the DeviceIdentification and CorrelationUid which is received from the GetActualMeterReadsGas request.
 
 ### References
 

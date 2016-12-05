@@ -1,7 +1,7 @@
 ## GetSetConfigurationObjectResponse request
 
 ### Description
-GetSetConfigurationObjectResponse returns the result from setting a ConfigurationObject. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetConfigurationObject](SetConfigurationObject.md) request.
+GetSetConfigurationObjectResponse returns the result from setting a ConfigurationObject. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetConfigurationObject](SetConfigurationObject.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

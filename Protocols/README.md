@@ -1,5 +1,5 @@
 ## Protocols
-The open smart grid platform supported protocols can be found in this section.Feel free to add your own protocol or improve an exsisting protocol adaptor.
+The open smart grid platform supported protocols can be found in this section. Feel free to add your own protocol or improve an existing protocol adapter.
 
 ### Protocol Adapters
 

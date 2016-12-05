@@ -1,7 +1,7 @@
 ## GetSetActivityCalendarResponse request
 
 ### Description
-GetSetActivityCalendarResponse returns the result from setting a SetActivityCalendar. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetActivityCalendar](SetActivityCalendar.md) request.
+GetSetActivityCalendarResponse returns the result from setting a SetActivityCalendar. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetActivityCalendar](SetActivityCalendar.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

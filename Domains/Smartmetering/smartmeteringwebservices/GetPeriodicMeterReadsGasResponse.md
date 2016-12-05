@@ -1,7 +1,7 @@
 ## GetPeriodicMeterReadsGasResponse request
 
 ### Description
-GetPeriodicMeterReadsGasResponse returns the retrieved import and export values, unit and logtime from the PeriodicMeterReadsGas request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [GetPeriodicMeterReadsGas](GetPeriodicMeterReadsGas.md) request.
+GetPeriodicMeterReadsGasResponse returns the retrieved import and export values, unit and log time from the PeriodicMeterReadsGas request. The response contains the DeviceIdentification and CorrelationUid which is received from the [GetPeriodicMeterReadsGas](GetPeriodicMeterReadsGas.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

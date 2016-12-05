@@ -6,8 +6,8 @@ The Platform was tested with the following AWS setup:
 
 Systems:
 
-- **Specs Component Server**: 2 CPU's, 8 GB Ram
-- **Specs DB Server**: 1 CPU, 2 GB Ram
+- **Specifications Component Server**: 2 CPU's, 8 GB RAM
+- **Specifications Database Server**: 1 CPU, 2 GB RAM
 
 Setup:
 
@@ -24,6 +24,3 @@ For the test to succeed, two requirements were to be met:
 2. Switch 40.000 simulated OSLP devices under 5 minutes.
 
 The results showed that both tests succeeded.
-
-
-
