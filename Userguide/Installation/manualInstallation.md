@@ -60,7 +60,7 @@ git clone https://github.com/OSGP/Documentation.git /home/dev/Sources/OSGP/Docum
 ```
 Make sure you are on the development branch (default).
 
-Initialiaze the Git submodules in Platform, Protocol-Adapter-OSLP, Protocol-Adapter-DLMS, Protocol-Adapter-IEC61850 and Integration-Tests by running the following command in each directory:
+Initialize the Git submodules in Platform, Protocol-Adapter-OSLP, Protocol-Adapter-DLMS, Protocol-Adapter-IEC61850 and Integration-Tests by running the following command in each directory:
 ```shell
 git submodule update --init --recursive
 ```
@@ -97,5 +97,3 @@ service postgresql reload
 ### Set up the Open Smart Grid Platform
 
 Continue with setting up the Open Smart Grid Platform by following the [Set up the Open Smart Grid Platform Guide](http://documentation.opensmartgridplatform.org/Userguide/Installation/setupOSGP.html)
-
-

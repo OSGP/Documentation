@@ -5,7 +5,7 @@ Enable debugging for a device. Communication with the device will be logged and 
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetEnableDebuggingResponse](./GetEnableDebuggingResponse.md) returns the result status. The response request contains the DeviceIdentification and CorrelationUid which is received from the SynchronizeTime request.
+[GetEnableDebuggingResponse](./GetEnableDebuggingResponse.md) returns the result status. The response contains the DeviceIdentification and CorrelationUid which is received from the GetEnableDebuggingRequest request.
 
 ### References
 

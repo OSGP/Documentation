@@ -20,20 +20,20 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 
 **Implementation/roll-out**
 
-- Small scale roll-out started jan-2015
+- Small scale roll-out started January 2015
 - 200 Sub Stations will be fitted with an SSLD to control public lighting and tariff switching
 - 15 municipalities in the Liander grid operator area will be participating
 - Goal is to allow municipalities to use the application, give feedback and to see if the services offered to municipalities are adequate
 
 
 - Large scale roll-out will start around 2016
-- The entire Liander grid operator area will use SSLD's to controll all public lighting and tariff switching
+- The entire Liander grid operator area will use SSLD's to control all public lighting and tariff switching
 - About 25.000 Sub Stations (middenspanningsruimtes)
 - About 800.000 street lights will be switched by the SSLD's mounted in the 25.000 Sub Stations
 
 **FlexOVL web application (not open source available)**
 
-Municipalities are free to choose their own (web)application (using the webservices of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
+Municipalities are free to choose their own (web)application (using the web services of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
 
 ![alt text](./Smartscocietyservices-web-application.png "FlexOVL Web Application")
 

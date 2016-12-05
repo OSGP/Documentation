@@ -2,19 +2,19 @@
 
 The Domain Adapters are responsible for receiving requests from the Web Services layer, and delivering them to the Core layer. The Domain Layer mainly contains MessageProcessors and Services for request handling.
 
-The Core/Admin compoments contains the shared functionality, while the Domain components contain additonial domain specific funtionality.
+The Core/Admin components contains the shared functionality, while the Domain components contain additional domain specific functionality.
 
 At the moment the Platform uses the following Domain Adapters:
 
 Generic
-- Core - osgp-adapter-domain-core: Contains Core (common) functionality (AdHocManagement, FirmwareManagement, etc.)
-- Admin - osgp-adapter-domain-admin: Contains Admin functionality (DeviceManagement)
+- Core - osgp-adapter-domain-core: Contains Core (common) functionality;  AdHocManagement, FirmwareManagement, etc.
+- Admin - osgp-adapter-domain-admin: Contains Admin functionality, e.g. DeviceManagement.
 
 Domain
 - Public Lighting - osgp-adapter-domain-publiclighting: Contains functionality for the Public Lighting Domain.
 - Smart Metering - osgp-adapter-domain-smartmetering: Contains functionality for the Smart Metering Domain.
 - Tariff Switching - osgp-adapter-domain-tariffswitching: Contains functionality for the Tariff Switching Domain.
-- Microgrids - osgp-adapter-domain-microgrids: Contains functionality for the Microgrids domain.
+- Microgrids - osgp-adapter-domain-microgrids: Contains functionality for the Micro Grids domain.
 
 ### General Package structure
 

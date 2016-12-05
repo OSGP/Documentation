@@ -19,7 +19,7 @@ message StopSelfTestResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum Status {

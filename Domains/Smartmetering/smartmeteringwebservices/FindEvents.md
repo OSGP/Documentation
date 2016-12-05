@@ -13,7 +13,7 @@ DSMR Chapter 4.2.1 describes the several events and their description.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetFindEventsResponse](GetFindEventsResponse.md) returns if the result is successful from the  request. The response request contains the DeviceIdentification and CorrelationUid which is received from the FindEvents request.
+[GetFindEventsResponse](GetFindEventsResponse.md) returns if the result is successful from the request. The response contains the DeviceIdentification and CorrelationUid which is received from the FindEvents request.
 
 ### References
 

@@ -1,8 +1,8 @@
 ## Core Layer
 
-The Core layer of the Open Source Grid Platform is responsible for Validation, Tanslation, Authorisation and Routing of request messages. It also contains all the Domain Objects.
+The Core layer of the Open Source Grid Platform is responsible for Validation, Translation, Authorisation and Routing of request messages. It also contains all the Domain Objects.
 
-The core layer consists of two compoments:
+The core layer consists of two components:
 
 - osgp-domain-core: Shared Domain objects, services, repositories, etc. These classes are used through the entire platform.
 - osgp-core: Logic for routing domain requests, scheduling, retrying, etc.
@@ -10,12 +10,12 @@ The core layer consists of two compoments:
 ### General Package structure: osgp-domain-core
 
 - entities: Defines the entities used for persistence.
-- exceptions: Domain specific exceptions are residing here.
+- exceptions: Domain specific exceptions reside here.
 - repositories: Repositories that contain logic for persisting entities.
 - services: Domain services that reference a repository.
 - specifications: Interfaces that define specifications for Devices and Events.
 - validations: Validators and constraints.
-- valueobjects: Definitons of the Domain Objects.
+- valueobjects: Definitions of the Domain Objects.
 
 ### General Package structure: osgp-core
 
@@ -27,7 +27,7 @@ The core layer consists of two compoments:
 -- PersistenceConfig
 -- ProtocolMessagingConfig
 -- SchedulingConfig
-- services: Services that process device requests/responses. Checks for authorization, and if the request is supported by the platform. Then it routes the request to the right protocol adapter.
+- services: Services that process device requests/ responses. Checks for authorization, and if the request is supported by the platform, it will be routed to the appropriate protocol adapter.
 - tasks: Contains task scheduler logic.
 
 #### domain.model
@@ -38,5 +38,3 @@ These packages contain interfaces for the Services.
 #### infra.jms
 - domain: Contains Messages, MessageListeners and MessageProcessors for Domain related messaging.
 - protocol: Contains Messages, MessageListeners and MessageProcessors for Protocol related messaging.
-
-

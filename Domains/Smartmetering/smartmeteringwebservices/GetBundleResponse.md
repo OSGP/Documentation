@@ -1,7 +1,7 @@
 ## GetBundleResponse request
 
 ### Description
-GetBundleResponse returns the result of the bundle requested with the Bundle method. The response request contains the DeviceIdentification and CorrelationUid which is received from the [Bundle](Bundle.md) request.
+GetBundleResponse returns the result of the bundle requested with the Bundle method. The response contains the DeviceIdentification and CorrelationUid which is received from the [Bundle](Bundle.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

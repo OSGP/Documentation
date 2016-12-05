@@ -21,7 +21,7 @@ message SetTransitionResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum TransitionType {

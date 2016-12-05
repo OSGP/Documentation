@@ -18,7 +18,7 @@ message SetRebootResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum Status {

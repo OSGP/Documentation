@@ -1,7 +1,7 @@
 ## The open smart grid platform core and admin functions for device management.
 
 ## Scope
-This core and admin domain contains all generic webservices that can be used in other domains. Most generic services relate to device management including powerful device authorization management
+This core and admin domain contains all generic web services that can be used in other domains. Most generic services relate to device management including powerful device authorization management
 
 ### Common webservices
 
