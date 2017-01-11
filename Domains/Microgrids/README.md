@@ -21,7 +21,7 @@ after which the client will be able to obtain the data or result by sending an '
 
 #### Reporting
 When a device is connected it will periodically push measurement reports (and send trigger-based status reports) to OSGP. OSGP will inform the client via a notification, after which the data can be retrieved in a way similar to GetData (using the GetDataAsync message).
-In order to determine whether all report data are received, the response of a GetDataAsync message will (in case of a report) contain report metadata consisting of a report id, sequence number and time of entry.
+In order to determine whether all report data are received, the response of a GetDataAsync message will (in case of a report) contain report metadata consisting of a report id, sequence number and time of entry.(XSD is already updated with report metadata, returning the report metadata from OSGP is not yet implemented)
 
 ### Messages
 
