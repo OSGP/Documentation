@@ -9,13 +9,19 @@ The goal of this domain is to control and monitor microgrids.
 ### Features
 Currently, the following features are available within the open smart grid platform:
 
-- Get data, used to retrieve measurement and profile data from the device
-- Set data, used to set setpoints and profiles on the device
-- Reporting, retrieval of measurement data periodically pushed by the device
+#### Get Data
+Get data is used to retrieve measurement and profile data from the device
 
-### Generic functionality
+#### Set Data
+Set data is used to set setpoints and profiles on the device
 
-- Notifications, when either report data or the result for a request is available, a notification is sent to a client, after which the client will be able to obtain the data or result by sending an 'async' message.
+#### Notifications
+When either report data or the result for a request is available, a notification is sent to a client,
+after which the client will be able to obtain the data or result by sending an 'async' message.
+
+#### Reporting
+When a device is connected it will periodically push measurement reports (and send trigger-based status reports) to OSGP. OSGP will inform the client via a notification, after which the data can be retrieved in a way similar to GetData (using the GetDataAsync message).
+In order to determine whether all report data are received, the response of a GetDataAsync message will (in case of a report) contain report metadata consisting of a report id, sequence number and time of entry.
 
 ### Messages
 
