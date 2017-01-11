@@ -25,9 +25,9 @@ In order to determine whether all report data are received, the response of a Ge
 
 ### Messages
 
-- **GetData** is an asynchronous request to retrieve measurement and profile data from a device.
+- **GetData** is a request to retrieve measurement and profile data from a device.
 - **GetDataAsync** is a request to retrieve the result of the GetData request or to retrieve report data pushed by the device.
-- **SetData** is an asynchronous request to set setpoints and profiles on a device.
+- **SetData** is a request to set setpoints and profiles on a device.
 - **SetDataAsync** is a request to retrieve the result of the SetData request.
 
 ### WSDLs
