@@ -12,7 +12,7 @@ The Open Smart Grid Platform runs on a Linux environment. It is recommended to s
 ### Software and tools
 
 The Open Smart Grid platform needs the following software and tools installed/downloaded:
-- **Java 7** openjdk-7
+- **Java 8** openjdk-8
 - **PostgreSQL** and **PGAdmin 3**
 - **Git**
 - **Maven**
@@ -44,7 +44,7 @@ a2enmod proxy_ajp
 ```
 
 #### Java
-- Make sure the JAVA_HOME var is set, and points to openjdk-7.
+- Make sure the JAVA_HOME var is set, and points to openjdk-8.
 
 ### Cloning Sources
 Clone the following repo's, it is recommeded to create a ```Sources/OSGP``` directory in ```/home/dev/``` since some scripts contain hard coded references to those folders.

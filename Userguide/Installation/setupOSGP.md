@@ -36,23 +36,11 @@ In Eclipse go to Window -> Open Perspective -> Debug
 
 In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/tomcat`
 
+Click on Next
 ![alt text](./installation-script-screenshots/17.png)
 
-Click on Installed JREs...
+Click on Finish
 ![alt text](./installation-script-screenshots/18.png)
-
-Add a new VM as shown below
-![alt text](./installation-script-screenshots/19.png)
-
-![alt text](./installation-script-screenshots/20.png)
-
-Specify the JRE Home directory: ```/usr/lib/jvm/java-7-openjdk-amd64```
-![alt text](./installation-script-screenshots/21.png)
-
-![alt text](./installation-script-screenshots/22.png)
-
-Make sure java-7-openjdk is selected under JRE.
-![alt text](./installation-script-screenshots/23.png)
 
 ![alt text](./installation-script-screenshots/24.png)
 After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 3.
