@@ -17,6 +17,12 @@ Open street light protocol does not use ASN.1 but Google Protocol Buffers. The m
 ** No encryption, because content is not confidential
 * Replay attack prevention
 
+*Special note on Java security provider:*
+
+When both the DLMS and OSLP providers are deloyed within the same Java VM, the SunEC provider will not work properly.
+To workaround this issue, the SunPKCS11-NSS provider must be used for the OSLP protocol adapter.
+By default this provider is enabled on the development VM. 
+
 ### OSLP v0.5.1
 
 The protobuf contract for [OSLP v0.5.1](./oslp/v0.5.1/oslp.proto.v0.5.1.md).
