@@ -32,4 +32,4 @@ In order to determine whether all report data are received, the response of a Ge
 
 ### WSDLs
 
-* [WSDL's and schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-microgrids/src/main/webapp/WEB-INF/wsdl/microgrids)
+* [WSDL's and schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-microgrids/src/main/resources)

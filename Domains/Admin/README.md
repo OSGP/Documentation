@@ -43,10 +43,10 @@ This core and admin domain contains all generic web services that can be used in
 | **AdHocManagement.wsdl** |
 | SetReboot | DeviceIdentification | - |
 
-* [Core WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common)
-* [Core XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-core/src/main/webapp/WEB-INF/wsdl/common/schemas)
+* [Core WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-core/src/main/resources)
+* [Core XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-core/src/main/resources/schemas)
 
 
 ### Admin webservices
-* [Admin WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin)
-* [Admin XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-admin/src/main/webapp/WEB-INF/wsdl/admin/schemas)
+* [Admin WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-admin/src/main/resources)
+* [Admin XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-admin/src/main/resources/schemas)
