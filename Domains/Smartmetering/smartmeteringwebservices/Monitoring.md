@@ -1,3 +1,3 @@
 ## Monitoring
 
-Describes the funtions as defined in [SmartMeteringMonitoring.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringMonitoring.wsdl)
+Describes the funtions as defined in [SmartMeteringMonitoring.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringMonitoring.wsdl)
