@@ -96,5 +96,5 @@ Currently, the following Smart Metering features are available within the open s
 All request sent to this device make use of one communication channel, which may improve performance considerably.
 
 ### WSDL's
-* [SmartMetering WSDL's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering)
-* [PublicLighting XSD schema's](https://github.com/OSGP/Platform/tree/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas)
+* [SmartMetering WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-smartmetering/src/main/resources)
+* [PublicLighting XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-smartmetering/src/main/resources/schemas)

@@ -23,6 +23,6 @@ All requests have similar response behaviour which is described in [ResponseMess
 
 ### References
 
-XSD: [sm-installation.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/SmartMeteringInstallation.xsd)
+XSD: [sm-installation.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/SmartMeteringInstallation.xsd)
 
-WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringInstallation.wsdl)
+WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringInstallation.wsdl)
