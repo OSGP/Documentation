@@ -4,7 +4,7 @@
 
 Note: the device registration is a 2 step process. First RegisterDeviceRequest and RegisterDeviceResponse are exchanged between device and platform. Second [ConfirmRegisterDeviceRequest and ConfirmRegisterDeviceResponse messages](ConfirmRegisterDevice.md) are exchanged.
 
-Request that notifies the platform a device which wants to register. During the registration the sequence number is reset to a random value the platform is notified if the device has a light schedule, the type of the device, the device identification, and the device communicates it's IP address to the platform. Also a random number is determined by the device and this 'randomDevice' should be present in the response form the platform.
+Request that notifies the platform a device which wants to register. During the registration the sequence number is reset to a random value the platform is notified if the device has a light schedule, the type of the device, the device identification, and the device communicates its IP address to the platform. Also a random number is determined by the device and this 'randomDevice' should be present in the response form the platform.
 
 Response which holds the time of the platform so the device can synchronize the time, contains location information for the device like GPS coordinates and Daylight Saving Time information. The device will sent ConfirmRegisterDeviceRequest after receiving the RegisterDeviceResponse. Also a random number is determined by the platform and this 'randomPlatform' should be present in the next request 'ConfirmRegisterDeviceRequest' by the device.
 

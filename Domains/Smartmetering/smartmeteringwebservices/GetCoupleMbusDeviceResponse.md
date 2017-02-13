@@ -1,7 +1,7 @@
 ## GetCoupleMbusDeviceResponse request
 
 ### Description
-GetCoupleMbusDeviceResponse returns if the result is successful from the CoupleMbusDevice request. The response request contains the DeviceIdentification and CorrelationUid which is received from the [CoupleMbusDevice](CoupleMbusDevice.md) request.
+GetCoupleMbusDeviceResponse returns if the result is successful from the CoupleMbusDevice request. The response contains the DeviceIdentification and CorrelationUid which is received from the [CoupleMbusDevice](CoupleMbusDevice.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

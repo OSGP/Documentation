@@ -1,7 +1,7 @@
 ## GetSetAdministrativeStatusResponse request
 
 ### Description
-GetSetAdministrativeStatusResponse returns if the setting SetAdministrativeStatus is enabled. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetAdministrativeStatus](SetAdministrativeStatus.md) request.
+GetSetAdministrativeStatusResponse returns if the setting SetAdministrativeStatus is enabled. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetAdministrativeStatus](SetAdministrativeStatus.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

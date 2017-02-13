@@ -20,7 +20,7 @@ message SetScheduleResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 message Schedule {

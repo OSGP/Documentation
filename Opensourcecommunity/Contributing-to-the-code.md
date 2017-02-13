@@ -9,7 +9,7 @@ Before code is merged it needs to comply with a number of guidelines:
 2. Right formatting; code should follow the Coding Conventions (see 3.1.2)
 3. Fixed/added unit tests where applicable
 4. Javadocs added where applicable
-5. Accepting pull-requests with SonarQube reports "Blocker" and "Critical" and are not allowed
+5. Accepting pull-requests with SonarQube reports "Blocker" and "Critical" are not allowed
 6. Comply with International open standards where possible (e.g. IEC standards)
 
 ### Contributor License Agreement
@@ -30,7 +30,7 @@ If the changes fix a bug, mention the issue number in the commit message or pull
 The open smart grid platform's main branch is master. All major releases are tagged in this branch. Development is done in
 the development and feature branches. We use the GitFlow branching strategy. Find more information on this strategy here: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
 
-The GitFlow work flow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits.
+The GitFlow workflow is someone complicated, but it has the advantage that it gives a clear overview of all previous releases and current development and thus helps to collaborate more efficiently. Please follow this strategy in your commits.
 
 ### Pull requests: review process
 

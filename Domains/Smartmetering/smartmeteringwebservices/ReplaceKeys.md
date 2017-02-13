@@ -5,7 +5,7 @@ ReplaceKeys is a request to change the keys on an E-meter. The request needs the
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetReplaceKeysResponse](GetReplaceKeysResponse.md) returns if the result is successful from the ReplaceKeys request. The response request contains the DeviceIdentification and CorrelationUid which is received from the ReplaceKeys request.
+[GetReplaceKeysResponse](GetReplaceKeysResponse.md) returns if the result is successful from the ReplaceKeys request. The response contains the DeviceIdentification and CorrelationUid which is received from the ReplaceKeys request.
 
 ### References
 

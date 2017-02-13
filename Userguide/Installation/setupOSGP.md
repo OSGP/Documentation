@@ -36,23 +36,11 @@ In Eclipse go to Window -> Open Perspective -> Debug
 
 In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat7 server, Tomcat7 is available in the folder `/home/dev/Tools/tomcat`
 
+Click on Next
 ![alt text](./installation-script-screenshots/17.png)
 
-Click on Installed JREs...
+Click on Finish
 ![alt text](./installation-script-screenshots/18.png)
-
-Add a new VM as shown below
-![alt text](./installation-script-screenshots/19.png)
-
-![alt text](./installation-script-screenshots/20.png)
-
-Specify the JRE Home directory: ```/usr/lib/jvm/java-7-openjdk-amd64```
-![alt text](./installation-script-screenshots/21.png)
-
-![alt text](./installation-script-screenshots/22.png)
-
-Make sure java-7-openjdk is selected under JRE.
-![alt text](./installation-script-screenshots/23.png)
 
 ![alt text](./installation-script-screenshots/24.png)
 After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 3.
@@ -65,7 +53,10 @@ Click on 'Open launch configuration', click on the 'Arguments' tab and add the f
 ![alt text](./installation-script-screenshots/27.png)
 
 ### Setting Up Apache Tomcat7 Server Context
-Setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml` to map configuration file names to file paths.
+All modules contain their own context.xml. In the module specific context.xml are the environment variables defined where the global and module specific configuration files are located. Default they will point to a location in */etc/osp/*.
+
+If you want to deviate from this, you might set up the context.xml in tomcat to be able to redirect in one file to different locations.  This is optional and not required.
+In order to use a custom context.xml, copy the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml.sample` to the Tomcat7 context.xml in the eclipse Servers folder, to map configuration file names to file paths.
 ![alt text](./installation-script-screenshots/28.png)
 
 ![alt text](./installation-script-screenshots/29.png)

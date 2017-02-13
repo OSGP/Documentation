@@ -1,7 +1,7 @@
 ## GetSetPushSetupSmsResponse request
 
 ### Description
-GetSetPushSetupSmsResponse returns the result from setting a SetPushSetupSms. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetPushSetupSms](SetPushSetupSms.md) request.
+GetSetPushSetupSmsResponse returns the result from setting a SetPushSetupSms. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetPushSetupSms](SetPushSetupSms.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

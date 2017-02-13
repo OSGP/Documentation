@@ -19,7 +19,7 @@ message ResumeScheduleResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 enum Status {

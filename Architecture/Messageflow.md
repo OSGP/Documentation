@@ -1,5 +1,5 @@
 # Messageflow examples 
-This are some examples how an messages flows in the open smart grid platform.
+This are some examples how a message flows in the Open Smart Grid Platform.
 
 ## Message Flow:  Request/Acknowledge/Poll
 

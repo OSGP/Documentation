@@ -28,9 +28,9 @@ The functions an organisation can execute on a device are determined by the func
 
 This structure provides maximum flexibility when assigning rights to devices. Devices always belong to an Owner. An owner is an organisation, but not every organisation is an owner. The entity "Event", at the bottom of the image, is the execution of a function by an organisation on a device.
 
-Details like device-type, device-status etcetera have been omitted in this model.
+Details like device-type, device-status, etc. have been omitted from this model.
 
-One security requirement is that each event must be traced back to a 'natural'  person, also known as an audit trail. Although the open smart grid platform does not register individual users we can meet this requirement by registering a data-item with each event. This enables the user organisation to investigate which events belongs to which 'natural' person. This data-item can for example be an user-ID provided by the user-organisation which doesn't have to be unique in the open smart grid platform.
+One security requirement is that each event must be traced back to a 'natural' person, also known as an audit trail. Although the open smart grid platform does not register individual users we can meet this requirement by registering a data-item with each event. This enables the user organisation to investigate which events belongs to which 'natural' person. This data-item can for example be an user-ID provided by the user organisation which doesn't have to be unique in the open smart grid platform.
 
 Table describing the entities in the logical data-model
 
@@ -47,25 +47,25 @@ Table describing the entities in the logical data-model
 
 An organization can get rights to one or more function groups, and thus all functions in that function group will be available to this organization.
 
-To ensure that devices can only receive instructions from a 'genuine' open smart grid platform it must be possible to authenticate the open smart grid platform. This is implemented through a standard technology based on asymmetric encryption (If supported by the Device). The open smart grid platform will receive an unique key to enable the devices to tell if the messages come from a 'genuine' open smart grid platform. Both OSLP and DLMS device types use this kind of encryption. To prevent replay-attacks each message will get an index number (this is standard practice as well).
+To ensure that devices can only receive instructions from a 'genuine' open smart grid platform it must be possible to authenticate the open smart grid platform. This is implemented through a standard technology based on asymmetric encryption (if supported by the Device). The open smart grid platform will receive a unique key to enable the devices to tell if the messages come from a 'genuine' open smart grid platform. Both OSLP and DLMS device types use this kind of encryption. To prevent replay-attacks each message will get an index number (this is standard practice as well).
 
 #### Authentication of devices
 
-To make sure the open smart grid platform can distinguish between 'genuine' devices and 'illegal' devices all devices are supplied with a manufacturer key. Each device has an unique key. Because of the asymmetrical encryption the platform contains the public part of each key. In this way devices can be identified by their unique key and their unique hardware ID. The device-ID will be encrypted in each message sent from the device to the platform.
+To ensure that the open smart grid platform can distinguish between 'genuine' devices and 'illegal' devices, all devices are supplied with a manufacturer key. Each device has a unique key. Because of the asymmetrical encryption the platform contains the public part of each key. In this way devices can be identified by their unique key and their unique hardware ID. The device-ID will be encrypted in each message sent from the device to the platform.
 
 All communication between the open smart grid platform and the devices will be signed with these keys to ensure (1) the source is legitimate and (2) to ensure the integrity of the message. It is not necessary to encrypt the whole message because confidentiality is not important. This results in a less computationally intensive process.
 
-When a key is stolen (by hacking a device) this will not affect the integrity of the other devices. Each device has an unique key after all and only the hacked device has to be excluded from communicating in the platform.
+When a key is stolen (by hacking a device) this will not affect the integrity of the other devices. Each device has an unique key after all and only the hacked device has to be excluded from communication in the platform.
 
 The security is independent from the carrier (GPRS, CDMA, Ethernet, etc.). The open smart grid platform supports symmetric and asymmetric encryption (depends on device and protocol).
 
-For OSLP devices, the firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates. DLMS devices use a mechanism to switch keys that is indepents of firmware updates.
+For OSLP devices, the firmware will be used to distribute keys to devices. In this way we can use the existing secure firmware update mechanism for updating keys and certificates. DLMS devices use a mechanism to switch keys that is not dependent on firmware updates.
 
 Additional security may be provided by using TLS communication.
 
 #### Authorisation of organisations
 
-Authorisation for use of the platform functionalities is handled by function groups. Function groups are defined for both platform functionality and device functionality. Each function group has one or more functions. Access to device functions can be set per device. The tables below respectively show an overview of all function-groups and device-functions and platform-groups and platform-functions.
+Authorisation for use of the platform functionalities is handled by function groups. Function groups are defined for both platform functionality and device functionality. Each function group has one or more functions. Access to device functions can be set per device. The tables below show an overview of all function-groups and device-functions and platform-groups and platform-functions respectively.
 
 |   | **Groups** |
 | --- | --- |

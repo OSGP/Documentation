@@ -1,12 +1,12 @@
 ### Security
 
-The following security measures could in place for a hosted environment:
+The following security measures can be used in a hosted environment:
 ### Cloud security
 - DDOS protection
 - IPSEC VPN connections
 - IP whitelisting
 
-Most cloud envionments support these features.
+Most cloud environments support these features.
 
 ### Operating System 
 - Hardened operating systems (according to Center of Internet Security)
@@ -14,13 +14,13 @@ Most cloud envionments support these features.
 ### Platform security
 - Communication over TLS
 - Firewalls between all servers and layers
-- Certificates from a certificate authority
+- Certificates from a recognized Certificate Authority (CA)
 - Audit trail on all actions throughout the platform
 - Role based authorizations on specific functions of devices
 - Access control
 - Unique device identification
 
-For every major release there will be a mandated security test initiated by Smart society services.
+For every major release there will be a mandated security test initiated by Smart Society Services.
 
 In cooperation with the European Network of Cyber Security (ENCS) state of the art security measures were implemented.
 
@@ -46,11 +46,11 @@ In cooperation with the European Network of Cyber Security (ENCS) state of the a
 
 #### Encryption
 
-An analysis of safety aspects has led to the decision that the safety of the whole system will be realized by proven technology based on asymmetrical coding (Also known as public-key encryption).
+An analysis of safety aspects has led to the decision that the safety of the whole system will be realized by proven technology based on asymmetrical coding (also known as public-key encryption).
 
-#### Authentication of web-applications
+#### Authentication of web applications
 
-Two way SSL will be used between web-applications and the open smart grid platform to verify the identities for both parties. User organisations are responsible for the administration of the identity of and access to their web applications. The web applications feature a login page. After successful login the user is linked to an organisation. Passwords will be stored encrypted. The organisation ID will be sent in each message to the open smart grid platform and will be verified by the SSL certificate.
+Two-way SSL will be used between web applications and the Open Smart Grid Platform to verify the identities for both client and server. User organisations are responsible for the administration of the identity of and access to their web applications. The web applications feature a login page. After successful login the user is linked to an organisation. Passwords will be stored with encryption. The organisation ID will be sent in each message to the Open Smart Grid Platform and will be verified by the SSL certificate.
 
 #### Algorithms
 
@@ -67,5 +67,5 @@ A private APN is used for linking to mobile data communication infrastructures.
 
 
 ### Logging
-* Every action to and from devices is logged in the audittrail
+* Every action to and from devices is logged in the audit trail
 * Messages from unknown devices will be denied (and logged)

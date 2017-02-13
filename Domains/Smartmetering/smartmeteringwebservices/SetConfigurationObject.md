@@ -17,7 +17,7 @@ See DSMR document chapter 8.3 for detailed description. The request needs the De
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetSetConfigurationObjectResponse](GetSetConfigurationObjectResponse.md) returns the result from setting a SetConfigurationObject. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetConfigurationObject request.
+[GetSetConfigurationObjectResponse](GetSetConfigurationObjectResponse.md) returns the result from setting a SetConfigurationObject. The response contains the DeviceIdentification and CorrelationUid which is received from the SetConfigurationObject request.
 
 ### References
 

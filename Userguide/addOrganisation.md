@@ -85,7 +85,7 @@ Now that the certificate has been created, restart the tomcat server.
 
 ### Signing a request with the new certificate
 
-When the tomcat server is up and running again, go to SoapUi and add the new certificate to the pubblic-lighting project: double-click on the project, go to the WS-Security Configurations tab and select the keystores tab. Click the '+' button and browse to the my-org.pfx certificate which can be found in `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/`
+When the tomcat server is up and running again, go to SoapUi and add the new certificate to the public-lighting project: double-click on the project, go to the WS-Security Configurations tab and select the keystores tab. Click the '+' button and browse to the my-org.pfx certificate which can be found in `/home/dev/Sources/OSGP/Config/certificates/osgp-ca/certs/`
 
 ![alt text](screenshots/02.png)
 
@@ -137,4 +137,4 @@ Send the new request, you should receive the following response:
 
 Check the device-simulator to see if the dimValue of the SSLD_000-00-01 changed to 50.
 
-You now have succesfully created a new organisation, along with a certificate to sign the requests, and changed the device authorisations of the device to accept commands from the new organisation.
+You now have successfully created a new organisation, along with a certificate to sign the requests, and changed the device authorisations of the device to accept commands from the new organisation.

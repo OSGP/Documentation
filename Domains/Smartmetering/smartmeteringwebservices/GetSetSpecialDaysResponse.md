@@ -1,7 +1,7 @@
 ## GetSetSpecialDaysResponse request
 
 ### Description
-GetSetSpecialDaysResponse returns the result from setting a Special Day. The response request contains the DeviceIdentification and CorrelationUid which is received from the [SetSpecialDays](SetSpecialDays.md) request.
+GetSetSpecialDaysResponse returns the result from setting a Special Day. The response contains the DeviceIdentification and CorrelationUid which is received from the [SetSpecialDays](SetSpecialDays.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

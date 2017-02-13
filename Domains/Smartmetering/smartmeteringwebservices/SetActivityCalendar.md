@@ -1,13 +1,13 @@
 ## SetActivityCalendar request
 
 ### Description
-SetActivityCalendar is a request to set tarrifs on an E-meter according a SeasonProfile and WeekProfile. In a WeekProfile, seven dayprofiles can be filled in with a starttime and dayId which contains the tariff. 
+SetActivityCalendar is a request to set tariffs on an E-meter according a SeasonProfile and WeekProfile. In a WeekProfile, seven dayprofiles can be filled in with a start time and dayId which contains the tariff. 
 
 The request needs the DeviceIdentification, CalendarName, ActivatePassiveCalendarTime, SeasonProfileName, SeasonStart, WeekProfileName, DayId and StartTime.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
-[GetSetActivityCalendarResponse](GetSetActivityCalendarResponse.md) returns the result from setting a SetActivityCalendar. The response request contains the DeviceIdentification and CorrelationUid which is received from the SetActivityCalendar request.
+[GetSetActivityCalendarResponse](GetSetActivityCalendarResponse.md) returns the result from setting a SetActivityCalendar. The response contains the DeviceIdentification and CorrelationUid which is received from the SetActivityCalendar request.
 
 ### References
 

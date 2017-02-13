@@ -21,7 +21,7 @@ message SetLightResponse {
 }
 ```
 
-### Datatypes
+### Data types
 
 ``` json
 message LightValue {
