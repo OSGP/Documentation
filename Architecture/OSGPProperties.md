@@ -4,7 +4,7 @@ The Open Smart Grid Platform is designed for message based communication.
 - Acts as a **connecting link** between (web)applications and smart devices
 - The open Source approach **prevents vendor lock-in** 
 - State of the art **security** 
-- Fully **scalable,** dynamically scaling up and down as more devices and applications are added.  > 5 million devices with the aid of a growth path
+- Fully **scalable,** dynamically scaling up and down as more devices and applications are added.
 - Freedom of choice in the **desired IP communication infrastructure** , e.g. CDMA and GPRS.
 - Stimulates open innovation by using **open standards** and **open source** technology
 - **Multiple devices** and communication protocols are supported
@@ -31,4 +31,3 @@ The Open Smart Grid Platform is unique due to its multi-dimensional, generic and
 4. The platform layers are truly separated by open standards and the platform is made available as **open source** software.
 5. The platform does not store any application data (the platform is thus **stateless** ). No messages/commands will ever get lost.
 This enables third party vendors and developers to deliver innovative applications which are competitive in both rich functionalities and the generated data.
-
