@@ -22,10 +22,10 @@ Open street light protocol does not use ASN.1 but Google Protocol Buffers. The m
 The protobuf contract for [OSLP v0.5.1](./oslp/v0.5.1/oslp.proto.v0.5.1.md).
 For v0.5.1 port number 12121 is used.
 
-### OSLP v0.6.0
+### OSLP v0.6.1
 
-The protobuf contract for [OSLP v0.6.0](./oslp/v0.5.1/oslp.proto.v0.6.0.md).
-For v0.6.0 port number 12122 is used.
+The protobuf contract for [OSLP v0.6.1](./oslp/v0.6.1/oslp.proto.v0.6.1.md).
+For v0.6.1 port number 12122 is used.
 
 ### OSLP Envelope
 

@@ -29,6 +29,8 @@ This core and admin domain contains all generic webservices that can be used in 
 | SetOwner | DeviceIdentification, OrganisationIdentification | - |
 | UpdateDeviceAuthorisations | DeviceAuthorisations | - |
 | ActivateOrganisation | Organisation | - |
+| ActivateDevice | DeviceIdentification | - |
+| DeactivateDevice | DeviceIdentification | - |
 | **FirmwareManagement.wsdl** |
 | GetFirmwareVersion | DeviceIdentification | FirmwareVersion |
 | UpdateFirmware | DeviceIdentification, FirmwareIdentification | - |

@@ -6,7 +6,7 @@ There are multiple options for support
 Community members can help you on voluntary basis. See the open source and community section for more information where you can ask your questions.
 
 ## Commercial support
-You like professional support for your OSGP use case consider support of one of the companies below.
+If you'd like professional support for your Open Smart Grid Platform use case, consider support of one of the companies below.
 
 Smart Society Services
 - Website: http://smartsocietyservices.com
