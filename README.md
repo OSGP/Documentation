@@ -31,3 +31,5 @@ Open smart grid platform issue tracker:
 
 Open smart grid platform docker images:
 * [OSGP Docker Hub](https://hub.docker.com/u/sssda/dashboard/)
+
+Testing new URL webhook: cla.opensmartgridplatform.org
