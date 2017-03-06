@@ -39,6 +39,6 @@ Functionality like **GetData** can now be tested, with the Cucumber framework, u
 
 ### Multiple Server names
 By default the RTU device is configured with the servername: **WAGO61850Server**. This name also appears in the **icd** file, that is used by the RTU device. The name of this icd file, is configured in a properties file. Multiple server names are now supported, with the introduction of the new column: **server_name** in the **iec61850_device** table. If this value is null, 
-the default servername (WAGO61850Server) is used, otherwise the servername from the database is used (eq 'WAGO123'). In that case another corresponding icd file, in which this servername is used, must be configured! 
+the default servername (WAGO61850Server) is used, otherwise the servername from the database is used (eg 'WAGO123'). In that case another corresponding icd file, in which this servername is used, must be configured! 
 
 
