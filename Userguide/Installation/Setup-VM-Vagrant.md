@@ -18,7 +18,7 @@ To improve the usability of the Installation process, a Vagrant file and some pu
 The following system requirements are recommended:
 
 - Core i5/i7 ~2.5GHz
-- At least 4 GB RAM, 8 GB recommended
+- At least 5 GB RAM, 8 GB recommended
 - At least 10 GB free space
 
 The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubuntu 14.04 and Ubuntu 16.04.
@@ -68,7 +68,7 @@ move Vagrantfile.txt Vagrantfile
 
 Now open a Command Prompt and navigate to the newly created directory where you just put the files.
 
-> **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 1 cpu and 4096 MB of RAM. If you can it is wise to make this 4 cpus and 8192 MB of RAM.
+> **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 1 cpu and 5120 MB of RAM. If you can it is wise to make this 4 cpus and 8192 MB of RAM.
 
 Run the following command:
 `vagrant up`
@@ -93,7 +93,7 @@ If you do want to update the virtualbox settings for this image, shut down the i
 
 ![alt text](./installation-script-screenshots/06.png)
 
-Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called "OSGP Development") and select Settings. Go to System and increase the Base Memory of the system to at least 4096 mb (or the maximum recommended (in green amount).
+Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called "OSGP Development") and select Settings. Go to System and increase the Base Memory of the system to at least 5120 MB (or the maximum recommended (in green amount).
 
 ![alt text](./installation-script-screenshots/07.png)
 
@@ -106,8 +106,10 @@ Close the Settings window and Start the Virtual Machine again. Once it is booted
 ## Post actions
 
 In order to use git correctly you need to execute the following commands in a terminal:
-`git config --global user.name "<your full name>"`
-`git config --global user.email <your email address>`
+```shell
+git config --global user.name "<your full name>"
+git config --global user.email <your email address>
+```
 
 ## Recap
 
