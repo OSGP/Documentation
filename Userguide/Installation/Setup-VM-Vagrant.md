@@ -73,6 +73,11 @@ Now open a Command Prompt and navigate to the newly created directory where you 
 Run the following command:
 `vagrant up`
 
+> **note:** In case of error bad uri Images/OSGP Development/hashicorp/cxtlabs/vagrant-ubuntu-16.04-mate <URI::InvalidURIError> then use the following command; 
+ - vagrant destroy
+ - vagrant box add cxtlabs/vagrant-ubuntu-16.04-mate
+ - vagrant up
+
 ![alt text](./installation-script-screenshots/04.png)
 
 Vagrant will now automatically download an Ubuntu image (+- 2.6 Gb), create a virtualbox image from it and run the installation puppet script when finished. This might take a while, depending on your internet speed.
