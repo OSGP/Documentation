@@ -111,8 +111,10 @@ Close the Settings window and Start the Virtual Machine again. Once it is booted
 ## Post actions
 
 In order to use git correctly you need to execute the following commands in a terminal:
-`git config --global user.name "<your full name>"`
-`git config --global user.email <your email address>`
+```shell
+git config --global user.name "<your full name>"
+git config --global user.email <your email address>
+```
 
 ## Recap
 
