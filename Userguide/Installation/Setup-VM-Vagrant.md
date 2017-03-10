@@ -17,9 +17,9 @@ To improve the usability of the Installation process, a Vagrant file and some pu
 ### System Requirements
 The following system requirements are recommended:
 
-- Core i5/i7 ~2.5GHz
-- At least 5 GB RAM, 8 GB recommended
-- At least 10 GB free space
+- Core i5/i7 ~2.5GHz Dual Core, Quad Core recommended
+- At least 6 GB RAM, 8 GB RAM recommended
+- At least 20 GB free space, 50 GB free space recommended
 
 The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubuntu 14.04 and Ubuntu 16.04.
 
@@ -68,10 +68,15 @@ move Vagrantfile.txt Vagrantfile
 
 Now open a Command Prompt and navigate to the newly created directory where you just put the files.
 
-> **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 1 cpu and 5120 MB of RAM. If you can it is wise to make this 4 cpus and 8192 MB of RAM.
+> **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 2 cpu cores and 8192 MB of RAM. If you need to you can change this to more or less cpu cores and RAM, but it is recommended to use the provided settings.
 
 Run the following command:
 `vagrant up`
+
+> **note:** In case of error bad uri Images/OSGP Development/hashicorp/cxtlabs/vagrant-ubuntu-16.04-mate <URI::InvalidURIError> then use the following command; 
+ - vagrant destroy
+ - vagrant box add cxtlabs/vagrant-ubuntu-16.04-mate
+ - vagrant up
 
 ![alt text](./installation-script-screenshots/04.png)
 
@@ -93,7 +98,7 @@ If you do want to update the virtualbox settings for this image, shut down the i
 
 ![alt text](./installation-script-screenshots/06.png)
 
-Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called "OSGP Development") and select Settings. Go to System and increase the Base Memory of the system to at least 5120 MB (or the maximum recommended (in green amount).
+Once the machine has been Shut Down, open VirtualBox and right click on the new virtual machine (called "OSGP Development") and select Settings. Go to System and increase the Base Memory of the system to at least 6144 MB (6 GB) (or the maximum recommended (in green) amount for your system).
 
 ![alt text](./installation-script-screenshots/07.png)
 

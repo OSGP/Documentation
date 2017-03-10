@@ -26,19 +26,18 @@
 - [NPM](https://www.npmjs.com/): Package manager for the NodeJS Javascript applications.
 - [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/): A free and open-source terminal emulator, serial console and network file transfer application.
 - [Vim](http://www.vim.org/): Source code editor.
-- [Apache Maven](https://maven.apache.org/): Software project management tool
-- [GIT & GitHub](https://github.com/osgp): Source code management
+- [Apache Maven](https://maven.apache.org/): Software project management tool.
+- [GIT & GitHub](https://github.com/osgp): Source code management.
 
 ### Testing &QA
 
 - [Apache JMeter](http://jmeter.apache.org/): Application designed to load test functional behaviour and measure performance.
-- [Fitnesse](http://www.fitnesse.org/): A test tool, used to write behaviour driven tests.
-- [GivWenZen](https://github.com/weswilliams/GivWenZen): BDD extension for Fitnesse.
 - [Cucumber](https://cucumber.io/): automated acceptance testing framework.
-- [Sonarqube](http://www.sonarqube.org/): Quality management platform
-- [SoapUI](https://www.soapui.org/): Functional testing tool for testing web services
-- [JUnit](http://junit.org/): Unit testing
-- [Mockito](http://mockito.org/): A Mock framework for Unit testing
+- [Gherkin](https://cucumber.io/docs/reference): DSL for acceptence testing framework.
+- [Sonarqube](http://www.sonarqube.org/): Quality management platform.
+- [SoapUI](https://www.soapui.org/): Functional testing tool for testing web services.
+- [JUnit](http://junit.org/): Unit testing.
+- [Mockito](http://mockito.org/): A Mock framework for Unit testing.
 
 The following table presents an overview of the components and the most important technical choices per component.
 
