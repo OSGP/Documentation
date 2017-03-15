@@ -13,6 +13,11 @@ Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home
 Go to WSDL Settings and check 'Generate Example Values in New Requests' and 'Generate Comments with Type Information in New Requests'
 ![alt text](./installation-script-screenshots/39.png)
 
+### Add the SoapUI projects to SoapUI
+There are several SoapUI project prepared, see `/home/dev/Sources/OSGP/Config/soapui/`.
+Import all SoapUI projects present in the folder mentioned above.
+Below, 2 projects are shown as examples.
+
 ### Adding the 'Admin' Soap project
 Import the 'admin' project by clicking File -> Import project. Browse to `/home/dev/Sources/OSGP/Config/soapui/`, select 'admin-soapui-project.xml' and click open.
 
