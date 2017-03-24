@@ -37,7 +37,7 @@ Currently, the following actions are supported:
 
 ### References
 
-XSD: [sm-notification.xsd](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/schemas/sm-bundle.xsd)
+XSD: [sm-notification.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-bundle.xsd)
 
-WSDL: [SmartMeteringBundle.wsdl](https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-smartmetering/src/main/webapp/WEB-INF/wsdl/smartmetering/SmartMeteringBundle.wsdl)
+WSDL: [SmartMeteringBundle.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringBundle.wsdl)
 

@@ -27,7 +27,7 @@ Alternatively you can create the 'admin' project yourself by following the steps
 
 - Right click the 'admin' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
-https://localhost/osgp-adapter-ws-admin/wsdl/Admin/DeviceManagement.wsdl
+/home/dev/Sources/OSGP/Shared/osgp-ws-admin/src/main/resources/DeviceManagement.wsdl
 ```
 
 - Make sure the box 'Create sample requests for all operators' is checked, and click OK.
@@ -47,7 +47,7 @@ Alternatively you can create the 'public-lighting' project yourself by following
 
 - Right click the 'public-lighting' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
-https://localhost/osgp-adapter-ws-publiclighting/wsdl/PublicLighting/PublicLightingAdHocManagement.wsdl
+/home/dev/Sources/OSGP/Shared/osgp-ws-publiclighting/src/main/resources/PublicLightingAdHocManagement.wsdl
 ```
 
 - Make sure the box 'Create sample requests for all operators' is checked, and click OK.
