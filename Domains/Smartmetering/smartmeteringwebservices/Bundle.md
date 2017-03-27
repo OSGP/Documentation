@@ -34,6 +34,7 @@ Currently, the following actions are supported:
 * GetSpecificConfigurationObjectRequest see [SpecificConfigurationObject](./SpecificConfigurationObject.md)
 * SetKeysRequest
 * GetAssociationLnObjectsRequest
+* SetClockConfigurationRequest [SetClockConfiguration](./SetClockConfiguration.md)
 
 ### References
 
