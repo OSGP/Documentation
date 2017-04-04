@@ -155,7 +155,7 @@
       * [OSLP v0.6.1](Protocols/OSLP/oslp-v0.6.1.md)
          * [GetConfiguration](Protocols/OSLP/v0.6.1/GetConfiguration.md)
          * [SetConfiguration](Protocols/OSLP/v0.6.1/SetConfiguration.md)
-		 * [EventNotification](Protocols/OSLP/v0.6.1/EventNotification.md)
+         * [EventNotification](Protocols/OSLP/v0.6.1/EventNotification.md)
          * [SetSchedule](Protocols/OSLP/v0.6.1/SetSchedule.md)
          * [GetStatus](Protocols/OSLP/v0.6.1/GetStatus.md)
          * [UpdateDeviceSslCertification](Protocols/OSLP/v0.6.1/UpdateDeviceSslCertification.md)

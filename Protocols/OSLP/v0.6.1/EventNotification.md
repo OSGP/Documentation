@@ -44,7 +44,7 @@ eventNotificationRequest {
     event: TARIFF_EVENTS_TARIFF_OFF
     index: "\001"
     description: "Tariff Off Example Event"
-	timestamp: "20170404093500"
+    timestamp: "20170404093500"
   }
 }
 ```
