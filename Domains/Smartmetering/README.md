@@ -22,7 +22,7 @@ Currently, the following Smart Metering features are available within the open s
 - **[bypass retry](./smartmeteringwebservices/bypassretry.md)** requests can be given the flag 'bypass retry'. Which means that a request will not be retried in case of an error.
 - **[priority](./smartmeteringwebservices/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 - **[scheduling](./smartmeteringwebservices/scheduling.md)** requests can be scheduled for a certain time.
-- **[bundeling](./smartmeteringwebservices/bundeling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
+- **[bundling](./smartmeteringwebservices/bundling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
 
 
 ### Messages
