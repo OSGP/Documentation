@@ -54,6 +54,4 @@ Behavior driven development is a way of programming that first describes behavio
 
 For the application of BDD the following frameworks are used:
 
-- FitNesse, acceptance testing framework, makes use of wiki.
-- GivWenZen, extension for FitNesse to use Given When Then scenario's
-- Cucumber, automated acceptance testing, based on scenarios from stories.
+- Cucumber and Gherkin, automated acceptance testing, based on scenarios from stories.

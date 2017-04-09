@@ -13,6 +13,11 @@ Go to File -> Preferences -> SSL Settings, and browse for the KeyStore to `/home
 Go to WSDL Settings and check 'Generate Example Values in New Requests' and 'Generate Comments with Type Information in New Requests'
 ![alt text](./installation-script-screenshots/39.png)
 
+### Add the SoapUI projects to SoapUI
+There are several SoapUI project prepared, see `/home/dev/Sources/OSGP/Config/soapui/`.
+Import all SoapUI projects present in the folder mentioned above.
+Below, 2 projects are shown as examples.
+
 ### Adding the 'Admin' Soap project
 Import the 'admin' project by clicking File -> Import project. Browse to `/home/dev/Sources/OSGP/Config/soapui/`, select 'admin-soapui-project.xml' and click open.
 
@@ -60,7 +65,122 @@ Before sending the request, the test-org.pfx should be added as SSL Keystore: Go
 
 ![alt text](./installation-script-screenshots/46.png)
 
-A SSLD needs to be added to the platform, together with a public key. The UpdateKey function of the admin webservice offers that functionality. Double click 'Request 1' under UpdateKey in the 'admin' project. Add the following request:
+A SSLD needs to be added to the platform, aswell as a manufacturer and a public key for the SSLD.
+A couple of steps need to be performed to realize this.
+
+1 Add manufacturer
+2 Add device model
+3 Add SSLD 
+4 Setup a protocol for the SSLD to use
+5 Set the public key for the SSLD (in case of OSLP)
+
+The AddManufacturer function adds a new manufacturer to OSGP. All devices are coupled to an manufacturer.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">
+   <soapenv:Header>
+      <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
+      <ns:UserName>USER_NAME</ns:UserName>
+      <ns:OrganisationIdentification>test-org</ns:OrganisationIdentification>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:AddManufacturerRequest>
+         <ns1:Manufacturer>
+            <ns1:Name>Manufacturer01</ns1:Name>
+            <ns1:ManufacturerId>MAN</ns1:ManufacturerId>
+            <ns1:UsePrefix>false</ns1:UsePrefix>
+         </ns1:Manufacturer>
+      </ns1:AddManufacturerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+The AddDeviceModel function adds a new device model to OSGP. All devices are coupled to a device model.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">
+   <soapenv:Header>
+      <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
+      <ns:UserName>USER_NAME</ns:UserName>
+      <ns:OrganisationIdentification>test-org</ns:OrganisationIdentification>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:AddDeviceModelRequest>
+         <ns1:DeviceModel>
+            <ns1:Manufacturer>MAN</ns1:Manufacturer>
+            <!--Optional:-->
+            <ns1:ModelCode>MOD01</ns1:ModelCode>
+            <!--Optional:-->
+            <ns1:Description>Device model MOD01.</ns1:Description>
+            <ns1:Metered>false</ns1:Metered>
+         </ns1:DeviceModel>
+      </ns1:AddDeviceModelRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+The AddDevice function adds a new SSLD to OSGP. The device is coupled to a device model and a manufacturer.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10">
+   <soapenv:Header>
+      <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
+      <ns:UserName>USER_NAME</ns:UserName>
+      <ns:OrganisationIdentification>test-org</ns:OrganisationIdentification>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:AddDeviceRequest>
+         <ns1:Device>
+            <ns1:DeviceIdentification>SSLD_000-00-01</ns1:DeviceIdentification>
+            <!--Optional:-->
+            <ns1:Owner>test-org</ns1:Owner>
+            <!--Optional:-->
+            <ns1:Activated>false</ns1:Activated>
+            <!--Optional:-->
+            <ns1:HasSchedule>false</ns1:HasSchedule>
+            <!--Optional:-->
+            <ns1:PublicKeyPresent>false</ns1:PublicKeyPresent>
+            <ns1:DeviceModel>
+               <!--anonymous type-->
+               <ns1:Manufacturer>MAN</ns1:Manufacturer>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <ns1:ModelCode>MOD01</ns1:ModelCode>
+               <!--Optional:-->
+               <!--anonymous type-->
+               <ns1:Description>Test device.</ns1:Description>
+               <!--type: boolean-->
+               <ns1:Metered>false</ns1:Metered>
+            </ns1:DeviceModel>
+         </ns1:Device>
+      </ns1:AddDeviceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+The function UpdateDeviceProtocol sets a protocol for a device.
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
+   <soapenv:Header>
+      <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
+      <ns:UserName>USER_NAME</ns:UserName>
+      <ns:OrganisationIdentification>test-org</ns:OrganisationIdentification>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns1:UpdateDeviceProtocolRequest>
+         <ns1:DeviceIdentification>SSLD_000-00-01</ns1:DeviceIdentification>
+         <ns1:ProtocolInfo>
+            <ns1:Id>1</ns1:Id>
+            <ns1:Protocol>OSLP</ns1:Protocol>
+            <ns1:ProtocolVersion>1.0</ns1:ProtocolVersion>
+         </ns1:ProtocolInfo>
+      </ns1:UpdateDeviceProtocolRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+The UpdateKey function of the admin webservice sets a public key for a device. Double click 'Request 1' under UpdateKey in the 'admin' project. Add the following request:
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
    <soapenv:Header>
