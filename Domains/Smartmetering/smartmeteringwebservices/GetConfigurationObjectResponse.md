@@ -1,7 +1,7 @@
 ## GetConfigurationObjectResponse request
 
 ### Description
-GetConfigurationObjectResponse returns the result, a ConfigurationObject, which is received from the [SetConfigurationObject](GetConfigurationObject.md) request.
+GetConfigurationObjectResponse returns the result, a ConfigurationObject, which is received from the [GetConfigurationObject](GetConfigurationObject.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
