@@ -3,7 +3,7 @@
 ### Description
 GetConfigurationObjectResponse returns the result, a ConfigurationObject, which is received from the [GetConfigurationObject](GetConfigurationObject.md) request.
 
-All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+All requests have similar response behavior which is described in [ResponseMessages](./ResponseMessages.md).
 
 ### References
 

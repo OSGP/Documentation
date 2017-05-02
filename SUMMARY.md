@@ -97,6 +97,8 @@
             * [GetSetPushSetupSmsResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetPushSetupSmsResponse.md)
             * [SetSpecialDays](Domains/Smartmetering/smartmeteringwebservices/SetSpecialDays.md)
             * [GetSetSpecialDaysResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetSpecialDaysResponse.md)
+            * [GetConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/GetConfigurationObject.md)
+            * [GetConfigurationObjectResponse](Domains/Smartmetering/smartmeteringwebservices/GetConfigurationObjectResponse.md)
         * [Installation](Domains/Smartmetering/smartmeteringwebservices/Installation.md)
             * [AddDevice](Domains/Smartmetering/smartmeteringwebservices/AddDevice.md)
             * [GetAddDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetAddDeviceResponse.md)

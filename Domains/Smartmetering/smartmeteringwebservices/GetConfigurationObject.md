@@ -1,7 +1,7 @@
 ## GetConfigurationObject request
 
 ### Description
-GetConfigurationObject is a request to retrieve a ConfigurationObject from on a device. The attributes with OBIS code 0-1:94.31.3.255 is used to access the GPRS_operation_mode setting and following flags:
+GetConfigurationObject is a request to retrieve a ConfigurationObject from a device. The configuration object in the electricity meter with the OBIS code 0-1:94.31.3.255 is used to access the GPRS_operation_mode setting and following flags:
 - discover_on_open_cover
 - discover_on_power_on
 - dynamic_mbus_address
@@ -15,7 +15,7 @@ GetConfigurationObject is a request to retrieve a ConfigurationObject from on a 
 
 See DSMR document chapter 8.3 for detailed description. The request needs the DeviceIdentification.
 
-All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
+All requests have similar response behavior which is described in [ResponseMessages](./ResponseMessages.md).
 
 ### References
 
