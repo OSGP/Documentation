@@ -35,7 +35,7 @@ You can request write access to the Jira issue board by sending a request to ope
 
 ### Questions
 If you have a question, please create an Github issue in the [documentation repository](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**) or request access to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/).
- .
+
  
 ### Report security issues
 Due to the sensible nature of security issues e.g. zero days, we prefer a responsible disclosure. Security issues can be reported on the [opensmartgridplatform.org website](https://opensmartgridplatform.org/report-security-issue/).
