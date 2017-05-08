@@ -42,6 +42,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetSetSpecialDaysResponse](./smartmeteringwebservices/GetSetSpecialDaysResponse.md)** is a request which returns the response from the [SetSpecialDays](./smartmeteringwebservices/SetSpecialDays.md) request.
 - **[SetConfigurationObject](./smartmeteringwebservices/SetConfigurationObject.md)** is a request to set ConfigurationObject settings on a device to specify behaviour and connection options. 
 - **[GetSetConfigurationObjectResponse](./smartmeteringwebservices/GetSetConfigurationObjectResponse.md)** is a request which returns the response from the [SetConfigurationObject](./smartmeteringwebservices/SetConfigurationObject.md) request.
+- **[GetConfigurationObject](./smartmeteringwebservices/GetConfigurationObject.md)** is a request to retrieve a ConfigurationObject from a device. 
+- **[GetConfigurationObjectResponse](./smartmeteringwebservices/GetConfigurationObjectResponse.md)** is a request which returns the response, a ConfigurationObject, from the [GetConfigurationObject](./smartmeteringwebservices/GetConfigurationObject.md) request.
 - **[SetPushSetupAlarm](./smartmeteringwebservices/SetPushSetupAlarm.md)** is a request that pushes received alarm messages to OSGP.
 - **[GetSetPushSetupAlarmResponse](./smartmeteringwebservices/GetSetPushSetupAlarmResponse.md)** is a request which returns the response from the [SetPushSetupAlarm](./smartmeteringwebservices/SetPushSetupAlarm.md) request.
 - **[SetPushSetupSms](./smartmeteringwebservices/SetPushSetupSms.md)** is a request to set an endpoint in a device which tells the device where to connect to when it is waked up.
