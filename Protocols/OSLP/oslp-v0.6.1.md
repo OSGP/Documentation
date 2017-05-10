@@ -8,6 +8,8 @@ These messages below are part of OSLP v0.6.1 and are new or different from OSLP 
 
 - **[GetStatusRequest](./v0.6.1/GetStatus.md)** (from platform to device) is a request that requires the device to send the status of all relays, current network link and preferred network link, the type of configuration (PSLD vs SSLD), and the event notification mask which has been set.
 - **[GetStatusResponse](./v0.6.1/GetStatus.md)** (from device to platform) is a response which confirms the GetStatusRequest has been executed and returns the current status for all of the relays and other information or rejects the GetStatusRequest.
+- **[EventNotificationRequest](./v0.6.1/EventNotification.md)** (from device to platform) is a request that pushes an event notification from a device to the platform.
+- **[EventNotificationResponse](./v0.6.1/EventNotification.md)** (from platform to device) is a response which confirms the EventNotificationRequest has been executed or rejected.
 - **[SetScheduleRequest](./v0.6.1/SetSchedule.md)** (from platform to device) is a request that sends a light or tariff schedule to the device.
 - **[SetScheduleResponse](./v0.6.1/SetSchedule.md)** (from device to platform) is a response which confirms the SetScheduleRequest has been executed or rejected.
 - **[SetConfigurationRequest](./v0.6.1/SetConfiguration.md)** (from platform to device) is a request that sends configuration settings to the device.

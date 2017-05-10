@@ -1,4 +1,4 @@
-## Bundeling
+## Bundling
 
 You can combine multiple requests to a meter in a bundle by creating a BundleRequest with one or more Actions in the namespace
 http://www.alliander.com/schemas/osgp/smartmetering/sm-bundle/2014/10. Each Action contains one of the existing requests to a meter.

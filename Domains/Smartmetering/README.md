@@ -19,9 +19,10 @@ Currently, the following Smart Metering features are available within the open s
 
 ### Generic functionality
 
+- **[bypass retry](./smartmeteringwebservices/bypassretry.md)** requests can be given the flag 'bypass retry'. Which means that a request will not be retried in case of an error.
 - **[priority](./smartmeteringwebservices/priority.md)** requests can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 - **[scheduling](./smartmeteringwebservices/scheduling.md)** requests can be scheduled for a certain time.
-- **[bundeling](./smartmeteringwebservices/bundeling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
+- **[bundling](./smartmeteringwebservices/bundling.md)** requests can be combined in a [Bundle](./smartmeteringwebservices/Bundle.md).
 
 
 ### Messages
@@ -82,6 +83,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetPeriodicMeterReadsResponse](./smartmeteringwebservices/GetPeriodicMeterReadsResponse.md)** is a request which returns the response from the [PeriodicMeterReads](./smartmeteringwebservices/GetPeriodicMeterReads.md) request.
 - **[GetPeriodicMeterReadsGas](./smartmeteringwebservices/GetPeriodicMeterReadsGas.md)** is a request to retrieve the periodic meter reads from a G-meter.
 - **[GetPeriodicMeterReadsGasResponse](./smartmeteringwebservices/GetPeriodicMeterReadsGasResponse.md)** is a request which returns the response from the [PeriodicMeterReadsGas](./smartmeteringwebservices/GetPeriodicMeterReadsGas.md) request.
+- **[GetProfileGenericData](./smartmeteringwebservices/GetProfileGenericData.md)** is a request to retrieve any Profile Generic data from an E-meter.
+- **[GetProfileGenericDataResponse](./smartmeteringwebservices/GetProfileGenericDataResponse.md)** is a request which returns the response from the [ProfileGenericData](./smartmeteringwebservices/GetProfileGenericData.md) request.
 - **[ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md)** is a request to read the alarm register from a device.
 - **[GetReadAlarmRegisterResponse](./smartmeteringwebservices/GetReadAlarmRegisterResponse.md)** is a request which returns the response from the [ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md) request.
 - **[RetrievePushNotificationAlarm](./smartmeteringwebservices/RetrievePushNotificationAlarm.md)** is a request to push retrieved alarm notifications to OSGP.
@@ -97,4 +100,4 @@ All request sent to this device make use of one communication channel, which may
 
 ### WSDL's
 * [SmartMetering WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-smartmetering/src/main/resources)
-* [PublicLighting XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-smartmetering/src/main/resources/schemas)
+* [SmartMetering XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-smartmetering/src/main/resources/schemas)

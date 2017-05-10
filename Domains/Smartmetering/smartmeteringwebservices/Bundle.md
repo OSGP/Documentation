@@ -16,10 +16,10 @@ Currently, the following actions are supported:
 * SetSpecialDaysRequest see [SetSpecialDays](./SetSpecialDays.md)
 * ReadAlarmRegisterRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
 * GetActualMeterReadsRequest see [ReadAlarmRegister](./ReadAlarmRegister.md)
-* GetActualMeterReadsGasRequest see [ActualMeterReadsGas](./ActualMeterReadsGas.md)
+* GetActualMeterReadsGasRequest see [GetActualMeterReadsGas](./GetActualMeterReadsGas.md)
 * GetAdministrativeStatusRequest see [GetAdministrativeStatus](./GetAdministrativeStatus.md)
-* GetPeriodicMeterReadsRequest see [PeriodicMeterReads](./PeriodicMeterReads.md)
-* GetPeriodicMeterReadsGasRequest see [PeriodicMeterReadsGas](./PeriodicMeterReadsGas.md)
+* GetPeriodicMeterReadsRequest see [GetPeriodicMeterReads](./GetPeriodicMeterReads.md)
+* GetPeriodicMeterReadsGasRequest see [GetPeriodicMeterReadsGas](./GetPeriodicMeterReadsGas.md)
 * SetAdministrativeStatusRequest see [SetAdministrativeStatus](./SetAdministrativeStatus.md)
 * SetActivityCalendarRequest see [SetActivityCalendar](./SetActivityCalendar.md)
 * SetEncryptionKeyExchangeOnGMeterRequest see [SetEncryptionKeyExchangeOnGMeter](./SetEncryptionKeyExchangeOnGMeter.md)
@@ -35,6 +35,7 @@ Currently, the following actions are supported:
 * SetKeysRequest
 * GetAssociationLnObjectsRequest
 * SetClockConfigurationRequest [SetClockConfiguration](./SetClockConfiguration.md)
+* GetProfileGenericDataRequest see [GetProfileGenericData](./GetProfileGenericData.md)
 
 ### References
 
