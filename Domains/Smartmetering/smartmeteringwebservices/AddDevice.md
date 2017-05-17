@@ -27,7 +27,8 @@ XSD: [sm-installation.xsd](https://github.com/OSGP/Shared/blob/development/osgp-
 
 WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringInstallation.wsdl)
 
-### Example Message
+### Example scenario
+
 '''
   Scenario: Add a new device
     When receiving a smartmetering add device request
@@ -51,6 +52,8 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
     And a request to the device can be performed after activation
     And the stored keys are not equal to the received keys
 '''    
+
+### Example XML Message
 
 ''' xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/smartmetering/sm-installation/2014/10">
