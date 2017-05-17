@@ -52,7 +52,7 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
     And the stored keys are not equal to the received keys
     
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/smartmetering/sm-installation/2014/10">
+''' <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/smartmetering/sm-installation/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>AutomaticTest</ns:ApplicationName>
       <ns:UserName>SoapUI</ns:UserName>
@@ -91,4 +91,4 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
          </ns1:Device>
       </ns1:AddDeviceRequest>
    </soapenv:Body>
-</soapenv:Envelope>
+</soapenv:Envelope>'''
