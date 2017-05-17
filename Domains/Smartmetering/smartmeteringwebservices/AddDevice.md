@@ -29,7 +29,7 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
 
 ### Example scenario
 
-'''
+```
   Scenario: Add a new device
     When receiving a smartmetering add device request
       | DeviceIdentification  | TEST1024000000001 |
@@ -51,11 +51,11 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
     And the dlms device with identification "TEST1024000000001" exists
     And a request to the device can be performed after activation
     And the stored keys are not equal to the received keys
-'''    
+```    
 
 ### Example XML Message
 
-''' xml
+``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/smartmetering/sm-installation/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>AutomaticTest</ns:ApplicationName>
@@ -96,4 +96,4 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
       </ns1:AddDeviceRequest>
    </soapenv:Body>
 </soapenv:Envelope>
-'''
+```
