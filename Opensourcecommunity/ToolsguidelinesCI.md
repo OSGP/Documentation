@@ -2,7 +2,7 @@
 
 ## Tools Used
 
-The technology and tools used can be found in the [Technology stack](../Architecture/Technologystack.md) section.
+The technology and tools used can be found in the [Technology stack](../Architecture/Technical-overview/Technologystack.md) section.
 
 ## Code Guidelines and Code Tests
 
