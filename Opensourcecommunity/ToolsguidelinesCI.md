@@ -2,12 +2,12 @@
 
 ## Tools Used
 
-The technology and tools used can be found in the [Technology stack](../Architecture/Technologystack.md) section.
+The technology and tools used can be found in the [Technology stack](../Architecture/Technical-overview/Technologystack.md) section.
 
 ## Code Guidelines and Code Tests
 
-- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/code-format)
-- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/save-actions)
+- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/code-format)
+- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/save-actions)
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
 - Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests repo](https://github.com/OSGP/Integration-Tests)
 - In case you are not familiar with behaviour driven tests, include unit tests
