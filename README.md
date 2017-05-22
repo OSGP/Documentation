@@ -16,7 +16,7 @@ Web
 * [Latest Pull-request publication](http://documentation.opensmartgridplatform.org/documentation-pr)
 
 PDF
-* [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/documentation-pdf)
+* [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/osgp-documentation.pdf)
 
 
 ## Open smart grid platform information and news
