@@ -132,6 +132,7 @@
             * [SendNotification](Domains/Smartmetering/smartmeteringwebservices/SendNotification.md)
      * [ResponseMessages](Domains/Smartmetering/smartmeteringwebservices/ResponseMessages.md)
      * [Use cases](Domains/Smartmetering/Smartmetering-use-cases.md)
+   * [Guidelines to add a new domain to OSGP](Domains/createNewDomain.md)
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
    * [DLMS / COSEM](Protocols/DLMS/README.md)
