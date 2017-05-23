@@ -1,18 +1,18 @@
 ## Distribution Automation
 
-The Open Smart Grid Platform can also be used in the monitoring of a variety of components in substations; RTUs, switches, transformers, etc. Often, an RTU or Remote Terminal Unit is used as a central information hub in a substation. The RTU is connected to one or more sensors or devices that can measure any kind of information. Often. the focus is on measuring power quality values, temperature and other 'health' variables, but any kind of measurable data can be read through OSGP.
+The Open Smart Grid Platform can also be used in the monitoring of a variety of components in substations; RTUs, switches, transformers, etc. Often, an RTU or Remote Terminal Unit is used as a central information hub in a substation. The RTU is connected to one or more sensors or devices that can measure any kind of information. Usually, the focus is on measuring power quality values, temperature and other 'health' variables, but any kind of measurable data can be read through OSGP.
  
 ### Scope
-The goal of this domain is to control and monitor substation; the current focus is on health status information and power quality data, but this may be extended in the future.
+The goal of this domain is to control and monitor substations; the current focus is on health status information and power quality data, but this may be extended in the future.
 
 ### Features
-Currently, the following features are available within the Open Smart Grid Platform:
+Currently, the following features are available within the Open Smart Grid Platform;
 
 #### Get PQ Values
-Get PQ Values retrieves the actual, current PQ values from the devices. Examples of PQ values are Current, Voltage, Reactive Power, Active Power, etc. These examples merely serve as an indication of what is possible; OSGP does not impose any restriction on the number or content of variables that can be read. The outline of what should be measured is configured on the device and in the application that reads the data.
+Get PQ Values retrieves the actual, current PQ values from a device. Examples of PQ values are Current, Voltage, Reactive Power, Active Power, etc. These examples merely serve as an indication of what is possible; OSGP does not impose any restriction on the number or content of variables that can be read. The outline of what should be measured is configured on the device and in the application that reads the data.
 
 #### Get Health Status
-Retrieves the current health status of a device; is useful in a monitoring application.
+Retrieves the current health status of a device. This is useful in a monitoring application.
 
 #### Get Device Model
 Retrieves the device model or metadata of a device. This includes the variables that can be measured, the information structure of the device, etc.
