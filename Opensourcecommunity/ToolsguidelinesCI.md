@@ -69,7 +69,7 @@ For the OSLP implementation, two components are used. The first component is the
 ## Other Guides
 
 ### Installation Guide
-If a full installation is desired, have a look at our [Installation Guide](../Userguide/Installationguide.md).
+If a full installation is desired, have a look at our [Installation Guide](../Userguide/Installation/Installationguide.md).
 
 ### Create New Domain Guide
 In order to add a new domain to OSGP, you can benefit from the information in the [Create New Domain Guide](../Domains/createNewDomain.md).
