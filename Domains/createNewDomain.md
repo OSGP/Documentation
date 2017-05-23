@@ -7,7 +7,7 @@ To add a new domain, changes must be made to 3 GitHub repositories:
 3. [Platform repository](https://github.com/OSGP/Platform). 
 
 ### Changes to OSGP/Config
-* Search for “Microgrids” and “microgrids” in all files and you will find all files to change for a new domain. These files include:
+Search for “Microgrids” and “microgrids” in all files and you will find all files to change for a new domain. These files include:
 * Apache configuration
 * Create domain database script
 * Backup, restore, symlinks scripts
