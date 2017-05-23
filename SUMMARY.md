@@ -56,6 +56,7 @@
       * [Use cases](Domains/Smartlighting/Smartlightning-use-cases.md)
    * [Tariff switching](Domains/Tariffswitching/README.md)
    * [Microgrids](Domains/Microgrids/README.md)
+   * [Distribution Automation](Domains/DistributionAutomation/README.md)
    * [SmartMetering](Domains/Smartmetering/README.md)
      * [Web Services](Domains/Smartmetering/smartmeteringwebservices/SmartMeteringWs.md)
         * [bypass retry](Domains/Smartmetering/smartmeteringwebservices/bypassretry.md)

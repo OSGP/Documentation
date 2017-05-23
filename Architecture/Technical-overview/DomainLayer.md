@@ -15,6 +15,7 @@ Domain
 - Smart Metering - osgp-adapter-domain-smartmetering: Contains functionality for the Smart Metering Domain.
 - Tariff Switching - osgp-adapter-domain-tariffswitching: Contains functionality for the Tariff Switching Domain.
 - Microgrids - osgp-adapter-domain-microgrids: Contains functionality for the Micro Grids domain.
+- Distribution Automation - osgp-adapter-domain-distributionautomation: Contains functionality for the Distribution Automation domain.
 
 ### General Package structure
 
