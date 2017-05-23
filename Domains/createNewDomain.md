@@ -63,7 +63,7 @@ Test data for a new domain will include:
 * Modify mapping/DomainNewDomainMapper to map the classes in Platform/osgp-domain-new-domain to the classes in Shared/osgp-dto. The osgp-dto classes are used in the core layer and the protocol layer.
 
 #### Testing the new domain services
-In order to test the new domain services take a look at the [Installation Guide](./Installation/Installationguide.md). While following this guide keep the following items in mind:
+In order to test the new domain services take a look at the [Installation Guide](../Userguide/Installation/Installationguide.md). While following this guide keep the following items in mind:
 * A test device for the new domain must be available. This can either be a physical device or a simulated device.
 * The test device must be connected or a device simulator must be running.
 * The OSGP protocol adapter for the new device must be extended.
