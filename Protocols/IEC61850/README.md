@@ -1,5 +1,5 @@
 ## IEC61850
-The open smart grid platform support IEC61850. IEC61850 is a popular protocol in the field of "smart grids". IEC 61850 started as an standard for substation automation but has expanded into other domains such as EV and solar panels. 
+The open smart grid platform support IEC61850. IEC61850 is a popular protocol in the field of "smart grids". IEC 61850 started as an standard for substation automation but has expanded into other domains such as EV and solar panels. Currently, the IEC61850 protocol is used within the Public Lighting, Microgrids and Distribution Automation domains.
 [IEC 61850 on Wikipedia](https://en.wikipedia.org/wiki/IEC_61850)
 
 ## Protocol security
