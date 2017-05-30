@@ -1,7 +1,21 @@
 ## AddDevice request
 
 ### Description
-AddDevice is a request to add a device to the OSGP database. For the most recent list of parameters, see the .xsd file (link below). 
+AddDevice is a request to add a device to the OSGP database. The request needs the following parameters:
+- DeviceIdentification
+- Device_type
+- Communication_method
+- Communication_provider
+- ICC_id
+- DSMR_version
+- Supplier
+- HLS3_active
+- HLS4_active
+- HLS5_active
+- Master_key
+- Global_encryption_unicast_key
+- Authentication_key 
+- Delivery_date
 
 All requests have similar response behaviour which is described in [ResponseMessages](ResponseMessages.md)
 
