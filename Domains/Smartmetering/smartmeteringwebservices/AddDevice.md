@@ -1,7 +1,7 @@
 ## AddDevice request
 
 ### Description
-AddDevice is a request to add a device to the OSGP database. For the most recent list of parameters, see the .xsd file (link below). 
+AddDevice is a request to add a device to the OSGP database. For the list of parameters, see the .xsd file (link below). 
 
 All requests have similar response behaviour which is described in [ResponseMessages](ResponseMessages.md)
 
