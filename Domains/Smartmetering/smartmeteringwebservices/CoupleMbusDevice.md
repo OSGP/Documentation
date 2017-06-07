@@ -4,7 +4,6 @@
 CoupleMbusDevice is a request to couple a gateway and a m-bus device. The request needs the following parameters:
 - DeviceIdentification
 - MbusDeviceIdentification
-- Channel
 
 All requests have similar response behaviour which is described in [ResponseMessages](ResponseMessages.md)
 
