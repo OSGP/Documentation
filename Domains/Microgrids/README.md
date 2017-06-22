@@ -1,13 +1,12 @@
 ## Microgrids documentation
 
-A first experiment with Microgrids using the open smart grid platform.
-The open smart grid platform act as an central component to monitor and control microgrids.
+The Open Smart Grid Platform act as an central component to monitor and control microgrids.
 
 ### Scope
 The goal of this domain is to control and monitor microgrids.
 
 ### Features
-Currently, the following features are available within the open smart grid platform:
+Currently, the following features are available within the Open Smart Grid Platform:
 
 #### Get Data
 Get data is used to retrieve measurement and profile data from the device

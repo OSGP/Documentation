@@ -4,7 +4,7 @@ The Protocol Adapters are responsible for the actual communication to and from a
 
 The Open Smart Grid Platform currently has the following protocol adapters:
 - Protocol-Adapter-DLMS: Smart Metering
-- Protocol-Adapter-IEC61850: Public Lighting
+- Protocol-Adapter-IEC61850: Public Lighting, Micro Grids and Distribution Automation
 - Protocol-Adapter-OSLP: Public Lighting and Micro Grids
 
 ### General package structure

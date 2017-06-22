@@ -2,12 +2,12 @@
 
 ## Tools Used
 
-The technology and tools used can be found in the [Technology stack](../Architecture/Technologystack.md) section.
+The technology and tools used can be found in the [Technology stack](../Architecture/Technical-overview/Technologystack.md) section.
 
 ## Code Guidelines and Code Tests
 
-- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/code-format)
-- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/code-format-settings/save-actions)
+- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/code-format)
+- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/save-actions)
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
 - Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests repo](https://github.com/OSGP/Integration-Tests)
 - In case you are not familiar with behaviour driven tests, include unit tests
@@ -65,3 +65,13 @@ Protocol Adapter components translate a message from domain adapter components i
 #### OSLP
 
 For the OSLP implementation, two components are used. The first component is the protocol adapter for the protocol. It can translate message into the protocol message for SSLD's. Second there's the signing-server component. It is responsible for signing the protocol message using the private key of the platform. The components communicate using a key-pair. The signing-server can handle multiple protocol adapter instances by utilizing a reply-to queue per protocol adapter instance. Since the protocol adapter component needs to be reachable from a network, it is a requirement that the private key may not be used by the protocol adapter directly. The signing server component can be deployed in such a way that no network access is available to this component, as the only coupling needed are the queues / the message broker.
+
+## Other Guides
+
+### Installation Guide
+If a full installation is desired, have a look at our [Installation Guide](../Userguide/Installation/Installationguide.md).
+
+### Create New Domain Guide
+In order to add a new domain to OSGP, you can benefit from the information in the [Create New Domain Guide](../Domains/createNewDomain.md).
+
+

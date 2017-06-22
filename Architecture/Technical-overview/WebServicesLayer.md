@@ -15,6 +15,7 @@ Each domain of the Platform has its own web services:
 - Smart Metering - osgp-adapter-ws-smartmetering: Contains the Smart Metering web services.
 - Tariff Swithcing - osgp-adapter-ws-tariffswitching: Contains the Tariff Switching web services.
 - Microgrids - osgp-adapter-ws-microgrids: Contains the Micro Grids web services.
+- Distribution Automation - osgp-adapter-ws-distributionautomation: Contains the Distribution Automation web services.
 
 For a description of the WSDL's see the [Domain Chapter](../../Domains/README.md).
 
