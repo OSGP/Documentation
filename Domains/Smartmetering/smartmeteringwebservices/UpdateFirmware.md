@@ -1,7 +1,7 @@
 ## UpdateFirmware request
 
 ### Description
-UpdateFirmware is a request to install another firmware version(s) on a device. The request needs the DeviceIdentification, and the FirmwareIdentifier that was appointed to the firmware file when the firmware was added to the platform.
+UpdateFirmware is a request to install another firmware version(s) on a device. The request needs the DeviceIdentification and the firmware versions, that together with the device model (as stored with the identified device) uniquely determine the firmware file to be used.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
