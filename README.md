@@ -6,7 +6,7 @@
 
 ### Description
 
-This repository contains documentation for Open smart grid platform project. This repository is built as a GitBook, therefore all content has to be written using markdown syntax. See [GitBook on GitHub](https://github.com/GitbookIO/gitbook) for more information.
+This repository contains documentation for the Open Smart Grid Platform project. This repository is built as a GitBook, therefore all content has to be written using markdown syntax. See [GitBook on GitHub](https://github.com/GitbookIO/gitbook) for more information.
 
 ### Publications of this Gitbook
 
