@@ -1,7 +1,7 @@
 ## SetPushSetupAlarm request
 
 ### Description
-SetPushSetupAlarm is a request to push a received alarm notification from a device to OSGP and to store it in the OSGP event table from the database. The request needs the DeviceIdentification, Host URL and port.
+SetPushSetupAlarm is a request to define the destination of the TCP message that is optionally sent by the device. The request needs the DeviceIdentification, Host URL and port.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
