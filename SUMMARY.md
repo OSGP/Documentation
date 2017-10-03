@@ -94,7 +94,7 @@
             * [GetSetEncryptionKeyExchangeOnGMeterResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetEncryptionKeyExchangeOnGMeterResponse.md)
             * [SetPushSetupAlarm](Domains/Smartmetering/smartmeteringwebservices/SetPushSetupAlarm.md)
             * [GetSetPushSetupAlarmResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetPushSetupAlarmResponse.md)
-            * [SetPushSetupSms](Domains/Smartmetering/smartmeteringwebservices/SetPushSetupAlarm.md)
+            * [SetPushSetupSms](Domains/Smartmetering/smartmeteringwebservices/SetPushSetupSms.md)
             * [GetSetPushSetupSmsResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetPushSetupSmsResponse.md)
             * [SetSpecialDays](Domains/Smartmetering/smartmeteringwebservices/SetSpecialDays.md)
             * [GetSetSpecialDaysResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetSpecialDaysResponse.md)
