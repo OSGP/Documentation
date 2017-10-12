@@ -12,7 +12,7 @@
 
   <groupId>com.alliander.osgp</groupId>
   <artifactId>documentation</artifactId>
-  <version>4.14.1</version>
+  <version>4.15.0</version>
   <name>Documentation</name>
   <packaging>pom</packaging>
 
