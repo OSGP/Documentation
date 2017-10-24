@@ -100,6 +100,8 @@
             * [GetSetSpecialDaysResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetSpecialDaysResponse.md)
             * [GetConfigurationObject](Domains/Smartmetering/smartmeteringwebservices/GetConfigurationObject.md)
             * [GetConfigurationObjectResponse](Domains/Smartmetering/smartmeteringwebservices/GetConfigurationObjectResponse.md)
+            * [ConfigureDefinableLoadProfile](Domains/Smartmetering/smartmeteringwebservices/ConfigureDefinableLoadProfile.md)
+            * [GetConfigureDefinableLoadProfileResponse](Domains/Smartmetering/smartmeteringwebservices/GetConfigureDefinableLoadProfileResponse.md)
         * [Installation](Domains/Smartmetering/smartmeteringwebservices/Installation.md)
             * [AddDevice](Domains/Smartmetering/smartmeteringwebservices/AddDevice.md)
             * [GetAddDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetAddDeviceResponse.md)
