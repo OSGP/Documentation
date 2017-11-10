@@ -37,6 +37,7 @@ Currently, the following actions are supported:
 * SetClockConfigurationRequest [SetClockConfiguration](./SetClockConfiguration.md)
 * GetProfileGenericDataRequest see [GetProfileGenericData](./GetProfileGenericData.md)
 * ConfigureDefinableLoadProfileRequest see [ConfigureDefinableLoadProfile](./ConfigureDefinableLoadProfile.md)
+* SetMbusUserKeyByChannelRequest see [SetMbusUserKeyByChannel](./SetMbusUserKeyByChannel.md)
 
 ### References
 

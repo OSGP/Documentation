@@ -102,6 +102,8 @@
             * [GetConfigurationObjectResponse](Domains/Smartmetering/smartmeteringwebservices/GetConfigurationObjectResponse.md)
             * [ConfigureDefinableLoadProfile](Domains/Smartmetering/smartmeteringwebservices/ConfigureDefinableLoadProfile.md)
             * [GetConfigureDefinableLoadProfileResponse](Domains/Smartmetering/smartmeteringwebservices/GetConfigureDefinableLoadProfileResponse.md)
+            * [SetMbusUserKeyByChannel](Domains/Smartmetering/smartmeteringwebservices/SetMbusUserKeyByChannel.md)
+            * [GetSetMbusUserKeyByChannelResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetMbusUserKeyByChannelResponse.md)
         * [Installation](Domains/Smartmetering/smartmeteringwebservices/Installation.md)
             * [AddDevice](Domains/Smartmetering/smartmeteringwebservices/AddDevice.md)
             * [GetAddDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetAddDeviceResponse.md)
