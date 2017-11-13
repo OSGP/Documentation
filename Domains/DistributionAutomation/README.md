@@ -6,7 +6,7 @@ The Open Smart Grid Platform can also be used in the monitoring of a variety of 
 The goal of this domain is to control and monitor substations; the current focus is on health status information and power quality data, but this may be extended in the future.
 
 ### Features
-Currently, the following features are available within the Open Smart Grid Platform;
+Currently, the following features are available within the Open Smart Grid Platform using the IEC 61850 protocol;
 
 #### Get PQ Values
 Get PQ Values retrieves the actual, current PQ values from a device. Examples of PQ values are Current, Voltage, Reactive Power, Active Power, etc. These examples merely serve as an indication of what is possible; OSGP does not impose any restriction on the number or content of variables that can be read. The outline of what should be measured is configured on the device and in the application that reads the data.
