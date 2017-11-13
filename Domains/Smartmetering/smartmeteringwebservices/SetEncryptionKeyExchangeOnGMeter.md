@@ -2,6 +2,7 @@
 
 ### Description
 SetEncryptionKeyExchangeOnGMeter is a request to transfer and set a G-meter key on a G-meter via the E-meter. The request needs the DeviceIdentification from the G-meter.
+If the device identification of the G-meter is not known, but the gateway device identification and M-Bus channel are known, use the [SetMbusUserKeyByChannel](./SetMbusUserKeyByChannel.md) request instead.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
