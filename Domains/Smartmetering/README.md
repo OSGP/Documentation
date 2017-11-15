@@ -30,9 +30,9 @@ Currently, the following Smart Metering features are available within the open s
 #### SmartMeteringAdHoc
 - **[SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md)** is a request to synchronize the date and time on a device. The date and time are retrieved from the server and sent to the device.
 - **[GetSynchronizeTimeResponse](./smartmeteringwebservices/GetSynchronizeTimeResponse.md)** is a request which returns the response from the [SynchronizeTime](./smartmeteringwebservices/SynchronizeTime.md) request.
-- **[RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md)** is a request to obtain all the attributes of the whole tree of objects from an E-meter. 
+- **[RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md)** is a request to obtain all the attributes of the whole tree of objects from an E-meter.
 - **[GetRetrieveAllAttributeValuesResponse](./smartmeteringwebservices/GetRetrieveAllAttributeValuesResponse.md)** is a request which returns the response from the [RetrieveAllAttributeValues](./smartmeteringwebservices/RetrieveAllAttributeValues.md) request.
-- **[GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md)** is a request to obtain a specific attribute value from an ObisCode from an E-meter. 
+- **[GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md)** is a request to obtain a specific attribute value from an ObisCode from an E-meter.
 - **[GetSpecificAttributeValueResponse](./smartmeteringwebservices/GetSpecificAttributeValueResponse.md)** is a request which returns the response from the [GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md) request.
 - **[GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md)** is a request to get the associated ln objects.
 - **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md) ** is a request which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) request.
@@ -40,9 +40,9 @@ Currently, the following Smart Metering features are available within the open s
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./smartmeteringwebservices/SetSpecialDays.md)** is a request to set a dayId profile and its tariffs for a specific date on a device.
 - **[GetSetSpecialDaysResponse](./smartmeteringwebservices/GetSetSpecialDaysResponse.md)** is a request which returns the response from the [SetSpecialDays](./smartmeteringwebservices/SetSpecialDays.md) request.
-- **[SetConfigurationObject](./smartmeteringwebservices/SetConfigurationObject.md)** is a request to set ConfigurationObject settings on a device to specify behaviour and connection options. 
+- **[SetConfigurationObject](./smartmeteringwebservices/SetConfigurationObject.md)** is a request to set ConfigurationObject settings on a device to specify behaviour and connection options.
 - **[GetSetConfigurationObjectResponse](./smartmeteringwebservices/GetSetConfigurationObjectResponse.md)** is a request which returns the response from the [SetConfigurationObject](./smartmeteringwebservices/SetConfigurationObject.md) request.
-- **[GetConfigurationObject](./smartmeteringwebservices/GetConfigurationObject.md)** is a request to retrieve a ConfigurationObject from a device. 
+- **[GetConfigurationObject](./smartmeteringwebservices/GetConfigurationObject.md)** is a request to retrieve a ConfigurationObject from a device.
 - **[GetConfigurationObjectResponse](./smartmeteringwebservices/GetConfigurationObjectResponse.md)** is a request which returns the response, a ConfigurationObject, from the [GetConfigurationObject](./smartmeteringwebservices/GetConfigurationObject.md) request.
 - **[SetPushSetupAlarm](./smartmeteringwebservices/SetPushSetupAlarm.md)** is a request that pushes received alarm messages to OSGP.
 - **[GetSetPushSetupAlarmResponse](./smartmeteringwebservices/GetSetPushSetupAlarmResponse.md)** is a request which returns the response from the [SetPushSetupAlarm](./smartmeteringwebservices/SetPushSetupAlarm.md) request.
@@ -52,6 +52,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetSetAlarmNotificationsResponse](./smartmeteringwebservices/GetSetAlarmNotificationsResponse.md)** is a request which returns the response from the [SetAlarmNotifications](./smartmeteringwebservices/SetAlarmNotifications.md) request.
 - **[SetEncryptionKeyExchangeOnGMeter](./smartmeteringwebservices/SetEncryptionKeyExchangeOnGMeter.md)** is a request to transfer and set a G-meter key on a device.
 - **[GetSetEncryptionKeyExchangeOnGMeterResponse](./smartmeteringwebservices/GetSetEncryptionKeyExchangeOnGMeterResponse.md)** is a request which returns the response from the [SetEncryptionKeyExchangeOnGMeter](./smartmeteringwebservices/SetEncryptionKeyExchangeOnGMeter.md) request.
+- **[GetMbusEncryptionKeyStatus](./smartmeteringwebservices/GetMbusEncryptionKeyStatus.md)** is a request to retrieve the encryption key status for a M-Bus device.
+- **[GetGetMbusEncryptionKeyStatusResponse](./smartmeteringwebservices/GetGetMbusEncryptionKeyStatusResponse.md)** is a request which returns the response from the [GetMbusEncryptionKeyStatus](./smartmeteringwebservices/GetMbusEncryptionKeyStatus.md) request.
 - **[SetActivityCalendar](./smartmeteringwebservices/SetActivityCalendar.md)** is a request to set several parameters on an E-meter such as tariffs per day in a week profile.
 - **[GetSetActivityCalendarResponse](./smartmeteringwebservices/GetSetActivityCalendarResponse.md)** is a request which returns the response from the [SetActivityCalendar](./smartmeteringwebservices/SetActivityCalendar.md) request.
 - **[GetAdministrativeStatus](./smartmeteringwebservices/GetAdministrativeStatus.md)** is a request to retrieve the current AdministrativeStatus setting.
