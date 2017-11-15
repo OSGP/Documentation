@@ -1,7 +1,8 @@
 ## GetGetMBusEncryptionKeyStatusResponse request
 
 ### Description
-GetGetMBusEncryptionKeyStatusResponse is a request to return the M-Bus encryption key status as requested by a [GetMBusEncryptionKeyStatus](GetMBusEncryptionKeyStatus.md) request. 
+GetGetMbusEncryptionKeyStatusResponse is a request to return the M-Bus encryption key status as requested by a [GetMbusEncryptionKeyStatus](GetMbusEncryptionKeyStatus.md) request.
+The possible return values for the M-Bus encryption key status can be found in the EncryptionKeyStatus enum in the sm-configuration.xsd
 
 ### References
 

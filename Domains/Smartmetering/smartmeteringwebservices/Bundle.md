@@ -38,7 +38,7 @@ Currently, the following actions are supported:
 * GetProfileGenericDataRequest see [GetProfileGenericData](./GetProfileGenericData.md)
 * ConfigureDefinableLoadProfileRequest see [ConfigureDefinableLoadProfile](./ConfigureDefinableLoadProfile.md)
 * SetMbusUserKeyByChannelRequest see [SetMbusUserKeyByChannel](./SetMbusUserKeyByChannel.md)
-* GetMBusEncryptionKeyStatusRequest see [GetMBusEncryptionKeyStatus](./GetMBusEncryptionKeyStatus.md)
+* GetMBusEncryptionKeyStatusRequest see [GetMbusEncryptionKeyStatus](./GetMbusEncryptionKeyStatus.md)
 
 ### References
 
