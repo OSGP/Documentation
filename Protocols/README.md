@@ -11,8 +11,8 @@ For the OSLP implementation, 2 components are used. The first component is the p
 
 #### DLMS
 
-The DLMS implementation is work in progress.
+The DLMS protocol is used for (mainly) smart metering.
 
 #### IEC61850
 
-The IEC61850 implementation is work in progress.
+The IEC61850 implementation is used for e.g. distibution automation, microgrids and public lightning.
