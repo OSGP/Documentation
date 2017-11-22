@@ -36,10 +36,12 @@ Currently, the following actions are supported:
 * GetAssociationLnObjectsRequest
 * SetClockConfigurationRequest [SetClockConfiguration](./SetClockConfiguration.md)
 * GetProfileGenericDataRequest see [GetProfileGenericData](./GetProfileGenericData.md)
+* ConfigureDefinableLoadProfileRequest see [ConfigureDefinableLoadProfile](./ConfigureDefinableLoadProfile.md)
+* SetMbusUserKeyByChannelRequest see [SetMbusUserKeyByChannel](./SetMbusUserKeyByChannel.md)
 
 ### References
 
-XSD: [sm-notification.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-bundle.xsd)
+XSD: [sm-bundle.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-bundle.xsd)
 
 WSDL: [SmartMeteringBundle.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringBundle.wsdl)
 
