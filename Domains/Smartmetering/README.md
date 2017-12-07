@@ -72,6 +72,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetCoupleMbusDeviceResponse](./smartmeteringwebservices/GetCoupleMbusDeviceResponse.md)** is a request which returns the response from the [CoupleMbusDevice](./smartmeteringwebservices/CoupleMbusDevice.md) request.
 - **[DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md)** is a request to decouple an M-Bus device from a gateway.
 - **[GetDeCoupleMbusDeviceResponse](./smartmeteringwebservices/GetDeCoupleMbusDeviceResponse.md)** is a request which returns the response from the [DeCoupleMbusDevice](./smartmeteringwebservices/DeCoupleMbusDevice.md) request.
+- **[CoupleMbusDeviceByChannel](./smartmeteringwebservices/CoupleMbusDeviceByChannel.md)** is a request to couple a M-Bus device to a gateway.
+- **[GetCoupleMbusDeviceByChannelResponse](./smartmeteringwebservices/GetCoupleMbusDeviceByChannelResponse.md)** is a request which returns the response from the [CoupleMbusDeviceByChannel](./smartmeteringwebservices/CoupleMbusDeviceByChannel.md) request.
 
 #### SmartMeteringManagement
 - **[FindEvents](./smartmeteringwebservices/FindEvents.md)** is a request to retrieve events logging from a device.
