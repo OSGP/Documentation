@@ -15,3 +15,22 @@ Please note that jDLMS is licensed under the GPLv3.
 
 ###DLMS device simulator
 DLMS [device simulator](Protocols/DLMS/Devicesimulator.md)
+
+###Supported devices
+
+These devices can be used in combination with the Open Smart Grid Platform.
+
+| E/G	| Supplier | Type	| x fase | 
+|----|--------|-------|-------|
+| E	| Kaifa | MA105 	| | 
+| E	| Kaifa	| MA105C	| 1 fase | 
+| E	| Kaifa	| MA304	  | | 
+| E	| Kaifa	| MA304C	| 3 fase | 
+| E	| L+G	| ZCF110CCtFs2	| 1 fase | 
+| E	| L+G	| ZMF110CCtFs2	| 3 fase | 
+| E	| L+G	| ZCF110CBtFs2	| 1 fase | 
+| E	| L+G	| E350	| | 
+| E	| L+G	| E650	| | 
+| E	| Iskra	| Mx382	| | 
+| G	| L+G	| G350 (wireless/wired)| |  	
+| G |	Itron	| G1 RF1	| | 
