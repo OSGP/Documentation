@@ -30,7 +30,6 @@ Currently, the following actions are supported:
 * SynchronizeTimeRequest see [SynchronizeTime](./SynchronizeTime.md)
 * GetConfigurationRequest
 * GetFirmwareVersionRequest
-* UpdateFirmwareRequest see [UpdateFirmware](./UpdateFirmware.md)
 * GetSpecificConfigurationObjectRequest see [SpecificConfigurationObject](./SpecificConfigurationObject.md)
 * SetKeysRequest
 * GetAssociationLnObjectsRequest
