@@ -17,7 +17,7 @@ The Open Smart Grid platform needs the following software and tools installed/do
 - **Git**
 - **Maven**
 - **ActiveMQ**
-- **Tomcat 7**
+- **Tomcat 8**
 - **Apache HTTPD**
 - **SoapUi**
 - **Eclipse EE Luna**
@@ -29,9 +29,9 @@ The Open Smart Grid platform needs the following software and tools installed/do
 #### User
 It is recommeded to create a 'dev' user, because some scripts contain hard coded references to this 'dev' user. It is possible to skip this step, but then some of the scripts will have to be adjusted manually.
 
-##### Tomcat 7
-- Place the PostgreSql JDBC driver jar in the Tomcat7 lib directory.
-- Change permissions of Tomcat 7 Config files to 644 in the Tomcat 7 conf directory.
+##### Tomcat 8
+- Place the PostgreSql JDBC driver jar in the Tomcat 8 lib directory.
+- Change permissions of Tomcat 8 Config files to 644 in the Tomcat 8 conf directory.
 
 ##### Apache HTTPD
 - Enable mod_ssl by running the following command:
