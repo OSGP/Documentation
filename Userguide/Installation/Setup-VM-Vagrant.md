@@ -92,7 +92,7 @@ Don't log in yet, wait until the script in the Console is finished.
 Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. 
 
 ## Optimize your Open Smart Grid Platform Development virtualbox image.
-At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.3 Setup Open Smart Grid Platform
+At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.2. Platform Setup.
 
 If you do want to update the virtualbox settings for this image, shut down the image first:
 
