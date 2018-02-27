@@ -1,7 +1,7 @@
 ## GetMBusEncryptionKeyStatusByChannel request
 
 ### Description
-GetMbusEncryptionKeyStatusByChannel is a request to retrieve the encryption key status of a M-Bus device from an E-meter. The request needs the DeviceIdentification of the gateway device and a channel
+GetMbusEncryptionKeyStatusByChannel is a request to retrieve the encryption key status of an M-Bus device from an E-meter. The request needs the DeviceIdentification of the gateway device and a channel.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
