@@ -119,6 +119,8 @@
             * [FindEvents](Domains/Smartmetering/smartmeteringwebservices/FindEvents.md)
             * [GetFindEventsResponse](Domains/Smartmetering/smartmeteringwebservices/GetFindEventsResponse.md)
             * [GetDevices](Domains/Smartmetering/smartmeteringwebservices/GetDevices.md)
+            * [SetDeviceLifecycleStatusByChannel](Domains/Smartmetering/smartmeteringwebservices/SetDeviceLifecycleStatusByChannel.md)
+            * [SetDeviceLifecycleStatusByChannelResponse](Domains/Smartmetering/smartmeteringwebservices/SetDeviceLifecycleStatusByChannelResponse.md)
 
             * [EnableDebugging](Domains/Smartmetering/smartmeteringwebservices/EnableDebugging.md)
             * [DisableDebugging](Domains/Smartmetering/smartmeteringwebservices/DisableDebugging.md)
