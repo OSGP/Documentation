@@ -23,7 +23,7 @@ When both the DLMS and OSLP providers are deloyed within the same Java VM, the S
 To workaround this issue, the SunPKCS11-NSS provider must be used for the OSLP protocol adapter.
 By default this provider is enabled on the development VM. 
 
-### OSLP v0.5.1
+### OSLP v0.5.1 (Deprecated)
 
 The protobuf contract for [OSLP v0.5.1](./oslp/v0.5.1/oslp.proto.v0.5.1.md).
 For v0.5.1 port number 12121 is used.
