@@ -47,7 +47,7 @@ After adding the server, double click on the Tomcat server in the 'Servers' view
 ![alt text](./installation-script-screenshots/25.png)
 
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments':
-`-Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true`
+`-Xms512m -Xmx2048m -Xss512k -XX:MaxMetaspaceSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true`
 ![alt text](./installation-script-screenshots/26.png)
 
 ![alt text](./installation-script-screenshots/27.png)
