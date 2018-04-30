@@ -108,6 +108,9 @@
             * [GetGetMbusEncryptionKeyStatusResponse](Domains/Smartmetering/smartmeteringwebservices/GetGetMbusEncryptionKeyStatusResponse.md)
             * [GetMbusEncryptionKeyStatusByChannel](Domains/Smartmetering/smartmeteringwebservices/GetMbusEncryptionKeyStatusByChannel.md)
             * [GetGetMbusEncryptionKeyStatusByChannelResponse](Domains/Smartmetering/smartmeteringwebservices/GetGetMbusEncryptionKeyStatusByChannelResponse.md)
+            * [ScanMbusChannels](Domains/Smartmetering/smartmeteringwebservices/ScanMbusChannels.md)
+            * [ScanMbusChannelsResponse](Domains/Smartmetering/smartmeteringwebservices/ScanMbusChannelsResponse.md)
+            
         * [Installation](Domains/Smartmetering/smartmeteringwebservices/Installation.md)
             * [AddDevice](Domains/Smartmetering/smartmeteringwebservices/AddDevice.md)
             * [GetAddDeviceResponse](Domains/Smartmetering/smartmeteringwebservices/GetAddDeviceResponse.md)
