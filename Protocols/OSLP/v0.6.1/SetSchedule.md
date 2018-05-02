@@ -883,12 +883,95 @@ This schedule consists of 1 page, and uses 'minimumLightOn' to indicate a minima
 
 
 
+#### Example 4: Astronomical Time Light Schedule
+
+SOAP Request Message for Platform web-service:
+
+``` xml
+TODO
+```
+
+SOAP Response Message:
+
+``` xml
+TODO
+```
+OSLP SetScheduleRequest sent to 'device-01':
+
+``` json
+setScheduleRequest {
+  schedules {
+    weekday: ALL
+    actionTime: SUNRISE
+    window {
+      minutesBefore: 0
+      minutesAfter: 60
+    }
+    value {
+      index: "\000"
+      on: false
+    }
+    triggerType: ASTRONOMICAL
+    minimumLightsOn: 0
+  }
+  schedules {
+    weekday: ALL
+    actionTime: SUNSET
+    window {
+      minutesBefore: 60
+      minutesAfter: 0
+    }
+    value {
+      index: "\000"
+      on: true
+    }
+    triggerType: ASTRONOMICAL
+    minimumLightsOn: 0
+  }
+  scheduleType: LIGHT
+}
+```
+OSLP SetScheduleResponse from 'device-01' for page 2:
+``` json
+setScheduleResponse {
+  status: OK
+}
+```
 
 
 
 
 
-#### Example 4: Tariff Schedule
+Description for this schedule:
+This light schedule defines astronomical switch moments. The switch time will be calculated by the device, using the location information (GPS coordinates). If a value is set for variable 'offset', the offset in minutes shall be used to adjust the calculated time for a switch moment.
+
+
+
+
+
+
+
+SOAP Request to obtain response from 'device-01':
+
+``` xml
+TODO
+```
+
+SOAP Response containing response from 'device-01':
+
+``` xml
+TODO
+```
+
+
+
+
+
+
+
+
+
+#### Example 5: Tariff Schedule
 
 SOAP Request Message for Platform web-service:
 
