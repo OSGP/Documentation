@@ -86,8 +86,13 @@ The AddManufacturer function adds a new manufacturer to OSGP. All devices are co
    <soapenv:Body>
       <ns1:AddManufacturerRequest>
          <ns1:Manufacturer>
+            <!--type: int-->
+            <ns1:Id>3</ns1:Id>
+            <!--anonymous type-->
+            <ns1:Code>MAN</ns1:Code>
+            <!--anonymous type-->
             <ns1:Name>Manufacturer01</ns1:Name>
-            <ns1:ManufacturerId>MAN</ns1:ManufacturerId>
+            <!--type: boolean-->
             <ns1:UsePrefix>false</ns1:UsePrefix>
          </ns1:Manufacturer>
       </ns1:AddManufacturerRequest>
@@ -171,8 +176,8 @@ The function UpdateDeviceProtocol sets a protocol for a device.
       <ns1:UpdateDeviceProtocolRequest>
          <ns1:DeviceIdentification>SSLD_000-00-01</ns1:DeviceIdentification>
          <ns1:ProtocolInfo>
-            <ns1:Id>1</ns1:Id>
-            <ns1:Protocol>OSLP</ns1:Protocol>
+            <ns1:Id>4</ns1:Id>
+            <ns1:Protocol>OSLP ESTER</ns1:Protocol>
             <ns1:ProtocolVersion>1.0</ns1:ProtocolVersion>
          </ns1:ProtocolInfo>
       </ns1:UpdateDeviceProtocolRequest>
@@ -241,7 +246,7 @@ Fill out the fields like this:
 - Device Identification: SSLD_000-00-01
 - IP Address: 127.0.0.1
 - Device Type: SSLD
-- Protocol: OSLP
+- Protocol: OSLP ELSTER
 
 Click Create Device
 ![alt text](./installation-script-screenshots/52.png)
