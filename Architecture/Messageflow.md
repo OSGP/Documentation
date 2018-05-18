@@ -34,3 +34,5 @@ This are some examples how a message flows in the Open Smart Grid Platform.
 | 12 | Client app sends soap request with correlation id to retrieve the response |
 | 13 | WS adapter retrieves (and deletes) response from DB |
 | 14 | WS adapter sends soap response to client app |
+
+*In case the response is not timely retrieved by the client app, OSGP will resend the notification with correlation id to the client app. The amount of retries is configurable. 
