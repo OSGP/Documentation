@@ -30,7 +30,9 @@ This are some examples how a message flows in the Open Smart Grid Platform.
 | 1-8 | Same as request/acknowledge/poll message flow |
 | 9 | Domain adapter forwards response message to WS adapter |  
 | 10 | WS adapter stores response in DB | 
-| 11 | WS adapter sends soap notification with correlation id to client app |
-| 12 | Client app sends soap request with correlation id to retrieve the response |
+| 11 | WS adapter sends soap notification with correlation id to the client app |
+| 12 | Client app sends soap request with correlation id to retrieve the response* |
 | 13 | WS adapter retrieves (and deletes) response from DB |
-| 14 | WS adapter sends soap response to client app |
+| 14 | WS adapter sends soap response to the client app |
+
+*In case the response is not timely retrieved by the client app, OSGP will resend the notification with correlation id to the client app. The amount of retries is configurable. 
