@@ -101,6 +101,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetFindMessageLogsResponse](./smartmeteringwebservices/GetFindMessageLogsResponse.md)** is an operation which returns the response from the [FindMessageLogs](./smartmeteringwebservices/FindMessageLogs.md) operation.
 - **[SetDeviceCommunicationSettings](./smartmeteringwebservices/SetDeviceCommunicationSettings.md)** is an operation to set the OSGP device communication settings for a specific device.
 - **[SetDeviceCommunicationSettingsResponse](./smartmeteringwebservices/SetDeviceCommunicationSettingsResponse.md)** is an operation which returns the response from the [SetDeviceCommunicationSettings](./smartmeteringwebservices/SetDeviceCommunicationSettings.md) operation.
+- **[SetDeviceLifecycleStatus](./smartmeteringwebservices/SetDeviceLifecycleStatus.md)** is an operation to set the lifecycle status from a device.
+- **[SetDeviceLifecycleStatusResponse](./smartmeteringwebservices/SetDeviceLifecycleStatusResponse.md)** is an operation which returns the response from the [SetDeviceLifecycleStatus](./smartmeteringwebservices/SetDeviceLifecycleStatus.md) operation.
 - **[SetDeviceLifecycleStatusByChannel](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannel.md)** is an operation to set the lifecycle status from a device.
 - **[SetDeviceLifecycleStatusByChannelResponse](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannelResponse.md)** is an operation which returns the response from the [SetDeviceLifecycleStatusByChannel](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannel.md) operation.
 
