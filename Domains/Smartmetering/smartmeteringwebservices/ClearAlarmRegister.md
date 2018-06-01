@@ -1,7 +1,7 @@
 ## ClearAlarmRegister request
 
 ### Description
-ClearAlarmRegister is a request to set the OSGP device communication settings for a specific device. The request needs the DeviceIdentification.
+ClearAlarmRegister is a request to clear the alarm register on a specific device. The request needs the DeviceIdentification.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 

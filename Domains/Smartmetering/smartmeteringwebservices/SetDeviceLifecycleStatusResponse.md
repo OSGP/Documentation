@@ -5,6 +5,6 @@ SetDeviceLifecycleStatusResponse returns the result of a [SetDeviceLifecycleStat
 
 ### References
 
-XSD: [sm-management.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-management.xsd)
+XSD: [devicemanagement-ws-core.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/devicemanagement-ws-core.xsd)
 
-WSDL: [SmartMeteringManagement.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringManagement.wsdl)
+WSDL: [DeviceManagement.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/DeviceManagement.wsdl)
