@@ -35,7 +35,9 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md)** is a request to obtain a specific attribute value from an ObisCode from an E-meter.
 - **[GetSpecificAttributeValueResponse](./smartmeteringwebservices/GetSpecificAttributeValueResponse.md)** is a request which returns the response from the [GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md) request.
 - **[GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md)** is a request to get the associated ln objects.
-- **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md) ** is a request which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) request.
+- **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md)** is a request which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) request.
+- **[ScanMbusChannels](./smartmeteringwebservices/ScanMbusChannels.md)** is a request to get the M-Bus attribute values for all four channels from an E-meter.
+- **[ScanMbusChannelsResponse](./smartmeteringwebservices/ScanMbusChannelsResponse.md)** is a request which returns the response from the [ScanMbusChannels](./smartmeteringwebservices/ScanMbusChannels.md) request.
 
 #### SmartMeteringConfiguration
 - **[SetSpecialDays](./smartmeteringwebservices/SetSpecialDays.md)** is a request to set a dayId profile and its tariffs for a specific date on a device.
@@ -64,6 +66,18 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetGetFirmwareVersionResponse](./smartmeteringwebservices/GetGetFirmwareVersionResponse.md)** is a request which returns the response from the [GetFirmwareVersionRequest](./smartmeteringwebservices/GetFirmwareVersion.md).
 - **[ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md)** is a request to change the keys on a E-meter.
 - **[GetReplaceKeysResponse](./smartmeteringwebservices/GetReplaceKeysResponse.md)** is a request which returns the response from the [ReplaceKeys](./smartmeteringwebservices/ReplaceKeys.md) request.
+- **[GetMbusEncryptionKeyStatusByChannel](./smartmeteringwebservices/GetMbusEncryptionKeyStatusByChannel.md)** is a request to get the M-Bus encryption key status from an M-Bus device by using the E-meter device identification and channel from the G-meter.
+- **[GetMbusEncryptionKeyStatusByChannelResponse](./smartmeteringwebservices/GetMbusEncryptionKeyStatusByChannelResponse.md)** is a request which returns the response from the [GetMbusEncryptionKeyStatusByChannel](./smartmeteringwebservices/GetMbusEncryptionKeyStatusByChannel.md) request.
+- **[SetMbusUserKeyByChannel](./smartmeteringwebservices/SetMbusUserKeyByChannel.md)** is a request to set the M-Bus encryption key on an M-Bus device by using the E-meter device identification and channel from the G-meter.
+- **[SetMbusUserKeyByChannelResponse](./smartmeteringwebservices/SetMbusUserKeyByChannelResponse.md)** is a request which returns the response from the [SetMbusUserKeyByChannel](./smartmeteringwebservices/SetMbusUserKeyByChannel.md) request.
+- **[UpdateFirmware](./smartmeteringwebservices/UpdateFirmware.md)** is a request to update the firmware module(s) on a device.
+- **[GetUpdateFirmwareResponse](./smartmeteringwebservices/GetUpdateFirmwareResponse.md)** is a request which returns the response from the [UpdateFirmware](./smartmeteringwebservices/UpdateFirmware.md) request.
+- **[GenerateAndReplaceKeys](./smartmeteringwebservices/GenerateAndReplaceKeys.md)** is a request to generate and set the encryption and authentication key on a device.
+- **[GenerateAndReplaceKeysResponse](./smartmeteringwebservices/GenerateAndReplaceKeysResponse.md)** is a request which returns the response from the [GenerateAndReplaceKeys](./smartmeteringwebservices/GenerateAndReplaceKeys.md) request.
+- **[SetClockConfiguration](./smartmeteringwebservices/SetClockConfiguration.md)** is a request to set the clock configuration on a device.
+- **[GetSetClockConfigurationResponse](./smartmeteringwebservices/GetSetClockConfigurationResponse.md)** is a request which returns the response from the [SetClockConfiguration](./smartmeteringwebservices/SetClockConfiguration.md) request.
+- **[ConfigureDefinableLoadProfile](./smartmeteringwebservices/ConfigureDefinableLoadProfile.md)** is a request to configure the load profile on a device.
+- **[GetConfigureDefinableLoadProfileResponse](./smartmeteringwebservices/GetConfigureDefinableLoadProfileResponse.md)** is a request which returns the response from the [ConfigureDefinableLoadProfile](./smartmeteringwebservices/ConfigureDefinableLoadProfile.md) request.
 
 #### SmartMeteringInstallation
 - **[AddDevice](./smartmeteringwebservices/AddDevice.md)** is a request to add a device to the OSGP database.
@@ -79,6 +93,16 @@ Currently, the following Smart Metering features are available within the open s
 - **[FindEvents](./smartmeteringwebservices/FindEvents.md)** is a request to retrieve events logging from a device.
 - **[GetFindEventsResponse](./smartmeteringwebservices/GetFindEventsResponse.md)** is a request which returns the response from the [FindEvents](./smartmeteringwebservices/FindEvents.md) request.
 - **[GetDevices](./smartmeteringwebservices/GetDevices.md)** is a request to retrieve the last known relay statuses for a group of devices.
+- **[EnableDebugging](./smartmeteringwebservices/EnableDebugging.md)** is a request to enable debug logging for a device.
+- **[GetEnableDebuggingResponse](./smartmeteringwebservices/GetEnableDebuggingResponse.md)** is a request which returns the response from the [EnableDebugging](./smartmeteringwebservices/EnableDebugging.md) request.
+- **[DisableDebugging](./smartmeteringwebservices/DisableDebugging.md)** is a request to disable debug logging for a device.
+- **[GetDisableDebuggingResponse](./smartmeteringwebservices/GetDisableDebuggingResponse.md)** is a request which returns the response from the [DisableDebugging](./smartmeteringwebservices/DisableDebugging.md) request.
+- **[FindMessageLogs](./smartmeteringwebservices/FindMessageLogs.md)** is a request to read the debug logging from a device.
+- **[GetFindMessageLogsResponse](./smartmeteringwebservices/GetFindMessageLogsResponse.md)** is a request which returns the response from the [FindMessageLogs](./smartmeteringwebservices/FindMessageLogs.md) request.
+- **[SetDeviceCommunicationSettings](./smartmeteringwebservices/SetDeviceCommunicationSettings.md)** is a request to set the OSGP device communication settings for a specific device.
+- **[SetDeviceCommunicationSettingsResponse](./smartmeteringwebservices/SetDeviceCommunicationSettingsResponse.md)** is a request which returns the response from the [SetDeviceCommunicationSettings](./smartmeteringwebservices/SetDeviceCommunicationSettings.md) request.
+- **[SetDeviceLifecycleStatusByChannel](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannel.md)** is a request to set the lifecycle status from a device.
+- **[SetDeviceLifecycleStatusByChannelResponse](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannelResponse.md)** is a request which returns the response from the [SetDeviceLifecycleStatusByChannel](./smartmeteringwebservices/SetDeviceLifecycleStatusByChannel.md) request.
 
 #### SmartMeteringMonitoring
 - **[GetActualMeterReads](./smartmeteringwebservices/GetActualMeterReads.md)** is a request to retrieve the actual meter reads from an E-meter.
@@ -94,6 +118,8 @@ Currently, the following Smart Metering features are available within the open s
 - **[ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md)** is a request to read the alarm register from a device.
 - **[GetReadAlarmRegisterResponse](./smartmeteringwebservices/GetReadAlarmRegisterResponse.md)** is a request which returns the response from the [ReadAlarmRegister](./smartmeteringwebservices/ReadAlarmRegister.md) request.
 - **[RetrievePushNotificationAlarm](./smartmeteringwebservices/RetrievePushNotificationAlarm.md)** is a request to push retrieved alarm notifications to OSGP.
+- **[ClearAlarmRegister](./smartmeteringwebservices/ClearAlarmRegister.md)** is a request to clear the Alarm register flags for pushed event notifications.
+- **[ClearAlarmRegisterResponse](./smartmeteringwebservices/ClearAlarmRegisterResponse.md)** is a request which returns the response from the [ClearAlarmRegister](./smartmeteringwebservices/ClearAlarmRegister.md) request.
 
 #### SmartMeteringNotification
 - **[SendNotification](./smartmeteringwebservices/SendNotification.md)** is a request to let Webapps know there is a result ready to retrieve from the platform.
