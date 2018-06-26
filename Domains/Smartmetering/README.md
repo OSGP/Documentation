@@ -36,7 +36,7 @@ Currently, the following Smart Metering features are available within the open s
 - **[GetSpecificAttributeValueResponse](./smartmeteringwebservices/GetSpecificAttributeValueResponse.md)** is an operation which returns the response from the [GetSpecificAttributeValue](./smartmeteringwebservices/GetSpecificAttributeValue.md) operation.
 - **[GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md)** is an operation to get the associated ln objects.
 - **[GetGetAssociationLnObjectsResponse](./smartmeteringwebservices/GetGetAssociationLnObjectsResponse.md)** is an operation which gets the response from the [GetAssociationLnObjects](./smartmeteringwebservices/GetAssociationLnObjects.md) operation.
-- **[ScanMbusChannels](./smartmeteringwebservices/ScanMbusChannels.md)** is an operation to get the M-Bus attribute values for all four channels from an E-meter.
+- **[ScanMbusChannels](./smartmeteringwebservices/ScanMbusChannels.md)** is an operation to get the M-Bus Short ID attribute values for all four channels from an E-meter.
 - **[ScanMbusChannelsResponse](./smartmeteringwebservices/ScanMbusChannelsResponse.md)** is an operation which returns the response from the [ScanMbusChannels](./smartmeteringwebservices/ScanMbusChannels.md) operation.
 
 #### SmartMeteringConfiguration

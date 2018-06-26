@@ -1,7 +1,7 @@
 ## ScanMbusChannels request
 
 ### Description
-ScanMbusChannels is a request to read the M-Bus identification number from all four channels on a Gateway device to determine if a M-Bus device is bound on a channel of the Gateway device.
+ScanMbusChannels is a request to read the M-Bus Short Equipment Identifier (Short ID) attributes (Identification number, Manufacturer identification, Version identification, and Device type identification) from all four channels on a Gateway device to determine if an M-Bus device is bound on a channel of the Gateway device.
 
 All requests have similar response behaviour which is described in [ResponseMessages](./ResponseMessages.md).
 
