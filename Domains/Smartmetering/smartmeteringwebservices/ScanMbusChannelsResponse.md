@@ -1,7 +1,7 @@
 ## ScanMbusChannelsResponse request
 
 ### Description
-ScanMbusChannelsResponse returns the result of a [ScanMbusChannels](ScanMbusChannels.md) request. The response contains the the M-Bus Short Equipment Identifier (Short ID) attributes (Identification number, Manufacturer identification, Version identification, and Device type identification) from all four channels of a Gateway device.
+ScanMbusChannelsResponse returns the result of a [ScanMbusChannels](ScanMbusChannels.md) request. The response contains the M-Bus Short Equipment Identifier (Short ID) attributes (Identification number, Manufacturer identification, Version identification, and Device type identification) from all four channels of a Gateway device.
 
 ### References
 
