@@ -26,7 +26,7 @@ The functions an organisation can execute on a device are determined by the func
 - Configuration-group (Functions to configure devices)
 - Monitoring-group (Functions to monitor devices)
 
-This structure provides maximum flexibility when assigning rights to devices. Devices always belong to an Owner. An owner is an organisation, but not every organisation is an owner. The entity "Event", at the bottom of the image, is the execution of a function by an organisation on a device.
+This structure provides maximum flexibility when assigning rights to devices. Devices always belong to an Owner. An owner is an organisation, but not every organisation is an owner. A device can have more than one owner. The entity "Event", at the bottom of the image, is the execution of a function by an organisation on a device.
 
 Details like device-type, device-status, etc. have been omitted from this model.
 
