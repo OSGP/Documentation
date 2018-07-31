@@ -1,11 +1,5 @@
 # Documentation
 
-License information: Apache 2.0. The code files on this master branch don't have a license header yet. Soon we will merge development branch into master branch. Then all code files will have a licence header.
-
-### Build Status
-
-[![Build Status](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development/badge/icon?style=plastic)](http://ci.opensmartgridplatform.org/job/OSGP_Documentation_development)
-
 ### Description
 
 This repository contains documentation for the Open Smart Grid Platform project. This repository is built as a GitBook, therefore all content has to be written using markdown syntax. See [GitBook on GitHub](https://github.com/GitbookIO/gitbook) for more information.
