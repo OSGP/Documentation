@@ -33,7 +33,7 @@ enum Status {
 
 Soap requests and responses sent to and from platform:
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:dev="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:dev="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10">
    <soapenv:Header>
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>liander gebruiker</com:UserName>
@@ -49,7 +49,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:StopDeviceTestAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:StopDeviceTestAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160104160800238</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -58,7 +58,7 @@ Soap requests and responses sent to and from platform:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:dev="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:dev="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10">
    <soapenv:Header>
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>liander gebruiker</com:UserName>
@@ -77,7 +77,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:StopDeviceTestResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:StopDeviceTestResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
       </ns2:StopDeviceTestResponse>
    </SOAP-ENV:Body>

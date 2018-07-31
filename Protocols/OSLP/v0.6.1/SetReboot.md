@@ -32,7 +32,7 @@ enum Status {
 
 Soap requests and responses sent to and from platform:
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/adhocmanagement/2014/10" xmlns:com="http://www.alliander.com/schemas/osgp/common" xmlns:adh="http://www.alliander.com/schemas/osgp/adhocmanagement">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/adhocmanagement/2014/10" xmlns:com="http://www.opensmartgridplatform.org/schemas/common" xmlns:adh="http://www.opensmartgridplatform.org/schemas/adhocmanagement">
    <soapenv:Header>
    	<com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    	<com:UserName>liander gebruiker</com:UserName>
@@ -49,7 +49,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns3:SetRebootAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/adhocmanagement/2014/10">
+      <ns3:SetRebootAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/adhocmanagement/2014/10">
          <ns3:AsyncResponse>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20160104153201024</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
@@ -58,7 +58,7 @@ Soap requests and responses sent to and from platform:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/adhocmanagement/2014/10" xmlns:com="http://www.alliander.com/schemas/osgp/common" xmlns:adh="http://www.alliander.com/schemas/osgp/adhocmanagement">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/adhocmanagement/2014/10" xmlns:com="http://www.opensmartgridplatform.org/schemas/common" xmlns:adh="http://www.opensmartgridplatform.org/schemas/adhocmanagement">
    <soapenv:Header>
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>liander gebruiker</com:UserName>
@@ -79,7 +79,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns3:SetRebootResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/adhocmanagement/2014/10">
+      <ns3:SetRebootResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/adhocmanagement/2014/10">
          <ns3:Result>OK</ns3:Result>
       </ns3:SetRebootResponse>
    </SOAP-ENV:Body>
