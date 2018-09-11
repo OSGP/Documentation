@@ -120,7 +120,7 @@ message RelayMatrix {
 
 Soap requests and responses sent to and from platform:
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:con="http://www.alliander.com/schemas/osgp/configurationmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:con="http://www.opensmartgridplatform.org/schemas/configurationmanagement/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>Kevin</com:UserName>
@@ -136,7 +136,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:GetConfigurationAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/configurationmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetConfigurationAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/configurationmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20161007142028655</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -145,7 +145,7 @@ Soap requests and responses sent to and from platform:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:con="http://www.alliander.com/schemas/osgp/configurationmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:con="http://www.opensmartgridplatform.org/schemas/configurationmanagement/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>Kevin</com:UserName>
@@ -164,7 +164,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:GetConfigurationResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/configurationmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetConfigurationResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/configurationmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
          <ns2:Configuration>
             <ns2:LightType>RELAY</ns2:LightType>

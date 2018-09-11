@@ -19,7 +19,7 @@ A new Maven module must be added for the new domain (osgp-ws-newdomain). This mo
 _Image showing the generated @XmlRootElement annotation_
 ![alt text](./xmlRootElementAnnotation.png "JAXB generated Java code with @XmlRootElement annotation")
 
-Do not forget to add two constants for your new domain in the enum ComponentType.java (https://github.com/OSGP/Shared/blob/development/shared/src/main/java/com/alliander/osgp/shared/exceptionhandling/ComponentType.java). These constants are used in handling exceptions. Add one constant to denote your new Domain layer (DOMAIN) and one for your new Web Services layer (WS). See for instance MicrogridsService.java (https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-microgrids/src/main/java/com/alliander/osgp/adapter/ws/microgrids/application/services/MicrogridsService.java).
+Do not forget to add two constants for your new domain in the enum ComponentType.java (https://github.com/OSGP/Shared/blob/development/shared/src/main/java/org/opensmartgridplatform/shared/exceptionhandling/ComponentType.java). These constants are used in handling exceptions. Add one constant to denote your new Domain layer (DOMAIN) and one for your new Web Services layer (WS). See for instance MicrogridsService.java (https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-microgrids/src/main/java/org/opensmartgridplatform/adapter/ws/microgrids/application/services/MicrogridsService.java).
 
 Add DTO’s to osgp-dto for your services. The DTO’s are used in the protocol-adapter. Mapping from/to DTO’s is performed in adapter-domain.
 
@@ -37,9 +37,9 @@ OSGP uses a couple of Java enums to identify all available services the platform
 
 Each new service that is offered by the domain, for instance GET_DATA or SET_DATA, must be added to 4 java enums:
 1. NotificationType (https://github.com/OSGP/Shared/blob/development/osgp-ws-microgrids/src/main/resources/schemas/notification.xsd, generated from wsdl with JAXB)
-2. DeviceFunction (https://github.com/OSGP/Platform/blob/development/osgp-domain-core/src/main/java/com/alliander/osgp/domain/core/valueobjects/DeviceFunction.java)
-3. NewDomainRequestMessageType (see for instance, https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-microgrids/src/main/java/com/alliander/osgp/adapter/ws/microgrids/infra/jms/MicrogridsRequestMessageType.java)
-4. DeviceRequestMessageType (https://github.com/OSGP/Protocol-Adapter-IEC61850/blob/development/osgp-protocol-adapter-iec61850/src/main/java/com/alliander/osgp/adapter/protocol/iec61850/infra/messaging/DeviceRequestMessageType.java or any other protocol adapter)
+2. DeviceFunction (https://github.com/OSGP/Platform/blob/development/osgp-domain-core/src/main/java/org/opensmartgridplatform/domain/core/valueobjects/DeviceFunction.java)
+3. NewDomainRequestMessageType (see for instance, https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-microgrids/src/main/java/org/opensmartgridplatform/adapter/ws/microgrids/infra/jms/MicrogridsRequestMessageType.java)
+4. DeviceRequestMessageType (https://github.com/OSGP/Protocol-Adapter-IEC61850/blob/development/osgp-protocol-adapter-iec61850/src/main/java/org/opensmartgridplatform/adapter/protocol/iec61850/infra/messaging/DeviceRequestMessageType.java or any other protocol adapter)
 
 #### SQL for the new domain
 A Flyway script should be added for system data. For a new domain a new record must be inserted in the table domain_info in the core database. Check for instance the Flyway script for Distribution Automation https://github.com/OSGP/Platform/blob/development/osgp-core/src/main/resources/db/migration/V20170508125704045__Added_Distribution_Automation_domain_info.sql.

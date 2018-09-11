@@ -6,7 +6,7 @@ In SoapUi go to DeviceManagement under the Admin project. Click on request 1 und
 
 This request creates a new organisation called "my-org":
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/admin/devicemanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -43,7 +43,7 @@ Fill in the parameters like shown below. The functionGroup will be set to AdHoc 
 Make sure to use the test-org as OrganisationIdentification in the request header, and to sign the request with the test-org.pfx.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/admin/devicemanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>AAPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -92,7 +92,7 @@ When the tomcat server is up and running again, go to SoapUi and add the new cer
 Now double-click on 'Request 1' in SetLight in PublicLightingAdHocManagement in the public-lighting project. Set the SSL Keystore to 'my-org.pfx' in the request properties so the request gets signed with the new certificate. Change the request parameters as shown in the example below:
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -125,7 +125,7 @@ Send the new request, you should receive the following response:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:SetLightAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:SetLightAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>my-org|||SSLD_000-00-01|||20160805150420802</ns3:CorrelationUid>
             <ns3:DeviceId>SSLD_000-00-01</ns3:DeviceId>

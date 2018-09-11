@@ -92,12 +92,12 @@ Soap requests and responses sent to and from platform:
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">WEB_OWNER</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">liander gebruiker</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">WEB_OWNER</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">liander gebruiker</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns2:GetPowerUsageHistoryRequest xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetPowerUsageHistoryRequest xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:DeviceIdentification>device-01</ns2:DeviceIdentification>
          <ns2:TimePeriod>
             <ns2:StartTime>2016-01-04T00:00:00.000+01:00</ns2:StartTime>
@@ -111,7 +111,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns2:GetPowerUsageHistoryAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetPowerUsageHistoryAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160106185428497</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -122,12 +122,12 @@ Soap requests and responses sent to and from platform:
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">WEB_OWNER</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">liander gebruiker</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">WEB_OWNER</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">liander gebruiker</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns2:GetPowerUsageHistoryAsyncRequest xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetPowerUsageHistoryAsyncRequest xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncRequest>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160106185428497</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -139,7 +139,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns2:GetPowerUsageHistoryResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetPowerUsageHistoryResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/devicemonitoring/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
          <ns2:PowerUsageData>
             <ns2:RecordTime>2016-01-04T22:00:00.000Z</ns2:RecordTime>

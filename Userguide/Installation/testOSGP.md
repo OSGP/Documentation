@@ -77,7 +77,7 @@ A couple of steps need to be performed to realize this.
 The AddManufacturer function adds a new manufacturer to OSGP. All devices are coupled to an manufacturer.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -103,7 +103,7 @@ The AddManufacturer function adds a new manufacturer to OSGP. All devices are co
 The AddDeviceModel function adds a new device model to OSGP. All devices are coupled to a device model.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -127,7 +127,7 @@ The AddDeviceModel function adds a new device model to OSGP. All devices are cou
 The AddDevice function adds a new SSLD to OSGP. The device is coupled to a device model and a manufacturer.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -166,7 +166,7 @@ The AddDevice function adds a new SSLD to OSGP. The device is coupled to a devic
 The function UpdateDeviceProtocol sets a protocol for a device.
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/admin/devicemanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -187,7 +187,7 @@ The function UpdateDeviceProtocol sets a protocol for a device.
 
 The UpdateKey function of the admin webservice sets a public key for a device. Double click 'Request 1' under UpdateKey in the 'admin' project. Add the following request:
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/admin/devicemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/admin/devicemanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -213,7 +213,7 @@ Click the 'play' button to submit the request to the endpoint. You should receiv
 After the SSLD has been added, let's see if the function FindAllDevices shows the SSLD. Continue with the FindAllDevices request from the public-lighting project. Since this is not the same project, we have to change the endpoint; in this case in https://localhost:443/osgp-adapter-ws-publiclighting/publiclighting/adHocManagementService/.
 Do not forget to set the SSL keystore in the Request Properties. Use the following parameters in the request:
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -266,7 +266,7 @@ Now that the Device is known in the platform, and simulated in the Device-Simula
 Using SoapUI, click on Request 1 under SetLight at the public-lighting project. Set the following parameters in the request (And do not forget to set the Keystore in the request properties):
 
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>
@@ -301,7 +301,7 @@ In the home screen of the OSLP device simulator, the lightbulb should light up f
 The last request concerns the response form the previous SetLight request.
 In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' project. Set the following parameters in the request (And the keystore in the request properties). Make sure to replace the CorrelationUid with the value from the respons from the SetLight request.
 ```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>APPLICATION_NAME</ns:ApplicationName>
       <ns:UserName>USER_NAME</ns:UserName>

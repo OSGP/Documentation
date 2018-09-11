@@ -33,14 +33,14 @@ enum Status {
 
 Soap requests and responses sent to and from platform:
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:fir="http://www.alliander.com/schemas/osgp/firmwaremanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:fir="http://www.opensmartgridplatform.org/schemas/firmwaremanagement/2014/10">
    <soapenv:Header>
 	   <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
 	   <com:UserName>liander gebruiker</com:UserName>
 	   <com:ApplicationName>WEB_NET_MANAGEMENT</com:ApplicationName>
    </soapenv:Header>
    <soapenv:Body>   
-      <fir1:UpdateFirmwareRequest xmlns:fir1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">	  
+      <fir1:UpdateFirmwareRequest xmlns:fir1="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
          <!--type: Identification-->
          <fir1:DeviceIdentification>device-01</fir1:DeviceIdentification>
          <!--anonymous type-->
@@ -52,7 +52,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>   
-      <ns2:UpdateFirmwareAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">	  
+      <ns2:UpdateFirmwareAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>		 
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160104145959438</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>			
@@ -61,14 +61,14 @@ Soap requests and responses sent to and from platform:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:fir="http://www.alliander.com/schemas/osgp/firmwaremanagement">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:fir="http://www.opensmartgridplatform.org/schemas/firmwaremanagement">
    <soapenv:Header>
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>liander gebruiker</com:UserName>
    <com:ApplicationName>WEB_NET_MANAGEMENT</com:ApplicationName>
    </soapenv:Header>
    <soapenv:Body>
-      <fir1:UpdateFirmwareAsyncRequest xmlns:fir1="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10">
+      <fir1:UpdateFirmwareAsyncRequest xmlns:fir1="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
          <fir1:AsyncRequest>
             <!--type: CorrelationUid-->
             <com:CorrelationUid>LianderNetManagement|||device-01|||20160104145959438</com:CorrelationUid>
@@ -82,7 +82,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:UpdateFirmwareResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:UpdateFirmwareResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
       </ns2:UpdateFirmwareResponse>
    </SOAP-ENV:Body>

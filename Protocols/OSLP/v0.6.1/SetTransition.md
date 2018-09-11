@@ -40,7 +40,7 @@ enum Status {
 
 Soap requests and responses sent to and from platform:
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:adh="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:com="http://www.alliander.com/schemas/osgp/publiclighting/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:adh="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>liander gebruiker</com:UserName>
@@ -59,7 +59,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:SetTransitionAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:SetTransitionAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160106155501582</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -68,7 +68,7 @@ Soap requests and responses sent to and from platform:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:adh="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:adh="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>liander gebruiker</com:UserName>
@@ -87,7 +87,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:SetTransitionResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:SetTransitionResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
       </ns2:SetTransitionResponse>
    </SOAP-ENV:Body>

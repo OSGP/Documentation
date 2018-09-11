@@ -42,7 +42,7 @@ WSDL: [SmartMeteringInstallation.wsdl](https://github.com/OSGP/Shared/blob/devel
 ### Example XML Message
 
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/smartmetering/sm-installation/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/smartmetering/sm-installation/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>AutomaticTest</ns:ApplicationName>
       <ns:UserName>SoapUI</ns:UserName>

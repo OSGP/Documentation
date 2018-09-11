@@ -5,7 +5,7 @@
 
 package oslp;
 
-option java_package = "com.alliander.osgp.oslp";
+option java_package = "org.opensmartgridplatform.oslp";
 
 message Message {
     optional RegisterDeviceRequest registerDeviceRequest = 1;

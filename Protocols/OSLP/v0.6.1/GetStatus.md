@@ -77,12 +77,12 @@ Soap requests and responses sent to and from platform:
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">SoapUI</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">Kevin</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">SoapUI</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">Kevin</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns2:GetStatusRequest xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetStatusRequest xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:DeviceIdentification>device-01</ns2:DeviceIdentification>
       </ns2:GetStatusRequest>
    </SOAP-ENV:Body>
@@ -91,7 +91,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns2:GetStatusAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetStatusAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160106133844686</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -102,12 +102,12 @@ Soap requests and responses sent to and from platform:
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">SoapUI</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">Kevin</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">SoapUI</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">Kevin</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns2:GetStatusAsyncRequest xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:GetStatusAsyncRequest xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncRequest>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160106133844686</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -119,7 +119,7 @@ Soap requests and responses sent to and from platform:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns3:GetStatusResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/deviceinstallation/2014/10">
+      <ns3:GetStatusResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/deviceinstallation/2014/10">
          <ns3:Result>OK</ns3:Result>
          <ns3:DeviceStatus>
             <ns3:LightValues>

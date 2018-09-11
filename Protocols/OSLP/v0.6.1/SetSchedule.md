@@ -106,8 +106,8 @@ SOAP Request Message for Platform web-service:
 ``` xml
 <soapenv:Envelope 
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
-xmlns:com="http://www.alliander.com/schemas/osgp/publiclighting/2014/10" 
-xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
+xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
 	 <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
 	 <com:UserName>Kevin</com:UserName>
@@ -234,7 +234,7 @@ SOAP Response Message:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>   
-      <ns3:SetScheduleAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">	  
+      <ns3:SetScheduleAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
          <ns3:AsyncResponse>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20151230104608559</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
@@ -445,8 +445,8 @@ SOAP Request to obtain response from 'device-01':
 ``` xml
 <soapenv:Envelope 
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
-xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" 
-xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10"
+xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
 	   <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
 	   <com:UserName>Kevin</com:UserName>
@@ -469,7 +469,7 @@ SOAP Response containing response from 'device-01':
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>   
-      <ns3:SetScheduleResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">	  
+      <ns3:SetScheduleResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
          <ns3:Result>OK</ns3:Result>		 
       </ns3:SetScheduleResponse>	  
    </SOAP-ENV:Body>
@@ -493,12 +493,12 @@ SOAP messages:
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">SoapUI</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">Kevin</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">SoapUI</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">Kevin</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns3:SetScheduleRequest xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns3:SetScheduleRequest xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns3:DeviceIdentification>device-01</ns3:DeviceIdentification>
          <ns3:Schedules>
             <ns3:WeekDay>ABSOLUTEDAY</ns3:WeekDay>
@@ -517,7 +517,7 @@ SOAP messages:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns3:SetScheduleAsyncResponse xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns3:SetScheduleAsyncResponse xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns3:AsyncResponse>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20160113131032759</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
@@ -528,12 +528,12 @@ SOAP messages:
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header>
-      <OrganisationIdentification xmlns="http://www.alliander.com/schemas/osp/common">LianderNetManagement</OrganisationIdentification>
-      <ApplicationName xmlns="http://www.alliander.com/schemas/osp/common">SoapUI</ApplicationName>
-      <UserName xmlns="http://www.alliander.com/schemas/osp/common">Kevin</UserName>
+      <OrganisationIdentification xmlns="http://www.opensmartgridplatform.org/schemas/common">LianderNetManagement</OrganisationIdentification>
+      <ApplicationName xmlns="http://www.opensmartgridplatform.org/schemas/common">SoapUI</ApplicationName>
+      <UserName xmlns="http://www.opensmartgridplatform.org/schemas/common">Kevin</UserName>
    </SOAP-ENV:Header>
    <SOAP-ENV:Body>
-      <ns3:SetScheduleAsyncRequest xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns3:SetScheduleAsyncRequest xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns3:AsyncRequest>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20160113131032759</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
@@ -545,7 +545,7 @@ SOAP messages:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns3:SetScheduleResponse xmlns:ns3="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns3:SetScheduleResponse xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns3:Result>OK</ns3:Result>
       </ns3:SetScheduleResponse>
    </SOAP-ENV:Body>
@@ -602,8 +602,8 @@ SOAP messages:
 ```xml
 <soapenv:Envelope 
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
-xmlns:com="http://www.alliander.com/schemas/osgp/publiclighting/2014/10" 
-xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
+xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>Kevin</com:UserName>
@@ -759,7 +759,7 @@ xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanageme
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:SetScheduleAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:SetScheduleAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
             <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160313162236547</ns3:CorrelationUid>
             <ns3:DeviceId>device-01</ns3:DeviceId>
@@ -768,7 +768,7 @@ xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanageme
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns1="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>
       <ns:ApplicationName>SoapUI</ns:ApplicationName>
       <ns:UserName>Kevin</ns:UserName>
@@ -787,7 +787,7 @@ xmlns:sch="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanageme
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns2:SetScheduleResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/common/2014/10">
+      <ns2:SetScheduleResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
       </ns2:SetScheduleResponse>
    </SOAP-ENV:Body>
@@ -893,7 +893,7 @@ This schedule consists of 1 page, and uses 'minimumLightOn' to indicate a minima
 SOAP Request Message for Platform web-service:
 
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:sch="http://www.alliander.com/schemas/osgp/tariffswitching/schedulemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:sch="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>Kevin</com:UserName>
@@ -1035,7 +1035,7 @@ SOAP Response Message:
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
-      <ns3:SetScheduleAsyncResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/tariffswitching/schedulemanagement/2014/10">
+      <ns3:SetScheduleAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
          <ns3:AsyncResponse>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20151230132054477</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
@@ -1381,7 +1381,7 @@ specifies that this is a tariff schedule.
 SOAP Request to obtain response from 'device-01':
 
 ``` xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:sch="http://www.alliander.com/schemas/osgp/tariffswitching/schedulemanagement/2014/10">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:sch="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
       <com:UserName>Kevin</com:UserName>
@@ -1404,7 +1404,7 @@ SOAP Response containing response from 'device-01':
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>   
-      <ns3:SetScheduleResponse xmlns:ns2="http://www.alliander.com/schemas/osgp/common/2014/10" xmlns:ns3="http://www.alliander.com/schemas/osgp/tariffswitching/schedulemanagement/2014/10">	  
+      <ns3:SetScheduleResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
          <ns3:Result>OK</ns3:Result>		 
       </ns3:SetScheduleResponse>	  
    </SOAP-ENV:Body>
