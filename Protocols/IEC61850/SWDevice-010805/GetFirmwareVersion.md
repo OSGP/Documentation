@@ -2,27 +2,16 @@
 
 ### Description
 
-Request which notifies the device to send the current firmware version.
+Request which queries the device for its current firmware version.
 
-Response containing the firmware version.
+Response which returns the result of the request and, if 'result = OK' contains the firmware version.
 
-### Message definitions
+### IEC61850 Fields
 
-``` json
-message GetFirmwareVersionRequest {
-    optional bool present = 1 [default = true];
-}
-
-message GetFirmwareVersionResponse {
-    required string firmwareVersion = 1; // [(nanopb).max_size = 7]; // RXX
-}
-```
-
-### Datatypes
-
-``` json
-
-```
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
+|---|---|---|---|
+|SWDeviceGenericIO/CSLC.FuncFwDw|ST|curVer|VisString32|
+|SWDeviceGenericIO/CSLC.ScyFwDw|ST|curVer|VisString32|
 
 ### Example
 
@@ -31,13 +20,13 @@ Soap requests and responses sent to and from platform:
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:fman="http://www.opensmartgridplatform.org/schemas/firmwaremanagement">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
-      <com:UserName>KevinSmeets</com:UserName>
+      <com:UserName>Sander</com:UserName>
       <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
    <soapenv:Body>
       <fman:GetFirmwareVersionRequest xmlns:fman="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
          <!--type: Identification-->
-         <fman:DeviceIdentification>device-01</fman:DeviceIdentification>
+         <fman:DeviceIdentification>KAI-0000000053</fman:DeviceIdentification>
       </fman:GetFirmwareVersionRequest>
    </soapenv:Body>
 </soapenv:Envelope>
@@ -47,8 +36,8 @@ Soap requests and responses sent to and from platform:
    <SOAP-ENV:Body>
       <ns2:GetFirmwareVersionAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:AsyncResponse>
-            <ns3:CorrelationUid>LianderNetManagement|||device-01|||20160104150323405</ns3:CorrelationUid>
-            <ns3:DeviceId>device-01</ns3:DeviceId>
+            <ns3:CorrelationUid>LianderNetManagement|||KAI-0000000053|||20180924135200412</ns3:CorrelationUid>
+            <ns3:DeviceId>KAI-0000000053</ns3:DeviceId>
          </ns2:AsyncResponse>
       </ns2:GetFirmwareVersionAsyncResponse>
    </SOAP-ENV:Body>
@@ -57,16 +46,16 @@ Soap requests and responses sent to and from platform:
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:fman="http://www.opensmartgridplatform.org/schemas/firmwaremanagement">
    <soapenv:Header>
       <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
-      <com:UserName>liander gebruiker</com:UserName>
-      <com:ApplicationName>WEB_NET_MANAGEMENT</com:ApplicationName>
+      <com:UserName>Sander</com:UserName>
+      <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
    <soapenv:Body>
       <fman:GetFirmwareVersionAsyncRequest xmlns:fman="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
          <fman:AsyncRequest>
             <!--type: CorrelationUid-->
-            <com:CorrelationUid>LianderNetManagement|||device-01|||20160104150323405</com:CorrelationUid>
+            <com:CorrelationUid>LianderNetManagement|||KAI-0000000053|||20180924135200412</com:CorrelationUid>
             <!--type: Identification-->
-            <com:DeviceId>device-01</com:DeviceId>
+            <com:DeviceId>KAI-0000000053</com:DeviceId>
          </fman:AsyncRequest>
       </fman:GetFirmwareVersionAsyncRequest>
    </soapenv:Body>
@@ -77,21 +66,24 @@ Soap requests and responses sent to and from platform:
    <SOAP-ENV:Body>
       <ns2:GetFirmwareVersionResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/common/2014/10">
          <ns2:Result>OK</ns2:Result>
-         <ns2:FirmwareVersion>R01</ns2:FirmwareVersion>
+         <ns2:FirmwareVersion>
+            <ns2:FirmwareModuleType>FUNCTIONAL</ns2:FirmwareModuleType>
+            <ns2:Version>01_21_01A</ns2:Version>
+         </ns2:FirmwareVersion>
+         <ns2:FirmwareVersion>
+            <ns2:FirmwareModuleType>SECURITY</ns2:FirmwareModuleType>
+            <ns2:Version>01_06_02A</ns2:Version>
+         </ns2:FirmwareVersion>
       </ns2:GetFirmwareVersionResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
 
-OSLP GetFirmwareRequest message sent to 'device-01':
+Platform message of the data received from the device:
 ``` json
-getFirmwareVersionRequest {
-}
-```
-
-OSLP GetFirmwareResponse message sent to platform:
-``` json
-getFirmwareVersionResponse {
-  firmwareVersion: "R01"
+LogicalDevice: SWDeviceGenericIO
+messageType: GetFirmwareVersion {
+  CSLC.FuncFwDw[ST].curVer: 01_21_01A
+  CSLC.ScyFwDw[ST].curVer: 01_06_02A
 }
 ```

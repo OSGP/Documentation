@@ -13,10 +13,10 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 - **[ConfirmRegisterDeviceResponse](./v0.6.1/ConfirmRegisterDevice.md)** (from platform to device) is a response which confirms the ConfirmRegisterDeviceRequest has been executed or rejected.
 
 - **[StartSelfTestRequest](./v0.6.1/StartSelfTest.md)** (from platform to device) is a request that notifies the device to switch all relays on.
-- **[StartSelfTestResponse](./v0.6.1/StartSelfTest.md)** (from device to platform) is a response which confirms the StartSelfTestRequest has been executed or rejects the StartSelfTestRequest.
+- **[StartSelfTestResponse](./v0.6.1/StartSelfTest.md)** (from device to platform) is a response which confirms the StartSelfTestRequest has been executed or rejected.
 
 - **[StopSelfTestRequest](./v0.6.1/StopSelfTest.md)** (from platform to device) is a request that notifies the device to switch all relays off.
-- **[StopSelfTestResponse](./v0.6.1/StopSelfTest.md)** (from device to platform) is a response which confirms the StopSelfTestResponse has been executed or rejects the StopSelfTestResponse.
+- **[StopSelfTestResponse](./v0.6.1/StopSelfTest.md)** (from device to platform) is a response which confirms the StopSelfTestRequest has been executed or rejected.
 
 - **[UpdateFirmwareRequest](./v0.6.1/UpdateFirmware.md)** (from platform to device) is a request which notifies the device to download a new firmware version from a server using a URL.
 - **[UpdateFirmwareResponse](./v0.6.1/UpdateFirmware.md)** (from device to platform) is a response which confirms the UpdateFirmwareRequest has been executed or rejects the UpdateFirmwareRequest. Please note there are several events which are sent from the device to the platform to inform the platform when the firmware has been downloaded and whether or not the firmware was successfully activated.
