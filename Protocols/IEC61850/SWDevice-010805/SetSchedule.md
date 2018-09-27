@@ -6,26 +6,24 @@ Request which commands a device to set a light or tariff schedule.
 
 Response which returns the result of the request.
 
-### Message definitions
+### IEC61850 Fields
 
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|XSWC1.Sche|CF|sche1.enable|BOOLEAN|Flag indicating the schedule entry is enabled|
+|XSWC1.Sche|CF|sche1.day|INT32|Day in yyyymmdd format|
+|XSWC1.Sche|CF|sche1.tOn|INT32||
+|XSWC1.Sche|CF|sche1.tOnT|INT8||
+|XSWC1.Sche|CF|sche1.tOff|INT32||
+|XSWC1.Sche|CF|sche1.tOffT|INT8||
+|XSWC1.Sche|CF|sche1.minOnPer|INT16U||
+|XSWC1.Sche|CF|sche1.minOffPer|INT16U||
+|XSWC1.Sche|CF|sche1.srBefWd|INT16U||
+|XSWC1.Sche|CF|sche1.srAftWd|INT16U||
+|XSWC1.Sche|CF|sche1.igBefWd|INT16U||
+|XSWC1.Sche|CF|sche1.igAftWd|INT16U||
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|XSWC2.Sche|CF|sche1.enable|BOOLEAN|
-|XSWC2.Sche|CF|sche1.tOn|INT32|
-|XSWC2.Sche|CF|sche1.tOnT|INT8|
-|XSWC2.Sche|CF|sche1.tOff|INT32|
-|XSWC2.Sche|CF|sche1.tOffT|INT8|
-|XSWC2.Sche|CF|sche1.srBefWd|INT16U|
-|XSWC2.Sche|CF|sche1.srAftWd|INT16U|
-|XSWC3.Sche|CF|sche1.enable|BOOLEAN|
-|XSWC3.Sche|CF|sche1.tOn|INT32|
-|XSWC3.Sche|CF|sche1.tOnT|INT8|
-|XSWC3.Sche|CF|sche1.tOff|INT32|
-|XSWC3.Sche|CF|sche1.tOffT|INT8|
-|XSWC3.Sche|CF|sche1.srBefWd|INT16U|
-|XSWC3.Sche|CF|sche1.srAftWd|INT16U|
-
+Although the device supports setting 64 schedule entries (sche1...sche64) for 4 relays (XSWC1...XSWC4), the actual number of schedule entries is limited by OSGP to 50.
 
 ### Examples
 
@@ -268,6 +266,10 @@ IEC61850 protocol adapter logging:
 
 #### Example 2: Tariff Schedule
 
+Description for this schedule:
+
+This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be weekday).
+
 SOAP Request Message for Platform web-service:
 
 ``` xml
@@ -487,21 +489,17 @@ messageType: SetSchedule {
 }
 ```
 
+IEC61850 protocol adapter logging:
+```
 2018-09-26 15:09:22.380] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.m.DeviceRequestMessageListener@onMessage:61 - Received message of type: SET_TARIFF_SCHEDULE with message priority: 4
-2018-09-26 15:09:22.381] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.m.BaseMessageProcessor@printDomainInfo:53 - Calling DeviceService function: SET_TARIFF_SCHEDULE for domain: TARIFF_SWITCHING
-1.0
+2018-09-26 15:09:22.381] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.m.BaseMessageProcessor@printDomainInfo:53 - Calling DeviceService function: SET_TARIFF_SCHEDULE for domain: TARIFF_SWITCHING 1.0
 2018-09-26 15:09:22.381] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.m.BaseMessageProcessor@getJmsXdeliveryCount:64 - jmsXdeliveryCount: 1
-2018-09-26 15:09:22.381] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@connect:115 - Trying to connect to deviceIdentification: KAI-0000000053 at IP address 84.
-30.69.148 using response time-out: 10000
-2018-09-26 15:09:22.386] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.r.Iec61850ClientSSLDEventListener@buildExternalByInternalIndexMap:80 - Retrieved internal to external index map for device
-KAI-0000000053: {0=0, 1=1, 2=2, 3=3}
-2018-09-26 15:09:22.393] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.Iec61850Client@connect:97 - Attempting to connect to server: 84.30.69.148 on port: 102, max redelivery count: 3 and max ret
-ry count: 3
+2018-09-26 15:09:22.381] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@connect:115 - Trying to connect to deviceIdentification: KAI-0000000053 at IP address 84.30.69.148 using response time-out: 10000
+2018-09-26 15:09:22.386] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.r.Iec61850ClientSSLDEventListener@buildExternalByInternalIndexMap:80 - Retrieved internal to external index map for device KAI-0000000053: {0=0, 1=1, 2=2, 3=3}
+2018-09-26 15:09:22.393] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.Iec61850Client@connect:97 - Attempting to connect to server: 84.30.69.148 on port: 102, max redelivery count: 3 and max retry count: 3
 2018-09-26 15:09:22.439] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.Iec61850Client@connect:113 - Connected to device: KAI-0000000053
-2018-09-26 15:09:22.439] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@readServerModelFromConfiguredIcdFile:316 - Reading ServerModel from SCL / ICD file: /etc/
-osp/kaifa-server-model/SWDevice-010805.icd
-2018-09-26 15:09:22.496] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@connect:159 - Connected to device: KAI-0000000053, fetched server model. Start time: 2018
--09-26T15:09:22.381Z, end time: 2018-09-26T15:09:22.496Z, total time in milliseconds: 115
+2018-09-26 15:09:22.439] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@readServerModelFromConfiguredIcdFile:316 - Reading ServerModel from SCL / ICD file: /etc/osp/kaifa-server-model/SWDevice-010805.icd
+2018-09-26 15:09:22.496] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@connect:159 - Connected to device: KAI-0000000053, fetched server model. Start time: 2018-09-26T15:09:22.381Z, end time: 2018-09-26T15:09:22.496Z, total time in milliseconds: 115
 2018-09-26 15:09:22.506] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.h.DeviceConnection@createObjectReference:94 - Device: KAI-0000000053, ObjectReference: SWDeviceGenericIO/XSWC1.Sche
 2018-09-26 15:09:22.527] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850SetScheduleCommand@disableScheduleEntries:449 - Checking if schedule entry 1 for relay 1 is enabled: true
 2018-09-26 15:09:22.527] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850SetScheduleCommand@disableScheduleEntries:451 - Disabling schedule entry 1 of 64 for relay 1 before setting new TARIFF schedule
@@ -545,185 +543,4 @@ osp/kaifa-server-model/SWDevice-010805.icd
 2018-09-26 15:09:31.868] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.s.DeviceResponseService@handleDeviceMessageStatus:42 - OK device message status received: OK
 2018-09-26 15:09:31.868] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.m.DeviceResponseMessageSender@sendMessage:111 - Sending protocol response message for device: KAI-0000000053 of message type: SET_TARIFF_SCHEDULE with message priority: 4
 2018-09-26 15:09:31.868] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@logDuration:355 - Device: KAI-0000000053, messageType: SET_TARIFF_SCHEDULE, Start time: 2018-09-26T15:09:22.381Z, end time: 2018-09-26T15:09:31.868Z, total time in milliseconds: 9487
-
-
-
-
-Description for this schedule:
-
-This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be weekday).
-
-The first schedule-entry:
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150101"
-    endDay: "20160201"
-    actionTime: ABSOLUTETIME
-    time: "230000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
 ```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 1st of January 2015 until 1st of February 2016 (startDay: "20150101" and endDay: "20160201") at 11 'o clock in the evening (actionTime: ABSOLUTETIME and time: "230000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high.
-
-The second schedule-entry:
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150101"
-    endDay: "20160201"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: false
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 1st of January 2015 until 1st of February 2016 (startDay: "20150101" and endDay: "20160201") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch off (on: false). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be high. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be low.
-
-The third schedule-entry:
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150101"
-    endDay: "20150101"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 1st of January 2015 until 1st of January 2015 (startDay: "20150101" and endDay: "20150101") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (New Year's Day).
-
-The fourth schedule-entry:
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150406"
-    endDay: "20150406"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 6st of April 2015 until 6st of April 2015 (startDay: "20150406" and endDay: "20150406") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (Easter Monday).
-
-The fifth schedule-entry:
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150427"
-    endDay: "20150427"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 27st of April 2015 until 27st of April 2015 (startDay: "20150427" and endDay: "20150427") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (Dutch Kings Day).
-
-The pagination info:
-``` json
-  pageInfo {
-    currentPage: 1
-    pageSize: 5
-    totalPages: 2
-  }
-```
-specifies that this is the first page of a total of 2 pages. The pageSize is set by the platform and can be any value from 1 to 50.
-
-The last element of the SetScheduleRequest:
-``` json
-  scheduleType: TARIFF
-```
-specifies that this is a tariff schedule.
-
-
-The sixth schedule-entry (page 2):
-``` json
-    weekday: WEEKDAY
-    startDay: "20150514"
-    endDay: "20150514"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 14th of May 2015 until 14th of May 2015 (startDay: "20150514" and endDay: "20150514") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (Ascension Day).
-
-The seventh schedule-entry (page 2):
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20150525"
-    endDay: "20150525"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 25th of May 2015 until 25th of May 2015 (startDay: "20150525" and endDay: "20150525") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (Whit Monday).
-
-The eighth schedule-entry (page 2):
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20151225"
-    endDay: "20151225"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-  }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 25th of December 2015 until 25th of December 2015 (startDay: "20151225" and endDay: "20151225") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (Christmas Day).
-
-The ninth schedule-entry (page 2):
-``` json
-  schedules {
-    weekday: WEEKDAY
-    startDay: "20160101"
-    endDay: "20160101"
-    actionTime: ABSOLUTETIME
-    time: "070000"
-    value {
-      index: "\003"
-      on: true
-    }
-```
-specifies that for every work day of the week (weekday: WEEKDAY meaning from Monday until Friday) from 1st of January 2016 until 1st of January 2016 (startDay: "20160101" and endDay: "20160101") at 7 'o clock in the morning (actionTime: ABSOLUTETIME and time: "070000") the relay with index 3 (index: "\003") has to switch on (on: true). When a device is configured to have relay 3 as TARIFF relay, this means the tariff will be low. When a device is configured to have relay 3 as TARIFF_REVERSED, this means the tariff will be high. This schedule entry is needed to make sure that the tariff is low for a particular day of the year (New Year's Day).
-
-The pagination info (page 2):
-``` json
-  pageInfo {
-    currentPage: 2
-    pageSize: 5
-    totalPages: 2
-  }
-```
-specifies that this is the second page of a total of 2 pages. The pageSize is set by the platform and can be any value from 1 to 50.
-
-The last element of the SetScheduleRequest:
-``` json
-  scheduleType: TARIFF
-```
-specifies that this is a tariff schedule.
