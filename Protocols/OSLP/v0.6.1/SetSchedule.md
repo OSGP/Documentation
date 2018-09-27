@@ -104,8 +104,8 @@ Screenshot of this schedule in an OSGP client application.
 SOAP Request Message for Platform web-service:
 
 ``` xml
-<soapenv:Envelope 
-xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
@@ -114,7 +114,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
 	 <com:ApplicationName>SoapUI</com:ApplicationName>	   
    </soapenv:Header>
    <soapenv:Body>
-      
+
       <sch:SetScheduleRequest>
          <!--type: Identification-->
          <sch:DeviceIdentification>device-01</sch:DeviceIdentification>
@@ -143,7 +143,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
             <!--type: TriggerType - enumeration: [LIGHT_TRIGGER,ASTRONOMICAL]-->
             <sch:TriggerType>LIGHT_TRIGGER</sch:TriggerType>
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -168,7 +168,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
             <!--type: TriggerType - enumeration: [LIGHT_TRIGGER,ASTRONOMICAL]-->
             <sch:TriggerType>LIGHT_TRIGGER</sch:TriggerType>
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -193,7 +193,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
                <sch:On>false</sch:On>
             </sch:LightValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -223,12 +223,12 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
          </sch:Schedules>
 
       </sch:SetScheduleRequest>
-   
+
    </soapenv:Body>
 </soapenv:Envelope>
 ```
 
-SOAP Response Message: 
+SOAP Response Message:
 
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -443,8 +443,8 @@ specifies that this is a light schedule.
 SOAP Request to obtain response from 'device-01':
 
 ``` xml
-<soapenv:Envelope 
-xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
@@ -600,8 +600,8 @@ This schedule has one entry which switches light relay 1 (index: "\001") off at 
 SOAP messages:
 
 ```xml
-<soapenv:Envelope 
-xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
    <soapenv:Header>   
@@ -647,7 +647,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
             <!--type: int, minimal burning time in seconds-->
             <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -681,7 +681,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
             <!--type: int, minimal burning time in seconds-->
             <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -715,7 +715,7 @@ xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulem
             <!--type: int, minimal burning time in seconds-->
             <!--<sch:minimumLightsOn>300</sch:minimumLightsOn>-->
          </sch:Schedules>
-         
+
          <sch:Schedules>
             <!--type: WeekDayType - enumeration: [MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY,WEEKDAY,WEEKEND,ABSOLUTEDAY,ALL]-->
             <sch:WeekDay>ALL</sch:WeekDay>
@@ -926,9 +926,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>1</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-01-01</sch:StartDay>
             <sch:EndDay>2015-01-01</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -938,9 +938,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-04-06</sch:StartDay>
             <sch:EndDay>2015-04-06</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -950,9 +950,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-04-27</sch:StartDay>
             <sch:EndDay>2015-04-27</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -962,9 +962,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-05-14</sch:StartDay>
             <sch:EndDay>2015-05-14</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -974,9 +974,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-05-25</sch:StartDay>
             <sch:EndDay>2015-05-25</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -986,9 +986,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-12-25</sch:StartDay>
             <sch:EndDay>2015-12-25</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -998,9 +998,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2015-12-26</sch:StartDay>
             <sch:EndDay>2015-12-26</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -1010,9 +1010,9 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
          <sch:Schedules>
-            <sch:WeekDay>WEEKDAY</sch:WeekDay>
+            <sch:WeekDay>ABSOLUTEDAY</sch:WeekDay>
             <sch:StartDay>2016-01-01</sch:StartDay>
             <sch:EndDay>2016-01-01</sch:EndDay>
             <sch:Time>07:00:00</sch:Time>
@@ -1022,14 +1022,14 @@ SOAP Request Message for Platform web-service:
                <sch:High>0</sch:High>
             </sch:TariffValue>
          </sch:Schedules>
-         
+
       </sch:SetScheduleRequest>
-      
+
    </soapenv:Body>
 </soapenv:Envelope>
 ```
 
-SOAP Response Message: 
+SOAP Response Message:
 
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -1071,7 +1071,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20150101"
     endDay: "20150101"
     actionTime: ABSOLUTETIME
@@ -1082,7 +1082,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20150406"
     endDay: "20150406"
     actionTime: ABSOLUTETIME
@@ -1093,7 +1093,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20150427"
     endDay: "20150427"
     actionTime: ABSOLUTETIME
@@ -1122,7 +1122,7 @@ setScheduleResponse {
 ``` json
 setScheduleRequest {
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20150514"
     endDay: "20150514"
     actionTime: ABSOLUTETIME
@@ -1133,7 +1133,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20150525"
     endDay: "20150525"
     actionTime: ABSOLUTETIME
@@ -1144,7 +1144,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20151225"
     endDay: "20151225"
     actionTime: ABSOLUTETIME
@@ -1155,7 +1155,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20151226"
     endDay: "20151226"
     actionTime: ABSOLUTETIME
@@ -1166,7 +1166,7 @@ setScheduleRequest {
     }
   }
   schedules {
-    weekday: WEEKDAY
+    weekday: ABSOLUTEDAY
     startDay: "20160101"
     endDay: "20160101"
     actionTime: ABSOLUTETIME
