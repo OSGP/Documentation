@@ -8,9 +8,9 @@ Response which returns the result of the request.
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|CSLC.Sensor|CO|Oper.ctlVal|BOOLEAN|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|CSLC.Sensor|CO|Oper.ctlVal|BOOLEAN|Flag indicating transition type, true = DAY_NIGHT, false = NIGHT_DAY|
 
 ### Example
 
