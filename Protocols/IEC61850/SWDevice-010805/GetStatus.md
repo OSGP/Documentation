@@ -8,14 +8,13 @@ Response which returns the result of the request and, if 'result = OK', contains
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|SWDeviceGenericIO/XSWC1.Pos|ST|stVal|BOOLEAN|
-|SWDeviceGenericIO/XSWC2.Pos|ST|stVal|BOOLEAN|
-|SWDeviceGenericIO/XSWC3.Pos|ST|stVal|BOOLEAN|
-|SWDeviceGenericIO/CSLC.EvnBuf|CF|enbEvnType|VisString32|
-|SWDeviceGenericIO/CSLC.SWCf|CF|LT|VisString64|
-
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|SWDeviceGenericIO/XSWC1.Pos|ST|stVal|BOOLEAN|Current switch status for relay 1|
+|SWDeviceGenericIO/XSWC2.Pos|ST|stVal|BOOLEAN|Current switch status for relay 2|
+|SWDeviceGenericIO/XSWC3.Pos|ST|stVal|BOOLEAN|Current switch status for relay 3|
+|SWDeviceGenericIO/CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled|
+|SWDeviceGenericIO/CSLC.SWCf|CF|LT|VisString64|Device light type, always "RELAY"|
 
 ### Example
 

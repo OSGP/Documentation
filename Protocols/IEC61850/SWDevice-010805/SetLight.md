@@ -10,10 +10,10 @@ Response which returns the result of the request.
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|
-|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to true, immediately switches relay 2 on|
+|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to true, immediately switches relay 3 on|
 
 ### Example
 
