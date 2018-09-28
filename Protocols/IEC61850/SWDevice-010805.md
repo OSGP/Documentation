@@ -7,7 +7,7 @@ Contrary to OSLP the contract between OSGP and IEC61850 devices does not exist o
 
 The messages below are part of OSGP and implemented in the IEC61850 protocol adapter and supported by the SWDevice-010805 device firmware.
 
-- **[RegisterDeviceRequest](./SWDevice-010805/RegisterDevice.md)** (from device to platform) is a request that notifies the platform a device which wants to register. During the registration the device sends it's identification (serial number), and the device communicates its IP address to the platform.
+- **[RegisterDeviceRequest](./SWDevice-010805/RegisterDevice.md)** (from device to platform) is a request that notifies the platform a device wants to register. During the registration the device sends it's identification (serial number), and the device communicates it's IP address to the platform.
 - **[RegisterDeviceResponse](./SWDevice-010805/RegisterDevice.md)** (from platform to device) is a response which informs the device that the registration was successful. The device will not register anymore, until the next power cycle or reboot.
 
 - **[StartSelfTestRequest](./SWDevice-010805/StartSelfTest.md)** is a request which commands a device to switch all light relays on.

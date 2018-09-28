@@ -2,9 +2,9 @@
 
 ### Description
 
-Note: the device registration is a 2 step process. First RegisterDeviceRequest is sent from device to platform. Second steps are writing GPS coordinates to the device and disabling the device registration flag.
+Note: the device registration is a 2 step process. First RegisterDeviceRequest is sent from device to platform. Second are writing GPS coordinates to the device and disabling the device registration flag.
 
-Request that notifies the platform a device which wants to register. During the registration the device identification (serial number), and the device communicates its IP address to the platform.
+Request that notifies the platform that a device wants to register. During the registration the device identification (serial number) and the IP address are sent to the platform.
 
 Response writes GPS coordinates and disables registration flag.
 
@@ -13,11 +13,24 @@ Response writes GPS coordinates and disables registration flag.
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
 |CSLC.Reg|CF|ntfEnb|BOOLEAN|Enable/Disable device registration.|
+|CSLC.Atnm|CF|lon|FLOAT32|Longitude.|
+|CSLC.Atnm|CF|lat|FLOAT32|Latitude.|
 
 ### Plain text registration message
-
 ``` json
 0000000053,84.30.69.148
+```
+
+IEC61850 platform messages of the data sent to the device:
+``` json
+LogicalDevice: SWDeviceGenericIO
+messageType: LocationInformation {
+  CSLC.Atnm[CF].lon: 52.37875
+  CSLC.Atnm[CF].lat:  5.95558
+}
+messageType: DisableRegistration {
+  CSLC.Reg[CF].ntfEnb: false
+}
 ```
 
 IEC61850 protocol adapter logging:
