@@ -150,6 +150,7 @@
 * [Protocols](Protocols/README.md)
    * [IEC 61850](Protocols/IEC61850/README.md)
       * [SWDevice-010805](Protocols/IEC61850/SWDevice-010805.md)
+        * [RegisterDevice](Protocols/IEC61850/SWDevice-010805/RegisterDevice.md)
         * [GetConfiguration](Protocols/IEC61850/SWDevice-010805/GetConfiguration.md)
         * [SetConfiguration](Protocols/IEC61850/SWDevice-010805/SetConfiguration.md)
         * [SetEventNotifications](Protocols/IEC61850/SWDevice-010805/SetEventNotifications.md)
