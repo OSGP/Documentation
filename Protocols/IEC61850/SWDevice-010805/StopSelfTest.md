@@ -3,15 +3,16 @@
 ### Description
 
 Request which commands the device to switch all light relays off and then queries the device for the status of the relays.
+Part of this request is also to retrieve the status of the relays after switching off.
 
 Response which returns the result of the request.
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|
-|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 2 off|
+|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 3 off|
 
 ### Example
 

@@ -8,10 +8,10 @@ Response which returns the result of the request and, if 'result = OK' contains 
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|SWDeviceGenericIO/CSLC.FuncFwDw|ST|curVer|VisString32|
-|SWDeviceGenericIO/CSLC.ScyFwDw|ST|curVer|VisString32|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|SWDeviceGenericIO/CSLC.FuncFwDw|ST|curVer|VisString32|Current functional firmware version|
+|SWDeviceGenericIO/CSLC.ScyFwDw|ST|curVer|VisString32|Current security firmware version|
 
 ### Example
 

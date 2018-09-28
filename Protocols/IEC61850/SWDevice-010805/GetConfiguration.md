@@ -8,26 +8,26 @@ Response which returns the result of the request and, if 'result = OK', contains
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|XSWC1.SwType|ST|stVal|INT8|
-|XSWC2.SwType|ST|stVal|INT8|
-|XSWC3.SwType|ST|stVal|INT8|
-|CSLC.SWCf|CF|LT|VisString64|
-|CSLC.SWCf|CF|adSetOft|INT16|
-|CSLC.SWCf|CF|adRiseOft|INT16|
-|CSLC.Reg|CF|svrAddr|VisString64|
-|CSLC.Reg|CF|svrPort|INT32|
-|CSLC.Clock|CF|dstBegT|VisString255|
-|CSLC.Clock|CF|dstEndT|VisString255|
-|CSLC.Clock|CF|enbDst|BOOLEAN|
-|CSLC.Clock|CF|enbNtpC|BOOLEAN|
-|CSLC.Clock|CF|ntpSvrA|VisString255|
-|CSLC.Clock|CF|syncPer|INT16U|
-|CSLC.IPCf|CF|enbDHCP|BOOLEAN|
-|CSLC.IPCf|CF|ipAddr|VisString32|
-|CSLC.IPCf|CF|netmask|VisString32|
-|CSLC.IPCf|CF|gateway|VisString32|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|XSWC1.SwType|ST|stVal|INT8|Switch type for relay 1, tariff = 0, light = 1|
+|XSWC2.SwType|ST|stVal|INT8|Switch type for relay 2, tariff = 0, light = 1|
+|XSWC3.SwType|ST|stVal|INT8|Switch type for relay 3, tariff = 0, light = 1|
+|CSLC.SWCf|CF|LT|VisString64|Device light type, always set to RELAY|
+|CSLC.SWCf|CF|adSetOft|INT16|Offset in minutes with respect to astronomical sunset|
+|CSLC.SWCf|CF|adRiseOft|INT16|Offset in minutes with respect to astronomical sunrise|
+|CSLC.Reg|CF|svrAddr|VisString64|OSGP server address for device registration|
+|CSLC.Reg|CF|svrPort|INT32|OSGP server port for device registration|
+|CSLC.Clock|CF|dstBegT|VisString255|Daylight savings time begin time|
+|CSLC.Clock|CF|dstEndT|VisString255|Daylight savings time end time|
+|CSLC.Clock|CF|enbDst|BOOLEAN|Flag indicating whether daylight savings time is enabled |
+|CSLC.Clock|CF|enbNtpC|BOOLEAN|Flag inidicating whether NTP client is enabled|
+|CSLC.Clock|CF|ntpSvrA|VisString255|NTP server address|
+|CSLC.Clock|CF|syncPer|INT16U|Time sync period|
+|CSLC.IPCf|CF|enbDHCP|BOOLEAN|Flag indicating whether DHCP client is enabled|
+|CSLC.IPCf|CF|ipAddr|VisString32|Fixed IP address when DHCP is disabled|
+|CSLC.IPCf|CF|netmask|VisString32|Netmask when DHCP is disabled|
+|CSLC.IPCf|CF|gateway|VisString32|Gateway when DHCP is disabled|
 
 ### Example
 
@@ -145,24 +145,24 @@ Platform message of the data read from the device:
 ``` json
 LogicalDevice: SWDeviceGenericIO
 messageType: GetConfiguration {
-  CSLC.SWCf[CF].adSetOft: 0
-  CSLC.Reg[CF].svrPort: 50003
-  CSLC.Clock[CF].ntpSvrA: 0.nl.pool.ntp.org
-  XSWC2.SwType[ST].stVal: 1
-  CSLC.SWCf[CF].LT: RELAY
-  CSLC.Clock[CF].dstEndT: M10.5.0
-  CSLC.IPCf[CF].enbDHCP: true
-  CSLC.Clock[CF].enbDst: true
   XSWC1.SwType[ST].stVal: 0
+  XSWC2.SwType[ST].stVal: 1
+  XSWC3.SwType[ST].stVal: 1
+  CSLC.SWCf[CF].LT: RELAY
+  CSLC.SWCf[CF].adSetOft: 0
+  CSLC.SWCf[CF].adRiseOft: 0
+  CSLC.Reg[CF].svrPort: 50003
+  CSLC.Reg[CF].svrAddr: 168.63.97.65
+  CSLC.Clock[CF].dstBegT: M3.5.0
+  CSLC.Clock[CF].dstEndT: M10.5.0
+  CSLC.Clock[CF].enbDst: true
   CSLC.Clock[CF].enbNtpC: true
+  CSLC.Clock[CF].ntpSvrA: 0.nl.pool.ntp.org
+  CSLC.Clock[CF].syncPer: 1440
+  CSLC.IPCf[CF].enbDHCP: true
+  CSLC.IPCf[CF].ipAddr: 192.168.0.110
   CSLC.IPCf[CF].netmask: 255.255.0.0
   CSLC.IPCf[CF].gateway: 192.168.0.1
-  CSLC.IPCf[CF].ipAddr: 192.168.0.110
-  CSLC.Reg[CF].svrAddr: 168.63.97.65
-  CSLC.SWCf[CF].adRiseOft: 0
-  XSWC3.SwType[ST].stVal: 1
-  CSLC.Clock[CF].syncPer: 1440
-  CSLC.Clock[CF].dstBegT: M3.5.0
 }
 ```
 
