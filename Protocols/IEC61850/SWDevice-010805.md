@@ -1,11 +1,14 @@
 ## Contract
 
 Contract for [SWDevice-010805](./SWDevice-010805/SWDevice-010805.icd.md)
-Contrary to OSLP the contract between OSGP and IEC61850 devices does not exist of request/response messages, in stead the request messages received by OSGP will result in multiple read/write operations at the device. The response messages returned by OSGP will contain the result of these operations.
+Contrary to OSLP the contract between OSGP and IEC61850 devices does not exist of request/response messages, instead the request messages received by OSGP will result in multiple read/write operations at the device. The response messages returned by OSGP will contain the result of these operations.
 
 ### Messages
 
 The messages below are part of OSGP and implemented in the IEC61850 protocol adapter and supported by the SWDevice-010805 device firmware.
+
+- **[RegisterDeviceRequest](./SWDevice-010805/RegisterDevice.md)** (from device to platform) is a request that notifies the platform a device which wants to register. During the registration the device sends it's identification (serial number), and the device communicates its IP address to the platform.
+- **[RegisterDeviceResponse](./SWDevice-010805/RegisterDevice.md)** (from platform to device) is a response which informs the device that the registration was successful. The device will not register anymore, until the next power cycle or reboot.
 
 - **[StartSelfTestRequest](./SWDevice-010805/StartSelfTest.md)** is a request which commands a device to switch all light relays on.
 - **[StartSelfTestResponse](./SWDevice-010805/StartSelfTest.md)** is a response which returns the result of the StartSelfTestRequest.
@@ -58,9 +61,6 @@ The following message from device to OSGP is also not supported:
 
 
 TODO
-
-- **[RegisterDeviceRequest](./v0.6.1/RegisterDevice.md)** (from device to platform) is a request that notifies the platform a device which wants to register. During the registration the sequence number is reset to a random value, the platform is notified if the device has a light schedule, the type of the device, the device identification, and the device communicates its IP address to the platform.
-- **[RegisterDeviceResponse](./v0.6.1/RegisterDevice.md)** (from platform to device) is a response which holds the time of the platform so the device can synchronize the time, contains location information for the device like GPS coordinates and Day Light Saving time information. The device will sent ConfirmRegisterDeviceRequest after receiving the RegisterDeviceResponse.
 
 - **[EventNotificationRequest](./v0.6.1/EventNotification.md)** (from device to platform) is a request that pushes an event notification from a device to the platform.
 - **[EventNotificationResponse](./v0.6.1/EventNotification.md)** (from platform to device) is a response which confirms the EventNotificationRequest has been executed or rejected.
