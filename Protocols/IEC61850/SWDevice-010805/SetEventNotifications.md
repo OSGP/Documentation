@@ -8,9 +8,9 @@ Response which returns the result of the request.
 
 ### Message definitions
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|CSLC.EvnBuf|CF|enbEvnType|VisString32|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled, all event types enabled: "11FFFFFF"|
 
 ### Example
 
@@ -83,7 +83,7 @@ Soap requests and responses sent to and from platform:
 </SOAP-ENV:Envelope>
 ```
 
-OSLP SetEventNotificationsRequest sent to 'device-01' to set EventNotifications:
+Platform message of data written to the device:
 ``` json
 LogicalDevice: SWDeviceGenericIO
 messageType: SetEventNoficationFilter {

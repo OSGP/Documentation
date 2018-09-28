@@ -8,9 +8,9 @@ Response which returns the result of the request.
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|CSLC.RbOper|ST|Oper.ctlVal|BOOLEAN|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|CSLC.RbOper|ST|Oper.ctlVal|BOOLEAN|Flag which, if set to true, will trigger a reboot|
 
 ### Example
 
@@ -84,7 +84,7 @@ messageType: Reboot {
 }
 ```
 
-OSLP SetRebootResponse sent to platform:
+IEC61850 protocol adapter logging:
 ```
 2018-09-25 10:44:06.142] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.h.DeviceConnection@createObjectReference:94 - Device: KAI-0000000053, ObjectReference: SWDeviceGenericIO/CSLC.RbOper
 2018-09-25 10:44:06.160] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850RebootCommand@apply:41 - device: KAI-0000000053, rebootOperationNode: SWDeviceGenericIO/CSLC.RbOper [CO]
@@ -110,4 +110,4 @@ SWDeviceGenericIO/CSLC.RbOper.Oper.Check: 0x0
 2018-09-25 10:44:06.176] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850RebootCommand@apply:53 - device: KAI-0000000053, set ctlVal to true in order to reboot the device
 2018-09-25 10:44:06.192] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.s.DeviceMessageLoggingService@logMessage:52 - Sending iec61850LogItemRequestMessage for device: KAI-0000000053
 2018-09-25 10:44:06.193] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.s.DeviceResponseService@handleDeviceMessageStatus:42 - OK device message status received: OK
-20```
+```
