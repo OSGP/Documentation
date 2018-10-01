@@ -10,7 +10,7 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled, all event types enabled: "11FFFFFF"|
+|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled, all event types enabled: "11FFFFFF".|
 
 ### Example
 

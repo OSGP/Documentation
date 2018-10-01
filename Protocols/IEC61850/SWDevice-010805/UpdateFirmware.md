@@ -8,12 +8,12 @@ Response which returns the result of the request.
 
 ### IEC61850 Fields
 
-|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|
-|---|---|---|---|
-|CSLC.FuncFwDw|CF|url|VisString255|
-|CSLC.FuncFwDw|CF|startT|Timestamp|
-|CSLC.ScyFwDw|CF|url|VisString255|
-|CSLC.ScyFwDw|CF|startT|Timestamp|
+|**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|---|
+|CSLC.FuncFwDw|CF|url|VisString255|Functional firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmwrae file at startT.|
+|CSLC.FuncFwDw|CF|startT|Timestamp|Functional firmware. Device will try to install new firmware file at this Timestamp.|
+|CSLC.ScyFwDw|CF|url|VisString255|Security firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmwrae file at startT.|
+|CSLC.ScyFwDw|CF|startT|Timestamp|Security firmware. Device will try to install new firmware file at this Timestamp.|
 
 ### Example
 

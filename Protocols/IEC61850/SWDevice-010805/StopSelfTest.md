@@ -11,8 +11,8 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 2 off|
-|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 3 off|
+|XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 2 off.|
+|XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to false, immediately switches relay 3 off.|
 
 ### Example
 
@@ -90,11 +90,11 @@ IEC61850 platform message of the data read from the device:
 ``` json
 LogicalDevice: SWDeviceGenericIO
 messageType: GetStatus {
-  XSWC2.Pos[ST]: false
-  CSLC.SWCf[CF]: RELAY
-  XSWC3.Pos[ST]: false
-  XSWC1.Pos[ST]: false
-  CSLC.EvnBuf[CF]: 1FFFFFF
+  XSWC2.Pos[ST].stVal: false
+  CSLC.SWCf[CF].LT: RELAY
+  XSWC3.Pos[ST].stVal: false
+  XSWC1.Pos[ST].stVal: false
+  CSLC.EvnBuf[CF]enbEvnType: 1FFFFFF
 }
 ```
 

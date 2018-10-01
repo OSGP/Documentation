@@ -10,7 +10,7 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.Sensor|CO|Oper.ctlVal|BOOLEAN|Flag indicating transition type, true = DAY_NIGHT, false = NIGHT_DAY|
+|CSLC.Sensor|CO|Oper.ctlVal|BOOLEAN|Flag indicating transition type, true = DAY_NIGHT, false = NIGHT_DAY.|
 
 ### Example
 

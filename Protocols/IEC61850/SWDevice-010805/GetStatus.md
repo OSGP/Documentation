@@ -10,11 +10,11 @@ Response which returns the result of the request and, if 'result = OK', contains
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|SWDeviceGenericIO/XSWC1.Pos|ST|stVal|BOOLEAN|Current switch status for relay 1|
-|SWDeviceGenericIO/XSWC2.Pos|ST|stVal|BOOLEAN|Current switch status for relay 2|
-|SWDeviceGenericIO/XSWC3.Pos|ST|stVal|BOOLEAN|Current switch status for relay 3|
-|SWDeviceGenericIO/CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled|
-|SWDeviceGenericIO/CSLC.SWCf|CF|LT|VisString64|Device light type, always "RELAY"|
+|XSWC1.Pos|ST|stVal|BOOLEAN|Current switch status for relay 1.|
+|XSWC2.Pos|ST|stVal|BOOLEAN|Current switch status for relay 2.|
+|XSWC3.Pos|ST|stVal|BOOLEAN|Current switch status for relay 3.|
+|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled.|
+|CSLC.SWCf|CF|LT|VisString64|Device light type, always "RELAY".|
 
 ### Example
 

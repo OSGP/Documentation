@@ -10,20 +10,35 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|XSWC1.Sche|CF|sche1.enable|BOOLEAN|Flag indicating the schedule entry is enabled|
-|XSWC1.Sche|CF|sche1.day|INT32|Day in yyyymmdd format|
-|XSWC1.Sche|CF|sche1.tOn|INT32||
-|XSWC1.Sche|CF|sche1.tOnT|INT8||
-|XSWC1.Sche|CF|sche1.tOff|INT32||
-|XSWC1.Sche|CF|sche1.tOffT|INT8||
-|XSWC1.Sche|CF|sche1.minOnPer|INT16U||
-|XSWC1.Sche|CF|sche1.minOffPer|INT16U||
-|XSWC1.Sche|CF|sche1.srBefWd|INT16U||
-|XSWC1.Sche|CF|sche1.srAftWd|INT16U||
-|XSWC1.Sche|CF|sche1.igBefWd|INT16U||
-|XSWC1.Sche|CF|sche1.igAftWd|INT16U||
+|XSWC1.Sche|CF|sche1.enable|BOOLEAN|Flag indicating the schedule entry is enabled.|
+|XSWC1.Sche|CF|sche1.day|INT32|Day in yyyymmdd format or defined by DAY enum.|
+|XSWC1.Sche|CF|sche1.tOn|INT32|Timestamp when relay should switch on or -1 if not used.|
+|XSWC1.Sche|CF|sche1.tOnT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
+|XSWC1.Sche|CF|sche1.tOff|INT32|Timestamp when relay should switch off or -1 if not used.|
+|XSWC1.Sche|CF|sche1.tOffT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
+|XSWC1.Sche|CF|sche1.minOnPer|INT16U|Minimun burning time for this relay.|
+|XSWC1.Sche|CF|sche1.minOffPer|INT16U|Not used.|
+|XSWC1.Sche|CF|sche1.srBefWd|INT16U|Window for light sensor trigger, minutes before astronomical time.|
+|XSWC1.Sche|CF|sche1.srAftWd|INT16U|Window for light sensor trigger, minutes after astronomical time.|
+|XSWC1.Sche|CF|sche1.igBefWd|INT16U|Not used.|
+|XSWC1.Sche|CF|sche1.igAftWd|INT16U|Not used.|
 
 Although the device supports setting 64 schedule entries (sche1...sche64) for 4 relays (XSWC1...XSWC4), the actual number of schedule entries is limited by OSGP to 50.
+
+```
+enum DAY {
+  0 Every day of the week;
+  -1 Every weekday: Monday, Tuesday, Wednesday, Thursday, Friday;
+  -2 Every weekend day: Saturday, Sunday;
+  1 Monday;
+  2 Tuesday;
+  3 Wednesday;
+  4 Thursday;
+  5 Friday;
+  6 Saturday;
+  7 Sunday;
+}
+```
 
 ### Examples
 

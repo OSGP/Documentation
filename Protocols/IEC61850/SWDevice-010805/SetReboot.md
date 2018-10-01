@@ -10,7 +10,7 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.RbOper|ST|Oper.ctlVal|BOOLEAN|Flag which, if set to true, will trigger a reboot|
+|CSLC.RbOper|ST|Oper.ctlVal|BOOLEAN|Flag which, if set to true, will trigger a reboot.|
 
 ### Example
 

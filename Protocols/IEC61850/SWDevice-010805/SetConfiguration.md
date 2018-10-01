@@ -10,24 +10,24 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|XSWC1.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 1, tariff = 0, light = 1|
-|XSWC2.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 2, tariff = 0, light = 1|
-|XSWC3.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 3, tariff = 0, light = 1|
-|CSLC.SWCf|CF|LT|VisString64|Light type, always set to "RELAY"|
-|CSLC.SWCf|CF|adSetOft|INT16|Offset in minutes with respect to astronomical sunset|
-|CSLC.SWCf|CF|adRiseOft|INT16|Offset in minutes with respect to astronomical sunrise|
-|CSLC.Reg|CF|svrAddr|VisString64|OSGP server address for device registration|
-|CSLC.Reg|CF|svrPort|INT32|OSGP server port for device registration|
-|CSLC.Clock|CF|dstBegT|VisString255|Daylight savings time begin time|
-|CSLC.Clock|CF|dstEndT|VisString255|Daylight savings time end time|
-|CSLC.Clock|CF|enbDst|BOOLEAN|Flag indicating whether daylight savings time is enabled|
-|CSLC.Clock|CF|enbNtpC|BOOLEAN|Flag inidicating whether NTP client is enabled|
-|CSLC.Clock|CF|ntpSvrA|VisString255|NTP server address|
-|CSLC.Clock|CF|syncPer|INT16U|Time sync period|
-|CSLC.IPCf|CF|enbDHCP|BOOLEAN|Flag indicating whether DHCP client is enabled|
-|CSLC.IPCf|CF|ipAddr|VisString32|Fixed IP address when DHCP is disabled|
-|CSLC.IPCf|CF|netmask|VisString32|Netmask when DHCP is disabled|
-|CSLC.IPCf|CF|gateway|VisString32|Gateway when DHCP is disabled|
+|XSWC1.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 1, tariff = 0, light = 1.|
+|XSWC2.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 2, tariff = 0, light = 1.|
+|XSWC3.SwType|CO|Oper.ctlVal|INT8|Switch type for relay 3, tariff = 0, light = 1.|
+|CSLC.SWCf|CF|LT|VisString64|Light type, always set to "RELAY".|
+|CSLC.SWCf|CF|adSetOft|INT16|Offset in minutes with respect to astronomical sunset.|
+|CSLC.SWCf|CF|adRiseOft|INT16|Offset in minutes with respect to astronomical sunrise.|
+|CSLC.Reg|CF|svrAddr|VisString64|OSGP server address for device registration.|
+|CSLC.Reg|CF|svrPort|INT32|OSGP server port for device registration.|
+|CSLC.Clock|CF|dstBegT|VisString255|Daylight savings time begin time.|
+|CSLC.Clock|CF|dstEndT|VisString255|Daylight savings time end time.|
+|CSLC.Clock|CF|enbDst|BOOLEAN|Flag indicating whether daylight savings time is enabled.|
+|CSLC.Clock|CF|enbNtpC|BOOLEAN|Flag inidicating whether NTP client is enabled.|
+|CSLC.Clock|CF|ntpSvrA|VisString255|NTP server address.|
+|CSLC.Clock|CF|syncPer|INT16U|Time sync period.|
+|CSLC.IPCf|CF|enbDHCP|BOOLEAN|Flag indicating whether DHCP client is enabled.|
+|CSLC.IPCf|CF|ipAddr|VisString32|Fixed IP address when DHCP is disabled.|
+|CSLC.IPCf|CF|netmask|VisString32|Netmask when DHCP is disabled.|
+|CSLC.IPCf|CF|gateway|VisString32|Gateway when DHCP is disabled.|
 
 ### Example
 
