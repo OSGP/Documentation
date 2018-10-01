@@ -57,14 +57,14 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 - **[SetTransitionRequest](./v0.6.1/SetTransition.md)** (from platform to device) is a request that notifies the device to switch its light relays according to light measurement schedule-entries.
 - **[SetTransitionResponse](./v0.6.1/SetTransition.md)** (from device to platform) is a response which confirms the SetTransitionRequest has been executed or rejected.
 
-- **[UpdateDeviceSslCertificationRequest](./v0.6.1/UpdateDeviceSslCertificationRequest.md)** (from platform to device)
-- **[UpdateDeviceSslCertificationResponse](./v0.6.1/UpdateDeviceSslCertificationResponse.md)** (from platform to device)
+- **[UpdateDeviceSslCertification](./v0.6.1/UpdateDeviceSslCertification.md)** (from platform to device) is a request which commands a device to download a new certificate file from a server using a URL.
+- **[UpdateDeviceSslCertification](./v0.6.1/UpdateDeviceSslCertification.md)** (from platform to device) is a response which returns the result of the UpdateFirmwareRequest. Please note there are several events which are sent from the device to the platform to inform the platform whether or not the certificate file was successfully downloaded and activated.
 
-- **[SetDeviceVerificationKeyRequest](./v0.6.1/SetDeviceVerificationKeyRequest.md)** (from platform to device)
-- **[SetDeviceVerificationKeyResponse](./v0.6.1/SetDeviceVerificationKeyResponse.md)** (from platform to device)
+- **[SetDeviceVerificationKeyRequest](./v0.6.1/SetDeviceVerificationKey.md)** (from platform to device) is a request which sends a new OSGP public key to the device.
+- **[SetDeviceVerificationKeyResponse](./v0.6.1/SetDeviceVerificationKey.md)** (from platform to device) is a response which returns the result of the SetDeviceVerificationKeyRequest.
 
-- **[SwitchFirmwareRequest](./v0.6.1/SwitchFirmwareRequest.md)** (from platform to device)
-- **[SwitchFirmwareResponse](./v0.6.1/SwitchFirmwareResponse.md)** (from platform to device)
+- **[SwitchFirmwareRequest](./v0.6.1/SwitchFirmware.md)** (from platform to device) is a request which commands the device to switch to the other firmware bank.
+- **[SwitchFirmwareResponse](./v0.6.1/SwitchFirmware.md)** (from platform to device) is a response which returns the result of the SwitchFirmwareRequest.
 
-- **[SwitchConfigurationRequest](./v0.6.1/SwitchConfigurationRequest.md)** (from platform to device)
-- **[SwitchConfigurationResponse](./v0.6.1/SwitchConfigurationResponse.md)** (from platform to device)
+- **[SwitchConfigurationRequest](./v0.6.1/SwitchConfigurationRequest.md)** (from platform to device) is a request which commands the device to switch to the other configuration bank.
+- **[SwitchConfigurationResponse](./v0.6.1/SwitchConfigurationResponse.md)** (from platform to device) is a response which returns the result of the SwitchConfigurationRequest.

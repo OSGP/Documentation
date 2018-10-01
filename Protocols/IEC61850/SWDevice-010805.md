@@ -49,21 +49,22 @@ The messages below are part of OSGP and implemented in the IEC61850 protocol ada
 - **[SetConfigurationRequest](./SWDevice-010805/SetConfiguration.md)** is a request which commands a device to update its configuration settings.
 - **[SetConfigurationResponse](./SWDevice-010805/SetConfiguration.md)** is a response which returns the result of the SetConfigurationRequest.
 
+- **[GetPowerUsageHistoryRequest](./SWDevice-010805/GetPowerUsageHistory.md)** (from platform to device) is a request that requests the device to send the content of its power usage registers.
+- **[GetPowerUsageHistoryResponse](./SWDevice-010805/GetPowerUsageHistory.md)** (from device to platform) is a response which confirms the GetPowerUsageHistoryRequest has been executed or rejected and contains the power usage data.
+
+- **[UpdateDeviceSslCertificationRequest](./SWDevice-010805/UpdateDeviceSslCertification.md)** (from platform to device) is a request which commands a device to download a new certificate file from a server using a URL.
+- **[UpdateDeviceSslCertificationResponse](./SWDevice-010805/UpdateDeviceSslCertification.md)** (from platform to device) is a response which returns the result of the UpdateFirmwareRequest. Please note there are several events which are sent from the device to the platform to inform the platform whether or not the certificate file was successfully downloaded and activated.
+
 The following messages are not supported in IEC61850 and will return a UNSUPPORTED_DEVICE_ACTION SOAP Fault when a request is sent:
 - **ResumeScheduleRequest**
 - **SwitchConfigurationRequest**
-  **SwitchFirmwareRequest**
-  **UpdateDeviceSslCertificationRequest**
-  **SetDeviceVerificationKeyRequest**
+- **SwitchFirmwareRequest**
+- **SetDeviceVerificationKeyRequest**
 
 The following message from device to OSGP is also not supported:
-  **ConfirmRegisterDeviceRequest**
-
+- **ConfirmRegisterDeviceRequest**
 
 TODO
 
 - **[EventNotificationRequest](./v0.6.1/EventNotification.md)** (from device to platform) is a request that pushes an event notification from a device to the platform.
 - **[EventNotificationResponse](./v0.6.1/EventNotification.md)** (from platform to device) is a response which confirms the EventNotificationRequest has been executed or rejected.
-
-- **[GetPowerUsageHistoryRequest](./v0.6.1/GetPowerUsageHistory.md)** (from platform to device) is a request that requests the device to send the content of its power usage registers.
-- **[GetPowerUsageHistoryResponse](./v0.6.1/GetPowerUsageHistory.md)** (from device to platform) is a response which confirms the GetPowerUsageHistoryRequest has been executed or rejected and contains the power usage data.

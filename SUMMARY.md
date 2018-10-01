@@ -164,6 +164,7 @@
          * [SetTransition](Protocols/IEC61850/SWDevice-010805/SetTransition.md)
          * [GetStatus](Protocols/IEC61850/SWDevice-010805/GetStatus.md)
          * [GetPowerUsageHistory](Protocols/IEC61850/SWDevice-010805/GetPowerUsageHistory.md)
+         * [UpdateDeviceSslCertification](Protocols/IEC61850/SWDevice-010805/UpdateDeviceSslCertification.md)
    * [DLMS / COSEM](Protocols/DLMS/README.md)
       * [DLMS device simulator](Protocols/DLMS/Devicesimulator.md)
    * [OSLP](Protocols/OSLP/README.md)
