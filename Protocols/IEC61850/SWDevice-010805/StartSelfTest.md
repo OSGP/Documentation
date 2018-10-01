@@ -93,7 +93,7 @@ messageType: GetStatus {
   CSLC.SWCf[CF].LT: RELAY
   XSWC3.Pos[ST].stVal: true
   XSWC1.Pos[ST].stVal: false
-  CSLC.EvnBuf[CF]enbEvnType: 1FFFFFF
+  CSLC.EvnBuf[CF].enbEvnType: 1FFFFFF
 }
 ```
 
