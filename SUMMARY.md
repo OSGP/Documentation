@@ -154,6 +154,7 @@
          * [GetConfiguration](Protocols/IEC61850/SWDevice-010805/GetConfiguration.md)
          * [SetConfiguration](Protocols/IEC61850/SWDevice-010805/SetConfiguration.md)
          * [SetEventNotifications](Protocols/IEC61850/SWDevice-010805/SetEventNotifications.md)
+         * [EventNotification](Protocols/IEC61850/SWDevice-010805/EventNotification.md)
          * [SetSchedule](Protocols/IEC61850/SWDevice-010805/SetSchedule.md)
          * [GetFirmwareVersion](Protocols/IEC61850/SWDevice-010805/GetFirmwareVersion.md)
          * [UpdateFirmware](Protocols/IEC61850/SWDevice-010805/UpdateFirmware.md)
