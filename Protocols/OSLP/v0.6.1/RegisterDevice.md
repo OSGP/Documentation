@@ -2,7 +2,7 @@
 
 ### Description
 
-Note: the device registration is a 2 step process. First RegisterDeviceRequest and RegisterDeviceResponse are exchanged between device and platform. Second [ConfirmRegisterDeviceRequest and ConfirmRegisterDeviceResponse messages](ConfirmRegisterDevice.md) are exchanged.
+The device registration is a 2 step process. First RegisterDeviceRequest and RegisterDeviceResponse are exchanged between device and platform. Second [ConfirmRegisterDeviceRequest and ConfirmRegisterDeviceResponse messages](ConfirmRegisterDevice.md) are exchanged.
 
 Request that notifies the platform a device which wants to register. During the registration the sequence number is reset to a random value the platform is notified if the device has a light schedule, the type of the device, the device identification, and the device communicates its IP address to the platform. Also a random number is determined by the device and this 'randomDevice' should be present in the response form the platform.
 

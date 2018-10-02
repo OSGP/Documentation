@@ -1,6 +1,7 @@
 ## Contract
 
 Contract for [v0.6.1](./v0.6.1/oslp.proto.v0.6.1.md)
+The contract specifies the messages which can be exchanged with an SSLD.
 
 ### Messages
 
@@ -13,10 +14,10 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 - **[ConfirmRegisterDeviceResponse](./v0.6.1/ConfirmRegisterDevice.md)** (from platform to device) is a response which confirms the ConfirmRegisterDeviceRequest has been executed or rejected.
 
 - **[StartSelfTestRequest](./v0.6.1/StartSelfTest.md)** (from platform to device) is a request that notifies the device to switch all relays on.
-- **[StartSelfTestResponse](./v0.6.1/StartSelfTest.md)** (from device to platform) is a response which confirms the StartSelfTestRequest has been executed or rejects the StartSelfTestRequest.
+- **[StartSelfTestResponse](./v0.6.1/StartSelfTest.md)** (from device to platform) is a response which confirms the StartSelfTestRequest has been executed or rejected.
 
 - **[StopSelfTestRequest](./v0.6.1/StopSelfTest.md)** (from platform to device) is a request that notifies the device to switch all relays off.
-- **[StopSelfTestResponse](./v0.6.1/StopSelfTest.md)** (from device to platform) is a response which confirms the StopSelfTestResponse has been executed or rejects the StopSelfTestResponse.
+- **[StopSelfTestResponse](./v0.6.1/StopSelfTest.md)** (from device to platform) is a response which confirms the StopSelfTestRequest has been executed or rejected.
 
 - **[UpdateFirmwareRequest](./v0.6.1/UpdateFirmware.md)** (from platform to device) is a request which notifies the device to download a new firmware version from a server using a URL.
 - **[UpdateFirmwareResponse](./v0.6.1/UpdateFirmware.md)** (from device to platform) is a response which confirms the UpdateFirmwareRequest has been executed or rejects the UpdateFirmwareRequest. Please note there are several events which are sent from the device to the platform to inform the platform when the firmware has been downloaded and whether or not the firmware was successfully activated.
@@ -57,14 +58,14 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 - **[SetTransitionRequest](./v0.6.1/SetTransition.md)** (from platform to device) is a request that notifies the device to switch its light relays according to light measurement schedule-entries.
 - **[SetTransitionResponse](./v0.6.1/SetTransition.md)** (from device to platform) is a response which confirms the SetTransitionRequest has been executed or rejected.
 
-- **[UpdateDeviceSslCertificationRequest](./v0.6.1/UpdateDeviceSslCertificationRequest.md)** (from platform to device)
-- **[UpdateDeviceSslCertificationResponse](./v0.6.1/UpdateDeviceSslCertificationResponse.md)** (from platform to device)
+- **[UpdateDeviceSslCertification](./v0.6.1/UpdateDeviceSslCertification.md)** (from platform to device) is a request which commands a device to download a new certificate file from a server using a URL.
+- **[UpdateDeviceSslCertification](./v0.6.1/UpdateDeviceSslCertification.md)** (from platform to device) is a response which returns the result of the UpdateFirmwareRequest. Please note there are several events which are sent from the device to the platform to inform the platform whether or not the certificate file was successfully downloaded and activated.
 
-- **[SetDeviceVerificationKeyRequest](./v0.6.1/SetDeviceVerificationKeyRequest.md)** (from platform to device)
-- **[SetDeviceVerificationKeyResponse](./v0.6.1/SetDeviceVerificationKeyResponse.md)** (from platform to device)
+- **[SetDeviceVerificationKeyRequest](./v0.6.1/SetDeviceVerificationKey.md)** (from platform to device) is a request which sends a new OSGP public key to the device.
+- **[SetDeviceVerificationKeyResponse](./v0.6.1/SetDeviceVerificationKey.md)** (from platform to device) is a response which returns the result of the SetDeviceVerificationKeyRequest.
 
-- **[SwitchFirmwareRequest](./v0.6.1/SwitchFirmwareRequest.md)** (from platform to device)
-- **[SwitchFirmwareResponse](./v0.6.1/SwitchFirmwareResponse.md)** (from platform to device)
+- **[SwitchFirmwareRequest](./v0.6.1/SwitchFirmware.md)** (from platform to device) is a request which commands the device to switch to the other firmware bank.
+- **[SwitchFirmwareResponse](./v0.6.1/SwitchFirmware.md)** (from platform to device) is a response which returns the result of the SwitchFirmwareRequest.
 
-- **[SwitchConfigurationRequest](./v0.6.1/SwitchConfigurationRequest.md)** (from platform to device)
-- **[SwitchConfigurationResponse](./v0.6.1/SwitchConfigurationResponse.md)** (from platform to device)
+- **[SwitchConfigurationRequest](./v0.6.1/SwitchConfigurationRequest.md)** (from platform to device) is a request which commands the device to switch to the other configuration bank.
+- **[SwitchConfigurationResponse](./v0.6.1/SwitchConfigurationResponse.md)** (from platform to device) is a response which returns the result of the SwitchConfigurationRequest.

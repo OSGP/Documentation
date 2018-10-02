@@ -2,7 +2,7 @@
 
 ### Description
 
-Request that notifies the device to switch all relays off.
+Request that notifies the device to switch all light relays off.
 
 Response communicates status and the result of the test.
 

@@ -2,7 +2,7 @@
 
 ### Description
 
-Request that notifies the device to switch all relays on.
+Request that notifies the device to switch all light relays on.
 
 Response communicates status.
 
