@@ -2,8 +2,11 @@
 
 ### Description
 
-Light sensor device can send buffered report containing the current state of the digital inputs. The buffered report will be sent on data change.
-OSGP will interpret the buffered report and save event information contained in the reports.
+A light sensor device can send a buffered report containing the current state of the digital inputs. The buffered report will be sent on data change.
+OSGP will interpret the buffered report and save event information contained in the report, in this case the state of the digital input:
+```
+AA1TH01LD0/SPGGIO1.Ind.stVal: false
+```
 
 IEC61850 protocol Adapter logging:
 ``` json

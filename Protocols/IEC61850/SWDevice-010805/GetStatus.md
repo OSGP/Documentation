@@ -13,6 +13,7 @@ Response which returns the result of the request and, if 'result = OK', contains
 |XSWC1.Pos|ST|stVal|BOOLEAN|Current switch status for relay 1.|
 |XSWC2.Pos|ST|stVal|BOOLEAN|Current switch status for relay 2.|
 |XSWC3.Pos|ST|stVal|BOOLEAN|Current switch status for relay 3.|
+|XSWC4.Pos|ST|stVal|BOOLEAN|Current switch status for relay 4.|
 |CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled.|
 |CSLC.SWCf|CF|LT|VisString64|Device light type, always "RELAY".|
 

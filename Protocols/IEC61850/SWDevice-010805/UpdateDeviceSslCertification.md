@@ -9,7 +9,7 @@ Request to download a new SSL certificate from the certificate server. The devic
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
 |CSLC.CARepl|CF|url|VisString255|Set new CA file download URL here, device will download the new CA file and then replace the old CA file at startT.|
-|CSLC.CARepl|CF|startT|VisString32|Device will switch CA file at this Timestamp.|
+|CSLC.CARepl|CF|startT|VisString32|Device will download CA file at this Timestamp (date + time).|
 
 ### Example
 

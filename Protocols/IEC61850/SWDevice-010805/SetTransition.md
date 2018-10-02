@@ -2,7 +2,7 @@
 
 ### Description
 
-Request which commands a device to switch all relays configured as light relays according to  a [light schedule-entry](SetSchedule.md).
+Request which informs a device of a daylight transiton: it has become dark (sunset) or light (sunrise). The device will switch the relays, which have schedule entries for transition messages. See [light schedule-entry](SetSchedule.md) for more information regarding switch schedules.
 
 Response which returns the result of the request.
 

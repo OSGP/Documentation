@@ -3,7 +3,7 @@
 ### Description
 
 Request which commands the device to switch on or off one or several light relays.
-If optional value 'index' is omitted, all relays configured as light are switched. In that case, all light relays will switch using only 1 LightValue.
+If optional value 'index' is omitted, all relays configured as light are switched. In that case, the message will contain exactly one LightValue and all relays will switch to that LightValue.
 In case the value 'index' is included, multiple instances of LightValue can be used (up to 6), each indicating a particular relay.
 
 Response which returns the result of the request.
@@ -14,6 +14,7 @@ Response which returns the result of the request.
 |---|---|---|---|---|
 |XSWC2.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to true, immediately switches relay 2 on.|
 |XSWC3.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to true, immediately switches relay 3 on.|
+|XSWC4.Pos|CO|Oper.ctlVal|BOOLEAN|Flag which, if set to true, immediately switches relay 4 on.|
 
 ### Example
 

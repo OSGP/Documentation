@@ -2,7 +2,7 @@
 
 ### Description
 
-Note: the device registration is a 2 step process. First RegisterDeviceRequest is sent from device to platform. Second are writing GPS coordinates to the device and disabling the device registration flag.
+The device registration is a 2 step process. First RegisterDeviceRequest is sent from device to platform. Second are writing GPS coordinates to the device and disabling the device registration flag.
 
 Request that notifies the platform that a device wants to register. During the registration the device identification (serial number) and the IP address are sent to the platform.
 

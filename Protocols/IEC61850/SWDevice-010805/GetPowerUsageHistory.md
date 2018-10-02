@@ -10,8 +10,8 @@ Response contains status and the power usage data, for the requested time period
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.OnItvB|ST|itvX.itv|INT32|Time the relay was ON in minutes.|
-|CSLC.OnItvB|ST|itvX.day|TIMESTAMP|Date of the record.|
+|CSLC.OnItvB|ST|itvX.itv|INT32|Duration the relay was ON in minutes.|
+|CSLC.OnItvB|ST|itvX.day|TIMESTAMP|Date (at midnight) of the record.|
 |CSLC.OnItvB|ST|lastIdx|INT32|Indicates the last record of the cyclic buffer.|
 
 ### Example

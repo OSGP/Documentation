@@ -3,7 +3,7 @@
 ### Description
 
 Request which commands the device to switch all light relays off and then queries the device for the status of the relays.
-Part of this request is also to retrieve the status of the relays after switching off.
+OGSP checks if the status of the relays is as expected (off in this case).
 
 Response which returns the result of the request.
 

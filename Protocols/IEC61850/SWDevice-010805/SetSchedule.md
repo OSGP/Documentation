@@ -8,13 +8,15 @@ Response which returns the result of the request.
 
 ### IEC61850 Fields
 
+The table shows the fields for XSWC1 (relay 1). The device has 4 relays (XSWC1...XSWC4).
+
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
 |XSWC1.Sche|CF|sche1.enable|BOOLEAN|Flag indicating the schedule entry is enabled.|
 |XSWC1.Sche|CF|sche1.day|INT32|Day in yyyymmdd format or defined by DAY enum.|
-|XSWC1.Sche|CF|sche1.tOn|INT32|Timestamp when relay should switch on or -1 if not used.|
+|XSWC1.Sche|CF|sche1.tOn|INT32|Timestamp in hhmm format when relay should switch on or -1 if not used.|
 |XSWC1.Sche|CF|sche1.tOnT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
-|XSWC1.Sche|CF|sche1.tOff|INT32|Timestamp when relay should switch off or -1 if not used.|
+|XSWC1.Sche|CF|sche1.tOff|INT32|Timestamp in hhmm format when relay should switch off or -1 if not used.|
 |XSWC1.Sche|CF|sche1.tOffT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
 |XSWC1.Sche|CF|sche1.minOnPer|INT16U|Minimun burning time for this relay.|
 |XSWC1.Sche|CF|sche1.minOffPer|INT16U|Not used.|
@@ -42,16 +44,16 @@ enum DAY {
 
 ### Examples
 
-#### Example 1: Light schedule based on light-measurement
+#### Example 1: Light schedule based on light measurement
 
 Description:
-This schedule combines a 'morning/evening light' with an 'all night light'. Relay 1 and 2 will be switched on using a light-measurement trigger. Relay 2 will be switched off at 23:00 using an absolute time. Relay 2 will be switched on at 07:00, but only when no light-measurement trigger has been received yet. Relay 1 and 2 will be switched off using a light-measurement trigger.
+This schedule combines a 'morning/evening light' with an 'all night light'. Relay 1 and 2 will be switched on using a light measurement trigger. Relay 2 will be switched off at 23:00 using an absolute time. Relay 2 will be switched on at 07:00, but only when no light measurement trigger has been received yet. Relay 1 and 2 will be switched off using a light measurement trigger.
 
 Screenshot of this schedule in an OSGP client application:
 
 ![screenshot of schedule](./relay-1-and-2-schedule.jpg)
 
-SOAP Request Message for Platform web-service:
+SOAP Request Message for Platform web service:
 
 ``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -283,9 +285,9 @@ IEC61850 protocol adapter logging:
 
 Description for this schedule:
 
-This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be weekday).
+This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be a weekday).
 
-SOAP Request Message for Platform web-service:
+SOAP Request Message for Platform web service:
 
 ``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"

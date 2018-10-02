@@ -3,8 +3,17 @@
 ### Description
 
 Buffered report sent from device to platform containing information about 1 event.
-The devices keeps up to 120 events in the cyclic buffer `CSLC.EvnBuf.evn1/env120`.
-The events are converted to buffered reports when OSGP triggers the device to do so by writing true to `CSLC.evn_rpn01[BR].RptEna`, then the device will send the buffered reports to OSGP.
+The devices keep up to 120 events in the cyclic buffer `CSLC.EvnBuf.evn1/env120`.
+The events are converted to buffered reports when OSGP triggers the device to do so by writing true to `CSLC.evn_rpn01[BR].RptEna`. When this happens, the device will send the buffered reports to OSGP.
+OSGP will save the information specified by the remark field, like the event type and the event time:
+```
+evnType: 4 = TARIFF_EVENTS_TARIFF_ON
+swNum: 1 = get external index for switch 1
+trgType: 3 = fixed time trigger
+swVal: true = ON
+trgTime: 2018-10-01T05:00:00.000Z
+```
+
 Example buffered report:
 ```
                      RptId:     evn_rpn

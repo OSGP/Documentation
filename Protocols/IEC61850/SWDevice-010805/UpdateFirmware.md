@@ -10,10 +10,10 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.FuncFwDw|CF|url|VisString255|Functional firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmwrae file at startT.|
-|CSLC.FuncFwDw|CF|startT|Timestamp|Functional firmware. Device will try to install new firmware file at this Timestamp.|
-|CSLC.ScyFwDw|CF|url|VisString255|Security firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmwrae file at startT.|
-|CSLC.ScyFwDw|CF|startT|Timestamp|Security firmware. Device will try to install new firmware file at this Timestamp.|
+|CSLC.FuncFwDw|CF|url|VisString255|Functional firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmware file at startT.|
+|CSLC.FuncFwDw|CF|startT|Timestamp|Functional firmware. Device will try to install new firmware file at this Timestamp (date + time).|
+|CSLC.ScyFwDw|CF|url|VisString255|Security firmware. Set new firmware file download URL here, device will download the new firmware file and then replace the old firmware file at startT.|
+|CSLC.ScyFwDw|CF|startT|Timestamp|Security firmware. Device will try to install new firmware file at this Timestamp (date + time).|
 
 ### Example
 

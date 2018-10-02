@@ -2,9 +2,7 @@
 
 ### Description
 
-Request which notifies the device that it should switch all relays configured as light relays according to a [light schedule-entry](SetSchedule.md).
-The optional 'time' value can be used to indicate a switch time.
-If the optional 'time' value is omitted the device should switch immediately.
+Request which informs a device of a daylight transiton: it has become dark (sunset) or light (sunrise). The device will switch the relays, which have schedule entries for transition messages. The optional 'time' value can be used to indicate a switch time. If the optional 'time' value is omitted the device should switch immediately. See [light schedule-entry](SetSchedule.md) for more information regarding switch schedules.
 
 Response communicates status.
 

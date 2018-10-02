@@ -95,13 +95,13 @@ enum Status {
 
 ### Examples
 
-#### Example 1: Light schedule based on light-measurement
+#### Example 1: Light schedule based on light measurement
 
 Screenshot of this schedule in an OSGP client application.
 
 ![screenshot of schedule](./relay-1-and-2-schedule.jpg)
 
-SOAP Request Message for Platform web-service:
+SOAP Request Message for Platform web service:
 
 ``` xml
 <soapenv:Envelope
@@ -317,7 +317,7 @@ setScheduleResponse {
 
 Description for this schedule:
 
-This schedule combines a 'morning/evening light' with an 'all night light'. Relay 1 and 2 will be switched on using a light-measurement trigger. Relay 2 will be switched off at 23:00 using an absolute time. Relay 2 will be switched on at 07:00, but only when no light-measurement trigger has been received yet. Relay 1 and 2 will be switched off using a light-measurement trigger.
+This schedule combines a 'morning/evening light' with an 'all night light'. Relay 1 and 2 will be switched on using a light measurement trigger. Relay 2 will be switched off at 23:00 using an absolute time. Relay 2 will be switched on at 07:00, but only when no light measurement trigger has been received yet. Relay 1 and 2 will be switched off using a light measurement trigger.
 
 The first schedule-entry:
 ``` json
@@ -337,17 +337,17 @@ The first schedule-entry:
 ```
 Definitions:
 - 'index: "\000"' means: all device relays configured as LIGHT relays (see SetConfigurationRequest message)
-- 'light-measurement trigger' is defined as: a SetTransitionRequest message containing a TransitionType matching the schedule-entry's actionTime value (SUNRISE matches NIGHT_DAY and SUNSET matches DAY_NIGHT)
+- 'light measurement trigger' is defined as: a SetTransitionRequest message containing a TransitionType matching the schedule-entry's actionTime value (SUNRISE matches NIGHT_DAY and SUNSET matches DAY_NIGHT)
 
 Specifies:
 For all (weekday: ALL) 7 days of the week,
-when a light-measurement trigger is received in the morning (actionTime: SUNRISE),
+when a light measurement trigger is received in the morning (actionTime: SUNRISE),
 then all device relays configured as LIGHT relays have to switch off (on: false).
 
-When and only when a SUNRISE transition is received via a light-measurement trigger (LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
-then the device shall switch for the received light-measurement trigger.
+When and only when a SUNRISE transition is received via a light measurement trigger (LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
+then the device shall switch for the received light measurement trigger.
 
-When no SUNRISE transition is received via a light-measurement trigger (LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
+When no SUNRISE transition is received via a light measurement trigger (LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
 then the device shall switch at the end of the window.
 
 The triggerType (LIGHT_TRIGGER) defines how a SUNRISE (actionTime) transition will be triggered.
@@ -370,17 +370,17 @@ The second schedule-entry:
 ```
 Definitions:
 - 'index: "\000"' means: all device relays configured as LIGHT relays (see SetConfigurationRequest message)
-- 'light-measurement trigger' is defined as: a SetTransitionRequest message containing a TransitionType matching the schedule-entry's actionTime value (SUNRISE matches NIGHT_DAY and SUNSET matches DAY_NIGHT)
+- 'light measurement trigger' is defined as: a SetTransitionRequest message containing a TransitionType matching the schedule-entry's actionTime value (SUNRISE matches NIGHT_DAY and SUNSET matches DAY_NIGHT)
 
 Specifies:
 For all (weekday: ALL) 7 days of the week,
-when a light-measurement trigger is received in the morning (actionTime: SUNSET),
+when a light measurement trigger is received in the morning (actionTime: SUNSET),
 then all device relays configured as LIGHT relays have to switch on (on: true).
 
-When and only when a SUNSET transition is received via a light-measurement trigger (triggerType: LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunset,
-then the device shall switch for the received light-measurement trigger.
+When and only when a SUNSET transition is received via a light measurement trigger (triggerType: LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunset,
+then the device shall switch for the received light measurement trigger.
 
-When no SUNSET transition is received via a light-measurement trigger (triggerType: LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
+When no SUNSET transition is received via a light measurement trigger (triggerType: LIGHT_TRIGGER) within a window of 15 minutesBefore and 15 minutesAfter the calculated astronomical time for sunrise,
 then the device shall switch at the end of the window.
 
 The triggerType (LIGHT_TRIGGER) defines how a SUNSET (actionTime) transition will be triggered.
@@ -890,7 +890,7 @@ This schedule consists of 1 page, and uses 'minimumLightOn' to indicate a minima
 
 #### Example 4: Tariff Schedule
 
-SOAP Request Message for Platform web-service:
+SOAP Request Message for Platform web service:
 
 ``` xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:sch="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
@@ -1198,7 +1198,7 @@ setScheduleResponse {
 
 Description for this schedule:
 
-This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be weekday).
+This schedule defines the tariff switching moments. For most weekdays of the year the tariff is high from 7 'o clock in the morning until 11 'o clock in the evening. During the night and weekend, the tariff is low. However for certain days, like Christmas Day, the tariff has to be low as well (Christmas Day may be a weekday).
 
 The first schedule-entry:
 ``` json
