@@ -167,7 +167,7 @@
          * [GetPowerUsageHistory](Protocols/IEC61850/SWDevice-010805/GetPowerUsageHistory.md)
          * [UpdateDeviceSslCertification](Protocols/IEC61850/SWDevice-010805/UpdateDeviceSslCertification.md)
       * [FlexOVL_540_171101_2](Protocols/IEC61850/FlexOVL_540_171101_2.md)
-         * [FlexOVL_540_171101_2_out.icd](Protocols/IEC61850/FlexOVL_540_171101_2/FlexOVL_540_171101_2.out.icd)
+         * [FlexOVL_540_171101_2_out.icd](Protocols/IEC61850/FlexOVL_540_171101_2/FlexOVL_540_171101_2_out.icd.md)
          * [GetStatus](Protocols/IEC61850/FlexOVL_540_171101_2/GetStatus.md)
          * [EventNotification](Protocols/IEC61850/FlexOVL_540_171101_2/EventNotification.md)
    * [DLMS / COSEM](Protocols/DLMS/README.md)
