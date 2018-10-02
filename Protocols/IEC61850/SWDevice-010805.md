@@ -1,6 +1,6 @@
 ## Contract
 
-Contract for [SWDevice-010805](./SWDevice-010805/SWDevice-010805-icd.md)
+Contract for [SWDevice-010805](./SWDevice-010805/SWDevice-010805.icd.md)
 The contract specifies the messages which can be exchanged with an SSLD.
 
 ### Messages
