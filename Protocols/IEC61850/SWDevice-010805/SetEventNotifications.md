@@ -10,7 +10,7 @@ Response which returns the result of the request.
 
 |**ATTRIBUTE**|**FC**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
 |---|---|---|---|---|
-|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled, to enable all event types use: "1FFFFFF".|
+|CSLC.EvnBuf|CF|enbEvnType|VisString32|Bitmask indicating which event notification types are enabled, to enable all event types use: "3FFFFFF".|
 
 ### Example
 
@@ -87,7 +87,7 @@ Platform message of data written to the device:
 ``` json
 LogicalDevice: SWDeviceGenericIO
 messageType: SetEventNoficationFilter {
-  CSLC.EvnBuf[CF].enbEvnType: 1FFFFFF
+  CSLC.EvnBuf[CF].enbEvnType: 3FFFFFF
 }
 ```
 
@@ -104,7 +104,7 @@ IEC61850 protocol adapter logging:
 2018-09-27 07:45:09.306] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@connect:159 - Connected to device: KAI-0000000053, fetched server model. Start time: 2018-09-27T07:45:09.226Z, end time: 2018-09-27T07:45:09.305Z, total time in milliseconds: 79
 2018-09-27 07:45:09.313] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850SetEventNotificationFilterCommand@apply:37 - Setting the event notification filter
 2018-09-27 07:45:09.313] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.h.DeviceConnection@createObjectReference:94 - Device: KAI-0000000053, ObjectReference: SWDeviceGenericIO/CSLC.EvnBuf
-2018-09-27 07:45:09.329] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850SetEventNotificationFilterCommand@apply:44 - Updating the enabled EventType filter to 1FFFFFF
+2018-09-27 07:45:09.329] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.c.Iec61850SetEventNotificationFilterCommand@apply:44 - Updating the enabled EventType filter to 3FFFFFF
 2018-09-27 07:45:09.329] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.helper.NodeContainer@writeString:99 - Device: KAI-0000000053, writing 1FFFFFF to enbEvnType
 2018-09-27 07:45:09.348] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.s.DeviceMessageLoggingService@logMessage:52 - Sending iec61850LogItemRequestMessage for device: KAI-0000000053
 2018-09-27 07:45:09.349] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.s.DeviceResponseService@handleDeviceMessageStatus:42 - OK device message status received: OK
