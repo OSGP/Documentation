@@ -2,7 +2,7 @@
 
 ### Description
 
-Request which notifies the device to sent the current firmware version.
+Request which notifies the device to send the current firmware version.
 
 Response containing the firmware version.
 

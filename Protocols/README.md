@@ -15,4 +15,4 @@ The DLMS protocol is used for (mainly) smart metering.
 
 #### IEC61850
 
-The IEC61850 implementation is used for e.g. distibution automation, microgrids and public lighting.
+The IEC61850 implementation is used for e.g. distribution automation, microgrids and public lighting.

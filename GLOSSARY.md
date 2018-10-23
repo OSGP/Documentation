@@ -3,11 +3,18 @@ Open Smart Grid Platform, a solution to control and monitor smart devices. The O
 
 # SSLD
 Sub Station Lighting Device, a smart grid device that is used to control and monitor public lighting (several street lights) and tariff switching for an area.
+
 # PSLD
 Public Street Lighting Device, a smart grid device that is used to control and monitor a single street light.
 
+# LMD
+Light Measurement Device, a smart grid device which uses up to 4 light sensor arrays to determine light or dark for several areas.
+
 # OSLP
 Open Street Light Protocol, the protocol used to communicate with SSLD and other smart grid devices.
+
+# IEC61850
+IEC 61850 is an international standard defining communication protocols for intelligent electronic smart devices at electrical substations. See [IEC](https://www.iec.ch/smartgrid/standards/)
 
 # DLMS
 Device Language Message Specification, the protocol used to communicate with Smart Meters and other smart grid devices.
