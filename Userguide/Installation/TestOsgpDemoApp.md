@@ -2,7 +2,7 @@
 This chapter will describe the steps needed to test the Open Smart Grid Platform using the Web Demo Application.
 
 
-- Open Eclipse and import the following folder as as Maven project  ```/home/dev/Sources/OSGP/PublicLightingDemoApp/```
+- Open Eclipse and import the following folder as Maven project  ```/home/dev/Sources/OSGP/open-smart-grid-platform/public-lighting-demo-app/```
 - Add the PublicLightingDemoApp components to the Tomcat Server.
 - (Re)Start the Tomcat Server.
 
@@ -10,7 +10,7 @@ This chapter will describe the steps needed to test the Open Smart Grid Platform
 ### Creating a device
 To access the Demo App go to the following URL: ```https://localhost/web-demo-app/```
 
-If you encounter a Untrusted Connection page, go to 'I Understand the Risks' -> Add Exception.. -> Confirm Security Exception
+If you encounter an Untrusted Connection page, go to 'I Understand the Risks' -> Add Exception.. -> Confirm Security Exception
 ![alt text](./installation-script-screenshots/50.png)
 
 ![alt text](./installation-script-screenshots/59.png)
@@ -20,7 +20,7 @@ Click the Add a Device button in the Menu bar, and enter ```SSLD_000-00-01``` at
 
 ![alt text](./installation-script-screenshots/60.png)
 
-The following screen will appear, it shows that the device has been succesfully added to the Platform.
+The following screen will appear, it shows that the device has been successfully added to the Platform.
 
 ![alt text](./installation-script-screenshots/61.png)
 
@@ -38,7 +38,7 @@ Fill out the fields like this:
 - Device Identification: SSLD_000-00-01
 - IP Address: 127.0.0.1
 - Device Type: SSLD
-- Protocol: OSLP
+- Protocol: OSLP_ELSTER
 
 Click Create Device
 ![alt text](./installation-script-screenshots/52.png)
@@ -78,4 +78,4 @@ In the home screen of the OSLP device simulator, the lightbulb should light up f
 
 ![alt text](./installation-script-screenshots/57.png)
 
-This step also condcludes the installation manual.
+This step also concludes the installation manual.
