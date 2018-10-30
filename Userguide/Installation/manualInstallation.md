@@ -68,7 +68,7 @@ Execute the script ```/home/dev/Sources/OSGP/Config/scripts/create-symlinks.sh``
 
 ****Note**** This script uses hard coded references to ```/home/dev/Sources/OSGP/*```, if you used a different user, please edit the script before executing it.
 
-The script will make symlinks to certificates, to Apache2 configuration and copy configuration settings as samples to locations where theses properties may be overridden.
+The script will make symlinks to certificates, to Apache HTTP server configuration and copy configuration settings as samples to locations where these properties may be overridden.
 
 ### Initiating the Database
 To create the database run the following command (Change /home/dev/ in case of no dev user)
