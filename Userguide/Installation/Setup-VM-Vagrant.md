@@ -89,7 +89,9 @@ Don't log in yet, wait until the script in the Console is finished.
 #### Tip
  - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
 
-Now that the script has ran its course, it will automatically log in on the Ubuntu virtual machine as user *dev*. For some actions, like `sudo`, you will have to enter the password of user *dev*. The password for user *dev* is *dev*.
+Now that the script has ran its course, it will automatically log in on the Ubuntu virtual machine as user *dev*.
+
+> **note:** For some actions, like `sudo`, you will have to enter the password of user *dev*. The password for user *dev* is *dev*.
 
 ## Optimize your Open Smart Grid Platform Development virtualbox image.
 At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.2. Platform Setup.
