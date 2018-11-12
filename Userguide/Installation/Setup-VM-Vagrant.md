@@ -27,7 +27,7 @@ The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubun
 
 Start by downloading VirtualBox by going to <https://www.virtualbox.org/wiki/Downloads>
 And follow the installation steps. 
-> **note:** If you already have VirtualBox, make sure it is at least **version 5.1.6**
+> **note:** If you already have VirtualBox, make sure it is at least **version 5.1.32**
 
 ![alt text](./installation-script-screenshots/01.png)
 
@@ -38,7 +38,7 @@ Now download and install Vagrant. Vagrant is available at the following URL:
 
 ![alt text](./installation-script-screenshots/02.png)
 
-> **note:** If you already have Vagrant, make sure it is at least **version 1.8.6**
+> **note:** If you already have Vagrant, make sure it is at least **version 2.1.1**
 Complete the installation and restart your PC.
 
 > **note:** If you did a fresh install of Vagrant and already had a command prompt open, make sure you close this command prompt and open it again.
@@ -50,7 +50,7 @@ Complete the installation and restart your PC.
 ## Download and run the Vagrant file
 First create a new directory (for example: `D:\My Vagrant Images\OSGP Development\`)
 
-Browse to [https://github.com/OSGP/Config/tree/development/vagrant](https://github.com/OSGP/Config/tree/development/vagrant) and save the png image and Vagrantfile files in your newly created directory.
+Browse to <https://github.com/OSGP/Config/tree/development/vagrant> and save the png image and Vagrantfile files in your newly created directory.
 
 ![alt text](./installation-script-screenshots/03.png)
 
@@ -89,7 +89,7 @@ Don't log in yet, wait until the script in the Console is finished.
 #### Tip
  - If the script fails for some reason (eg. Errors in the console such as time outs during downloading), you can retry the procedure by running the following command `vagrant destroy && vagrant up`
 
-Now that the script has ran its course, go to the Ubuntu virtual machine and log in as 'The "dev" user', when asked for a password, enter 'dev'. 
+Now that the script has ran its course, it will automatically log in on the Ubuntu virtual machine as user *dev*. For some actions, like `sudo`, you will have to enter the password of user *dev*. The password for user *dev* is *dev*.
 
 ## Optimize your Open Smart Grid Platform Development virtualbox image.
 At this point you also can adjust the virtualbox settings like cpus and memory size. If you don't want to adjust this proceed to Chapter 2.1.2. Platform Setup.
@@ -106,14 +106,14 @@ Now go to the Processor Tab and increase the amount of Processors to the maximum
 
 ![alt text](./installation-script-screenshots/08.png)
 
-Close the Settings window and Start the Virtual Machine again. Once it is booted, you should be automatically logged in as the 'Dev' user.
+Close the Settings window and Start the Virtual Machine again. Once it is booted, you should be automatically logged in as the 'dev' user.
 
 ## Post actions
 
 In order to use git correctly you need to execute the following commands in a terminal:
 ```shell
-git config --global user.name "<your full name>"
-git config --global user.email <your email address>
+git config --global user.name "your full name"
+git config --global user.email yourEmailAddress
 ```
 
 ## Recap

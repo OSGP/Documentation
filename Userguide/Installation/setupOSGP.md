@@ -6,10 +6,7 @@ Open Eclipse by clicking the shortcut on the Desktop and import the projects.
 
 Go to File -> Import -> Existing Maven Projects, browse to folder `/home/dev/Sources/OSGP`
 
-Import projects from the following locations (in the order as mentioned below)
-
-- `/home/dev/Sources/OSGP/open-smart-grid-platform`
-- `/home/dev/Sources/OSGP/open-smart-grid-platform/public-lighting-demo-app`
+Import the projects from location `/home/dev/Sources/OSGP/open-smart-grid-platform`.
 
 ### Creating an Apache Tomcat Server
 
@@ -19,33 +16,33 @@ In Eclipse go to Window -> Open Perspective -> Debug
 In the 'Debug' perspective, go to the 'Servers' view and add a new Apache Tomcat server, Tomcat is available in the folder `/home/dev/Tools/tomcat` (or in another location if you didn't set up a VM using Vagrant, the latest version usually works fine).
 
 Click on Next
-![alt text](./installation-script-screenshots/17.png)
+![alt text](./installation-script-screenshots/tomcat-1-define-server.png)
 
 Click on Finish
-![alt text](./installation-script-screenshots/18.png)
+![alt text](./installation-script-screenshots/tomcat-2-edit-server-runtime.png)
 
-![alt text](./installation-script-screenshots/24.png)
-After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 3.
-![alt text](./installation-script-screenshots/25.png)
+![alt text](./installation-script-screenshots/tomcat-3-created.png)
+After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 30.
+![alt text](./installation-script-screenshots/tomcat-4-timeouts.png)
 
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments':
 `-Xms512m -Xmx2048m -Xss512k -XX:MaxMetaspaceSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true`
-![alt text](./installation-script-screenshots/26.png)
+![alt text](./installation-script-screenshots/tomcat-5-launch-configuration-old.png)
 
-![alt text](./installation-script-screenshots/27.png)
+![alt text](./installation-script-screenshots/tomcat-6-launch-configuration-new.png)
 
 ### Setting Up Apache Tomcat Server Context
 All modules contain their own context.xml. In the module specific context.xml are the environment variables defined where the global and module specific configuration files are located. Default they will point to a location in */etc/osp/*.
 
 If you want to deviate from this, you might set up the context.xml in Tomcat to be able to redirect in one file to different locations.  This is optional and not required.
 In order to use a custom context.xml, copy the entries in `/home/dev/Sources/OSGP/Config/tomcat/context.xml.sample` to the Tomcat context.xml in the eclipse Servers folder, to map configuration file names to file paths.
-![alt text](./installation-script-screenshots/28.png)
+![alt text](./installation-script-screenshots/context.xml.sample.png)
 
-![alt text](./installation-script-screenshots/29.png)
+![alt text](./installation-script-screenshots/context.xml.png)
 
 ### Deploying all Open Smart Grid Platform components to Apache Tomcat Server
-Continue by adding the Maven Projects to the Tomcat server by right clicking on the Tomcat server and choosing 'Add and Remove', followed by clicking on the 'Add All' button.
-![alt text](./installation-script-screenshots/30.png)
+Continue by adding the Maven Projects to the Tomcat server by right clicking on the Tomcat server and choosing 'Add and Remove'. Select all available resources, except for osgp-protocol-simulator-61850 (which is for advanced use and requires additional configuration), then click the 'Add' button.
+![alt text](./installation-script-screenshots/add-resources.png)
 At this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup.
 
 ### Starting Apache ActiveMQ
@@ -62,7 +59,7 @@ This starts ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach fr
 
 ### Starting Apache Tomcat Server
 With ActiveMQ running, the Tomcat server can be started. Go to Eclipse, go to the Servers tab in the Debug view, and right click on the Tomcat server and select 'Start'.
-![alt text](./installation-script-screenshots/32.png)
+![alt text](./installation-script-screenshots/tomcat-7-tomcat-started.png)
 
 ### Starting pgAdmin III and Connect to PostgreSQL
 Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using
