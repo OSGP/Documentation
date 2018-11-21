@@ -32,14 +32,14 @@ Alternatively you can create the 'admin' project yourself by following the steps
 
 - Right click the 'admin' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
-/home/dev/Sources/OSGP/Shared/osgp-ws-admin/src/main/resources/DeviceManagement.wsdl
+/home/dev/Sources/OSGP/open-smart-grid-platform/osgp/shared/osgp-ws-admin/src/main/resources/DeviceManagement.wsdl
 ```
 
-- Make sure the box 'Create sample requests for all operators' is checked, and click OK.
+- Make sure the box 'Create sample requests for all operations' is checked, and click OK.
 ![alt text](./installation-script-screenshots/42.png)
 
 ### Adding the 'Public Lighting' Soap project.
-Import the 'public-lighting' project by clicking File -> Import project. Browse to `/home/dev/Sourcees/OSGP/Config/soapui/`, select 'public-lighting-soapui-project.xml' and click open.
+Import the 'public-lighting' project by clicking File -> Import project. Browse to `/home/dev/Sources/OSGP/Config/soapui/`, select 'public-lighting-soapui-project.xml' and click open.
 
 Alternatively you can create the 'public-lighting' project yourself by following the steps below:
 
@@ -52,10 +52,10 @@ Alternatively you can create the 'public-lighting' project yourself by following
 
 - Right click the 'public-lighting' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
-/home/dev/Sources/OSGP/Shared/osgp-ws-publiclighting/src/main/resources/PublicLightingAdHocManagement.wsdl
+/home/dev/Sources/OSGP/open-smart-grid-platform/osgp/shared/osgp-ws-publiclighting/src/main/resources/PublicLightingAdHocManagement.wsdl
 ```
 
-- Make sure the box 'Create sample requests for all operators' is checked, and click OK.
+- Make sure the box 'Create sample requests for all operations' is checked, and click OK.
 ![alt text](./installation-script-screenshots/45.png)
 
 ### First SOAP requests to add a device to the open smart grid platform
@@ -65,7 +65,7 @@ Before sending the request, the test-org.pfx should be added as SSL Keystore: Go
 
 ![alt text](./installation-script-screenshots/46.png)
 
-A SSLD needs to be added to the platform, aswell as a manufacturer and a public key for the SSLD.
+An SSLD needs to be added to the platform, as well as a manufacturer and a public key for the SSLD.
 A couple of steps need to be performed to realize this.
 
 1 Add manufacturer
@@ -74,7 +74,7 @@ A couple of steps need to be performed to realize this.
 4 Setup a protocol for the SSLD to use
 5 Set the public key for the SSLD (in case of OSLP)
 
-The AddManufacturer function adds a new manufacturer to OSGP. All devices are coupled to an manufacturer.
+The AddManufacturer function adds a new manufacturer to OSGP. All devices are coupled to a manufacturer.
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/common/firmwaremanagement/2014/10">
@@ -236,7 +236,7 @@ In the Firefox Browser, open the Device Simulator by going to the following URL:
 ```
 https://localhost/web-device-simulator/devices
 ```
-If you encounter a Untrusted Connection page, go to 'I Understand the Risks' -> Add Exception.. -> Confirm Security Exception
+If you encounter an Untrusted Connection page, go to 'I Understand the Risks' -> Add Exception.. -> Confirm Security Exception
 ![alt text](./installation-script-screenshots/50.png)
 
 Click Add Device
@@ -298,7 +298,7 @@ Submit the request. Take note of the CorrelationUid in the response. You can use
 In the home screen of the OSLP device simulator, the lightbulb should light up for SSLD_000-00-01. This means that the request succeeded.
 ![alt text](./installation-script-screenshots/57.png)
 
-The last request concerns the response form the previous SetLight request.
+The last request concerns the response from the previous SetLight request.
 In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' project. Set the following parameters in the request (And the keystore in the request properties). Make sure to replace the CorrelationUid with the value from the respons from the SetLight request.
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns1="http://www.opensmartgridplatform.org/schemas/publiclighting/adhocmanagement/2014/10">
@@ -327,4 +327,4 @@ In SoapUi open Request 1 under 'GetSetLightResponse' in the 'public-lighting' pr
 
 The server replied Ok, indicicating that the SetLight request has been processed succesfully.
 
-This step also condcludes the installation manual.
+This step also concludes the installation manual.
