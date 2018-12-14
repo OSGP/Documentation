@@ -22,9 +22,9 @@ This domain could be used to replace ripple control tariff signals.
 ## TARIFF (normal) vs. TARIFF_REVERSED
 When configuring a device via the platform to switch relays according to a tariff schedule, the device can be instructed to switch the tariff relay normally ("TARIFF") or reversed ("TARIFF_REVERSED").
 
-The devices themselves are unaware of the difference between TARIFF and TARIFF_REVERSED. When sending a setScheduleRequest message for a tariff schedule to the platform, the tariff switching domain adapter checks if it's a TARIFF_REVERSED schedule. If so, the tariff switching domain adapter will invert the relay value for all schedule entries before the schedule is sent to the device.
+The devices themselves are unaware of the difference between TARIFF and TARIFF_REVERSED. When sending a setScheduleRequest message for a tariff schedule to the platform, the tariff switching domain adapter checks if the device relay(s) are configured with TARIFF_REVERSED. If so, the tariff switching domain adapter will invert the relay value for all tariff schedule entries before the tariff schedule is sent to the device.
 
- When two devices have the same schedule, while one device is using TARIFF and the other TARIFF_REVERSED, the state of their tariff relays will always be the opposite of each other.
+When two devices have the same schedule, while one device is using TARIFF and the other TARIFF_REVERSED, the state of their tariff relays will always be the opposite of each other.
 
 ### Communicated/Stored values
 The values as shown in the table below will be returned, when getting the status from a device or from the platform.
