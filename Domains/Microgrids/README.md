@@ -31,7 +31,7 @@ In order to determine whether all report data are received, the response of a Ge
 
 ### WSDLs
 
-* [WSDL's and schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-microgrids/src/main/resources)
+* [WSDL's and schema's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-microgrids/src/main/resources)
 
 ### Cucumber test
 Functionality like **GetData** can now be tested, with the Cucumber framework, using the **protocol-simulator-iec61850**. This simulator can be started from the Cucumber tests, and is configured with its own properties file.

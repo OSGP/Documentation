@@ -9,7 +9,7 @@ The technology and tools used can be found in the [Technology stack](../Architec
 - Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/code-format)
 - Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/save-actions)
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
-- Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests repo](https://github.com/OSGP/Integration-Tests)
+- Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests](https://github.com/OSGP/open-smart-grid-platform/tree/development/integration-tests)
 - In case you are not familiar with behaviour driven tests, include unit tests
 - Fix SonarQube issues
 - Issue pull request (preferable to development branch)
