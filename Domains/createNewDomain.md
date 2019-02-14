@@ -35,11 +35,10 @@ OSGP uses a couple of Java enums to identify all available services the platform
 * The NotificationType enum and the NewDomainRequestMessageType enum are identical and contain the services for 1 domain. The NotificationType enum is generated from the wsdl service definition for the notification service. The NewDomainType enum is defined in the Web Service Layer for the new domain and is used to pass the message type to the other layers of OSGP.
 * DeviceRequestMessageType will contain the services for 1 protocol Strictly speaking this enum is not necessary to add a new domain because the enum is located in the protocol layer of OSGP.
 
-Each new service that is offered by the domain, for instance GET_DATA or SET_DATA, must be added to 4 java enums:
+Each new service that is offered by the domain, for instance GET_DATA or SET_DATA, must be added to 3 java enums:
 1. NotificationType (https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-microgrids/src/main/resources/schemas/notification.xsd, generated from wsdl with JAXB)
 2. DeviceFunction (https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/platform/osgp-domain-core/src/main/java/org/opensmartgridplatform/domain/core/valueobjects/DeviceFunction.java)
-3. NewDomainRequestMessageType (see for instance, https://github.com/OSGP/Platform/blob/development/osgp-adapter-ws-microgrids/src/main/java/org/opensmartgridplatform/adapter/ws/microgrids/infra/jms/MicrogridsRequestMessageType.java)
-4. DeviceRequestMessageType (https://github.com/OSGP/Protocol-Adapter-IEC61850/blob/development/osgp-protocol-adapter-iec61850/src/main/java/org/opensmartgridplatform/adapter/protocol/iec61850/infra/messaging/DeviceRequestMessageType.java or any other protocol adapter)
+3. MessageType (https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/shared/src/main/java/org/opensmartgridplatform/shared/infra/jms/MessageType.java)
 
 #### SQL for the new domain
 A Flyway script should be added for system data. For a new domain a new record must be inserted in the table domain_info in the core database. Check for instance the Flyway script for Distribution Automation https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/platform/osgp-core/src/main/resources/db/migration/V20170508125704045__Added_Distribution_Automation_domain_info.sql.
