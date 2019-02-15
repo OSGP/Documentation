@@ -7,7 +7,7 @@ All requests have similar response behaviour which is described in [ResponseMess
 
 ### References
 
-XSD: [sm-notification.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-notification.xsd)
+XSD: [sm-notification.xsd](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-smartmetering/src/main/resources/schemas/sm-notification.xsd)
 
-WSDL: [SmartMeteringNotification.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringNotification.wsdl)
+WSDL: [SmartMeteringNotification.wsdl](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-smartmetering/src/main/resources/SmartMeteringNotification.wsdl)
 

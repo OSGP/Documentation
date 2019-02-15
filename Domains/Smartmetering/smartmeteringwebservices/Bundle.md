@@ -42,7 +42,7 @@ Currently, the following actions are supported:
 
 ### References
 
-XSD: [sm-bundle.xsd](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/schemas/sm-bundle.xsd)
+XSD: [sm-bundle.xsd](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-smartmetering/src/main/resources/schemas/sm-bundle.xsd)
 
-WSDL: [SmartMeteringBundle.wsdl](https://github.com/OSGP/Shared/blob/development/osgp-ws-smartmetering/src/main/resources/SmartMeteringBundle.wsdl)
+WSDL: [SmartMeteringBundle.wsdl](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-smartmetering/src/main/resources/SmartMeteringBundle.wsdl)
 

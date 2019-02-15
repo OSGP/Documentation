@@ -22,5 +22,5 @@ This domain consist of Switching schedules, groups, light sensors, manual switch
 | **PublicLightingScheduleManagement** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 
-* [PublicLighting WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-publiclighting/src/main/resources)
-* [PublicLighting XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-publiclighting/src/main/resources/schemas)
+* [PublicLighting WSDL's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-publiclighting/src/main/resources)
+* [PublicLighting XSD schema's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-publiclighting/src/main/resources/schemas)
