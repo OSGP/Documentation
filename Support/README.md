@@ -6,7 +6,4 @@ There are multiple options for support
 Community members can help you on voluntary basis. See the open source and community section for more information where you can ask your questions.
 
 ## Commercial support
-If you'd like professional support for your Open Smart Grid Platform use case, consider support by one of the companies below.
-
-Your company here? Contact us!
-- http://opensmartgridplatform.org/contact/
+Their is currently no commercial support availible. If you'd like to provide professional support, consider starting a support business/company and metion your company name here (pull-request or info@opensmartgridplatform.org).
