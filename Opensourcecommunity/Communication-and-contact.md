@@ -8,11 +8,11 @@ Once we get the foundation going, we will open an address so you can directly co
 
 ## Jira
 
-Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Smart Society Services for synergy reasons. 
-Once we have multiple contributors outside Smart Society Services we can move to a dedicated Jira instance or something else.
+Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Alliander for synergy reasons. 
+Once we have multiple contributors outside Alliander we can move to a dedicated Jira instance or something else.
 
 Once you get actively involved, you can request write permissions on the Jira board.
-You can request write access to the Jira issue board by sending a request to opensource@smartsocietyservices.com (Marcel checks this mailbox for Jira requests).
+You can request write access to the Jira issue board by sending a request to info@opensmartgridplatform.org.
 
 ### New Features
 
