@@ -33,7 +33,7 @@ FlexOVL, a new and flexible switching system of public lighting delivers more co
 
 **FlexOVL web application (not open source available)**
 
-Municipalities are free to choose their own (web)application (using the web services of the Open Smart Grid Platform), or they could use the default web application developed by Smart Society Services.
+Municipalities are free to choose their own (web)application (using the web services of the Open Smart Grid Platform), or they could use the default web application developed by Alliander.
 
 ![alt text](./Smartscocietyservices-web-application.png "FlexOVL Web Application")
 

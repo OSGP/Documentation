@@ -20,7 +20,7 @@ Most cloud environments support these features.
 - Access control
 - Unique device identification
 
-For every major release there will be a mandated security test initiated by Smart Society Services.
+For every major release there will be a mandated security test initiated by Alliander.
 
 In cooperation with the European Network of Cyber Security (ENCS) state of the art security measures were implemented.
 

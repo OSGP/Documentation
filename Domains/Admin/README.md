@@ -42,10 +42,10 @@ This core and admin domain contains all generic web services that can be used in
 | **AdHocManagement.wsdl** |
 | SetReboot | DeviceIdentification | - |
 
-* [Core WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-core/src/main/resources)
-* [Core XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-core/src/main/resources/schemas)
+* [Core WSDL's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-core/src/main/resources)
+* [Core XSD schema's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-core/src/main/resources/schemas)
 
 
 ### Admin webservices
-* [Admin WSDL's](https://github.com/OSGP/Shared/tree/development/osgp-ws-admin/src/main/resources)
-* [Admin XSD schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-admin/src/main/resources/schemas)
+* [Admin WSDL's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-admin/src/main/resources)
+* [Admin XSD schema's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-admin/src/main/resources/schemas)

@@ -31,4 +31,4 @@ When either report data or the result for a request is available, a notification
 
 ### WSDLs
 
-* [WSDL's and schema's](https://github.com/OSGP/Shared/tree/development/osgp-ws-distributionautomation/src/main/resources)
+* [WSDL's and schema's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-distributionautomation/src/main/resources)
