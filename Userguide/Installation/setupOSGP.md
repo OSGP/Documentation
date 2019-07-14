@@ -74,7 +74,7 @@ Open pgAdminIII and configure a connection: choose the 'Add a connection to a se
 
 ![alt text](./installation-script-screenshots/35.png)
 
-### Creating the 'test-org' Organization
+### Creating the 'test-org' Organization (in database osgp-core)
 Run the script in `/home/dev/Sources/OSGP/Config/sql/create-test-org.sql` to insert 'test-org' organization into the organisation table of the osgp_core database.
 
 ```shell
