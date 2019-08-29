@@ -6,8 +6,8 @@ The technology and tools used can be found in the [Technology stack](../Architec
 
 ## Code Guidelines and Code Tests
 
-- Use the [code formatting rules for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/code-format)
-- Use the [save actions for Eclipse](https://github.com/OSGP/Config/tree/development/eclipse/code-format-settings/save-actions)
+- In Eclipse >Window >Preferences >Java >Code Style >Formatter, import the file /home/dev/Sources/OSGP/Config/code-format-settings/eclipse/code-format/JavaFormatter.xml
+- In Eclipse >Window >Preferences >Java >Editor >Save actions, follow the images in /home/dev/Sources/OSGP/Config/code-format-settings/eclipse/save-actions. 
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
 - Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests](https://github.com/OSGP/open-smart-grid-platform/tree/development/integration-tests)
 - In case you are not familiar with behaviour driven tests, include unit tests
