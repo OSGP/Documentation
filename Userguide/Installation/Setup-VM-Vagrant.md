@@ -78,6 +78,8 @@ Run the following command:
  - vagrant box add cxtlabs/vagrant-ubuntu-16.04-mate
  - vagrant up
 
+> **note:** In case of an error complaining about not being able to resolve a URL (for instance to github.com) then try using a different internet connection not behind a proxy.
+
 ![alt text](./installation-script-screenshots/04.png)
 
 Vagrant will now automatically download an Ubuntu image (+- 2.6 Gb), create a virtualbox image from it and run the installation puppet script when finished. This might take a while, depending on your internet speed.
