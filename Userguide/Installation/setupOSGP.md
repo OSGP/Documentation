@@ -59,6 +59,8 @@ This starts ActiveMQ as a terminal process (this way, ActiveMQ doesn't detach fr
 
 ### Starting Apache Tomcat Server
 With ActiveMQ running, the Tomcat server can be started. Go to Eclipse, go to the Servers tab in the Debug view, and right click on the Tomcat server and select 'Start'.
+> **note:** In case of an error starting up for the very first time, try and start up only the module: 'osgp.core' first. This makes sure the database scripts are executed.
+
 ![alt text](./installation-script-screenshots/tomcat-7-tomcat-started.png)
 
 ### Starting pgAdmin III and Connect to PostgreSQL
