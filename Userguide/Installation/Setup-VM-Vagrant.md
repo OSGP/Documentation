@@ -77,6 +77,7 @@ Run the following command:
  - vagrant destroy
  - vagrant box add cxtlabs/vagrant-ubuntu-16.04-mate
  - vagrant up
+
 > **note:** In case of an error complaining about not being able to resolve a URL (for instance to github.com) then try using a different internet connection not behind a proxy.
 
 ![alt text](./installation-script-screenshots/04.png)
