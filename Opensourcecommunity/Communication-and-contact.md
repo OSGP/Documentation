@@ -3,8 +3,7 @@
 We choose [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for most of our development communication. This keeps the communication central and topic central and connect to development effort. 
 Please use [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for issues and bugs. 
 
-If you want to get in touch to discuss to discuss non-technical subjects, send us an email info@opensmartgridplatform.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**). 
-Once we get the foundation going, we will open an address so you can directly contact one of the foundation's employees.
+If you want to get in touch to discuss to discuss non-technical subjects, send us an email info@opensmartgridplatform.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
 
 ## Jira
 
