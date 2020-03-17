@@ -1,6 +1,9 @@
 ### Testing the platform using the Web Demo
 This chapter will describe the steps needed to test the Open Smart Grid Platform using the Web Demo Application.
 
+If you followed the steps from the 'Platform Setup' then you can skip the following installation steps, because the Web Demo will already be available.
+
+#### Installing the Web Demo 
 
 - Open Eclipse and import the following folder as Maven project  ```/home/dev/Sources/OSGP/open-smart-grid-platform/public-lighting-demo-app/```
 - Add the PublicLightingDemoApp components to the Tomcat Server.
