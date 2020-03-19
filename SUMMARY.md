@@ -145,7 +145,7 @@
             * [SendNotification](Domains/Smartmetering/smartmeteringwebservices/SendNotification.md)
      * [ResponseMessages](Domains/Smartmetering/smartmeteringwebservices/ResponseMessages.md)
      * [Use cases](Domains/Smartmetering/Smartmetering-use-cases.md)
-   * [Guidelines to add a new domain to OSGP](Domains/createNewDomain.md)
+   * [Guidelines to add a new domain to GXF](Domains/createNewDomain.md)
 * [Protocols](Protocols/README.md)
    * [IEC61850](Protocols/IEC61850/README.md)
       * [SWDevice-010805](Protocols/IEC61850/SWDevice-010805.md)
