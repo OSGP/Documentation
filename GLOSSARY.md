@@ -19,6 +19,9 @@ Open Street Light Protocol, the protocol used to communicate with SSLD and other
 # IEC61850
 IEC 61850 is an international standard defining communication protocols for intelligent electronic smart devices at electrical substations. See [IEC](https://www.iec.ch/smartgrid/standards/)
 
+# MQTT
+MQTT stands for MQ Telemetry Transport. It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks. See [MQTT](http://mqtt.org/)
+
 # DLMS
 Device Language Message Specification, the protocol used to communicate with Smart Meters and other smart grid devices.
 
