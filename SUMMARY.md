@@ -198,5 +198,6 @@
          * [SetDeviceVerificationKey](Protocols/OSLP/v0.6.1/SetDeviceVerificationKey.md)
          * [SwitchFirmware](Protocols/OSLP/v0.6.1/SwitchFirmware.md)
          * [SwitchConfiguration](Protocols/OSLP/v0.6.1/SwitchConfiguration.md)
+   * [MQTT](Protocols/MQTT/README.md)
 * [Support](Support/README.md)
 * [License](Apache-license/README.md)
