@@ -16,3 +16,7 @@ The DLMS protocol is used for (mainly) smart metering.
 #### IEC61850
 
 The IEC61850 implementation is used for e.g. distribution automation, microgrids and public lighting.
+
+#### MQTT
+
+The MQTT implementation is used in distribution automation 
