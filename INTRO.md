@@ -30,7 +30,7 @@ Use cases of Grid eXchange Fabric are only limited by your imagination. Here are
 - Smart Metering
 - Traffic Control (LED/matrix signs, traffic lights)
 - Flexible load management ( solar energy and wind energy)
-- Power Quality monitoring
+- Power Quality monitoring.
 
 ### Getting started
 - [Visit the userguide section to try Grid eXchange Fabric on your local machine](./Userguide/Installation/Installationguide.md)
