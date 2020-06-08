@@ -66,7 +66,7 @@ Windows:
 move Vagrantfile.txt Vagrantfile
 ```
 
-Now open a Command Prompt and navigate to the newly created directory where you just put the files. Make sure that you run the Command Prompt as an administrator. 
+Now open a Command Prompt and navigate to the newly created directory where you just put the files. Make sure that you run the Command Prompt using administrator rights. 
 
 > **note:** When you open the Vagrantfile you see that default the image is configured to run in virtualbox with 2 cpu cores and 8192 MB of RAM. If you need to you can change this to more or less cpu cores and RAM, but it is recommended to use the provided settings.
 
