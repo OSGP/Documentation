@@ -66,8 +66,8 @@ With ActiveMQ running, the Tomcat server can be started. Go to Eclipse, go to th
 
 ![alt text](./installation-script-screenshots/tomcat-7-tomcat-started.png)
 
-###Probe
-This is an optional program that shows the status of the TomCat resources in real time. To install Probe you can follow this [guide](https://github.com/psi-probe/psi-probe/wiki/InstallationApacheTomcat "probe"). Note that you need to add the Tomcat users in the guide's Security part in the tomcat-users.xml in your Eclipse environment. To downoad the war file go to: [https://github.com/psi-probe/psi-probe/releases](https://github.com/psi-probe/psi-probe/releases "title"). You need to copy the war file to: `/home/dev/<your Eclipse workspace>/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/webapps`. 
+### Probe
+This is an optional program that shows the status of the Tomcat resources in real time. To install Probe you can follow this [guide](https://github.com/psi-probe/psi-probe/wiki/InstallationApacheTomcat "probe"). Note that you need to add the Tomcat users in the guide's Security part in the tomcat-users.xml in your Eclipse environment. To download the war file go to: [https://github.com/psi-probe/psi-probe/releases](https://github.com/psi-probe/psi-probe/releases "title"). You need to copy the war file to: `/home/dev/<your Eclipse workspace>/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/webapps`. 
 	
 ### Starting pgAdmin III and Connect to PostgreSQL
 Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using
