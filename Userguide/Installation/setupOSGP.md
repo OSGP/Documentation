@@ -2,7 +2,7 @@
 This chapter describes all the steps needed to finalize the open smart grid platform development environment.
 
 ### Lombok
-The paltform uses Lombok annotations to generate extra Java methods. Without Lombok the project is not imported correctly by Maven and will not run. If you used the Vagrant installation method it should already be installed. To check if Lombok is properly installed to go `Help > About Eclipse IDE` and scroll down. Here you will see: `Lombok <version> "<version name>" is installed. https://projectlombok.org/`. If not follow this [guide](https://projectlombok.org/setup/eclipse "lomboklink") to install Lombok. 
+The platform uses Lombok annotations to generate extra Java methods. Without Lombok the project is not imported correctly by Maven and will not run. If you used the Vagrant installation method it should already be installed. To check if Lombok is properly installed to go `Help > About Eclipse IDE` and scroll down. Here you will see: `Lombok <version> "<version name>" is installed. https://projectlombok.org/`. If not follow this [guide](https://projectlombok.org/setup/eclipse "lomboklink") to install Lombok. 
 
 ### Importing Maven Projects into Eclipse
 Open Eclipse by clicking the shortcut on the Desktop and import the projects.
