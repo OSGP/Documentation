@@ -1,5 +1,8 @@
+# GXF
+Grid eXchange Fabric, formerly known as the Open Smart Grid Platform (OSGP). GXF is an open, generic, scalable and independent 'Internet of Things' platform, which enables various connected smart objects in the public space to be easily controlled and monitored. The GXF project is built using open source tools and standards.
+
 # OSGP
-Open Smart Grid Platform, a solution to control and monitor smart devices. The OSGP project is built using open source tools and standards.
+Open Smart Grid Platform, see GXF.
 
 # SSLD
 Sub Station Lighting Device, a smart grid device that is used to control and monitor public lighting (several street lights) and tariff switching for an area.
@@ -15,6 +18,9 @@ Open Street Light Protocol, the protocol used to communicate with SSLD and other
 
 # IEC61850
 IEC 61850 is an international standard defining communication protocols for intelligent electronic smart devices at electrical substations. See [IEC](https://www.iec.ch/smartgrid/standards/)
+
+# MQTT
+MQTT stands for MQ Telemetry Transport. It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks. See [MQTT](http://mqtt.org/)
 
 # DLMS
 Device Language Message Specification, the protocol used to communicate with Smart Meters and other smart grid devices.

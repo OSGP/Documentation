@@ -1,6 +1,9 @@
 ### Setting Up the Open Smart Grid Platform Development environment
 This chapter describes all the steps needed to finalize the open smart grid platform development environment.
 
+### Lombok
+The platform uses Lombok annotations to generate extra Java methods. Without Lombok the project is not imported correctly by Maven and will not run. If you used the Vagrant installation method it should already be installed. To check if Lombok is properly installed to go `Help > About Eclipse IDE` and scroll down. Here you will see: `Lombok <version> "<version name>" is installed. https://projectlombok.org/`. If not follow this [guide](https://projectlombok.org/setup/eclipse "lomboklink") to install Lombok. 
+
 ### Importing Maven Projects into Eclipse
 Open Eclipse by clicking the shortcut on the Desktop and import the projects.
 
@@ -63,6 +66,9 @@ With ActiveMQ running, the Tomcat server can be started. Go to Eclipse, go to th
 
 ![alt text](./installation-script-screenshots/tomcat-7-tomcat-started.png)
 
+### Probe
+This is an optional program that shows the status of the Tomcat resources in real time. To install Probe you can follow this [guide](https://github.com/psi-probe/psi-probe/wiki/InstallationApacheTomcat "probe"). Note that you need to add the Tomcat users in the guide's Security part in the tomcat-users.xml in your Eclipse environment. To download the war file go to: [https://github.com/psi-probe/psi-probe/releases](https://github.com/psi-probe/psi-probe/releases "title"). You need to copy the war file to: `/home/dev/<your Eclipse workspace>/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/webapps`. 
+	
 ### Starting pgAdmin III and Connect to PostgreSQL
 Open pgAdminIII and configure a connection: choose the 'Add a connection to a server.' and fill out the fields using
 - Host: localhost
