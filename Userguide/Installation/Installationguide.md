@@ -10,11 +10,11 @@ A summary of the steps involved:
 - Creating a virtual machine using Vagrant and Virtual Box
 - Run the puppet script (part of the Vagrant installation), or complete the steps manually (Manual installation)
 - Importing Maven Projects into Eclipse
-- Creating an Apache Tomcat7 Server
-- Setting Up Apache Tomcat7 Server Context
-- Deploying all open smart grid platform components to an Apache Tomcat7 Server
+- Creating an Apache Tomcat9 Server
+- Setting Up Apache Tomcat9 Server Context
+- Deploying all open smart grid platform components to an Apache Tomcat9 Server
 - Starting Apache ActiveMQ
-- Starting Apache Tomcat7 Server
+- Starting Apache Tomcat9 Server
 - Creating the 'test-org' organization in the Database
 - Setting up SoapUI
 - First SOAP Requests to add a device to the open smart grid platform

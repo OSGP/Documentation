@@ -12,7 +12,7 @@
 
   <groupId>org.opensmartgridplatform</groupId>
   <artifactId>documentation</artifactId>
-  <version>5.1.0</version>
+  <version>5.2.0</version>
   <name>Documentation</name>
   <packaging>pom</packaging>
 
