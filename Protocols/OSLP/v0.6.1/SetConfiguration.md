@@ -178,20 +178,8 @@ Soap requests and responses sent to and from platform:
                </con:RelayMap>
             </con:RelayConfiguration>
             <!--Optional:-->
-            <!--type: int-->
-            <con:ShortTermHistoryIntervalMinutes>15</con:ShortTermHistoryIntervalMinutes>
-            <!--Optional:-->
             <!--type: LinkType - enumeration: [GPRS,CDMA,ETHERNET]-->
             <con:PreferredLinkType>ETHERNET</con:PreferredLinkType>
-            <!--Optional:-->
-            <!--type: MeterType - enumeration: [P1,PULSE,AUX]-->
-            <con:MeterType>PULSE</con:MeterType>
-            <!--Optional:-->
-            <!--type: int-->
-            <con:LongTermHistoryInterval>1</con:LongTermHistoryInterval>
-            <!--Optional:-->
-            <!--type: LongTermIntervalType - enumeration: [DAYS,MONTHS]-->
-            <con:LongTermHistoryIntervalType>DAYS</con:LongTermHistoryIntervalType>
 
             <con:TimeSyncFrequency>864000</con:TimeSyncFrequency>
             <con:DeviceFixedIp>
