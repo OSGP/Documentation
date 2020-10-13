@@ -46,9 +46,6 @@ The messages below are part of OSGP and implemented in the IEC61850 protocol ada
 - **[SetScheduleRequest](./SWDevice-010805/SetSchedule.md)** (from platform to device) is a request which commands a device to update its light or tariff schedule.
 - **[SetScheduleResponse](./SWDevice-010805/SetSchedule.md)** (from device to platform) is a response which returns the result of the SetScheduleRequest.
 
-- **[GetPowerUsageHistoryRequest](./SWDevice-010805/GetPowerUsageHistory.md)** (from platform to device) is a request that requests the device to send the content of its power usage registers.
-- **[GetPowerUsageHistoryResponse](./SWDevice-010805/GetPowerUsageHistory.md)** (from device to platform) is a response which confirms the GetPowerUsageHistoryRequest has been executed or rejected and contains the power usage data.
-
 - **[UpdateDeviceSslCertificationRequest](./SWDevice-010805/UpdateDeviceSslCertification.md)** (from platform to device) is a request which commands a device to download a new certificate file from a server using a URL.
 - **[UpdateDeviceSslCertificationResponse](./SWDevice-010805/UpdateDeviceSslCertification.md)** (from platform to device) is a response which returns the result of the UpdateDeviceSslCertificationRequest, which indicates if the device will start the process to download and install a new certificate file. Please note there are several events which are sent from the device to the platform to inform the platform whether or not the certificate file was successfully downloaded and activated.
 
