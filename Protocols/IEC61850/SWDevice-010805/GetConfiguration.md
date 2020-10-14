@@ -113,11 +113,7 @@ Soap requests and responses sent to and from platform:
                   <ns2:alias/>
                </ns2:RelayMap>
             </ns2:RelayConfiguration>
-            <ns2:ShortTermHistoryIntervalMinutes>15</ns2:ShortTermHistoryIntervalMinutes>
             <ns2:PreferredLinkType>ETHERNET</ns2:PreferredLinkType>
-            <ns2:MeterType>AUX</ns2:MeterType>
-            <ns2:LongTermHistoryInterval>1</ns2:LongTermHistoryInterval>
-            <ns2:LongTermHistoryIntervalType>DAYS</ns2:LongTermHistoryIntervalType>
             <ns2:TimeSyncFrequency>1440</ns2:TimeSyncFrequency>
             <ns2:DeviceFixedIp>
                <ns2:IpAddress>192.168.0.110</ns2:IpAddress>

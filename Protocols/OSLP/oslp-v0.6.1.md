@@ -49,9 +49,6 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 - **[GetConfigurationRequest](./v0.6.1/GetConfiguration.md)** (from platform to device) is a request that requests the device to send its current configuration settings.
 - **[GetConfigurationResponse](./v0.6.1/GetConfiguration.md)** (from device to platform) is a response which confirms the GetConfigurationRequest has been executed or rejected.
 
-- **[GetPowerUsageHistoryRequest](./v0.6.1/GetPowerUsageHistory.md)** (from platform to device) is a request that requests the device to send the content of its power usage registers.
-- **[GetPowerUsageHistoryResponse](./v0.6.1/GetPowerUsageHistory.md)** (from device to platform) is a response which confirms the GetPowerUsageHistoryRequest has been executed or rejected and contains the power usage data.
-
 - **[SetRebootRequest](./v0.6.1/SetReboot.md)** (from platform to device) is a request that notifies the device to reboot immediately.
 - **[SetRebootResponse](./v0.6.1/SetReboot.md)** (from device to platform) is a response which confirms the SetRebootRequest has been executed or rejected.
 
