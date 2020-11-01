@@ -11,7 +11,7 @@ Response communicates status.
 ``` json
 message UpdateFirmwareRequest {
     required string firmwareDomain = 1; // [(nanopb).max_size = 100]; // Servername
-    required string firmwareUrl = 2; // [(nanopb).max_size = 255]; // /firmware/PSLD/RXX
+    required string firmwareUrl = 2; // [(nanopb).max_size = 255]; // /firmware/TSTMAN/TSTMOD/RXX
 }
 
 message UpdateFirmwareResponse {
@@ -44,7 +44,7 @@ Soap requests and responses sent to and from platform:
          <!--type: Identification-->
          <fir1:DeviceIdentification>device-01</fir1:DeviceIdentification>
          <!--anonymous type-->
-         <fir1:FirmwareIdentification>SSLD-V17</fir1:FirmwareIdentification>		 
+         <fir1:FirmwareIdentification>TSTMAN/TSTMOD/SSLD-V17</fir1:FirmwareIdentification>		 
       </fir1:UpdateFirmwareRequest>	  
    </soapenv:Body>
 </soapenv:Envelope>
@@ -93,7 +93,7 @@ OSLP UpdateFirmwareRequest sent to 'device-01' to update firmware:
 ``` json
 updateFirmwareRequest {
   firmwareDomain: "flexovltest.cloudapp.net"
-  firmwareUrl: "/firmware/SSLD/SSLD-V17.hex"
+  firmwareUrl: "/firmware/TSTMAN/TSTMOD/SSLD-V17.hex"
 }
 ```
 
