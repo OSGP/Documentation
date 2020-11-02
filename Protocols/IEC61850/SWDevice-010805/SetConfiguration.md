@@ -65,11 +65,7 @@ Soap requests and responses sent to and from platform:
                   <ns1:RelayType>LIGHT</ns1:RelayType>
                </ns1:RelayMap>
             </ns1:RelayConfiguration>
-            <ns1:ShortTermHistoryIntervalMinutes>15</ns1:ShortTermHistoryIntervalMinutes>
             <ns1:PreferredLinkType>ETHERNET</ns1:PreferredLinkType>
-            <ns1:MeterType>AUX</ns1:MeterType>
-            <ns1:LongTermHistoryInterval>1</ns1:LongTermHistoryInterval>
-            <ns1:LongTermHistoryIntervalType>DAYS</ns1:LongTermHistoryIntervalType>
             <ns1:TimeSyncFrequency>1440</ns1:TimeSyncFrequency>
             <ns1:DeviceFixedIp>
                <ns1:IpAddress>192.168.0.110</ns1:IpAddress>

@@ -54,11 +54,14 @@ The Core component routes messages from domain adapter components to protocol ad
 
 The internal database model in the core layer:
 ![alt text](./Core-datamodel/OSGP-core-model.png "Core model")
-![alt text](./Core-datamodel/OSGP-core-logging-and-monitor-model.png "Logging and monitor model")
-![alt text](./Core-datamodel/OSGP-core-OSLP-device-model.png "Device model")
+
+![alt text](./Core-datamodel/OSGP-core-additional-tables.png "Additional tables core")
+
+_ERD's made with Valetina Studio_
 
 
-_Image, Overview of platform data model_
+**Overview of platform data model:**
+
 ![alt text](./data-model.png "Data Model")
 
 Data model explanation:

@@ -211,33 +211,33 @@ message SetConfigurationRequest {
     optional LightType lightType = 1;
     optional DaliConfiguration daliConfiguration = 2;                                    // Contains specific configuration for DALI controllers.
     optional RelayConfiguration relayConfiguration = 3;                                  // Contains specific configuration for Relay.
-    optional uint32 shortTermHistoryIntervalMinutes = 4; 
+    optional uint32 shortTermHistoryIntervalMinutes = 4;                                 // Deprecated, no longer supported by the platform.
     optional LinkType preferredLinkType = 5;
-    optional MeterType meterType = 6;
-    optional uint32 longTermHistoryInterval = 7; 
-    optional LongTermIntervalType longTermHistoryIntervalType = 8;
+    optional MeterType meterType = 6;                                                    // Deprecated, no longer supported by the platform.
+    optional uint32 longTermHistoryInterval = 7;                                         // Deprecated, no longer supported by the platform.
+    optional LongTermIntervalType longTermHistoryIntervalType = 8;                       // Deprecated, no longer supported by the platform.
     optional uint32 timeSyncFrequency = 9 [default = 86400];                             // Time synch frequency (seconds).
     optional bytes deviceFixIpValue = 10; // [(nanopb).max_count = 4];                   // The fixed IP address of this device.
     optional bytes netMask = 11; // [(nanopb).max_count = 4];                            // Network mask for fixed IP address.
     optional bytes gateWay = 12; // [(nanopb).max_count = 4];                            // Gateway address for fixed IP address.
     optional bool isDhcpEnabled = 13 [default = true];                                   // Is DHCP enabled for this device?
-    optional bool isTlsEnabled = 14;                                                     // Defines if TLS is enabled.
-    optional uint32 oslpBindPortNumber = 15;                                             // The port used for TLS connections.
-    optional string commonNameString = 16 [default = 'TLS Test']; //[default = 'TLS Test',(nanopb).max_count = 25]; // The common name (CN) used when isTlsEnabled equals true.
-    optional uint32 communicationTimeout = 17 [default = 20];                            // Communication Timeouts (seconds) (wait for answer, socket establish, or server response = comm watchdog for local mode).
-    optional uint32 communicationNumberOfRetries = 18 [default = 3];                     // Communication number of retries.
-    optional uint32 communicationPauseTimeBetweenConnectionTrials = 19 [default = 60];   // Time between communication attempts.
-    optional bytes ospgIpAddress = 20; // [(nanopb).max_count = 4];                      // The IP address of the platform.
-    optional uint32 osgpPortNumber = 21;                                                 // The port number of the platform.
-    optional bool isTestButtonEnabled = 22 [default = true];                             // Is the test button enabled for this device?
-    optional bool isAutomaticSummerTimingEnabled = 23 [default = true];                  // Is the automatic summer timing enabled for this device?
-    optional sint32 astroGateSunRiseOffset = 24 [default = 0];                           // The calculated sunrise time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
-    optional sint32 astroGateSunSetOffset = 25 [default = 0];                            // The calculated sunset time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
-    repeated uint32 switchingDelay = 26; // [(nanopb).max_count = 4];                    // Switching delay (seconds), array of 4 values. Default 0, 0, 0, 0.
-    repeated RelayMatrix relayLinking = 27;                                              // Relay linking is a software linking, to may link each relay with each other relay. It is a matrix. Example, if relay 1 is linked with relay 3, if relay 1 will be switched (by OSGP or local by internal scheduler), the relay 3 will switch automatically (on or off, as it set) without new command.
-    optional bool relayRefreshing = 28 [default = true];                                 // Is relayRefreshing enabled for this device? Set minutely the nominal relay state and status according to active schedule after power outage and missed switching or anti manipulation.
-    optional string summerTimeDetails = 29 [default = '0360100']; //[default = '0360100',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
-    optional string winterTimeDetails = 30 [default = '1060200']; //[default = '1060200',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
+//    optional bool isTlsEnabled = 14;                                                     // Defines if TLS is enabled.
+//    optional uint32 oslpBindPortNumber = 15;                                             // The port used for TLS connections.
+//    optional string commonNameString = 16 [default = 'TLS Test']; //[default = 'TLS Test',(nanopb).max_count = 25]; // The common name (CN) used when isTlsEnabled equals true.
+    optional uint32 communicationTimeout = 14 [default = 20];                            // Communication Timeouts (seconds) (wait for answer, socket establish, or server response = comm watchdog for local mode).
+    optional uint32 communicationNumberOfRetries = 15 [default = 3];                     // Communication number of retries.
+    optional uint32 communicationPauseTimeBetweenConnectionTrials = 16 [default = 60];   // Time between communication attempts.
+    optional bytes ospgIpAddress = 17; // [(nanopb).max_count = 4];                      // The IP address of the platform.
+    optional uint32 osgpPortNumber = 18;                                                 // The port number of the platform.
+    optional bool isTestButtonEnabled = 19 [default = true];                             // Is the test button enabled for this device?
+    optional bool isAutomaticSummerTimingEnabled = 20 [default = true];                  // Is the automatic summer timing enabled for this device?
+    optional sint32 astroGateSunRiseOffset = 21 [default = 0];                           // The calculated sunrise time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
+    optional sint32 astroGateSunSetOffset = 22 [default = 0];                            // The calculated sunset time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
+    repeated uint32 switchingDelay = 23; // [(nanopb).max_count = 4];                    // Switching delay (seconds), array of 4 values. Default 0, 0, 0, 0.
+    repeated RelayMatrix relayLinking = 24;                                              // Relay linking is a software linking, to may link each relay with each other relay. It is a matrix. Example, if relay 1 is linked with relay 3, if relay 1 will be switched (by OSGP or local by internal scheduler), the relay 3 will switch automatically (on or off, as it set) without new command.
+    optional bool relayRefreshing = 25 [default = true];                                 // Is relayRefreshing enabled for this device? Set minutely the nominal relay state and status according to active schedule after power outage and missed switching or anti manipulation.
+    optional string summerTimeDetails = 26 [default = '0360100']; //[default = '0360100',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
+    optional string winterTimeDetails = 27 [default = '1060200']; //[default = '1060200',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
 }
 // summerTimeDetails string, winterTimeDetails:
 //MMWHHmi
@@ -261,33 +261,33 @@ message GetConfigurationResponse {
     optional LightType lightType = 2;
     optional DaliConfiguration daliConfiguration = 3;                                    // Contains specific configuration for DALI controllers.
     optional RelayConfiguration relayConfiguration = 4;                                  // Contains specific configuration for Relay.
-    optional uint32 shortTermHistoryIntervalMinutes = 5; 
+    optional uint32 shortTermHistoryIntervalMinutes = 5;                                 // Deprecated, no longer supported by the platform.
     optional LinkType preferredLinkType = 6;
-    optional MeterType meterType = 7;
-    optional uint32 longTermHistoryInterval = 8; 
-    optional LongTermIntervalType longTermHistoryIntervalType = 9;
+    optional MeterType meterType = 7;                                                    // Deprecated, no longer supported by the platform.
+    optional uint32 longTermHistoryInterval = 8;                                         // Deprecated, no longer supported by the platform.
+    optional LongTermIntervalType longTermHistoryIntervalType = 9;                       // Deprecated, no longer supported by the platform.
     optional uint32 timeSyncFrequency = 10 [default = 86400];                            // Time synch frequency (seconds).
     optional bytes deviceFixIpValue = 11; // [(nanopb).max_count = 4];                   // The fixed IP address of this device.
     optional bytes netMask = 12; // [(nanopb).max_count = 4];                            // Network mask for fixed IP address.
     optional bytes gateWay = 13; // [(nanopb).max_count = 4];                            // Gateway address for fixed IP address.
     optional bool isDhcpEnabled = 14 [default = true];                                   // Is DHCP enabled for this device?
-    optional bool isTlsEnabled = 15;                                                     // Defines if TLS is enabled.
-    optional uint32 oslpBindPortNumber = 16;                                             // The port used for TLS connections.
-    optional string commonNameString = 17 [default = 'TLS Test']; //[default = 'TLS Test',(nanopb).max_count = 25]; // The common name (CN) used when isTlsEnabled equals true.
-    optional uint32 communicationTimeout = 18 [default = 20];                            // Communication Timeouts (seconds) (wait for answer, socket establish, or server response = comm watchdog for local mode).
-    optional uint32 communicationNumberOfRetries = 19 [default = 3];                     // Communication number of retries.
-    optional uint32 communicationPauseTimeBetweenConnectionTrials = 20 [default = 60];   // Time between communication attempts.
-    optional bytes ospgIpAddress = 21; // [(nanopb).max_count = 4];                      // The IP address of the platform.
-    optional uint32 osgpPortNumber = 22;                                                 // The port number of the platform.
-    optional bool isTestButtonEnabled = 23 [default = true];                             // Is the test button enabled for this device?
-    optional bool isAutomaticSummerTimingEnabled = 24 [default = true];                  // Is the automatic summer timing enabled for this device?
-    optional sint32 astroGateSunRiseOffset = 25 [default = 0];                           // The calculated sunrise time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
-    optional sint32 astroGateSunSetOffset = 26 [default = 0];                            // The calculated sunset time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
-    repeated uint32 switchingDelay = 27; // [(nanopb).max_count = 4];                    // Switching delay (seconds), array of 4 values. Default 0, 0, 0, 0.
-    repeated RelayMatrix relayLinking = 28;                                              // Relay linking is a software linking, to may link each relay with each other relay. It is a matrix. Example, if relay 1 is linked with relay 3, if relay 1 will be switched (by OSGP or local by internal scheduler), the relay 3 will switch automatically (on or off, as it set) without new command.
-    optional bool relayRefreshing = 29 [default = true];                                 // Is relayRefreshing enabled for this device? Set minutely the nominal relay state and status according to active schedule after power outage and missed switching or anti manipulation.
-    optional string summerTimeDetails = 30 [default = '0360100']; //[default = '0360100',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
-    optional string winterTimeDetails = 31 [default = '1060200']; //[default = '1060200',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
+//    optional bool isTlsEnabled = 15;                                                     // Defines if TLS is enabled.
+//    optional uint32 oslpBindPortNumber = 16;                                             // The port used for TLS connections.
+//    optional string commonNameString = 17 [default = 'TLS Test']; //[default = 'TLS Test',(nanopb).max_count = 25]; // The common name (CN) used when isTlsEnabled equals true.
+    optional uint32 communicationTimeout = 15 [default = 20];                            // Communication Timeouts (seconds) (wait for answer, socket establish, or server response = comm watchdog for local mode).
+    optional uint32 communicationNumberOfRetries = 16 [default = 3];                     // Communication number of retries.
+    optional uint32 communicationPauseTimeBetweenConnectionTrials = 17 [default = 60];   // Time between communication attempts.
+    optional bytes ospgIpAddress = 18; // [(nanopb).max_count = 4];                      // The IP address of the platform.
+    optional uint32 osgpPortNumber = 19;                                                 // The port number of the platform.
+    optional bool isTestButtonEnabled = 20 [default = true];                             // Is the test button enabled for this device?
+    optional bool isAutomaticSummerTimingEnabled = 21 [default = true];                  // Is the automatic summer timing enabled for this device?
+    optional sint32 astroGateSunRiseOffset = 22 [default = 0];                           // The calculated sunrise time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
+    optional sint32 astroGateSunSetOffset = 23 [default = 0];                            // The calculated sunset time modified by this value. Time is moved earlier (if offset is negative) or later (if offset is positive). In seconds.
+    repeated uint32 switchingDelay = 24; // [(nanopb).max_count = 4];                    // Switching delay (seconds), array of 4 values. Default 0, 0, 0, 0.
+    repeated RelayMatrix relayLinking = 25;                                              // Relay linking is a software linking, to may link each relay with each other relay. It is a matrix. Example, if relay 1 is linked with relay 3, if relay 1 will be switched (by OSGP or local by internal scheduler), the relay 3 will switch automatically (on or off, as it set) without new command.
+    optional bool relayRefreshing = 26 [default = true];                                 // Is relayRefreshing enabled for this device? Set minutely the nominal relay state and status according to active schedule after power outage and missed switching or anti manipulation.
+    optional string summerTimeDetails = 27 [default = '0360100']; //[default = '0360100',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
+    optional string winterTimeDetails = 28 [default = '1060200']; //[default = '1060200',(nanopb).max_count = 7]; // The time point for DST for Europe is not identical in every country. It should be added as parameters the weekday, month and time point for DST/summer and winter.
 }
 
 message SwitchConfigurationRequest {
@@ -311,22 +311,27 @@ message ConfirmRegisterDeviceResponse {
 }
 
 // ========= Monitoring
+
+// Deprecated, no longer supported by the platform.
 message GetPowerUsageHistoryRequest {
     required TimePeriod timePeriod = 1;
     optional uint32 page = 2;
     required HistoryTermType termType = 3;
 }
 
+// Deprecated, no longer supported by the platform.
 message GetPowerUsageHistoryResponse {
     required Status status = 1;
     repeated PowerUsageData powerUsageData = 2; // [(nanopb).max_count = 20]; 
     optional PageInfo pageInfo = 3;
 }
 
+// Deprecated, no longer supported by the platform.
 message GetActualPowerUsageRequest {
     optional bool present = 1 [default = true];
 }
 
+// Deprecated, no longer supported by the platform.
 message GetActualPowerUsageResponse {
     required Status status = 1;
     required PowerUsageData powerUsageData = 2;
@@ -418,11 +423,13 @@ message PageInfo {
     required uint32 totalPages = 3;
 }
 
+// Deprecated, no longer supported by the platform.
 message TimePeriod {
     required string startTime = 1; // [(nanopb).max_size = 15]; // - Format YYYYMMDDhhmmss UTC.
     required string endTime = 2; // [(nanopb).max_size = 15];   // - format YYYYMMDDhhmmss UTC.
 }
 
+// Deprecated, no longer supported by the platform.
 message PowerUsageData {
     required string recordTime = 1; // [(nanopb).max_size = 15];    // Record time - format YYYYMMDDhhmmss UTC.
     required MeterType meterType = 2;                               // Meter type (P1, Pulse, Aux).
@@ -436,6 +443,7 @@ message PsldData {
     required uint32 totalLightingHours = 1; // Total lighting hours
 }
 
+// Deprecated, no longer supported by the platform.
 message SsldData {
     required uint32 actualCurrent1 = 1;             // Instantaneous current L1 in mA.
     required uint32 actualCurrent2 = 2;             // Instantaneous current L2 in mA.
@@ -449,6 +457,7 @@ message SsldData {
     repeated RelayData relayData = 10; // [(nanopb).max_count = 4]; // Measurement data per relay.
 }
 
+// Deprecated, no longer supported by the platform.
 message RelayData {
     required bytes index = 1; // [(nanopb).max_size = 1]; // external index, for example 1
     required uint32 totalLightingMinutes = 2; // Total lighting minutes for lighting relay
@@ -587,6 +596,7 @@ enum RelayType {
     TARIFF = 2;
 }
 
+// Deprecated, no longer supported by the platform.
 enum MeterType {
     MT_NOT_SET = 0;
     P1 = 1;
@@ -601,14 +611,17 @@ enum LinkType {
     ETHERNET = 3;
 }
 
+// Deprecated, no longer supported by the platform.
 enum LongTermIntervalType {
     LT_INT_NOT_SET = 0;
     DAYS = 1;
     MONTHS = 2;
 }
 
+// Deprecated, no longer supported by the platform.
 enum HistoryTermType {
     Short = 0;
     Long = 1;
 }
+
 ```

@@ -117,7 +117,6 @@ The AddDeviceModel function adds a new device model to OSGP. All devices are cou
             <ns1:ModelCode>MOD01</ns1:ModelCode>
             <!--Optional:-->
             <ns1:Description>Device model MOD01.</ns1:Description>
-            <ns1:Metered>false</ns1:Metered>
          </ns1:DeviceModel>
       </ns1:AddDeviceModelRequest>
    </soapenv:Body>
@@ -154,8 +153,6 @@ The AddDevice function adds a new SSLD to OSGP. The device is coupled to a devic
                <!--Optional:-->
                <!--anonymous type-->
                <ns1:Description>Test device.</ns1:Description>
-               <!--type: boolean-->
-               <ns1:Metered>false</ns1:Metered>
             </ns1:DeviceModel>
          </ns1:Device>
       </ns1:AddDeviceRequest>
