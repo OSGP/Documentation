@@ -7,21 +7,21 @@ This repository contains documentation for the Grid eXchange Fabric project. Thi
 ### Publications of this Gitbook
 
 Web
-* [Development branch publication](http://documentation.opensmartgridplatform.org)
-* [Master branch publication](http://documentation.opensmartgridplatform.org/documentation-master)
-* [Latest Pull-request publication](http://documentation.opensmartgridplatform.org/documentation-pr)
+* [Development branch publication](http://documentation.gxf.lfenergy.org)
+* [Master branch publication](http://documentation.gxf.lfenergy.org/documentation-master)
+* [Latest Pull-request publication](http://documentation.gxf.lfenergy.org/documentation-pr)
 
 PDF
-* [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/osgp-documentation.pdf)
+* [Development branch publication in PDF](http://documentation.gxf.lfenergy.org/osgp-documentation.pdf)
 
 
 ## Grid eXchange Fabric information and news
 
 High-level project information and news can be found on the Grid eXchange Fabric website: 
-* [www.opensmartgridplatform.org](http://opensmartgridplatform.org/)
+* [GXF at LF Energy](https://www.lfenergy.org/projects/gxf/)
 
 Grid eXchange Fabric detailed documentation:
-* [documentation.opensmartgridplatform.org](http://documentation.opensmartgridplatform.org/)
+* [documentation.gxf.lfenergy.org](http://documentation.gxf.lfenergy.org/)
 
 Grid eXchange Fabric issue tracker:
 * [Grid eXchange Fabric Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/)
