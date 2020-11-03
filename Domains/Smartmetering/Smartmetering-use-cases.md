@@ -1,5 +1,5 @@
 # Example use-case for this domain
-Up-to-date information on use-cases can be found on the [Grid eXchange Fabric website](http://www.lfenergy.org/projects/gxf/).
+Up-to-date information on use-cases can be found on the [Grid eXchange Fabric website](https://www.lfenergy.org/projects/gxf/).
 
 #### Smart Meter Head-end System
 
