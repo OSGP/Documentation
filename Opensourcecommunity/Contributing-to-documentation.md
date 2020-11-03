@@ -3,12 +3,12 @@
 This documentation is available in multiple formats.
 
 Web
-* [Development branch publication](http://documentation.gxf.lfenergy.org)
-* [Master branch publication](http://documentation.gxf.lfenergy.org/documentation-master)
-* [Latest Pull-request publication](http://documentation.gxf.lfenergy.org/documentation-pr)
+* [Development branch publication](https://documentation.gxf.lfenergy.org)
+* [Master branch publication](https://documentation.gxf.lfenergy.org/documentation-master)
+* [Latest Pull-request publication](https://documentation.gxf.lfenergy.org/documentation-pr)
 
 PDF
-* [Development branch publication in PDF](http://documentation.gxf.lfenergy.org/documentation-pdf)
+* [Development branch publication in PDF](https://documentation.gxf.lfenergy.org/documentation-pdf)
 
 
 ## Contributing to documentation

@@ -1,6 +1,6 @@
 # Thank you for contributing!
 
-Please comply with the [code of conduct](http://documentation.gxf.lfenergy.org/Opensourcecommunity/Code-of-conduct.html) and [documentation guidelines](http://documentation.gxf.lfenergy.org/Opensourcecommunity/Contributing-to-documentation.html).
+Please comply with the [code of conduct](https://documentation.gxf.lfenergy.org/Opensourcecommunity/Code-of-conduct.html) and [documentation guidelines](https://documentation.gxf.lfenergy.org/Opensourcecommunity/Contributing-to-documentation.html).
 
 ## To get started
 
@@ -12,7 +12,7 @@ Please comply with the [code of conduct](http://documentation.gxf.lfenergy.org/O
 
 4. Sign the CLA using [EasyCLA](https://lfcla.com/).
 
-5. Assign a maintainer or relevant community member on this topic to accept/evaluate your pull request. The current maintainer can be found in the [documentation](http://documentation.gxf.lfenergy.org/Opensourcecommunity/Governance.html).
+5. Assign a maintainer or relevant community member on this topic to accept/evaluate your pull request. The current maintainer can be found in the [documentation](https://documentation.gxf.lfenergy.org/Opensourcecommunity/Governance.html).
 
 If you have any questions, open an issue.
 
