@@ -88,4 +88,4 @@ service postgresql reload
 
 ### Set up the Open Smart Grid Platform
 
-Continue with setting up the Open Smart Grid Platform by following the [Set up the Open Smart Grid Platform Guide](http://documentation.opensmartgridplatform.org/Userguide/Installation/setupOSGP.html)
+Continue with setting up the Open Smart Grid Platform by following the [Set up the Open Smart Grid Platform Guide](http://documentation.gxf.lfenergy.org/Userguide/Installation/setupOSGP.html)
