@@ -18,7 +18,7 @@ PDF
 ## Grid eXchange Fabric information and news
 
 High-level project information and news can be found on the Grid eXchange Fabric website:
-* [GXF at LF Energy](https://www.lfenergy.org/projects/gxf/)
+* [www.lfenergy.org/projects/gxf/](https://www.lfenergy.org/projects/gxf/)
 
 Grid eXchange Fabric detailed documentation:
 * [documentation.gxf.lfenergy.org](https://documentation.gxf.lfenergy.org/)
