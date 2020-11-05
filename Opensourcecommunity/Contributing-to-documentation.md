@@ -3,19 +3,19 @@
 This documentation is available in multiple formats.
 
 Web
-* [Development branch publication](http://documentation.opensmartgridplatform.org)
-* [Master branch publication](http://documentation.opensmartgridplatform.org/documentation-master)
-* [Latest Pull-request publication](http://documentation.opensmartgridplatform.org/documentation-pr)
+* [Development branch publication](https://documentation.gxf.lfenergy.org)
+* [Master branch publication](https://documentation.gxf.lfenergy.org/documentation-master)
+* [Latest Pull-request publication](https://documentation.gxf.lfenergy.org/documentation-pr)
 
 PDF
-* [Development branch publication in PDF](http://documentation.opensmartgridplatform.org/documentation-pdf)
+* [Development branch publication in PDF](https://documentation.gxf.lfenergy.org/documentation-pdf)
 
 
 ## Contributing to documentation
 
-The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation). 
+The documentation is build using GitBook software from Markdown files in the [documentation repository](https://github.com/OSGP/Documentation).
 
-We encourage you to participate in improving the documentation. From corrected typos to new sections, every commit is appreciated. You can access the source files by clicking the "Fix this page"-button in the GitBook or by selecting the relevant Markdown-file in the documentation. You can commit your changes by sending a pull request. 
+We encourage you to participate in improving the documentation. From corrected typos to new sections, every commit is appreciated. You can access the source files by clicking the "Fix this page"-button in the GitBook or by selecting the relevant Markdown-file in the documentation. You can commit your changes by sending a pull request.
 
 1. Fork the repo, do work in a feature branch.
 
@@ -23,7 +23,7 @@ We encourage you to participate in improving the documentation. From corrected t
 
 3. Make sure the automated test suite succeeds. They will show-up in the pull request.
 
-4. Sign the CLA using [cla-assistant](http://cla.opensmartgridplatform.org/) (a comment by CLAAdmin will appear for your pull request to help you out).
+4. Sign the CLA using [EasyCLA](https://lfcla.com/).
 
 5. Assign a maintainer or other developer on this topic to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](../Opensourcecommunity/Governance).
 
@@ -33,7 +33,7 @@ If you are completely new to this and you need help to get started, file an issu
 
 ### Chapters in the documentation
 
-It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter. 
+It may be obvious to you already from the index, however, here is an overview on what documentation goes in which chapter.
 
 * Chapter 1 consist of an open smart grid platform introduction and architecture for potential users, architects and developers. The open smart grid platform website is used for basic product information.
 * Chapter 2 contains the general userguide for open smart grid platform users
@@ -53,7 +53,7 @@ We have chosen to work with GitBook since it allows us to make different version
 - Don't commit directly to the development branch, please do a pull request.
 - We use the American spelling
 - Please follow the used chapter and section numbering and apply it in your commits as well
-- Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know! 
+- Currently we do not use image numbering, since it is too much of a hassle to keep it up-to-date. If you have a smart idea to do this, let us know!
 - Give your (sub) document a relevant name or section with number
 - Update SUMMARY.md if needed
 
