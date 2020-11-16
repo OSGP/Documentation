@@ -20,3 +20,10 @@ The IEC61850 implementation is used for e.g. distribution automation, microgrids
 #### MQTT
 
 The MQTT implementation is used in distribution automation 
+
+&nbsp;
+### Basic layout of a protocol adapter
+
+The following diagram shows the basic structure of a protocol adapter. This however does not mean that all protocol adapters will be structured like this, but instead the diagram shows an example of how such a protocol adapter could be structured.
+
+![alt text](./protocol-adapters-model-gfx-pa-pd-example.png "Diagram of the structure of a protocol adapter")
