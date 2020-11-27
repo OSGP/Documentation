@@ -25,6 +25,3 @@ Grid eXchange Fabric detailed documentation:
 
 Grid eXchange Fabric issue tracker:
 * [Grid eXchange Fabric Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/)
-
-Grid eXchange Fabric questions and discussions:
-* [Grid eXchange Fabric Discourse](https://opensmartgridplatform.discourse.group/)
