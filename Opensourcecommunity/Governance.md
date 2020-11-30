@@ -19,7 +19,7 @@ The community council is responsible for:
 When the community grows, members of the community council can be elected. If the situation demands or requires it, the community council has the ability to establish sub councils for a specific subject, area of domain.
 
 The community council consist of the following members:
-* [Robert Tusveld](https://github.com/Sander3003) - Architect - Chairman 
+* [Robert Tusveld](https://github.com/rtusveld) - Architect - Chairman 
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
 * Vacancy
