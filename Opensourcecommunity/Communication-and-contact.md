@@ -37,4 +37,4 @@ If you have a question, please create an Github issue in the [documentation repo
 
  
 ### Report security issues
-Due to the sensible nature of security issues e.g. zero days, we prefer a responsible disclosure. Security issues can be reported at one of the maintainers personally.
+Due to the sensible nature of security issues e.g. zero days, we prefer a responsible disclosure. Security issues can be reported to [gxf+owner@lists.lfenergy.org](gxf+owner@lists.lfenergy.org).
