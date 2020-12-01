@@ -3,7 +3,7 @@
 We choose [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for most of our development communication. This keeps the communication central and topic central and connect to development effort. 
 Please use [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for issues and bugs. 
 
-If you want to get in touch to discuss non-technical subjects, send us an email to the LF energy GXF mailling list gxf@lists.lfenergy.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
+If you want to get in touch to discuss non-technical subjects, send us an email to the LF energy GXF mailing list gxf@lists.lfenergy.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
 
 ## Jira
 
