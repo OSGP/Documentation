@@ -19,7 +19,7 @@ The community council is responsible for:
 When the community grows, members of the community council can be elected. If the situation demands or requires it, the community council has the ability to establish sub councils for a specific subject, area of domain.
 
 The community council consist of the following members:
-* [Sander Jansen](https://github.com/Sander3003) - Open source consultant - Chairman 
+* [Robert Tusveld](https://github.com/rtusveld) - Architect - Chairman 
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
 * Vacancy
@@ -42,5 +42,3 @@ Current maintainers:
 * Open smart grid platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
 * Smart metering domain: [Sander van der Heijden](https://github.com/smvdheijden)
 * Non-domain specific documentation & configuration: [Ruud Lemmers](https://github.com/rlemmers)
-
-@Sander3003 will track new Github issues and assign them to maintainers and inform them (via a Jira ticket).

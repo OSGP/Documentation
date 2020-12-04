@@ -3,7 +3,7 @@
 We choose [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for most of our development communication. This keeps the communication central and topic central and connect to development effort. 
 Please use [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for issues and bugs. 
 
-If you want to get in touch to discuss non-technical subjects, send us an email info@opensmartgridplatform.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
+If you want to get in touch to discuss non-technical subjects, send us an email to the LF energy GXF mailing list gxf@lists.lfenergy.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
 
 ## Jira
 
@@ -11,7 +11,7 @@ Jira was chosen due to its extensive features. The current [Jira](https://smarts
 Once we have multiple contributors outside Alliander we can move to a dedicated Jira instance or something else.
 
 Once you get actively involved, you can request write permissions on the Jira board.
-You can request write access to the Jira issue board by sending a request to info@opensmartgridplatform.org.
+You can request write access to the Jira issue board by sending a request to gxf@lists.lfenergy.org.
 
 ### New Features
 
@@ -37,4 +37,4 @@ If you have a question, please create an Github issue in the [documentation repo
 
  
 ### Report security issues
-Due to the sensible nature of security issues e.g. zero days, we prefer a responsible disclosure. Security issues can be reported on the [opensmartgridplatform.org website](https://opensmartgridplatform.org/report-security-issue/).
+Due to the sensible nature of security issues e.g. zero days, we prefer a responsible disclosure. Security issues can be reported to [gxf+owner@lists.lfenergy.org](mailto:gxf+owner@lists.lfenergy.org).
