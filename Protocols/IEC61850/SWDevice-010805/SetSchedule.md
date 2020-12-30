@@ -18,7 +18,7 @@ The table shows the fields for XSWC1 (relay 1). The device has 4 relays (XSWC1..
 |XSWC1.Sche|CF|sche1.tOnT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
 |XSWC1.Sche|CF|sche1.tOff|INT32|Timestamp in hhmm format when relay should switch off or -1 if not used.|
 |XSWC1.Sche|CF|sche1.tOffT|INT8|Schedule entry type, 0 = fixed time, 1 = light sensor, 2 = astronomical time.|
-|XSWC1.Sche|CF|sche1.minOnPer|INT16U|Minimun burning time for this relay.|
+|XSWC1.Sche|CF|sche1.minOnPer|INT16U|Minimum burning time for this relay.|
 |XSWC1.Sche|CF|sche1.minOffPer|INT16U|Not used.|
 |XSWC1.Sche|CF|sche1.srBefWd|INT16U|Window for light sensor trigger, minutes before astronomical time.|
 |XSWC1.Sche|CF|sche1.srAftWd|INT16U|Window for light sensor trigger, minutes after astronomical time.|
@@ -26,6 +26,14 @@ The table shows the fields for XSWC1 (relay 1). The device has 4 relays (XSWC1..
 |XSWC1.Sche|CF|sche1.igAftWd|INT16U|Not used.|
 
 Although the device supports setting 64 schedule entries (sche1...sche64) for 4 relays (XSWC1...XSWC4), the actual number of schedule entries is limited by OSGP to 50.
+
+Besides the fields on the relay, the switch logic applies astronomical sunrise and sunset offsets to
+the calculated astronomical times. These are stored with the Street Light Configuration (logical node CSLC).
+
+|**ATTRIBUTE**|**SUB ATTRIBUTE**|**DATATYPE**|**DESCRIPTION**|
+|---|---|---|---|
+|SWCf|adSetOft|INT16|Offset to be used with calculated astronomical sunset time.|
+|SWCf|adRiseOft|INT16|Offset to be used with calculated astronomical sunrise time.|
 
 ```
 enum DAY {
@@ -279,6 +287,13 @@ IEC61850 protocol adapter logging:
 2018-09-26 11:12:45.060] [osgp-tst-03] [iec61850RequestsMessageListenerContainer-11] INFO o.o.a.p.i.i.n.s.Iec61850DeviceConnectionService@logDuration:355 - Device: KAI-0000000053, messageType: SET_LIGHT_SCHEDULE, Start time: 2018-09-26T11:12:39.471Z, end time: 2018-09-26T11:12:45.060Z, total time in milliseconds: 5589
 ```
 
+**Astronomical Offsets**
+
+The SOAP request message may contain information about astronomical offsets (see the
+[documentation about light schedules](../../../Domains/Smartlighting/LightSchedules.md) for more
+details about the offsets).<br>
+When `AstronomicalSunriseOffset` and/or `AstronomicalSunsetOffset` are set, they will be written to
+the device in attributes `CSLC.SWCf.adRiseOft` and `CSLC.SWCf.adSetOft`.
 
 
 #### Example 2: Tariff Schedule
