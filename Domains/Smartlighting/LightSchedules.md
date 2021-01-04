@@ -155,18 +155,85 @@ after which they are switched off again. In such a case the action of switching 
 suppressed if `minimumLightsOn` is set with a positive number of seconds, and the action switching the
 lights off again will be executed within this time period.
 
+The minimal burning time is always regarded with respect to an **actual time** for a switching moment
+that switches a relay on in comparison with the **expected time** of the next switching moment where
+the same relay will be switched off again.<br>
+Switching on will be skipped if switching off is expected to occur within a number of minutes set as
+`minimumLightsOn` with the schedule entry that switches the relay on.
+
+### Minimal Burning Time With Astronomical Offset
+
+This example shows the minimal burning time preventing the [morning lights](#morning-lights) to be
+switched on at a fixed time because switching off at the calculated time of astronomical sunrise
+(with offset) would happen before passing of the minimum number of minutes the lights should be kept on.
+
+![Astronomical switching off within minimum lights on of fixed time switching on](./minimal-burning-time-morning-lights-do-not-switch-on.png)
+
+### Minimal Burning Time With Light Sensor Trigger Window
+
+This example shows the minimal burning time preventing the [morning lights](#morning-lights) to be
+switched on at a fixed time because switching off at the start of the trigger window around the
+calculated time of astronomical sunrise would happen before passing of the minimum number of minutes
+the lights should be kept on.
+
+![Trigger window switching off within minimum lights on of fixed time switching on](./minimal-burning-time-morning-lights-do-not-switch-on-trigger-window.png)
+
 ## Light Value
 
 Each schedule entry may include 1 to 6 `LightValue` elements. These light values determine the relay
 to switch, whether the relay should be switched on or off, and whether the lights with a relay should
 be dimmed (and by how much).
 
-- `Index`: `0` for all relays in the device, or `1` to `6` for numbered relays (the index should
-  indicate an existing relay that is used for light switching).
+- `Index`: `0` for all light switching relays in the device, or `1` to `6` for numbered relays (the
+  index should indicate an existing relay that is used for light switching).
 - `On`: `true` if this entry is for switching on the relay(s) identified by `Index`; `false` for
   switching off.
 - `DimValue`: optional percentage set as number `1` to `100` indicating a dim value; will be ignored
   when the protocol or switching device does not support dimming.
+
+## Common Light Scheduling Patterns
+
+Here are some examples of patterns that are common with light schedules. The patterns are formed by
+combinations of schedule entries that switch on or off lights controlled by a certain relay on the
+switching device.
+
+### All Night Lights
+
+All night lights is a name for lights that are turned on around sunset and keep burning all night
+until they are switched off again around sunrise.<br>
+The all night lights are switched by a pair of schedule entries:
+- one entry switching on at [astronomical sunset time](#astronomical-time) with
+  [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
+- another entry switching off again based on [astronomical sunrise time](#astronomical-time) with
+  [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
+
+![All Night Lights based on astronomical offset](./all-night-lights.png)
+
+### Morning Lights
+
+Morning lights is a name used for lights that are switched on a short period in the morning hours of
+a day to illuminate a period before or around the morning twilight.<br>
+The morning lights are switched by a pair of schedule entries:
+- one entry switching on at a [fixed time](#fixed-time);
+- another entry switching off again based on [astronomical sunrise time](#astronomical-time) with
+  [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
+
+### Evening Lights
+
+Evening lights is a name used for lights that are switched on a short period in the evening hours of
+a day to illuminate a period after or around dusk.<br>
+The evening lights are switched by a pair of schedule entries:
+- one entry switching on at [astronomical sunset time](#astronomical-time) with
+  [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
+- another entry switching off again based on [fixed time](#fixed-time);
+
+### Evening/Morning Lights
+
+A combination of [morning lights](#morning-lights) and [evening lights](#evening-lights) can be
+configured for a relay if the lights may be turned off for a period in the late night and early
+morning, as opposed to the [all night lights](#all-night-lights) that keep on burning all through the night.
+
+![Evening/Morning Lights based on light triggers](./evening-morning-lights.png)
 
 ## Validity
 
