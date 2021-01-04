@@ -76,6 +76,29 @@ For `ActionTime` `SUNRISE` or `SUNSET` with `TriggerType` `ASTRONOMICAL` the cal
 sunrise or sunset time (by the switching device, based on its longitude and latitude) will be used to
 determine the switching moment.
 
+#### Astronomical Offsets
+
+If an astronomical offset is configured, it has to be added to the calculated astronomical time to
+determine the time to be used as the switching moment.<br>
+For positive offset values, the astronomical time for the switching moment will be the configured
+amount of minutes after the calculated astronomical sunrise or sunset time, while for negative values
+the astronomical time used will be the number of minutes before the calculated astronomical sunrise
+or sunset time.
+
+**Astronomical Sunrise Offset**
+
+The astronomical sunrise offset is applied with entries with `ActionTime` `SUNRISE` and
+`TriggerType` `ASTRONOMICAL`.<br>
+The following picture is an example of switching off at 07:30; the calculated astronomical sunrise
+(say at 07:15 for the day shown) plus 15 minutes (configured as `AstronomicalSunriseOffset` `15`).
+
+![Switching off at astronomical sunrise with 15 minutes offset](./astronomical-time-sunrise-with-offset.png)
+
+**Astronomical Sunset Offset**
+
+The astronomical sunset offset is similar to the [astronomical sunrise offset](#astronomical-sunrise-offset),
+except that it is applied with entries with `ActionTime` `SUNSET` and `TriggerType` `ASTRONOMICAL`.
+
 ### Astronomical Time With Sensor
 
 For `ActionTime` `SUNRISE` or `SUNSET` with `TriggerType` `LIGHT_TRIGGER` the calculated astronomical
@@ -124,29 +147,6 @@ trigger window closes for a schedule entry for astronomical time with sensor sig
 at the end of the trigger window.
 
 ![Switching on when no sensor input is received before the trigger window closes](./astronomical-time-without-sensor-signal-before-window-closes.png)
-
-## Astronomical Offsets
-
-Earlier examples about astronomical time were a small simplification of the time being used as the
-switching moment. If an astronomical offset is configured, it has to be added to the calculated
-astronomical time to determine the time to be used as the switching moment.<br>
-For positive offset values, the astronomical time for the switching moment will be the configured
-amount of minutes after the calculated astronomical sunrise or sunset time, while for negative values
-the astronomical time used will be the number of minutes before the calculated astronomical sunrise
-or sunset time.
-
-### Astronomical Sunrise Offset
-
-The astronomical sunrise offset is applied with entries with `ActionTime` `SUNRISE`.<br>
-The following picture is an example of switching off at 07:30; the calculated astronomical sunrise
-(say at 07:15 for the day shown) plus 15 minutes (configured as `AstronomicalSunriseOffset` `15`).
-
-![Switching off at astronomical sunrise with 15 minutes offset](./astronomical-time-sunrise-with-offset.png)
-
-### Astronomical Sunset Offset
-
-The astronomical sunset offset is similar to the [astronomical sunrise offset](#astronomical-sunrise-offset),
-except that it is applied with entries with `ActionTime` `SUNSET`.
 
 ## Minimal Burning Time
 
