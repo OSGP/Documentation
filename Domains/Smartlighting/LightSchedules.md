@@ -218,6 +218,26 @@ The morning lights are switched by a pair of schedule entries:
 - another entry switching off again based on [astronomical sunrise time](#astronomical-time) with
   [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
 
+#### Fixed Time And Sunrise Interaction
+
+Depending on the location of the device the time of sunrise may vary quite a bit throughout the year.
+Because of this it is possible that what for some period would be a very reasonable schedule, is a
+questionable schedule (possibly to be considered [invalid](#validity)) in another season.
+
+During the summer in the Netherlands for example sunrise can be as early as approximately 05:15,
+while during the winter the sun may rise even a little later than 08:45.<br>
+If morning lights are configured to switch on at fixed time of say 06:00 (after the earliest sunrise
+in the year, but well before the latest sunrise in the year), the lights are switched off at sunrise
+after having been on for almost three hours at some time in the winter, but may not be switched off
+in the morning at all because they were turned on after sunrise at some period in the summer.
+
+![Morning Lights throughout the year](./morning-lights-throughout-the-year.png)
+
+Whether the lights stay on all day in the summer or not is something to be looked into.<br>
+A switching device may have logic to deal with this situation figuring out the switch off belongs
+with the later switching moment to turn the lights on, and decide not to switch on.<br>
+If not, some validation may be needed to enforce such schedules not to be configured.
+
 ### Evening Lights
 
 Evening lights is a name used for lights that are switched on a short period in the evening hours of
@@ -226,6 +246,13 @@ The evening lights are switched by a pair of schedule entries:
 - one entry switching on at [astronomical sunset time](#astronomical-time) with
   [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
 - another entry switching off again based on [fixed time](#fixed-time);
+
+#### Fixed Time And Sunset Interaction
+
+Depending on the location of the device the time of sunset may vary quite a bit throughout the year.
+Because of this it is possible that what for some period would be a very reasonable schedule, is a
+questionable schedule (possibly to be considered [invalid](#validity)) in another season.<br>
+See the [explanation around sunrise](#fixed-time-and-sunrise-interaction) for a graphical example.
 
 ### Evening/Morning Lights
 
