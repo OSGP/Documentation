@@ -8,7 +8,7 @@ A switching schedule is defined by a number of declarations of switching moments
 The `SetScheduleRequest` defines the schedule, where `Schedules` of type `Schedule` define the entries.<br>
 A complete schedule for a device as set with the Set Schedule request can have 1 up to 50 entries.<br>
 Each schedule entry defines a moment on a day when certain relays on a device are switched on or off.<br>
-Whether or not a switch action defined in a schedule entry is executed may not only depend on the entry itself.<br>
+Whether or not a switch action defined in a schedule entry is executed may not only depend on the entry itself.
 Other switch moments from the schedule that are [close in time](#minimal-burning-time) compared to
 an entry may cause switching to be skipped.
 
@@ -24,19 +24,19 @@ A more detailed description of the components defining a schedule entry is in th
 
 The value of `WeekDay` is used to indicate on which days the schedule entry may trigger switch actions.
 
-| **`WeekDay`** | **Description**                                                       |
-| -------------:| --------------------------------------------------------------------- |
-| `MONDAY`      | may only trigger a switch action on Mondays                           |
-| `TUESDAY`     | may only trigger a switch action on Tuesdays                          |
-| `WEDNESDAY`   | may only trigger a switch action on Wednesdays                        |
-| `THURSDAY`    | may only trigger a switch action on Thursdays                         |
-| `FRIDAY`      | may only trigger a switch action on Fridays                           |
-| `SATURDAY`    | may only trigger a switch action on Saturdays                         |
-| `SUNDAY`      | may only trigger a switch action on Sundays                           |
-| `WEEKDAY`     | may only trigger a switch action on weekdays (Monday to Friday)       |
-| `WEEKEND`     | may only trigger a switch action during weekends (Saturday or Sunday) |
-| `ABSOLUTEDAY` | may only trigger a switch action on the day specified in `startDay`   |
-| `ALL`         | may trigger a switch action on any day                                |
+| **`WeekDay`** | **May trigger a switch action on** |
+| -------------:| ---------------------------------- |
+| `MONDAY`      | Mondays                            |
+| `TUESDAY`     | Tuesdays                           |
+| `WEDNESDAY`   | Wednesdays                         |
+| `THURSDAY`    | Thursdays                          |
+| `FRIDAY`      | Fridays                            |
+| `SATURDAY`    | Saturdays                          |
+| `SUNDAY`      | Sundays                            |
+| `WEEKDAY`     | weekdays (Monday to Friday)        |
+| `WEEKEND`     | weekend days (Saturday or Sunday)  |
+| `ABSOLUTEDAY` | the day specified in `startDay`    |
+| `ALL`         | any day                            |
 
 ## Time
 
@@ -52,10 +52,10 @@ in which this time can be specified, starting with `ActionTime`.
 For `ActionTime` values `SUNRISE` or `SUNSET` the value of `TriggerType` specifies what the actual
 switching time should be.
 
-| **`TriggerType`** | **Description**                                                                                           |
-| -----------------:| --------------------------------------------------------------------------------------------------------- |
-| `LIGHT_TRIGGER`   | [astronomical time with sensor input](#astronomical-time-with-sensor) determine the actual switching time |
-| `ASTRONOMICAL`    | the [calculated astronomical time](#astronomical-time) for sunrise or sunset is the switching time        |
+| **`TriggerType`** | **Description**                                                                                            |
+| -----------------:| ---------------------------------------------------------------------------------------------------------- |
+| `LIGHT_TRIGGER`   | [astronomical time with sensor input](#astronomical-time-with-sensor) determines the actual switching time |
+| `ASTRONOMICAL`    | the [calculated astronomical time](#astronomical-time) for sunrise or sunset is the switching time         |
 
 ### Fixed Time
 
@@ -72,9 +72,9 @@ instance, will silently apply only the hours and minutes from any of the formats
 
 ### Astronomical Time
 
-For `ActionTime` `SUNRISE` or `SUNSET` with `TriggerType` `ASTRONOMICAL` the calculated astronomical
-sunrise or sunset time (by the switching device, based on its longitude and latitude) will be used to
-determine the switching moment.
+For `ActionTime` `SUNRISE` or `SUNSET` with `TriggerType` `ASTRONOMICAL` the astronomical sunrise or
+sunset time (as calculated by the switching device, based on its longitude and latitude) will be used
+to determine the switching moment.
 
 #### Astronomical Offsets
 
@@ -153,7 +153,7 @@ at the end of the trigger window.
 For certain types of lighting it may be undesirable to switch the lights on only for a short period of time,
 after which they are switched off again. In such a case the action of switching the lights on will be
 suppressed if `minimumLightsOn` is set with a positive number of seconds, and the action switching the
-lights off again will be executed within this time period.
+lights off again is expected within this time period.
 
 The minimal burning time is always regarded with respect to an **actual time** for a switching moment
 that switches a relay on in comparison with the **expected time** of the next switching moment where
@@ -226,10 +226,15 @@ questionable schedule (possibly to be considered [invalid](#validity)) in anothe
 
 During the summer in the Netherlands for example sunrise can be as early as approximately 05:15,
 while during the winter the sun may rise even a little later than 08:45.<br>
-If morning lights are configured to switch on at fixed time of say 06:00 (after the earliest sunrise
-in the year, but well before the latest sunrise in the year), the lights are switched off at sunrise
-after having been on for almost three hours at some time in the winter, but may not be switched off
-in the morning at all because they were turned on after sunrise at some period in the summer.
+For this example we will assume configuration for the morning lights to switch on at fixed time of
+say 06:00. This is a time after the earliest sunrise in the year, but well before the latest sunrise
+ in the year.<br>
+To complete the morning lights configuration, a second switching moment is configured to switch the
+lights off at sunrise.<br>
+With this set up the lights will be switched off after having been on for almost three hours at some
+time in the winter (for instance from 06:00 to 08:45).<br>
+During summer at some days the lights will not be switched off in the morning at all because they were
+turned on (at 06:00) after sunrise (switching off at any time before 06:00, for instance at 05:30).
 
 ![Morning Lights throughout the year](./morning-lights-throughout-the-year.png)
 
@@ -242,6 +247,9 @@ If not, some validation may be needed to enforce such schedules not to be config
 
 Evening lights is a name used for lights that are switched on a short period in the evening hours of
 a day to illuminate a period after or around dusk.<br>
+This is similar to the [morning lights](#morning-lights), but in the evening instead of the morning,
+and the fixed time moment comes (normally) after the switch action around sunset.
+
 The evening lights are switched by a pair of schedule entries:
 - one entry switching on at [astronomical sunset time](#astronomical-time) with
   [optional offset](#astronomical-offsets) or [light sensor trigger](#astronomical-time-with-sensor).
@@ -274,9 +282,9 @@ Examples of such constraints, that are not enforced by GXF, could be:
 - no duplicated schedule entries;
 - no schedule entries canceling the switch actions of other entries within some time window;
 - schedule entries may be required for all days of the week;
-- switching on and off my be required to happen each day in equal number of times and alternately;
+- switching on and off might be required to happen each day in equal number of times and alternately;
 - checking expected actions around daylight saving change;
-- checking expected switching actions for days with the longest or shortest hours of daylight;
+- checking expected switching actions for days with the longest or shortest number of hours of daylight;
 - light value indexes map to existing light relays on the device the schedule is set on;
 - constraints from applying the provided input with specific devices or protocols.
 
