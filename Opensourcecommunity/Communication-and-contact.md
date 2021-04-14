@@ -1,21 +1,10 @@
 ## Communication and Contact
 
-We choose [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for most of our development communication. This keeps the communication central and topic central and connect to development effort. 
-Please use [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) for issues and bugs. 
-
 If you want to get in touch to discuss non-technical subjects, send us an email to the LF energy GXF mailing list gxf@lists.lfenergy.org or open an [issue on Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
-
-## Jira
-
-Jira was chosen due to its extensive features. The current [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) board is sponsored by Alliander for synergy reasons. 
-Once we have multiple contributors outside Alliander we can move to a dedicated Jira instance or something else.
-
-Once you get actively involved, you can request write permissions on the Jira board.
-You can request write access to the Jira issue board by sending a request to gxf@lists.lfenergy.org.
 
 ### New Features
 
-1. If there is a need (or wish!) for a new feature, add it as issue to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/) as a user story. Please provide a full description about the background of the problem. Spilt-up big user stories in multiple small user stories.
+1. If there is a need (or wish!) for a new feature, add it as issue to [Github](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**). Please provide a full description about the background of the problem.
 
 2. A developer can take on the issue and start working on it on voluntary base. If you need this feature and you have the money to pay for it, you can hire a developer and have the developer work on it. If open smart grid platform core components are involved, please discuss your change first with one of the developers/maintainers.
 
@@ -33,7 +22,7 @@ You can request write access to the Jira issue board by sending a request to gxf
 6. The maintainer than closes the issue.
 
 ### Questions
-If you have a question, please create an Github issue in the [documentation repository](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**) or request access to [Jira](https://smartsocietyservices.atlassian.net/projects/OC/issues/).
+If you have a question, please create an Github issue in the [documentation repository](https://github.com/OSGP/documentation/issues/new?title=Question%20:My%20Title&body=**Question:**%0A%0A**background:**%0A%0A**).
 
  
 ### Report security issues
