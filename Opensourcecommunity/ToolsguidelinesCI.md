@@ -6,8 +6,8 @@ The technology and tools used can be found in the [Technology stack](../Architec
 
 ## Code Guidelines and Code Tests
 
-- In Eclipse >Window >Preferences >Java >Code Style >Formatter, import the file /home/dev/Sources/OSGP/Config/code-format-settings/eclipse/code-format/JavaFormatter.xml
-- In Eclipse >Window >Preferences >Java >Editor >Save actions, follow the images in /home/dev/Sources/OSGP/Config/code-format-settings/eclipse/save-actions. 
+- To prevent formatting issues caused by using different IDEs, the formatting style for the code is based on [Google Java Format](https://github.com/google/google-java-format) with some extra additions based on the Eclipse based conventions that were already in use.
+  Check the explanation of the [general ideas](https://github.com/OSGP/Config/tree/development/code-format-settings) as well as the instructions how to configure your idea to be able to format according to the conventions (available for [Eclipse](https://github.com/OSGP/Config/tree/feature/google_java_format/code-format-settings/eclipse) and [IntelliJ](https://github.com/OSGP/Config/tree/feature/google_java_format/code-format-settings/intellij)).
 - Follow [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) approach for branching
 - Write behaviour driven tests using [Cucumber and Gherkin](https://cucumber.io), see the [Integration-Tests](https://github.com/OSGP/open-smart-grid-platform/tree/development/integration-tests)
 - In case you are not familiar with behaviour driven tests, include unit tests
