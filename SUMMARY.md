@@ -128,6 +128,7 @@
             * [EnableDebugging](Domains/Smartmetering/smartmeteringwebservices/EnableDebugging.md)
             * [DisableDebugging](Domains/Smartmetering/smartmeteringwebservices/DisableDebugging.md)
             * [FindMessageLogs](Domains/Smartmetering/smartmeteringwebservices/FindMessageLogs.md)
+            * [GetGsmDiagnostic](Domains/Smartmetering/smartmeteringwebservices/GetGsmDiagnostic.md)
         * [Monitoring](Domains/Smartmetering/smartmeteringwebservices/Monitoring.md)
             * [GetActualMeterReads](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReads.md)
             * [GetActualMeterReadsResponse](Domains/Smartmetering/smartmeteringwebservices/GetActualMeterReadsResponse.md)
