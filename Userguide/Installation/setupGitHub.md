@@ -8,7 +8,7 @@ git config --global user.email yourEmailAddress
 ```
 
 ### Contributors License Agreement (CLA)
-GXF is covered by [LFE's CLA](https://easycla.lfx.linuxfoundation.org/). You have to sign/agree to it in order to commit changes.
+GXF is covered by [LFE's CLA](https://easycla.lfx.linuxfoundation.org/). You have to sign/agree to it in order to commit changes. Most likely you will have to sign the individual agreement, unless you work for a licensed company.
 
 Your pull request will detect if you haven't signed it yet and instructions are given on how to continue.
 
