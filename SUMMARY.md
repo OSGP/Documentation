@@ -28,6 +28,7 @@
       * [Installation](Userguide/Installation/installation.md)
 	    * [Vagrant](Userguide/Installation/Setup-VM-Vagrant.md)
 	    * [Manual Setup](Userguide/Installation/manualInstallation.md)
+      * [GitHub configuration](Userguide/Installation/setupGitHub.md)
       * [Platform Setup](Userguide/Installation/setupOSGP.md)
       * [Test the Platform](Userguide/Installation/request.md)
         * [Using SoapUi](Userguide/Installation/testOSGP.md)
