@@ -10,16 +10,13 @@ This domain consist of [Switching schedules](./LightSchedules.md), groups, light
 
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |
-| **DeviceMonitoring.wsdl** |
-| GetActualPowerUsage | DeviceIdentification | PowerUsageData |
-| GetPowerUsageHistory | DeviceIdentification, TimePeriod, HistoryTermType, Page | PowerUsageData, PageInfo |
-| **PublicLightingAdHocManagement** |
+| **PublicLightingAdHocManagement.wsdl** |
 | SetTransition | DeviceIdentification, TransitionType, Time | - |
 | FindAllDevices | Page | DevicePage |
 | GetStatus | DeviceIdentification | LightValues, PreferredLinkType, ActualLinkType, LightType, EventNotifications |
 | ResumeSchedule | DeviceIdentification, Index, IsImmediate | - |
 | SetLight | DeviceIdentification, LightValue | - |
-| **PublicLightingScheduleManagement** |
+| **PublicLightingScheduleManagement.wsdl** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 
 * [PublicLighting WSDL's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-publiclighting/src/main/resources)

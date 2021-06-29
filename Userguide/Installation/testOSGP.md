@@ -32,7 +32,7 @@ Alternatively you can create the 'admin' project yourself by following the steps
 
 - Right click the 'admin' project and choose 'Add WSDL'. Enter the following URL in the WSDL Location field:
 ```
-/home/dev/Sources/OSGP/open-smart-grid-platform/osgp/shared/osgp-ws-admin/src/main/resources/DeviceManagement.wsdl
+/home/dev/Sources/OSGP/open-smart-grid-platform/osgp/shared/osgp-ws-admin/src/main/resources/AdminDeviceManagement.wsdl
 ```
 
 - Make sure the box 'Create sample requests for all operations' is checked, and click OK.
