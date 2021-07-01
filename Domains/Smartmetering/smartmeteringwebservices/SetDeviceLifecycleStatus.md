@@ -11,4 +11,4 @@ The returned response for the SetDeviceLifecycleStatus request is as specified i
 
 XSD: [devicemanagement-ws-core.xsd](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-core/src/main/resources/schemas/devicemanagement-ws-core.xsd)
 
-WSDL: [DeviceManagement.wsdl](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-core/src/main/resources/DeviceManagement.wsdl)
+WSDL: [CoreDeviceManagement.wsdl](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-core/src/main/resources/CoreDeviceManagement.wsdl)

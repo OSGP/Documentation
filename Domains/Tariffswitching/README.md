@@ -9,10 +9,10 @@ This domain could be used to replace ripple control tariff signals.
 
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |
-| **TariffSwitchingAdHocManagement** |
+| **TariffSwitchingAdHocManagement.wsdl** |
 | GetDevices |   |   |
 | GetStatus | DeviceIdentification | Status |
-| **TariffSwitchingScheduleManagement** |
+| **TariffSwitchingScheduleManagement.wsdl** |
 | SetSchedule | DeviceIdentification, Schedules, Page | - |
 
 

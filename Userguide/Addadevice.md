@@ -9,7 +9,7 @@ Each device type may have its own registration mechanism.
 
 - To add a DLMS Device to the Platform, take a look at the documentation of the Soap call [AddDevice](../Domains/Smartmetering/smartmeteringwebservices/AddDevice.md) as defined in the [SmartMeteringInstallation.wsdl](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-smartmetering/src/main/resources/SmartMeteringInstallation.wsdl).
 
-- To add an OSLP Device to the Platform, the Soap call defined in [DeviceInstallation](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-core/src/main/resources/DeviceInstallation.wsdl) can be used, or the [UpdateKey Request](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-admin/src/main/resources/DeviceManagement.wsdl).
+- To add an OSLP Device to the Platform, the Soap call defined in [CoreDeviceInstallation](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-core/src/main/resources/CoreDeviceInstallation.wsdl) can be used, or the [UpdateKey Request](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-admin/src/main/resources/AdminDeviceManagement.wsdl).
 
 Please take a look at the chapter [Testing the open smart grid platform](./Installation/testOSGP.md) in the installation manual for a detailed guide of how to add a OSLP device to the platform.
 

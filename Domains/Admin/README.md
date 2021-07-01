@@ -7,7 +7,7 @@ This core and admin domain contains all generic web services that can be used in
 
 | **Operation** | **Request** | **Response** |
 | --- | --- | --- |
-| **DeviceInstallation.wsdl** |
+| **CoreDeviceInstallation.wsdl** |
 | AddDevice | DeviceIdentification | - |
 | FindDevicesWhichHaveNoOwner | - | Devices |
 | FindRecentDevices | - | Devices |
@@ -15,7 +15,7 @@ This core and admin domain contains all generic web services that can be used in
 | StopDeviceTest | DeviceIdentification | - |
 | UpdateDevice | DeviceIdentification | - |
 | GetStatus | DeviceIdentification | Status |
-| **DeviceManagement.wsdl** |
+| **AdminDeviceManagement.wsdl / CoreDeviceManagement.wsdl** |
 | ChangeOrganisation | Organisation | - |
 | CreateOrganisation | Organisation | - |
 | FindAllOrganisations | - | Organisations |
@@ -30,16 +30,13 @@ This core and admin domain contains all generic web services that can be used in
 | UpdateDeviceAuthorisations | DeviceAuthorisations | - |
 | ActivateOrganisation | Organisation | - |
 | SetDeviceLifecycleStatus | DeviceIdentification, DeviceLifecycleStatus | - |
-| **FirmwareManagement.wsdl** |
+| **CoreFirmwareManagement.wsdl** |
 | GetFirmwareVersion | DeviceIdentification | FirmwareVersion |
 | UpdateFirmware | DeviceIdentification, FirmwareIdentification | - |
-| **ConfigurationManagement.wsdl** |
+| **CoreConfigurationManagement.wsdl** |
 | GetConfiguration | DeviceIdentification | Configuration |
 | SetConfiguration | DeviceIdentification, Configuration | - |
-| **ScheduleManagement.wsdl** |
-| SetSchedule | DeviceIdentification, Schedules, Page | - |
-| SetTariffSchedule | DeviceIdentification, Schedules, Page | - |
-| **AdHocManagement.wsdl** |
+| **CoreAdHocManagement.wsdl** |
 | SetReboot | DeviceIdentification | - |
 
 * [Core WSDL's](https://github.com/OSGP/open-smart-grid-platform/tree/development/osgp/shared/osgp-ws-core/src/main/resources)
