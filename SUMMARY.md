@@ -83,6 +83,7 @@
             * [GetUpdateFirmwareResponse](Domains/Smartmetering/smartmeteringwebservices/GetUpdateFirmwareResponse.md)
             * [ReplaceKeys](Domains/Smartmetering/smartmeteringwebservices/ReplaceKeys.md)
             * [GetReplaceKeysResponse](Domains/Smartmetering/smartmeteringwebservices/GetReplaceKeysResponse.md)
+            * [GetKeys](Domains/Smartmetering/smartmeteringwebservices/GetKeys.md)
             * [SetActivityCalendar](Domains/Smartmetering/smartmeteringwebservices/SetActivityCalendar.md)
             * [GetSetActivityCalendarResponse](Domains/Smartmetering/smartmeteringwebservices/GetSetActivityCalendarResponse.md)
             * [SetAdministrativeStatus](Domains/Smartmetering/smartmeteringwebservices/SetAdministrativeStatus.md)
