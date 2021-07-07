@@ -20,7 +20,13 @@ Your pull request will detect if you haven't signed-off your commits and instruc
 #### Command line
 Just add `-s` to `git commit ...`.
 
+Note this is the lower case `-s` (short for `--signoff`).
+
+With `git merge ...` you can add `--signoff` as the shorter `-s` is used to set the merge strategy.
+
 #### Eclipse
+In some versions of Eclipse you can click the button to "Add Signed-off-by" in the Git Staging view:
+![DCO Eclipse](./installation-script-screenshots/DCO-Eclipse.png)
 
 #### IntelliJ
 In the commit toolwindow, click the settings icon and check the 'Sign-off commit' checkbox:
