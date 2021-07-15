@@ -42,3 +42,8 @@ Current maintainers:
 * Open smart grid platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
 * Smart metering domain: [Sander van der Heijden](https://github.com/smvdheijden)
 * Non-domain specific documentation & configuration: [Robert Tusveld](https://github.com/rtusveld)
+
+###Contributors
+Contributors include anyone in the technical community that contributes code, documentation, or other technical artifacts to the project.
+
+Anyone can become a contributor. There is no expectation of commitment to the project, no specific skill requirements and no selection process. To become a contributor, a community member simply has to perform one or more actions that are beneficial to the project.
