@@ -108,10 +108,10 @@ SOAP Request Message for Platform web service:
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
-   <soapenv:Header>   
+   <soapenv:Header>
 	 <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
 	 <com:UserName>Kevin</com:UserName>
-	 <com:ApplicationName>SoapUI</com:ApplicationName>	   
+	 <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
    <soapenv:Body>
 
@@ -233,13 +233,13 @@ SOAP Response Message:
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
-   <SOAP-ENV:Body>   
+   <SOAP-ENV:Body>
       <ns3:SetScheduleAsyncResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
          <ns3:AsyncResponse>
             <ns2:CorrelationUid>LianderNetManagement|||device-01|||20151230104608559</ns2:CorrelationUid>
             <ns2:DeviceId>device-01</ns2:DeviceId>
-         </ns3:AsyncResponse>		 
-      </ns3:SetScheduleAsyncResponse>	  
+         </ns3:AsyncResponse>
+      </ns3:SetScheduleAsyncResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
@@ -447,18 +447,18 @@ SOAP Request to obtain response from 'device-01':
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/common/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
-   <soapenv:Header>   
+   <soapenv:Header>
 	   <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
 	   <com:UserName>Kevin</com:UserName>
 	   <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
-   <soapenv:Body>   
-      <sch:SetScheduleAsyncRequest>	  
+   <soapenv:Body>
+      <sch:SetScheduleAsyncRequest>
          <sch:AsyncRequest>
             <com:CorrelationUid>LianderNetManagement|||device-01|||20151230104608559</com:CorrelationUid>
             <com:DeviceId>device-01</com:DeviceId>
-         </sch:AsyncRequest>		 
-      </sch:SetScheduleAsyncRequest>	  
+         </sch:AsyncRequest>
+      </sch:SetScheduleAsyncRequest>
    </soapenv:Body>
 </soapenv:Envelope>
 ````
@@ -468,10 +468,10 @@ SOAP Response containing response from 'device-01':
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
-   <SOAP-ENV:Body>   
+   <SOAP-ENV:Body>
       <ns3:SetScheduleResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
-         <ns3:Result>OK</ns3:Result>		 
-      </ns3:SetScheduleResponse>	  
+         <ns3:Result>OK</ns3:Result>
+      </ns3:SetScheduleResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
@@ -604,12 +604,12 @@ SOAP messages:
 xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 xmlns:com="http://www.opensmartgridplatform.org/schemas/publiclighting/2014/10"
 xmlns:sch="http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10">
-   <soapenv:Header>   
+   <soapenv:Header>
    <com:OrganisationIdentification>LianderNetManagement</com:OrganisationIdentification>
    <com:UserName>Kevin</com:UserName>
    <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
-   <soapenv:Body>      
+   <soapenv:Body>
       <sch:SetScheduleRequest>
          <!--type: Identification-->
          <sch:DeviceIdentification>device-01</sch:DeviceIdentification>
@@ -875,12 +875,14 @@ Description for this schedule:
 
 This schedule consists of 1 page, and uses 'minimumLightOn' to indicate a minimal burning time in seconds. Further it uses 'index' and 'isEnabled' variables for the Schedule struct, to indicate what index this schedule-entry has within the list of schedule-entries and whether or not the schedule-entry is enabled.
 
+**Astronomical Offsets**
 
-
-
-
-
-
+The SOAP request message may contain information about astronomical offsets (see the
+[documentation about light schedules](../../../Domains/Smartlighting/LightSchedules.md) for more
+details about the offsets).<br>
+When `AstronomicalSunriseOffset` and/or `AstronomicalSunsetOffset` are set, they will be configured
+on the device by [updating the configuration](./SetConfiguration.md) setting the offsets as
+`astroGateSunRiseOffset` and `astroGateSunSetOffset` of the `SetConfigurationRequest`.
 
 
 
@@ -913,7 +915,7 @@ SOAP Request Message for Platform web service:
                <sch:Index>3</sch:Index>
                <sch:High>0</sch:High>
             </sch:TariffValue>
-         </sch:Schedules>         
+         </sch:Schedules>
 
          <sch:Schedules>
             <sch:WeekDay>WEEKDAY</sch:WeekDay>
@@ -1387,12 +1389,12 @@ SOAP Request to obtain response from 'device-01':
       <com:UserName>Kevin</com:UserName>
       <com:ApplicationName>SoapUI</com:ApplicationName>
    </soapenv:Header>
-   <soapenv:Body>   
-      <sch:SetScheduleAsyncRequest>	  
-         <sch:AsyncRequest>		 
+   <soapenv:Body>
+      <sch:SetScheduleAsyncRequest>
+         <sch:AsyncRequest>
             <com:CorrelationUid>LianderNetManagement|||device-01|||20151230132054477</com:CorrelationUid>
-            <com:DeviceId>device-01</com:DeviceId>			
-         </sch:AsyncRequest>		 
+            <com:DeviceId>device-01</com:DeviceId>
+         </sch:AsyncRequest>
       </sch:SetScheduleAsyncRequest>
    </soapenv:Body>
 </soapenv:Envelope>
@@ -1403,10 +1405,10 @@ SOAP Response containing response from 'device-01':
 ``` xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
-   <SOAP-ENV:Body>   
+   <SOAP-ENV:Body>
       <ns3:SetScheduleResponse xmlns:ns2="http://www.opensmartgridplatform.org/schemas/common/2014/10" xmlns:ns3="http://www.opensmartgridplatform.org/schemas/tariffswitching/schedulemanagement/2014/10">
-         <ns3:Result>OK</ns3:Result>		 
-      </ns3:SetScheduleResponse>	  
+         <ns3:Result>OK</ns3:Result>
+      </ns3:SetScheduleResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
