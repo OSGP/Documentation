@@ -18,9 +18,9 @@ The Grid eXchange Fabric is used in the following way:
 - For the 'translation' and communication of user/operator commands to the various smart devices, the platform uses multiple (open) protocols
 - The platform supports various IP based data telecommunication technologies and protocols to communicate with the devices
 
-More technical and user information about Grid eXchange Fabric can be found in this document. More generic/product information about Grid eXchange Fabric can be found on the [Grid eXchange Fabric website](http://opensmartgridplatform.org/).
+More technical and user information about Grid eXchange Fabric can be found in this document. More generic/product information about Grid eXchange Fabric can be found on the [Grid eXchange Fabric website](https://www.lfenergy.org/projects/gxf/).
 
-[![alt text](./Book-cover.jpg "Grid eXchange Fabric")](http://opensmartgridplatform.org/)
+[![alt text](./Book-cover.jpg "Grid eXchange Fabric")](https://www.lfenergy.org/projects/gxf/)
 
 
 ### Example use case for Grid eXchange Fabric
