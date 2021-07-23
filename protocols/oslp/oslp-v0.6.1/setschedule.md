@@ -99,7 +99,7 @@ enum Status {
 
 Screenshot of this schedule in an OSGP client application.
 
-![screenshot of schedule](../../../.gitbook/assets/relay-1-and-2-schedule%20%281%29.jpg)
+![screenshot of schedule](../../../.gitbook/assets/relay-1-and-2-schedule.jpg)
 
 SOAP Request Message for Platform web service:
 

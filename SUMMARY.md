@@ -199,5 +199,5 @@
       * [SwitchConfiguration](protocols/oslp/oslp-v0.6.1/switchconfiguration.md)
   * [MQTT](protocols/mqtt.md)
 * [Support](support.md)
-* [License](apache-license.md)
+* [License](license.md)
 

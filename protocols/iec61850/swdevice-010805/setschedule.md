@@ -57,7 +57,7 @@ Description: This schedule combines a 'morning/evening light' with an 'all night
 
 Screenshot of this schedule in an OSGP client application:
 
-![screenshot of schedule](../../../.gitbook/assets/relay-1-and-2-schedule.jpg)
+![screenshot of schedule](../../../.gitbook/assets/relay-1-and-2-schedule%20%281%29.jpg)
 
 SOAP Request Message for Platform web service:
 
