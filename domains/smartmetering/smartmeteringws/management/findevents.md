@@ -11,7 +11,7 @@ FindEvents is a request to retrieve periodic events logging from a device. The r
 * POWER\_QUALITY\_EVENT\_LOG
 * AUXILIARY\_EVENT\_LOG
 
-DSMR Chapter 4.2.1 and SMR chapter 4.2.1 describe the several events and their description.
+DSMR Chapter 4.2.1 and SMR5.1 chapters 4.2.1 and 4.2.2 describe the several events and their descriptions.
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
