@@ -2,20 +2,15 @@
 
 ## Description
 
-ClearMBusStatusOnAllChannels is a request to retrieve periodic events logging from a device. The request needs the DeviceIdentification, EventLogCategory, From and Until DateTime. The EventlogCategories consist off:
+ClearMBusStatusOnAllChannels is a request to clear the M-Bus status on all channels, so G-meters are ready to raise new alarms.
 
-* STANDARD\_EVENT\_LOG
-* FRAUD\_DETECTION\_LOG
-* COMMUNICATION\_SESSION
-* M\_BUS\_EVENT\_LOG
-* POWER\_QUALITY\_EVENT\_LOG
-* AUXILIARY\_EVENT\_LOG
+E-meters before version 5.1 clear the status by themself, 
 
-DSMR Chapter 4.2.1 and SMR5.1 chapters 4.2.1 and 4.2.2 describe the several events and their descriptions.
+The procedure to clear the M-Bus status is described in paragraph 5.8 Auxiliary event Handling in SMR5.1 (P3 Companion Standard)
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
-[ClearMBusStatusOnAllChannelsResponse](clearmbusstatusonallchannelsresponse.md) returns if the result is successful from the request. The response contains the DeviceIdentification and CorrelationUid which is received from the FindEvents request.
+[ClearMBusStatusOnAllChannelsResponse](clearmbusstatusonallchannelsresponse.md) returns if the result is successful from the request. The response contains the DeviceIdentification and CorrelationUid which is received from the ClearMBusStatusOnAllChannels request.
 
 ## References
 
