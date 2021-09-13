@@ -2,7 +2,7 @@
 
 ## Description
 
-ClearMBusStatusOnAllChannelsResponse returns if the result is successful from the ClearMBusStatusOnAllChannels request. The response contains the DeviceIdentification and CorrelationUid which is received from the [FindEvents](findevents.md) request.
+ClearMBusStatusOnAllChannelsResponse returns if the result is successful from the ClearMBusStatusOnAllChannels request. The response contains the DeviceIdentification and CorrelationUid which is received from the [ClearMBusStatusOnAllChannels](clearmbusstatusonallchannels.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
