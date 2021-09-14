@@ -4,7 +4,7 @@
 
 ClearMBusStatusOnAllChannels is a request to clear the M-Bus status on all channels, so G-meters are ready to raise new alarms.
 
-E-meters before version 5.1 clear the status by themself, 
+E-meters before version 5.1 clear the status by themselves. 
 
 The procedure to clear the M-Bus status is described in paragraph 5.8 Auxiliary event Handling in SMR5.1 (P3 Companion Standard)
 
