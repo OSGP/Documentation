@@ -5,14 +5,10 @@
 This documentation is available in multiple formats.
 
 Web
-
-* [Development branch publication](https://documentation.gxf.lfenergy.org)
-* [Master branch publication](https://documentation.gxf.lfenergy.org/documentation-master)
-* [Latest Pull-request publication](https://documentation.gxf.lfenergy.org/documentation-pr)
+* [Development branch publication](https://grid-exchange-fabric.gitbook.io/)
 
 PDF
-
-* [Development branch publication in PDF](https://documentation.gxf.lfenergy.org/documentation-pdf)
+* Click on <B>Export as PDF</B> on right side of gitbook [Development branch publication](https://grid-exchange-fabric.gitbook.io/)
 
 ## Contributing to documentation
 
