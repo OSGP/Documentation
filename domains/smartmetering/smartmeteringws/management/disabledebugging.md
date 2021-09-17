@@ -6,7 +6,7 @@ Disable debugging for a device. Communication with the device will be logged and
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
-[GetDisableDebuggingResponse](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Domains/Smartmetering/smartmeteringwebservices/GetDisableDebuggingResponse.md) returns the result status. The response contains the DeviceIdentification and CorrelationUid which is received from the GetDisableDebuggingRequest request.
+[GetDisableDebuggingResponse](getdisabledebuggingresponse.md) returns the result status. The response contains the DeviceIdentification and CorrelationUid which is received from the GetDisableDebuggingRequest request.
 
 ## References
 

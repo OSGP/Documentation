@@ -27,11 +27,11 @@ When both the DLMS and OSLP providers are deloyed within the same Java VM, the S
 
 ### OSLP v0.5.1 \(Deprecated\)
 
-The protobuf contract for [OSLP v0.5.1](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Protocols/OSLP/oslp/v0.5.1/oslp.proto.v0.5.1.md). For v0.5.1 port number 12121 is used.
+The protobuf contract for [OSLP v0.5.1](oslp-v0.5.1/oslp.proto.v0.5.1.md). For v0.5.1 port number 12121 is used.
 
 ### OSLP v0.6.1
 
-The protobuf contract for [OSLP v0.6.1](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Protocols/OSLP/oslp/v0.6.1/oslp.proto.v0.6.1.md). For v0.6.1 port number 12122 is used.
+The protobuf contract for [OSLP v0.6.1](oslp-v0.6.1/oslp.proto.v0.6.1.md). For v0.6.1 port number 12122 is used.
 
 ### OSLP Envelope
 

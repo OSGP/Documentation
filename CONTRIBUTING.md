@@ -4,7 +4,7 @@ We'd love to accept your patches and contributions to this project. There are ju
 
 ## Code of conduct
 
-Please comply with the [code of conduct](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/code-of-conduct) 
+Please comply with the [code of conduct](opensourcecommunity/code-of-conduct.md) 
 
 ## To get started
 
@@ -16,25 +16,25 @@ Please comply with the [code of conduct](https://grid-exchange-fabric.gitbook.io
 
 4. Sign the CLA using [EasyCLA](https://easycla.lfx.linuxfoundation.org/).
 
-5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [documentation](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/governance).
+5. Assign a maintainer to accept/evaluate your pull request. The current maintainer can be found in the [documentation](opensourcecommunity/governance.md).
 
 If you have any questions, open an issue.
 
 ## Developer tools and technical guidelines
 
-Please find the [developer tools and technical guidelines here](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/toolsguidelinesci).
+Please find the [developer tools and technical guidelines here](opensourcecommunity/toolsguidelinesci.md).
 
 ## Documentation guidelines
 
-Please find the [documentation guidelines here](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/contributing-to-documentation).
+Please find the [documentation guidelines here](opensourcecommunity/contributing-to-documentation.md).
 
 ## Contribution guidelines
 
-Please find the [more detailed contribution guidelines here](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/contributing-to-the-code).
+Please find the [more detailed contribution guidelines here](opensourcecommunity/contributing-to-the-code.md).
 
 ## Governance 
 
-The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the Technical Steering committee has the authority to make a decision. Please read [this page](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/governance) for more information on the governance.
+The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the Technical Steering committee has the authority to make a decision. Please read [this page](opensourcecommunity/governance.md) for more information on the governance.
 
 ## Help
 

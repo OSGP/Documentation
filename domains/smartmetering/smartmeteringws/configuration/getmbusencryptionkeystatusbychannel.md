@@ -6,7 +6,7 @@ GetMbusEncryptionKeyStatusByChannel is a request to retrieve the encryption key 
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
-The returned response for the GetMbusEncryptionKeyStatusByChannel request is as specified in [GetMbusEncryptionKeyStatusByChannelResponse](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Domains/Smartmetering/smartmeteringwebservices/GetMbusEncryptionKeyStatusByChannelResponse.md).
+The returned response for the GetMbusEncryptionKeyStatusByChannel request is as specified in [GetMbusEncryptionKeyStatusByChannelResponse](getmbusencryptionkeystatusbychannelresponse.md).
 
 ## References
 
