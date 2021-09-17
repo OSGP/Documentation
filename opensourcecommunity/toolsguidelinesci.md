@@ -74,7 +74,7 @@ For the OSLP implementation, two components are used. The first component is the
 
 ### Installation Guide
 
-If a full installation is desired, have a look at our [Installation Guide](../userguide/installationguide/).
+If a full installation is desired, have a look at our [Installation Guide](../userguide/installationguide).
 
 ### Create New Domain Guide
 

@@ -34,4 +34,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Contact
 
-If you have a question, please read [GXF wiki contact page](https://grid-exchange-fabric.gitbook.io/gxf/opensourcecommunity/communication-and-contact) how to best contact us.
+If you have a question, please read [GXF wiki contact page](opensourcecommunity/communication-and-contact.md) how to best contact us.

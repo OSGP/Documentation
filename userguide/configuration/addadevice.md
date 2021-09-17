@@ -15,5 +15,5 @@ Please take a look at the chapter [Testing the open smart grid platform](../inst
 
 ## Additional Device actions
 
-In the [Domain Chapter](../../domains/) of the documentation more information of the Web Service calls can be found for Adding devices, setting configuration, authorizations, schedules, firmware updates, etc.
+In the [Domain Chapter](../../domains) of the documentation more information of the Web Service calls can be found for Adding devices, setting configuration, authorizations, schedules, firmware updates, etc.
 

@@ -42,7 +42,7 @@ The benefits of REST \(e.g. speed / less overhead\) does not outweigh the benefi
 
 For each functional domain business logic is implemented using a separate domain component. Common functionality like authorization should be abstracted to a shared component. Domain components receive queue messages from web service components and send queue messages to the open smart grid platform core component.
 
-More information on the specific domains can be found in the [domain chapter](../domains/)
+More information on the specific domains can be found in the [domain chapter](../domains)
 
 ## Open Smart Grid Platform Core Services
 
@@ -84,7 +84,7 @@ The protocols can use one of the security layers:
 * TLS \(Transport Layer Security encryption\)
 * SSL \(Secure Sockets Layer encryption\)
 
-Other protocols can be easily added to the platform. If possible, we prefer protocols based on open standards. A comprehensive list of protocols that are currently supported can be found in the [protocols chapter](../protocols/).
+Other protocols can be easily added to the platform. If possible, we prefer protocols based on open standards. A comprehensive list of protocols that are currently supported can be found in the [protocols chapter](../protocols).
 
 Protocol specific device attributes are stored in the protocol adapter DB
 
