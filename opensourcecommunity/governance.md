@@ -26,7 +26,7 @@ The community council consist of the following members:
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
 * Vacancy
-* LF Energy TAC member - Vacancy
+* LF Energy TAC member - Jonas van den Bogaard (a.i)
 
 If you would like to join the community council, please contact us! Mention @OSGP/communitycouncil in an github issue. The \(online\) community council meetings will happen when needed.
 
