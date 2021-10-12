@@ -23,7 +23,7 @@ When the community grows, members of the community council can be elected. If th
 The community council consist of the following members:
 
 * [Robert Tusveld](https://github.com/rtusveld) - Lead Architect - Chairman 
-* [Maarten Mulder](https://gitnub.com/maarten.mulder@alliander.com) - Product owner GXF
+* [Maarten Mulder](mailto:maarten.mulder@alliander.com) - Product owner GXF
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
 * [Jonas van den Boogaard](https://github.com/Jonasvdbo) - LF Energy TAC member
