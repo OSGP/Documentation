@@ -13,4 +13,3 @@ An application will typically use this service like this:
 
 ## SMS/texting throttling
 SMS can be used to wake up certain types of devices. Throttling in this context means limiting the number of messages per second to a configurable rate.
-
