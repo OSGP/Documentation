@@ -1,0 +1,37 @@
+@startuml
+
+package org.opensmartgridplatform.simulator.protocol.dlms.server.profile {
+
+class DefaultDeviceProfile << @Configuration, @Profile ( "default" ) >> {
++ Map<String, CosemInterfaceObject> cosemClasses(ApplicationContext context)
++ OctetStringData deviceId1()
+}
+
+note top of DefaultDeviceProfile
+The default profile is based on the
+Dutch companion standard DSMR 4
+end note
+
+note left of DefaultDeviceProfile::"cosemClasses(ApplicationContext context)"
+Spring Bean definition that collects all CosemInterfaceObject
+beans from Spring configuration classes with activated profiles.
+end note
+
+note left of DefaultDeviceProfile::deviceId1()
+Spring Bean definition of a class extending CosemInterfaceObject.
+A default value is set on DynamicValues based on the
+configured value for deviceidentification.serialnumber
+in application-default.properties.
+end note
+
+
+class Smr5Profile << @Configuration, @Profile ( "smr5" ) >>
+
+note top of Smr5Profile
+Enabling this profile adds COSEM objects
+based on Dutch companion standard SMR 5
+to the simulated server
+end note
+}
+
+@enduml

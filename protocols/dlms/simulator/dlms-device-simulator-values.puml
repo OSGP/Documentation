@@ -1,0 +1,65 @@
+@startuml
+
+package org.openmuc.jdlms {
+class DlmsServer
+note right of DlmsServer
+The actual DLMS server simulating
+a device, configured as Spring
+bean in DlmsServerConfig
+end note
+abstract class CosemInterfaceObject
+}
+
+package org.opensmartgridplatform.simulator.protocol.dlms.cosem {
+
+class OctetStringData << @CosemClass ( id = 1 ) >> {
+- DataObject value
++ DataObject getValue()
++ void setValue(DataObject octetStringValue)
+}
+
+note left of OctetStringData::value
+@CosemAttribute ( id = 2, type = octet-string )
+end note
+
+note right of OctetStringData::getValue()
+returns a value obtained via the DynamicValues
+end note
+
+note right of OctetStringData::"setValue(DataObject octetStringValue)"
+stores the octetStringValue via the DynamicValues
+end note
+
+}
+
+CosemInterfaceObject <|-- OctetStringData
+
+package org.opensmartgridplatform.simulator.protocol.dlms.util {
+
+class DynamicValues
+
+note left of DynamicValues
+Keeps track of all dynamic
+attribute values on the server
+end note
+
+}
+
+package org.opensmartgridplatform.simulator.protocol.dlms.rest.client {
+
+class DlmsAttributeValuesClient
+
+note right of DlmsAttributeValuesClient
+This client enables the server to have
+changeable attribute values that can be
+set and observed in other ways than
+through DLMS communication
+end note
+
+}
+
+OctetStringData *-- DynamicValues
+
+DynamicValues *-- DlmsAttributeValuesClient : client for attribute access\nfrom outside the server and\nwithout DLMS communication
+
+@enduml
