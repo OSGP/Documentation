@@ -88,7 +88,7 @@ made available outside the server and DLMS communication as well.
 ![A COSEM interface object with a readable and writable value](./simulator/dlms-device-simulator-values.png)
 
 The role the DlmsAttributeValuesClient can play in a scenario where data is read and set from tests
-is described with the [DLMS Attribute Values REST Resource](#dlms-attribute-values-rest-resource-as-used-in-cucumber-tests-with-a simulated-smart-meter).
+is described with the DLMS Attribute Values REST Resource.
 
 ### DLMS Attribute Values REST Resource as used in Cucumber tests with a simulated smart meter
 
