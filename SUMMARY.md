@@ -173,6 +173,7 @@
       * [GetStatus](protocols/iec61850/flexovl_540_171101_2/getstatus.md)
       * [EventNotification](protocols/iec61850/flexovl_540_171101_2/eventnotification.md)
   * [DLMS / COSEM](protocols/dlms/README.md)
+    * [DLMS protocol adapter configuration](protocols/dlms/protocoladapterconfiguration.md)
     * [DLMS device simulator](protocols/dlms/devicesimulator.md)
   * [OSLP](protocols/oslp/README.md)
     * [OSLP v0.5.1](protocols/oslp/oslp-v0.5.1/README.md)
