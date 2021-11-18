@@ -16,6 +16,10 @@ The open smart grid platform DLMS/COSEM implementation was initial based on SMR5
 
 The [OpenMUC jDLMS library from Fraunhofer](https://www.openmuc.org/dlms-cosem/) is used to implement the protocol. Please note that jDLMS is licensed under the GPLv3.
 
+### Protocol adapter configuration
+
+DLMS [protocol adapter configuration](protocoladapterconfiguration.md)
+
 ### DLMS device simulator
 
 DLMS [device simulator](devicesimulator.md)
