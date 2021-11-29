@@ -2,7 +2,11 @@
 
 ## Description
 
-SetPushSetupAlarm is a request to define the destination of the TCP message that is optionally sent by the device. The request needs the DeviceIdentification, Host URL and port.
+SetPushSetupAlarm is a request to define the TCP message that is optionally sent by the device. The request consists of:
+- The destination: the DeviceIdentification, Host URL and port.
+- The push object list, defining which information should be sent in the alarm.
+
+Both items are optional. If an item is not included in the message, the value in the meter will remain unchanged.
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
 
