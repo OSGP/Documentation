@@ -70,7 +70,7 @@ A Flyway script should be added for system data. For a new domain a new record m
 
 ### Testing the new domain services
 
-In order to test the new domain services take a look at the [Installation Guide](../userguide/installationguide/). While following this guide keep the following items in mind:
+In order to test the new domain services take a look at the [Installation Guide](../userguide/installationguide). While following this guide keep the following items in mind:
 
 * A test device for the new domain must be available. This can either be a physical device or a simulated device.
 * The test device must be connected or a device simulator must be running.

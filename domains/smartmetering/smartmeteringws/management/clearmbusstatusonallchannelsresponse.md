@@ -1,12 +1,10 @@
-# DisableDebugging
+# ClearMBusStatusOnAllChannelsResponse
 
 ## Description
 
-Disable debugging for a device. Communication with the device will be logged and made available through [FindMessageLogs](findmessagelogs.md),
+ClearMBusStatusOnAllChannelsResponse returns if the result is successful from the ClearMBusStatusOnAllChannels request. The response contains the DeviceIdentification and CorrelationUid which is received from the [ClearMBusStatusOnAllChannels](clearmbusstatusonallchannels.md) request.
 
 All requests have similar response behaviour which is described in [ResponseMessages](../../responsemessages.md).
-
-[GetDisableDebuggingResponse](getdisabledebuggingresponse.md) returns the result status. The response contains the DeviceIdentification and CorrelationUid which is received from the GetDisableDebuggingRequest request.
 
 ## References
 

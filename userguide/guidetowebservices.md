@@ -10,7 +10,7 @@ All the features of the open smart grid platform are accessible by it's webservi
 * The requests use the Secure HTTP protocol \(https\).
 * For Asynchronious requests, the Platform will respond with a correlationId after succesfully making the request. Use this correlationId in the matching Response-Request to obtain the response from the device.
 
-To learn more about the open smart grid platform's webservices, please take a look at the [Domain Documentation](../domains/) or for hands-on experience with the Platform's webservices follow the [UserGuide](installationguide/installation/setup-vm-vagrant.md).
+To learn more about the open smart grid platform's webservices, please take a look at the [Domain Documentation](../domains) or for hands-on experience with the Platform's webservices follow the [UserGuide](installationguide/installation/setup-vm-vagrant.md).
 
 ## Rest
 

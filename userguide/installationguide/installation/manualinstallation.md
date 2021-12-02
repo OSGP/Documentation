@@ -8,7 +8,7 @@ With the increased control come increased risks of things not working with the v
 
 ### Note
 
-* Skip this chapter if you followed the Vagrant installation! You can continue with next chapter: [Setup the Open Smart grid Platform](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Userguide/Installation/SetupOSGP.md)
+* Skip this chapter if you followed the Vagrant installation! You can continue with next chapter: [Setup the Open Smart grid Platform](../setuposgp.md)
 
 ## Operating System
 
@@ -108,5 +108,5 @@ service postgresql reload
 
 ## Set up the Open Smart Grid Platform
 
-Continue with setting up the Open Smart Grid Platform by following the [Set up the Open Smart Grid Platform Guide](https://documentation.gxf.lfenergy.org/Userguide/Installation/setupOSGP.html)
+Continue with setting up the Open Smart Grid Platform by following the [Set up the Open Smart Grid Platform Guide](../setuposgp.md)
 

@@ -1,6 +1,6 @@
 # SmartMetering
 
-This chapter describes the SmartMetering domain including the web services. Currently the web services of the beta version are described, since the web services have not yet officially been released. Information on the DLMS device simulator can be found in the [DLMS protocol section](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Domains/Protocols/DLMS/Devicesimulator.md)
+This chapter describes the SmartMetering domain including the web services. Currently the web services of the beta version are described, since the web services have not yet officially been released. Information on the DLMS device simulator can be found in the [DLMS protocol section](../../protocols/dlms/devicesimulator.md)
 
 ## Scope
 
@@ -21,7 +21,7 @@ Currently, the following Smart Metering features are available within the open s
 * [**bypass retry**](smartmeteringws/bypassretry.md) operations can be given the flag 'bypass retry'. Which means that an operation will not be retried in case of an error.
 * [**priority**](smartmeteringws/priority.md) operations can be given a priority from 0 to 9, default is 4. Higher values causes messages to be processed faster.
 * [**scheduling**](smartmeteringws/scheduling.md) operations can be scheduled for a certain time.
-* [**bundling**](smartmeteringws/bundling/) operations can be combined in a [Bundle](smartmeteringws/bundling/bundle.md).
+* [**bundling**](smartmeteringws/bundling) operations can be combined in a [Bundle](smartmeteringws/bundling/bundle.md).
 
 ## Messages
 
@@ -92,6 +92,7 @@ Currently, the following Smart Metering features are available within the open s
 
 ### SmartMeteringManagement
 
+* [**ClearMBusStatusOnAllChannels**](smartmeteringws/management/clearmbusstatusonallchannels.md) is an operation to clear the M-Bus status on all channels, so G-meters are ready to raise new alarms.
 * [**FindEvents**](smartmeteringws/management/findevents.md) is an operation to retrieve events logging from a device.
 * [**GetFindEventsResponse**](smartmeteringws/management/getfindeventsresponse.md) is an operation which returns the response from the [FindEvents](smartmeteringws/management/findevents.md) operation.
 * [**GetDevices**](smartmeteringws/management/getdevices.md) is an operation to retrieve the last known relay statuses for a group of devices.

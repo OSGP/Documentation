@@ -5,14 +5,10 @@
 This documentation is available in multiple formats.
 
 Web
-
-* [Development branch publication](https://documentation.gxf.lfenergy.org)
-* [Master branch publication](https://documentation.gxf.lfenergy.org/documentation-master)
-* [Latest Pull-request publication](https://documentation.gxf.lfenergy.org/documentation-pr)
+* [Development branch publication](https://grid-exchange-fabric.gitbook.io/)
 
 PDF
-
-* [Development branch publication in PDF](https://documentation.gxf.lfenergy.org/documentation-pdf)
+* Click on <B>Export as PDF</B> on right side of gitbook [Development branch publication](https://grid-exchange-fabric.gitbook.io/)
 
 ## Contributing to documentation
 
@@ -24,7 +20,7 @@ We encourage you to participate in improving the documentation. From corrected t
 2. Issue a pull request.
 3. Make sure the automated test suite succeeds. They will show-up in the pull request.
 4. Sign the CLA using [EasyCLA](https://lfcla.com/).
-5. Assign a maintainer or other developer on this topic to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Opensourcecommunity/Governance/README.md).
+5. Assign a maintainer or other developer on this topic to accept/evaluate your pull request. The current maintainer can be found in the [governance paragraph](governance.md).
 
 Some information on GitBook and using Markdown can be found [here](http://help.gitbook.com/), more elaborate information on GitHub-flavored Markdown is found [here](https://help.github.com/articles/github-flavored-markdown/). If you like to upload illustration, you can use git or [Github](https://help.github.com/articles/adding-a-file-to-a-repository/)
 

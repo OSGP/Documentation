@@ -74,14 +74,14 @@ For `ActionTime` `SUNRISE` or `SUNSET` with `TriggerType` `ASTRONOMICAL` the ast
 If an astronomical offset is configured, it has to be added to the calculated astronomical time to determine the time to be used as the switching moment.  
  For positive offset values, the astronomical time for the switching moment will be the configured amount of minutes after the calculated astronomical sunrise or sunset time, while for negative values the astronomical time used will be the number of minutes before the calculated astronomical sunrise or sunset time.
 
-**Astronomical Sunrise Offset**
+####Astronomical Sunrise Offset
 
 The astronomical sunrise offset is applied with entries with `ActionTime` `SUNRISE` and `TriggerType` `ASTRONOMICAL`.  
  The following picture is an example of switching off at 07:30; the calculated astronomical sunrise \(say at 07:15 for the day shown\) plus 15 minutes \(configured as `AstronomicalSunriseOffset` `15`\).
 
 ![Switching off at astronomical sunrise with 15 minutes offset](../../.gitbook/assets/astronomical-time-sunrise-with-offset.png)
 
-**Astronomical Sunset Offset**
+####Astronomical Sunset Offset
 
 The astronomical sunset offset is similar to the [astronomical sunrise offset](lightschedules.md#astronomical-sunrise-offset), except that it is applied with entries with `ActionTime` `SUNSET` and `TriggerType` `ASTRONOMICAL`.
 
