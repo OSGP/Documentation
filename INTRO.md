@@ -39,7 +39,7 @@ Use cases of Grid eXchange Fabric are only limited by your imagination. Here are
 
 * [Visit the userguide section to try Grid eXchange Fabric on your local machine](userguide/installationguide)
 * [The Architecture section provides information on platform architecture](architecture)
-* [Check out the domain section if you want to know about the the existing domains](architecture)
+* [Check out the domain section if you want to know about the the existing domains](domains)
 * [Check out the protocol section to find out more on the existing supported protocols](protocols)
 * [Read the open source section how to contribute!](opensourcecommunity)
 

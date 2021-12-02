@@ -1,6 +1,6 @@
 # Governance
 
-With the open smart grid platform we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy in order to have a balanced decision-making process and to prevent unwanted dictators and everlasting discussions. The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the community council has the authority to make a decision. [Grid eXchange Fabric complies with the LF Energy governance](https://www.lfenergy.org/about/governance/)
+With the open smart grid platform we intend to have the right balance between a benevolent Dictator and a Formal Meritocracy in order to have a balanced decision-making process and to prevent unwanted dictators and everlasting discussions. The basic principle is that decisions are based on consensus. If this decision making process takes too long or a decision is required, the community council has the authority to make a decision. [Grid eXchange Fabric complies with the LF Energy governance](https://www.lfenergy.org/governance/)
 
 The governance and rules should be respected.
 
@@ -22,11 +22,11 @@ When the community grows, members of the community council can be elected. If th
 
 The community council consist of the following members:
 
-* [Robert Tusveld](https://github.com/rtusveld) - Architect - Chairman 
+* [Robert Tusveld](https://github.com/rtusveld) - Lead Architect - Chairman 
+* [Maarten Mulder](mailto:maarten.mulder@alliander.com) - Product owner GXF
 * [Paul Houtman](https://github.com/phoutman) - Lead Architect
 * [Kevin Smeets](https://github.com/kevinsmeets) - Maintainer 
-* Vacancy
-* LF Energy TAC member - Vacancy
+* [Jonas van den Boogaard](https://github.com/Jonasvdbo) - LF Energy TAC member
 
 If you would like to join the community council, please contact us! Mention @OSGP/communitycouncil in an github issue. The \(online\) community council meetings will happen when needed.
 
@@ -44,9 +44,9 @@ In case of long discussions or arguments, maintainers or other can request a com
 
 Current maintainers:
 
-* Open smart grid platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
-* Smart metering domain: [Sander van der Heijden](https://github.com/smvdheijden)
-* Non-domain specific documentation & configuration: [Robert Tusveld](https://github.com/rtusveld)
+* GXF Platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
+* GXF Platform and Smart metering domain: [Sander van der Heijden](https://github.com/smvdheijden)
+* GXF Architecture & documentation: [Robert Tusveld](https://github.com/rtusveld)
 
 ## Contributors
 
