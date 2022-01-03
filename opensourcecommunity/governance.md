@@ -45,7 +45,7 @@ In case of long discussions or arguments, maintainers or other can request a com
 Current maintainers:
 
 * GXF Platform and smart lighting domain: [Kevin Smeets](https://github.com/kevinsmeets)
-* GXF Platform and Smart metering domain: [Sander van der Heijden](https://github.com/smvdheijden)
+* GXF Platform and Smart metering domain: [Stefan Ermens](https://github.com/stefanermens)
 * GXF Architecture & documentation: [Robert Tusveld](https://github.com/rtusveld)
 
 ## Contributors
