@@ -9,6 +9,8 @@ MQTT is a lightweight publish/subscribe messaging protocol designed for constrai
 ## Dependencies
 
 The MQTT Protocol Adapter uses the HiveMQ MQTT client `com.hivemq:hivemq-mqtt-client` which supports MQTT 3. The MQTT Protocol Simulator also uses HiveMQ, as well as the Moquette MQTT broker `io.moquette:moquette-broker`. The reason for using Moquette is that there is no Maven dependency for the HiveMQ broker component.
+The integration test for the MQTT client uses a test container for Eclipse Mosquitto based on the
+`eclipse-mosquitto` Docker image as broker.
 
 ## Simulator
 
@@ -44,5 +46,7 @@ The protocol adapter will establish a connection with the simulator and subscrib
 
 A configurable default QoS value is used \(See `com.hivemq.client.mqtt.datatypes.MqttQos` for the values\).
 
-If not yet present, an MqttDevice is saved in the database of the protocol adapter with the values used. If the MqttDevice is updated in the database, the updated values will be used for subsequent communication. There is not yet any means to update this data, other than manual updating in the database.
+In earlier versions the MQTT broker was treated as a device saved in the GXF core and protocol
+adapter databases. To simplify things the MQTT protocol adapter now allows to configure connection
+settings for the MQTT broker, no longer considering this as a platform device.
 
