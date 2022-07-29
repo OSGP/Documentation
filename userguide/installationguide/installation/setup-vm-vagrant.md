@@ -19,7 +19,7 @@ To improve the usability of the Installation process, a Vagrant file and some pu
 The following system requirements are recommended:
 
 * Core i5/i7 ~2.5GHz Dual Core, Quad Core recommended
-* At least 6 GB RAM, 8 GB RAM recommended
+* At least 16 GB RAM, 32 GB RAM recommended
 * At least 20 GB free space, 50 GB free space recommended
 
 The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubuntu 14.04 and Ubuntu 16.04.
