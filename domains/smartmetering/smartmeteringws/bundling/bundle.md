@@ -22,7 +22,7 @@ Currently, the following actions are supported:
 * GetPeriodicMeterReadsGasRequest see [GetPeriodicMeterReadsGas](../monitoring/getperiodicmeterreadsgas.md)
 * SetAdministrativeStatusRequest see [SetAdministrativeStatus](../configuration/setadministrativestatus.md)
 * SetActivityCalendarRequest see [SetActivityCalendar](../configuration/setactivitycalendar.md)
-* SetEncryptionKeyExchangeOnGMeterRequest see [SetEncryptionKeyExchangeOnGMeter](../configuration/setencryptionkeyexchangeongmeter.md)
+* SetKeyOnGMeterRequest see [SetKeyOnGMeter](../configuration/setkeyongmeter.md)
 * SetAlarmNotificationsRequest see [SetAlarmNotifications](../configuration/setalarmnotifications.md)
 * SetConfigurationObjectRequest see [SetConfigurationObject](../configuration/setconfigurationobject.md)
 * SetPushSetupAlarmRequest see [SetPushSetupAlarm](../configuration/setpushsetupalarm.md)
