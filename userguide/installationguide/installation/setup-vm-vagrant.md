@@ -22,13 +22,13 @@ The following system requirements are recommended:
 * At least 16 GB RAM, 32 GB RAM recommended
 * At least 20 GB free space, 50 GB free space recommended
 
-The installation procedure has been tested on Windows 7, Windows 10, MacOS, Ubuntu 14.04 and Ubuntu 16.04.
+The installation procedure has been tested on Windows 10.
 
 ### Install Vagrant and VirtualBox
 
 Start by downloading VirtualBox by going to [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) And follow the installation steps.
 
-> **note:** If you already have VirtualBox, make sure it is at least **version 5.1.32**
+> **note:** If you already have VirtualBox, make sure it is at least **version 6.1.38**
 
 ![alt text](../../../.gitbook/assets/01.png)
 
@@ -38,7 +38,7 @@ Now download and install Vagrant. Vagrant is available at the following URL: [ht
 
 ![alt text](../../../.gitbook/assets/02.png)
 
-> **note:** If you already have Vagrant, make sure it is at least **version 2.1.1** Complete the installation and restart your PC.
+> **note:** If you already have Vagrant, make sure it is at least **version 2.3.0** Complete the installation and restart your PC.
 >
 > **note:** If you did a fresh install of Vagrant and already had a command prompt open, make sure you close this command prompt and open it again.
 
@@ -78,10 +78,10 @@ Now open a Command Prompt and navigate to the newly created directory where you 
 
 Run the following command: `vagrant up`
 
-> **note:** In case of error bad uri Images/OSGP Development/hashicorp/cxtlabs/vagrant-ubuntu-16.04-mate  then use the following command;
+> **note:** In case of error bad uri Images/OSGP Development/hashicorp/itc/itc-ubuntu-mate-20.04-amd64  then use the following command;
 >
 > * vagrant destroy
-> * vagrant box add cxtlabs/vagrant-ubuntu-16.04-mate
+> * vagrant box add itc/itc-ubuntu-mate-20.04-amd64
 > * vagrant up
 >
 > **note:** In case of an error complaining about not being able to resolve a URL \(for instance to github.com\) then try using a different internet connection not behind a proxy.
