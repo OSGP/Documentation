@@ -52,10 +52,10 @@ Continue by adding the Maven Projects to the Tomcat server by right clicking on 
 
 Continue with starting Apache ActiveMQ. If you installed an environment as described with Vagrant, you can double click the ActiveMQ shortcut on the desktop.
 
-Alternatively you can open a terminal and run the executable manually by using the following command: \(the executable can be found in the folder `/home/dev/Tools/activemq/bin/linux-x86-64`\)
+Alternatively you can open a terminal and run the executable manually by using the following command: \(the executable can be found in the folder `/home/dev/Tools/activemq/bin`\)
 
 ```text
-sudo ./activemq console
+./activemq console
 ```
 
 This starts ActiveMQ as a terminal process \(this way, ActiveMQ doesn't detach from the terminal and starts running as a daemon\). ![alt text](../../.gitbook/assets/31.png)
