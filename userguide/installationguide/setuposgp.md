@@ -28,6 +28,10 @@ Click on Finish ![alt text](../../.gitbook/assets/tomcat-2-edit-server-runtime.p
 
 ![alt text](../../.gitbook/assets/tomcat-3-created.png) After adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 30. ![alt text](../../.gitbook/assets/tomcat-4-timeouts.png)
 
+Make sure that Tomcat is using the correct Java Runtime Environment:
+
+Click on 'Runtime Environment', 'Installed JREs' and click 'Add'. Choose 'next' with 'Standard VM' highlighted. Click 'Directory' and in the folder browser that is shown, use the key combination 'Ctrl + h' to show hidden files. Choose '.sdkman/candidates/java/current' and select 'Open' and 'Finish'. In the 'Installed JREs' screen, unselect the default JVM (which will be an Eclipse hotspot JVM) and select '/home/dev/.sdkman/candidates/java/current' then close the screen by clicking 'Apply and Close'. The last step is to choose the new JRE which was just added in the dropdown of the 'Runtime Environment' screen by selecting '17.0.5'. Click 'Finish' to apply.
+
 Click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments': `-Xms512m -Xmx2048m -Xss512k -XX:MaxMetaspaceSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true` ![alt text](../../.gitbook/assets/tomcat-5-launch-configuration-old.png)
 
 ![alt text](../../.gitbook/assets/tomcat-6-launch-configuration-new.png)
