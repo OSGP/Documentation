@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Distribution automation
 
 The Open Smart Grid Platform can also be used in the monitoring of a variety of components in substations; RTUs, switches, transformers, etc. Often, an RTU or Remote Terminal Unit is used as a central information hub in a substation. The RTU is connected to one or more sensors or devices that can measure any kind of information. Usually, the focus is on measuring power quality values, temperature and other 'health' variables, but any kind of measurable data can be read through OSGP.

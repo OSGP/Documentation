@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # DLMS device simulator
 
 The library that is used to connect to DLMS devices contains functionality to build a simulator for a device. The library offers the following core functionality.

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Web Services Layer
 
 The Web Services layer contains the web services that are used to communicate with the Platform. The Open Source Smart Grid Platform uses the Simple Object Access Protocol or SOAP to expose its interfaces. The Web Services Adapter receives requests and sends those to the Domain Adapter. An incoming request is converted to a Domain Object, and put on the MessageQueue of the Domain layer. The Web Services layer also has a queue for incoming responses from the Domain adapter.

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Microgrids
 
 The Open Smart Grid Platform act as an central component to monitor and control microgrids.

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Admin
 
 ## The open smart grid platform core and admin functions for device management.

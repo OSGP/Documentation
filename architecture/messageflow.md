@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Message flow examples
 
 This are some examples how a message flows in the Open Smart Grid Platform.

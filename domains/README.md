@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Domains
 
 Chapter 4 Domain This chapter describes the separate domain in the open smart grid platform.

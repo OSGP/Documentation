@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Installation Guide
 
 To get started quickly, a [Vagrant Installation Guide](installation/setup-vm-vagrant.md) has been created and a guide for [Manual Installation](installation/manualinstallation.md).

@@ -1,3 +1,7 @@
+' SPDX-FileCopyrightText: Contributors to the Documentation project
+'
+' SPDX-License-Identifier: Apache-2.0
+
 @startuml
 
 package org.opensmartgridplatform.simulator.protocol.dlms.server.profile {

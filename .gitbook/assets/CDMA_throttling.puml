@@ -1,3 +1,7 @@
+' SPDX-FileCopyrightText: Contributors to the Documentation project
+'
+' SPDX-License-Identifier: Apache-2.0
+
 @startuml
 title Happy flow CDMA throttling
 queue queue as "jms.dlms.requests.queue"

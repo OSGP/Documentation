@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # GXF
 Grid eXchange Fabric, formerly known as the Open Smart Grid Platform (OSGP). GXF is an open, generic, scalable and independent 'Internet of Things' platform, which enables various connected smart objects in the public space to be easily controlled and monitored. The GXF project is built using open source tools and standards.
 

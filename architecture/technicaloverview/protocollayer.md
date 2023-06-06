@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Protocol Layer
 
 The Protocol Adapters are responsible for the actual communication to and from a device. They usually operate in a certain domain, and might use common/ generic functions from the platform.

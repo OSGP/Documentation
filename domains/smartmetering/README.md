@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # SmartMetering
 
 This chapter describes the SmartMetering domain including the web services. Currently the web services of the beta version are described, since the web services have not yet officially been released. Information on the DLMS device simulator can be found in the [DLMS protocol section](../../protocols/dlms/devicesimulator.md)

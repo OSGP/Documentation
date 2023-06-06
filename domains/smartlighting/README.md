@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Smart lighting
 
 ## This domain covers the use of the open smart grid platform for smart lighting.

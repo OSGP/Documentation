@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # General User's Guide
 
 Sys Admins who are tasked with keeping the Open Source Grid Platform running on a environment, can find some information in this chapter.

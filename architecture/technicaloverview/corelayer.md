@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Core Layer
 
 The Core layer of the Open Source Grid Platform is responsible for Validation, Translation, Authorisation and Routing of request messages. It also contains all the Domain Objects.

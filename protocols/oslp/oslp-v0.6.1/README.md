@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # OSLP v0.6.1
 
 Contract for [v0.6.1](oslp.proto.v0.6.1.md) The contract specifies the messages which can be exchanged with an SSLD.

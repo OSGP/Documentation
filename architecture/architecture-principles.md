@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the Documentation project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Architecture Principles
 
 This chapter gives an overview of the principles used defining and implementing the architecture. The following principles were applied:
