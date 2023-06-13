@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Protocols
 
 The open smart grid platform supported protocols can be found in this section. Feel free to add your own protocol or improve an existing protocol adapter.

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # SWDevice-010805
 
 Contract for [SWDevice-010805](swdevice-010805.icd.md) The contract specifies the messages which can be exchanged with an SSLD.

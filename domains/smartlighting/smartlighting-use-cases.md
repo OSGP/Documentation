@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Use cases
 
 Up-to-date information on use-cases can be found on the [Grid eXchange Fabric website](https://www.lfenergy.org/projects/gxf/).

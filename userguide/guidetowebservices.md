@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Web Services
 
 All the features of the open smart grid platform are accessible by it's webservices, as defined in the WSDL files. To use these services to communicate with devices through the platform, please keep in mind the following things.

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Contributing to the code
 
 Thank you for contributing to the Open Smart Grid Platform. Please keep the following in mind before submitting code.

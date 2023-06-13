@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # DLMS adapter configuration
 
 A specific protocol adapter can be used for a specific protocol 

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Bundle
 
 You can combine multiple requests to a meter in a bundle by creating a BundleRequest with one or more Actions in the namespace [http://www.opensmartgridplatform.org/schemas/smartmetering/sm-bundle/2014/10](http://www.opensmartgridplatform.org/schemas/smartmetering/sm-bundle/2014/10). Each Action contains one of the existing requests to a meter.

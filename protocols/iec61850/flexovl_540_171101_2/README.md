@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # FlexOVL\_540\_171101\_2
 
 Contract for [FlexOVL\_540\_171101\_2](flexovl_540_171101_2_out.icd.md) The contract specifies the messages which can be exchanged with a LMD.

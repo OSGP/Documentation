@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Technical Overview
 
 This chapter gives a more technical overview. It describes each layer of the platform by giving an overview of its packages and the code it contains. Furthermore it describes how a message proceeds through the platform. If you are planning on adding your own Domain Adapter or Protocol Adapter, it will be useful to read this chapter to get a feeling of how the Platform has been built.

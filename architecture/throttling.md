@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Throttling
 
 Throttling is used to limit the flow into communication channels that need it. The GXF platform has throttling support for [CDMA](https://en.wikipedia.org/wiki/Code-division_multiple_access) and [SMS](https://en.wikipedia.org/wiki/SMS)/texting.

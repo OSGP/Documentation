@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Performance
 
 This chapter describes the results of a performance test, to give potential users an indication of the system requirements for the platform.

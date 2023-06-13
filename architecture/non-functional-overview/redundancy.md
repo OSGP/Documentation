@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Contributors to the GXF project
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Redundancy
 
 This chapter describes the possibilities of a redundant set up of the Open Smart Grid Platform. The Platform is designed to run in a High Available \(or HA\) environment, and to prevent data loss due to unexpected failures. Each component of the Platform is designed to be stateless. Components communicate with each other using message queues, which are processed in an asynchronous way.
