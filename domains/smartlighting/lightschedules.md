@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 
 # Light Schedules
 
-Schedules for light switching can be set using [Set Schedule requests](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-publiclighting/src/main/resources/schemas/pl-schedulemanagement.xsd) from the [Public Lighting Schedule Management web service](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-publiclighting/src/main/resources/PublicLightingScheduleManagement.wsdl).  
+Schedules for light switching can be set using [Set Schedule requests](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-publiclighting/src/main/resources/schemas/schedulemanagement-ws-publiclighting.xsd) from the [Public Lighting Schedule Management web service](https://github.com/OSGP/open-smart-grid-platform/blob/development/osgp/shared/osgp-ws-publiclighting/src/main/resources/PublicLightingScheduleManagement.wsdl).  
  For brevity the XML element and type names in the descriptions below will not include the namespace \(which will typically be `"http://www.opensmartgridplatform.org/schemas/publiclighting/schedulemanagement/2014/10"`\).
 
 A switching schedule is defined by a number of declarations of switching moments \(also known as schedule entries\).  
