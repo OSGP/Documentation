@@ -50,6 +50,6 @@ These messages below are part of OSLP v0.6.1. Note that OSLP v0.6.1 is backwards
 * [**SetDeviceVerificationKeyResponse**](setdeviceverificationkey.md) \(from platform to device\) is a response which returns the result of the SetDeviceVerificationKeyRequest.
 * [**SwitchFirmwareRequest**](switchfirmware.md) \(from platform to device\) is a request which commands the device to switch to the other firmware bank.
 * [**SwitchFirmwareResponse**](switchfirmware.md) \(from platform to device\) is a response which returns the result of the SwitchFirmwareRequest.
-* [**SwitchConfigurationRequest**](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Protocols/OSLP/v0.6.1/SwitchConfigurationRequest.md) \(from platform to device\) is a request which commands the device to switch to the other configuration bank.
-* [**SwitchConfigurationResponse**](https://github.com/OSGP/Documentation/tree/805a7da4c3cbf27ddb6aed765ebc7a7eab320933/Protocols/OSLP/v0.6.1/SwitchConfigurationResponse.md) \(from platform to device\) is a response which returns the result of the SwitchConfigurationRequest.
+* [**SwitchConfigurationRequest**](switchconfiguration.md) \(from platform to device\) is a request which commands the device to switch to the other configuration bank.
+* [**SwitchConfigurationResponse**](switchconfiguration.md) \(from platform to device\) is a response which returns the result of the SwitchConfigurationRequest.
 
