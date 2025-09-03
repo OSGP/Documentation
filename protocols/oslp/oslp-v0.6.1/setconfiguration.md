@@ -55,6 +55,8 @@ message SetConfigurationRequest {
 //W:  day of the week (0- Monday, 6- Sunday)
 //HH: hour of the changing time
 //mi: minutes of the changing time
+//
+//note: The current implemention is usable in Europe and several other countries in the world, but doesn't support all situations as describe at https://en.wikipedia.org/wiki/Daylight_saving_time_by_country. Some countries don't switch the time in the last week of the month, but in the first or second. This is currently not supported.
 
 message SetConfigurationResponse {
     required Status status = 1;
