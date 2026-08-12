@@ -8,7 +8,7 @@ SPDX-License-Identifier: Apache-2.0
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
 
-Repositories in the OSGP org have all been retired and are no longer actively developed or maintained as GXF has moved within LF Energy to the Emeritus status.
+Dear interested Reader, this project has moved to Emeritius Status within Linux Foundation Energy. I.e. the project is currently inactive and the repositories are no longer actively developed or maintained. Should you want to contribute to the project, please contact Linux Foundation Energy @ https://lfenergy.org/about/contact/.
 
 ---------
 
